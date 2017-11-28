@@ -15,7 +15,7 @@ UNK = 'unk'
 file_path = 'data'
 
 limit = {
-    'max_descriptions' : 200,
+    'max_descriptions' : 50,
     'min_descriptions' : 0,
     'max_headings' : 5,
     'min_headings' : 0,

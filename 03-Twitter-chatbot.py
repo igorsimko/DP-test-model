@@ -14,7 +14,7 @@ idx_a, idx_q = metadata['idx_headings'], metadata['idx_descriptions']
 # parameters 
 xseq_len = trainX.shape[-1]
 yseq_len = trainY.shape[-1]
-batch_size = 32
+batch_size = 1
 xvocab_size = len(metadata['idx2word'])
 yvocab_size = xvocab_size
 emb_dim = 1024
@@ -35,10 +35,10 @@ model = seq2seq_wrapper.Seq2Seq(xseq_len=xseq_len,
 
 
 # In[8]:
-
-val_batch_gen = data_utils.rand_batch_gen(validX, validY, 32)
+# 32, 256
+val_batch_gen = data_utils.rand_batch_gen(validX, validY, 1)
 train_batch_gen = data_utils.rand_batch_gen(trainX, trainY, batch_size)
-test_batch_gen = data_utils.rand_batch_gen(testX, testY, 256)
+test_batch_gen = data_utils.rand_batch_gen(testX, testY, 1)
 
 # In[9]:
 # sess = model.restore_last_session()
@@ -50,8 +50,8 @@ print(output.shape)
 
 replies = []
 for ii, oi in zip(input_.T, output):
-    q = data_utils.decode(sequence=ii, lookup=metadata['idx2w'], separator=' ')
-    decoded = data_utils.decode(sequence=oi, lookup=metadata['idx2w'], separator=' ').split(' ')
+    q = data_utils.decode(sequence=ii, lookup=metadata['idx2word'], separator=' ')
+    decoded = data_utils.decode(sequence=oi, lookup=metadata['idx2word'], separator=' ').split(' ')
     if decoded.count('unk') == 0:
         if decoded not in replies:
             print('q : [{0}]; a : [{1}]'.format(q, ' '.join(decoded)))
