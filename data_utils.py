@@ -6,16 +6,15 @@ from random import sample
     return tuple( (trainX, trainY), (testX,testY), (validX,validY) )
 
 '''
-def split_dataset(x, y, ratio = [0.7, 0.15, 0.15] ):
-    # number of examples
-    data_len = len(x)
-    lens = [ int(data_len*item) for item in ratio ]
+def split_data(x, y, ratio=[0.8, 0.1, 0.1]):
+    data_length = len(x)
+    lengths = [int(data_length * item) if int(data_length * item) > 0 else 1 for item in ratio]
 
-    trainX, trainY = x[:lens[0]], y[:lens[0]]
-    testX, testY = x[lens[0]:lens[0]+lens[1]], y[lens[0]:lens[0]+lens[1]]
-    validX, validY = x[-lens[-1]:], y[-lens[-1]:]
+    x_train, y_train = x[:lengths[0]], y[:lengths[0]]
+    x_test, y_test = x[lengths[0]:lengths[0]+lengths[1]], y[lengths[0]:lengths[0]+lengths[1]]
+    x_valid, y_valid = x[-lengths[-1]:], y[-lengths[-1]:]
 
-    return (trainX,trainY), (testX,testY), (validX,validY)
+    return (x_train, y_train), (x_test, y_test), (x_valid, y_valid)
 
 
 '''

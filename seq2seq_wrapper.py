@@ -1,4 +1,6 @@
 import tensorflow as tf
+tf.logging.set_verbosity(tf.logging.DEBUG)
+
 import numpy as np
 import sys
 

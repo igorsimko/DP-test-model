@@ -1,22 +1,21 @@
 
 # In[1]:
 
-import tensorflow as tf
-import numpy as np
-
 # preprocessed data
-from datasets.twitter import data
 import data_utils
+from dataprocessing import *
 
 # load data from pickle and npy files
-metadata, idx_q, idx_a = data.load_data(PATH='datasets/twitter/')
-(trainX, trainY), (testX, testY), (validX, validY) = data_utils.split_dataset(idx_q, idx_a)
+metadata = unpickle_articles()
+idx_a, idx_q = metadata['idx_headings'], metadata['idx_descriptions']
+
+(trainX, trainY), (testX, testY), (validX, validY) = data_utils.split_data(idx_q, idx_a)
 
 # parameters 
 xseq_len = trainX.shape[-1]
 yseq_len = trainY.shape[-1]
 batch_size = 32
-xvocab_size = len(metadata['idx2w'])  
+xvocab_size = len(metadata['idx2word'])
 yvocab_size = xvocab_size
 emb_dim = 1024
 
