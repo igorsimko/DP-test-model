@@ -160,7 +160,7 @@ def process_data():
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('== External links ==\s*([^\n\r]*)', "", x))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x.split('Category:')[0])
 
-    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x[:100+limit['max_descriptions']])
+    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x[:limit['max_descriptions']])
 
     headings, descriptions = tokenize_articles(raw_data)
 
