@@ -15,7 +15,7 @@ UNK = 'unk'
 file_path = 'data'
 
 limit = {
-    'max_descriptions' : 50,
+    'max_descriptions' : 200,
     'min_descriptions' : 0,
     'max_headings' : 5,
     'min_headings' : 0,
@@ -149,15 +149,18 @@ def remove_underscore(data, where=None):
 def process_data():
 
     #load data from file
-    filename = path.join(file_path, 'train_5.json')
+    filename = path.join(file_path, 'train_1K.json')
     raw_data = load_raw_data(filename)
     raw_data['category'] = raw_data['category'].apply(lambda x: x.replace('_', " "))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('{(.*?)}', "", x))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('\|(.*?)=(.*?)', "", x))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('}*', "", x))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('{*', "", x))
+    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('[\n]+', "", x))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('== External links ==\s*([^\n\r]*)', "", x))
-    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x[100:100+limit['max_descriptions']])
+    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x.split('Category:')[0])
+
+    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x[:100+limit['max_descriptions']])
 
     headings, descriptions = tokenize_articles(raw_data)
 

@@ -17,7 +17,7 @@ yseq_len = trainY.shape[-1]
 batch_size = 1
 xvocab_size = len(metadata['idx2word'])
 yvocab_size = xvocab_size
-emb_dim = 1024
+emb_dim = 300
 
 import seq2seq_wrapper
 
