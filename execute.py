@@ -5,7 +5,8 @@ import data_utils
 from dataprocessing import *
 
 # load data from pickle and npy files
-metadata = unpickle_articles()
+
+metadata = unpickle_articles() #data.load_data(PATH='datasets/twitter/')
 idx_a, idx_q = metadata['idx_headings'], metadata['idx_descriptions']
 
 (trainX, trainY), (testX, testY), (validX, validY) = data_utils.split_data(idx_q, idx_a)
@@ -45,7 +46,7 @@ sess = model.train(train_batch_gen, val_batch_gen)
 
 for x in range(len(testX)):
     input_ = test_batch_gen.__next__()[0]
-    output = 0  # model.predict(sess, input_)
+    output = model.predict(sess, input_)
     # print(output.shape)
 
     replies = []
