@@ -202,7 +202,7 @@ def process_data():
 
 def load_data(PATH=''):
     # read data control dictionaries
-    with open(PATH + 'article_data.pkl', 'rb') as f:
+    with open(PATH + 'metadata.pkl', 'rb') as f:
         metadata = pickle.load(f)
     # read numpy arrays
     idx_q = np.load(PATH + 'idx_q.npy')

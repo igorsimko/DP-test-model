@@ -3,7 +3,7 @@
 # preprocessed data
 import data_utils
 from dataprocessing import *
-
+from datasets.twitter import data
 # load data from pickle and npy files
 
 metadata = unpickle_articles() #data.load_data(PATH='datasets/twitter/')
@@ -30,7 +30,7 @@ model = seq2seq_wrapper.Seq2Seq(xseq_len=xseq_len,
                                ckpt_path='ckpt/twitter/',
                                emb_dim=emb_dim,
                                num_layers=3,
-                                epochs=100
+                                epochs=1000
                                )
 
 

@@ -3,6 +3,7 @@ tf.logging.set_verbosity(tf.logging.DEBUG)
 
 import numpy as np
 import sys
+from utils import *
 
 
 class Seq2Seq(object):
@@ -76,10 +77,10 @@ class Seq2Seq(object):
             # train op to minimize the loss
             self.train_op = tf.train.AdamOptimizer(learning_rate=lr).minimize(self.loss)
 
-        sys.stdout.write('<log> Building Graph ')
+        prt('<log> Building Graph ')
         # build comput graph
         __graph__()
-        sys.stdout.write('</log>')
+        prt('</log>')
 
 
 
@@ -139,7 +140,7 @@ class Seq2Seq(object):
             # init all variables
             sess.run(tf.global_variables_initializer())
 
-        sys.stdout.write('\n<log> Training started </log>\n')
+        prt('\n<log> Training started </log>\n')
         # run M epochs
         for i in range(self.epochs):
             try:
@@ -148,13 +149,13 @@ class Seq2Seq(object):
                     # save model to disk
                     #saver.save(sess, self.ckpt_path + self.model_name + '.ckpt', global_step=i)
                     # evaluate to get validation loss
-                    val_loss = self.eval_batches(sess, valid_set, 16) # TODO : and this
+                    val_loss = self.eval_batches(sess, valid_set, 1) # TODO : and this
                     # print stats
-                    print('\nModel saved to disk at iteration #{}'.format(i))
-                    print('val   loss : {0:.6f}'.format(val_loss))
-                    sys.stdout.flush()
+                    prt('\nModel saved to disk at iteration #{}'.format(i))
+                    prt('val   loss : {0:.6f}'.format(val_loss))
+                    # sys.stdout.flush()
             except KeyboardInterrupt: # this will most definitely happen, so handle it
-                print('Interrupted by user at iteration {}'.format(i))
+                prt('Interrupted by user at iteration {}'.format(i))
                 self.session = sess
                 return sess
         self.session = sess
