@@ -89,7 +89,6 @@ def filter_length(headings, descriptions):
 
     print ('Length of filtered headings: {:,}'.format(len(filtered_headings)))
     print ('Length of filtered descriptions: {:,}'.format(len(filtered_descriptions)))
-
     return (filtered_headings, filtered_descriptions)
 
 def index_data(tokenized_sentences, vocab_size):
@@ -180,8 +179,21 @@ def process_data():
     idx_headings, idx_descriptions = zero_pad(word_tokenized_headings, word_tokenized_descriptions, word2idx)
 
     #check percentage of unks
-    unk_percentage = calculate_unk_percentage(idx_headings, idx_descriptions, word2idx)
-    print (calculate_unk_percentage(idx_headings, idx_descriptions, word2idx))
+    new_idx_h = []
+    new_idx_d = []
+
+    for index, i in enumerate(idx_headings):
+        if 1 not in i:
+            new_idx_h.append(i)
+            new_idx_d.append(idx_descriptions[index])
+    # for i in idx_descriptions:
+    #     if 1 not in i:
+    #         new_idx_d.append(i)
+
+    idx_headings = new_idx_h
+    idx_descriptions = new_idx_d
+    # unk_percentage = calculate_unk_percentage(idx_headings, idx_descriptions, word2idx)
+    # print (calculate_unk_percentage(idx_headings, idx_descriptions, word2idx))
 
     article_data = {
         'word2idx' : word2idx,
