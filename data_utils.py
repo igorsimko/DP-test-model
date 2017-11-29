@@ -39,7 +39,7 @@ def batch_gen(x, y, batch_size):
 def rand_batch_gen(x, y, batch_size):
     while True:
         sample_idx = sample(list(np.arange(len(x))), batch_size)
-        yield x[sample_idx].T, y[sample_idx].T
+        yield np.array(x)[sample_idx].T, np.array(y)[sample_idx].T
 
 #'''
 # convert indices of alphabets into a string (word)
