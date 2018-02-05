@@ -23,7 +23,7 @@ class Seq2Seq(object):
         self.ckpt_path = ckpt_path
         self.epochs = epochs
         self.model_name = model_name
-        self.bleu = []
+        self.bleu = 0
 
         # build thy graph
         #  attach any part of the graph that needs to be exposed, to the self

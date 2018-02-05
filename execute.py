@@ -45,6 +45,6 @@ for x in range(len(testX)):
         decoded = data_utils.decode(sequence=oi, lookup=metadata['idx2word'], separator=' ').split(' ')
         if decoded.count('unk') == 0:
             if decoded not in replies:
-                model.bleu.append()
+                model.bleu = bleu(data_utils.decode(sequence=testY[x], lookup=metadata['idx2word'], separator=' '), decoded)
                 print('description : [{0}]; category : [{1}]'.format(q, ' '.join(decoded)))
                 replies.append(decoded)
