@@ -5,6 +5,9 @@ import numpy as np
 import sys
 from utils import *
 
+setattr(tf.contrib.rnn.GRUCell, '__deepcopy__', lambda self, _: self)
+setattr(tf.contrib.rnn.BasicLSTMCell, '__deepcopy__', lambda self, _: self)
+setattr(tf.contrib.rnn.MultiRNNCell, '__deepcopy__', lambda self, _: self)
 
 class Seq2Seq(object):
 
@@ -20,7 +23,7 @@ class Seq2Seq(object):
         self.ckpt_path = ckpt_path
         self.epochs = epochs
         self.model_name = model_name
-
+        self.bleu = []
 
         # build thy graph
         #  attach any part of the graph that needs to be exposed, to the self
@@ -75,12 +78,12 @@ class Seq2Seq(object):
             loss_weights = [ tf.ones_like(label, dtype=tf.float32) for label in self.labels ]
             self.loss = tf.contrib.legacy_seq2seq.sequence_loss(self.decode_outputs, self.labels, loss_weights, yvocab_size)
             # train op to minimize the loss
+            tf.summary.scalar("loss", self.loss )
             self.train_op = tf.train.AdamOptimizer(learning_rate=lr).minimize(self.loss)
 
-        prt('<log> Building Graph ')
+        prt('Building Graph ')
         # build comput graph
         __graph__()
-        prt('</log>')
 
 
 
@@ -97,13 +100,17 @@ class Seq2Seq(object):
         return feed_dict
 
     # run one batch for training
-    def train_batch(self, sess, train_batch_gen):
+    def train_batch(self, sess, train_batch_gen, merged_summary_op):
         # get batches
         batchX, batchY = train_batch_gen.__next__()
-        # build feed
+        # build feedte
         feed_dict = self.get_feed(batchX, batchY, keep_prob=0.5)
-        _, loss_v = sess.run([self.train_op, self.loss], feed_dict)
-        return loss_v
+        _, summary = sess.run([self.train_op, merged_summary_op], feed_dict)
+
+        # _, summary = sess.run([self.train_op, merged_summary_op], feed_dict)
+        # tf.summary.scalar("loss_function", loss_v)
+
+        return summary
 
     def eval_step(self, sess, eval_batch_gen):
         # get batches
@@ -139,12 +146,18 @@ class Seq2Seq(object):
             sess = tf.Session()
             # init all variables
             sess.run(tf.global_variables_initializer())
+            summary_writer = tf.summary.FileWriter('/logs/', graph=tf.get_default_graph())
 
-        prt('\n<log> Training started </log>\n')
+        prt('\nTraining started </log>\n')
+        tf.summary.scalar("bleu", self.bleu)
+        merged_summary_op = tf.summary.merge_all()
+
         # run M epochs
         for i in range(self.epochs):
             try:
-                self.train_batch(sess, train_set)
+                summary = self.train_batch(sess, train_set, merged_summary_op)
+                summary_writer.add_summary(summary, self.epochs + i)
+
                 if i and i% (1) == 0: # TODO : make this tunable by the user
                     # save model to disk
                     #saver.save(sess, self.ckpt_path + self.model_name + '.ckpt', global_step=i)

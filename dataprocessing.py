@@ -15,9 +15,9 @@ UNK = 'unk'
 file_path = 'data'
 
 limit = {
-    'max_descriptions' : 200,
+    'max_descriptions' : 100,
     'min_descriptions' : 0,
-    'max_headings' : 5,
+    'max_headings' : 30,
     'min_headings' : 0,
 }
 
@@ -29,10 +29,6 @@ def load_raw_data(filename):
     return raw_data
 
 def tokenize_sentence(sentence):
-    ######################################
-    #   Splits article into sentences    #
-    ######################################
-
     return ' '.join(list(tokenize(sentence)))
 
 def article_is_complete(article):
@@ -44,10 +40,6 @@ def article_is_complete(article):
     return True
 
 def tokenize_articles(raw_data):
-    #########################################################################
-    #   Tokenizes raw data and creates list of headings and descriptions    #
-    #########################################################################
-
     headings, descriptions = [], []
     num_articles = len(raw_data)
     nltk.download('punkt')
@@ -62,17 +54,9 @@ def tokenize_articles(raw_data):
     return (headings, descriptions)
 
 def filter(line, whitelist):
-    ##############################################################
-    #   Filters out all characters which are not in whitelist    #
-    ##############################################################
-
     return ''.join([ch for ch in line if ch in whitelist])
 
 def filter_length(headings, descriptions):
-    ######################################################################
-    #   Filters based on heading and description length defined above    #
-    ######################################################################
-
     if len(headings) != len(descriptions):
         raise Exception('Number of headings does not match number of descriptions!')
 
@@ -92,9 +76,6 @@ def filter_length(headings, descriptions):
     return (filtered_headings, filtered_descriptions)
 
 def index_data(tokenized_sentences, vocab_size):
-    #####################################################
-    #   Forms vocab, and idx2word and word2idx dicts    #
-    #####################################################
 
     freq_dist = nltk.FreqDist(itertools.chain(*tokenized_sentences))
     vocab = freq_dist.most_common(vocab_size)
@@ -106,10 +87,6 @@ def index_data(tokenized_sentences, vocab_size):
     return (idx2word, word2idx, freq_dist)
 
 def pad_seq(seq, lookup, max_length):
-    #########################################
-    #   Pads sequence with zero values      #
-    #########################################
-
     indices = []
 
     for word in seq:
@@ -121,10 +98,6 @@ def pad_seq(seq, lookup, max_length):
     return indices + [0]*(max_length - len(seq))
 
 def zero_pad(tokenized_headings, tokenized_descriptions, word2idx):
-    #############################################
-    #   Stores indices in numpy arrays and      #
-    #   creates zero padding where required     #
-    #############################################
     data_length = len(tokenized_descriptions)
 
     idx_descriptions = np.zeros([data_length, limit['max_descriptions']], dtype=np.int32)
@@ -186,9 +159,6 @@ def process_data():
         if 1 not in i:
             new_idx_h.append(i)
             new_idx_d.append(idx_descriptions[index])
-    # for i in idx_descriptions:
-    #     if 1 not in i:
-    #         new_idx_d.append(i)
 
     idx_headings = new_idx_h
     idx_descriptions = new_idx_d
@@ -209,18 +179,10 @@ def process_data():
     return (idx_headings, idx_descriptions)
 
 def pickle_data(article_data):
-    ###########################################
-    #   Saves obj to disk as a pickle file    #
-    ###########################################
-
     with open(path.join(file_path, 'article_data.pkl'), 'wb') as fp:
         pickle.dump(article_data, fp, 2)
 
 def unpickle_articles():
-    #################################################
-    #   Loads pickle file from disk to give obj     #
-    #################################################
-
     with open(path.join(file_path, 'article_data.pkl'), 'rb') as fp:
         article_data = pickle.load(fp)
 
