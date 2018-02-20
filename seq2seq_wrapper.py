@@ -52,6 +52,7 @@ class Seq2Seq(object):
     def init_graph(self):
         # placeholders
         tf.reset_default_graph()
+        prt("Building graph")
 
         # Different placeholders
         self.batch_ph = tf.placeholder(tf.int32, [None, None])
@@ -63,6 +64,7 @@ class Seq2Seq(object):
         self.keep_prob = tf.placeholder(tf.float32)
         self.batch_size_ph = tf.placeholder(tf.int32, [])
 
+        prt("Encoder start.")
         # ENCODER
         encoder_embedding = tf.get_variable('encoder_embedding', [self.xvocab_size, self.emb_size],
                                             tf.float32, tf.random_uniform_initializer(-1.0, 1.0))
@@ -76,7 +78,11 @@ class Seq2Seq(object):
             dtype=tf.float32)
         self.encoder_state = tuple(self.encoder_state[-1] for _ in range(self.num_layers))
 
+        prt("Encoder done.")
+
         with tf.variable_scope(tf.get_variable_scope(), reuse=None) as scope:
+            prt("Decoder start.")
+
             decoder_embedding = tf.get_variable('decoder_embedding',
                                                 [self.yvocab_size, self.emb_size],
                                                 tf.float32, tf.random_uniform_initializer(-1.0, 1.0))
@@ -97,6 +103,8 @@ class Seq2Seq(object):
                 impute_finished=True,
                 maximum_iterations=tf.reduce_max(self.Yseq_len_ph))
             self.training_logits = self.decode_outputs.rnn_output
+            prt("Decoder done.")
+
             scope.reuse_variables()
 
         with tf.variable_scope(tf.get_variable_scope(), reuse=True):
@@ -124,6 +132,7 @@ class Seq2Seq(object):
 
         # LOSS
         # self.loss = self._compute_loss(self.training_logits)
+        prt("Backward pass start.")
 
         masks = tf.sequence_mask(self.Yseq_len_ph, tf.reduce_max(self.Yseq_len_ph), dtype=tf.float32)
         self.loss = tf.contrib.seq2seq.sequence_loss(logits=self.training_logits,
@@ -134,6 +143,9 @@ class Seq2Seq(object):
         gradients = tf.gradients(self.loss, params)
         clipped_gradients, _ = tf.clip_by_global_norm(gradients, 5.0)
         self.train_op = tf.train.AdamOptimizer().apply_gradients(zip(clipped_gradients, params))
+        prt("Backward pass done.")
+        prt("Building graph done.")
+
 
     '''
         Training and Evaluation
@@ -209,7 +221,7 @@ class Seq2Seq(object):
             sess.run(tf.global_variables_initializer())
             summary_writer = tf.summary.FileWriter(log_dir, graph=tf.get_default_graph())
 
-        prt('Training started </log>\n')
+        prt('Training started\n')
         tf.summary.scalar("bleu", self.bleu)
         tf.summary.scalar("loss", self.loss)
 
