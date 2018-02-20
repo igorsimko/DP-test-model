@@ -1,201 +1,236 @@
 import tensorflow as tf
-tf.logging.set_verbosity(tf.logging.DEBUG)
-
 import numpy as np
-import sys
-from utils import *
 
+from tensorflow.python.layers.core import Dense
+from utils import *
+#
+tf.logging.set_verbosity(tf.logging.DEBUG)
 setattr(tf.contrib.rnn.GRUCell, '__deepcopy__', lambda self, _: self)
 setattr(tf.contrib.rnn.BasicLSTMCell, '__deepcopy__', lambda self, _: self)
 setattr(tf.contrib.rnn.MultiRNNCell, '__deepcopy__', lambda self, _: self)
 
-class Seq2Seq(object):
 
-    def __init__(self, xseq_len, yseq_len, 
-            xvocab_size, yvocab_size,
-            emb_dim, num_layers, ckpt_path,
-            lr=0.0001, 
-            epochs=11, model_name='seq2seq_model'):
+class Seq2Seq(object):
+    def __init__(self, xseq_len, yseq_len,
+                 xvocab_size, yvocab_size,
+                 emb_dim, num_layers, ckpt_path, num_units, batch_size=32,
+                 lr=0.0001, embedding=None, emb_size=1,
+                 epochs=11, model_name='seq2seq_model'):
 
         # attach these arguments to self
         self.xseq_len = xseq_len
         self.yseq_len = yseq_len
+        self.xvocab_size = xvocab_size
+        self.yvocab_size = yvocab_size
+
+        self.batch_size = batch_size
+        self.embedding = embedding
+        self.emb_size = emb_size
+
         self.ckpt_path = ckpt_path
         self.epochs = epochs
+        self.num_units = num_units
+        self.num_layers = num_layers
         self.model_name = model_name
+        self.lr = lr
+
         self.bleu = 0
+        self.keep_prob = 0
+        self.batch_ph = 0
+        self.target_ph = 0
+        self.batch_size_ph = 0
 
-        # build thy graph
-        #  attach any part of the graph that needs to be exposed, to the self
-        def __graph__():
+        self.Xseq_len_ph = 0
+        self.Yseq_len_ph = 0
 
-            # placeholders
-            tf.reset_default_graph()
-            #  encoder inputs : list of indices of length xseq_len
-            self.enc_ip = [ tf.placeholder(shape=[None,], 
-                            dtype=tf.int64, 
-                            name='ei_{}'.format(t)) for t in range(xseq_len) ]
+        self.source_seq_len = xseq_len
+        self.go_token = 0
+        self.eos_token = 2
 
-            #  labels that represent the real outputs
-            self.labels = [ tf.placeholder(shape=[None,], 
-                            dtype=tf.int64, 
-                            name='ei_{}'.format(t)) for t in range(yseq_len) ]
+        self.init_graph()
 
-            #  decoder inputs : 'GO' + [ y1, y2, ... y_t-1 ]
-            self.dec_ip = [ tf.zeros_like(self.enc_ip[0], dtype=tf.int64, name='GO') ] + self.labels[:-1]
+    def init_graph(self):
+        # placeholders
+        tf.reset_default_graph()
 
+        # Different placeholders
+        self.batch_ph = tf.placeholder(tf.int32, [None, None])
+        self.target_ph = tf.placeholder(tf.int32, [None, None])
 
-            # Basic LSTM cell wrapped in Dropout Wrapper
-            self.keep_prob = tf.placeholder(tf.float32)
-            # define the basic cell
-            basic_cell = tf.contrib.rnn.DropoutWrapper(
-                    tf.contrib.rnn.BasicLSTMCell(emb_dim, state_is_tuple=True),
-                    output_keep_prob=self.keep_prob)
-            # stack cells together : n layered model
-            stacked_lstm = tf.contrib.rnn.MultiRNNCell([basic_cell]*num_layers, state_is_tuple=True)
+        self.Xseq_len_ph = tf.placeholder(tf.int32, [None])
+        self.Yseq_len_ph = tf.placeholder(tf.int32, [None])
 
+        self.keep_prob = tf.placeholder(tf.float32)
+        self.batch_size_ph = tf.placeholder(tf.int32, [])
 
-            # for parameter sharing between training model
-            #  and testing model
-            with tf.variable_scope('decoder') as scope:
-                # build the seq2seq model 
-                #  inputs : encoder, decoder inputs, LSTM cell type, vocabulary sizes, embedding dimensions
-                self.decode_outputs, self.decode_states = tf.contrib.legacy_seq2seq.embedding_rnn_seq2seq(self.enc_ip,self.dec_ip, stacked_lstm,
-                                                    xvocab_size, yvocab_size, emb_dim)
-                # share parameters
-                scope.reuse_variables()
-                # testing model, where output of previous timestep is fed as input 
-                #  to the next timestep
-                self.decode_outputs_test, self.decode_states_test = tf.contrib.legacy_seq2seq.embedding_rnn_seq2seq(
-                    self.enc_ip, self.dec_ip, stacked_lstm, xvocab_size, yvocab_size,emb_dim,
-                    feed_previous=True)
+        # ENCODER
+        encoder_embedding = tf.get_variable('encoder_embedding', [self.xvocab_size, self.emb_size],
+                                            tf.float32, tf.random_uniform_initializer(-1.0, 1.0))
 
-            # now, for training,
-            #  build loss function
+        tf.summary.histogram('embeddings_var', encoder_embedding)
 
-            # weighted loss
-            #  TODO : add parameter hint
-            loss_weights = [ tf.ones_like(label, dtype=tf.float32) for label in self.labels ]
-            self.loss = tf.contrib.legacy_seq2seq.sequence_loss(self.decode_outputs, self.labels, loss_weights, yvocab_size)
-            # train op to minimize the loss
-            tf.summary.scalar("loss", self.loss )
-            self.train_op = tf.train.AdamOptimizer(learning_rate=lr).minimize(self.loss)
+        self.encoder_out, self.encoder_state = tf.nn.dynamic_rnn(
+            cell=tf.nn.rnn_cell.MultiRNNCell([self.lstm_cell() for _ in range(self.num_layers)]),
+            inputs=tf.nn.embedding_lookup(encoder_embedding, self.batch_ph),
+            sequence_length=self.Xseq_len_ph,
+            dtype=tf.float32)
+        self.encoder_state = tuple(self.encoder_state[-1] for _ in range(self.num_layers))
 
-        prt('Building Graph ')
-        # build comput graph
-        __graph__()
+        with tf.variable_scope(tf.get_variable_scope(), reuse=None) as scope:
+            decoder_embedding = tf.get_variable('decoder_embedding',
+                                                [self.yvocab_size, self.emb_size],
+                                                tf.float32, tf.random_uniform_initializer(-1.0, 1.0))
+            decoder_cell = self.attention()
+            training_helper = tf.contrib.seq2seq.TrainingHelper(
+                inputs=tf.nn.embedding_lookup(decoder_embedding, self.processed_decoder_input()),
+                sequence_length=self.Yseq_len_ph,
+                time_major=False)
+            training_decoder = tf.contrib.seq2seq.BasicDecoder(
+                cell=decoder_cell,
+                helper=training_helper,
+                initial_state=decoder_cell.zero_state(self.batch_size_ph, tf.float32).clone(
+                    cell_state=self.encoder_state),
+                output_layer=Dense(self.yvocab_size)
+            )
+            self.decode_outputs, _, _ = tf.contrib.seq2seq.dynamic_decode(
+                decoder=training_decoder,
+                impute_finished=True,
+                maximum_iterations=tf.reduce_max(self.Yseq_len_ph))
+            self.training_logits = self.decode_outputs.rnn_output
+            scope.reuse_variables()
 
+        with tf.variable_scope(tf.get_variable_scope(), reuse=True):
+            decoder_cell = self.attention(True)
+            predicting_helper = tf.contrib.seq2seq.GreedyEmbeddingHelper(
+                embedding=tf.get_variable('decoder_embedding'),
+                start_tokens=tf.tile(tf.constant([self.go_token], dtype=tf.int32), [self.batch_size_ph]),
+                end_token=self.eos_token)
+            predicting_decoder = tf.contrib.seq2seq.BasicDecoder(
+                cell=decoder_cell,
+                helper=predicting_helper,
+                initial_state=decoder_cell.zero_state(self.batch_size_ph, tf.float32).clone(
+                    cell_state=self.encoder_state),
+                output_layer=Dense(self.yvocab_size, _reuse=True))
+            predicting_decoder_output, _, _ = tf.contrib.seq2seq.dynamic_decode(
+                decoder=predicting_decoder,
+                impute_finished=True,
+                maximum_iterations=2 * tf.reduce_max(self.Xseq_len_ph))
+            self.predicting_ids = predicting_decoder_output.sample_id
 
+        # with tf.name_scope('accuracy'):
+        #     correct_prediction = tf.equal(tf.argmax(self.training_logits, 1), tf.argmax(self.target_ph, 1))
+        #     accuracy = tf.reduce_mean(tf.cast(correct_prediction, 'float'))
+        #     tf.summary.scalar('train_accuracy', accuracy)
+
+        # LOSS
+        # self.loss = self._compute_loss(self.training_logits)
+
+        masks = tf.sequence_mask(self.Yseq_len_ph, tf.reduce_max(self.Yseq_len_ph), dtype=tf.float32)
+        self.loss = tf.contrib.seq2seq.sequence_loss(logits=self.training_logits,
+                                                     targets=self.target_ph,
+                                                     weights=masks)
+
+        params = tf.trainable_variables()
+        gradients = tf.gradients(self.loss, params)
+        clipped_gradients, _ = tf.clip_by_global_norm(gradients, 5.0)
+        self.train_op = tf.train.AdamOptimizer().apply_gradients(zip(clipped_gradients, params))
 
     '''
         Training and Evaluation
 
     '''
 
-    # get the feed dictionary
-    def get_feed(self, X, Y, keep_prob):
-        feed_dict = {self.enc_ip[t]: X[t] for t in range(self.xseq_len)}
-        feed_dict.update({self.labels[t]: Y[t] for t in range(self.yseq_len)})
-        feed_dict[self.keep_prob] = keep_prob # dropout prob
-        return feed_dict
+    def _compute_loss(self, logits):
+        """Compute optimization loss."""
+        target_output = self.target_ph
 
-    # run one batch for training
-    def train_batch(self, sess, train_batch_gen, merged_summary_op):
-        # get batches
-        batchX, batchY = train_batch_gen.__next__()
-        # build feedte
-        feed_dict = self.get_feed(batchX, batchY, keep_prob=0.5)
-        _, summary = sess.run([self.train_op, merged_summary_op], feed_dict)
+        crossent = tf.nn.sparse_softmax_cross_entropy_with_logits(
+            labels=target_output, logits=logits)
+        target_weights = tf.sequence_mask(
+            self.Yseq_len_ph, None, dtype=logits.dtype)
 
-        # _, summary = sess.run([self.train_op, merged_summary_op], feed_dict)
-        # tf.summary.scalar("loss_function", loss_v)
+        loss = tf.reduce_sum(
+            crossent * target_weights) / tf.to_float(self.batch_size_ph)
+        return loss
 
-        return summary
+    def processed_decoder_input(self):
+        main = tf.strided_slice(self.target_ph, [0, 0], [self.batch_size, -1], [1, 1])  # remove last char
+        decoder_input = tf.concat([tf.fill([self.batch_size, 1], self.go_token), main], 1)
+        return decoder_input
 
-    def eval_step(self, sess, eval_batch_gen):
-        # get batches
-        batchX, batchY = eval_batch_gen.__next__()
-        # build feed
-        feed_dict = self.get_feed(batchX, batchY, keep_prob=1.)
-        loss_v, dec_op_v = sess.run([self.loss, self.decode_outputs_test], feed_dict)
-        # dec_op_v is a list; also need to transpose 0,1 indices 
-        #  (interchange batch_size and timesteps dimensions
-        dec_op_v = np.array(dec_op_v).transpose([1,0,2])
-        return loss_v, dec_op_v, batchX, batchY
+    # ATTENTION
+    def attention(self, reuse=False):
+        attention_mechanism = tf.contrib.seq2seq.LuongAttention(
+            num_units=self.num_units,
+            memory=self.encoder_out,
+            memory_sequence_length=self.Xseq_len_ph)
 
-    # evaluate 'num_batches' batches
-    def eval_batches(self, sess, eval_batch_gen, num_batches):
-        losses = []
-        for i in range(num_batches):
-            loss_v, dec_op_v, batchX, batchY = self.eval_step(sess, eval_batch_gen)
-            losses.append(loss_v)
-        return np.mean(losses)
+        wrapper = tf.contrib.seq2seq.AttentionWrapper(
+            cell=tf.nn.rnn_cell.MultiRNNCell([self.lstm_cell(reuse) for _ in range(self.num_layers)]),
+            attention_mechanism=attention_mechanism,
+            attention_layer_size=self.num_units)
 
-    # finally the train function that
-    #  runs the train_op in a session
-    #   evaluates on valid set periodically
-    #    prints statistics
-    def train(self, train_set, valid_set, sess=None ):
-        
-        # we need to save the model periodically
-        saver = tf.train.Saver()
+        return wrapper
 
-        # if no session is given
+    def lstm_cell(self, reuse=False):
+        return tf.nn.rnn_cell.LSTMCell(self.num_units, initializer=tf.orthogonal_initializer(), reuse=reuse)
+
+
+    # prediction
+    def predict(self, sess, X, idx2word):
+        out = sess.run(self.predicting_ids, {
+            self.batch_ph: [X] * self.batch_size,
+            self.Xseq_len_ph: [len(X)] * self.batch_size,
+            self.batch_size_ph: self.batch_size})[0]
+
+        return [idx2word[i] for i in out]
+
+    def next_batch(self, X, Y, batch_size):
+        for i in range(0, len(X) - len(X) % batch_size, batch_size):
+            X_batch = X[i: i + batch_size]
+            Y_batch = Y[i: i + batch_size]
+            # padded_X_batch, X_batch_lens = self.pad_sentence_batch(X_batch, self._x_pad)
+            # padded_Y_batch, Y_batch_lens = self.pad_sentence_batch(Y_batch, self._y_pad)
+            yield (np.array(X_batch),
+                   np.array(Y_batch),
+                   [len(X_batch[0]) for i in range(len(X_batch))],
+                   [len(Y_batch[0]) for i in range(len(Y_batch))])
+                    # [get_eos_pos(i, self.xseq_len) for i in X_batch],
+                    # [get_eos_pos(i, self.yseq_len) for i in Y_batch])
+
+    # end method next_batch
+
+
+    def fit(self, X_train, Y_train, val_data, log_dir, sess=None, display_step=50, batch_size=128):
         if not sess:
             # create a session
             sess = tf.Session()
             # init all variables
             sess.run(tf.global_variables_initializer())
-            summary_writer = tf.summary.FileWriter('/logs/', graph=tf.get_default_graph())
+            summary_writer = tf.summary.FileWriter(log_dir, graph=tf.get_default_graph())
 
-        prt('\nTraining started </log>\n')
+        prt('Training started </log>\n')
         tf.summary.scalar("bleu", self.bleu)
+        tf.summary.scalar("loss", self.loss)
+
         merged_summary_op = tf.summary.merge_all()
 
-        # run M epochs
-        for i in range(self.epochs):
-            try:
-                summary = self.train_batch(sess, train_set, merged_summary_op)
-                summary_writer.add_summary(summary, self.epochs + i)
+        for epoch in range(1, self.epochs + 1):
+            for local_step, (X_train_batch, Y_train_batch, X_train_batch_lens, Y_train_batch_lens) in enumerate(
+                    self.next_batch(X_train, Y_train, batch_size)):
+                _, summary = sess.run([self.train_op, merged_summary_op], {self.batch_ph: X_train_batch,
+                                                                self.target_ph: Y_train_batch,
+                                                                self.Xseq_len_ph: X_train_batch_lens,
+                                                                self.Yseq_len_ph: Y_train_batch_lens,
+                                                                self.batch_size_ph: batch_size})
+                if local_step % display_step == 0:
+                    val_loss = sess.run(self.loss, {self.batch_ph: X_train_batch,
+                                                    self.target_ph: Y_train_batch,
+                                                    self.Xseq_len_ph: X_train_batch_lens,
+                                                    self.Yseq_len_ph: Y_train_batch_lens,
+                                                    self.batch_size_ph: batch_size})
+                    prt("Epoch %d/%d |  test_loss: %.3f" % (epoch, self.epochs, val_loss))
 
-                if i and i% (1) == 0: # TODO : make this tunable by the user
-                    # save model to disk
-                    #saver.save(sess, self.ckpt_path + self.model_name + '.ckpt', global_step=i)
-                    # evaluate to get validation loss
-                    val_loss = self.eval_batches(sess, valid_set, 1) # TODO : and this
-                    # print stats
-                    prt('\nModel saved to disk at iteration #{}'.format(i))
-                    prt('val   loss : {0:.6f}'.format(val_loss))
-                    # sys.stdout.flush()
-            except KeyboardInterrupt: # this will most definitely happen, so handle it
-                prt('Interrupted by user at iteration {}'.format(i))
-                self.session = sess
-                return sess
-        self.session = sess
+                summary_writer.add_summary(summary, epoch)
+
         return sess
-
-
-    def restore_last_session(self):
-        saver = tf.train.Saver()
-        # create a session
-        sess = tf.Session()
-        # get checkpoint state
-        ckpt = tf.train.get_checkpoint_state(self.ckpt_path)
-        # restore session
-        if ckpt and ckpt.model_checkpoint_path:
-            saver.restore(sess, ckpt.model_checkpoint_path)
-        # return to user
-        return sess
-
-    # prediction
-    def predict(self, sess, X):
-        feed_dict = {self.enc_ip[t]: X[t] for t in range(self.xseq_len)}
-        feed_dict[self.keep_prob] = 1.
-        dec_op_v = sess.run(self.decode_outputs_test, feed_dict)
-        # dec_op_v is a list; also need to transpose 0,1 indices 
-        #  (interchange batch_size and timesteps dimensions
-        dec_op_v = np.array(dec_op_v).transpose([1,0,2])
-        # return the index of item with highest probability
-        return np.argmax(dec_op_v, axis=2)
-
-

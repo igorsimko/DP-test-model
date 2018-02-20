@@ -9,15 +9,22 @@ import pandas as pd
 import re
 
 WHITELIST = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ '
-VOCAB_SIZE = 1200
-UNK = 'unk'
+VOCAB_SIZE = 10000
+
+UNK = '<UNK>'
+GO = '<GO>'
+EOS = '<EOS>'
+PAD = '<PAD>'
 
 file_path = 'data'
+file_name = 'train_10K_5K-len.json'
+file_name = '5K.json'
+
 
 limit = {
-    'max_descriptions' : 30,
+    'max_descriptions' : 500,
     'min_descriptions' : 0,
-    'max_headings' : 30,
+    'max_headings' : 100,
     'min_headings' : 0,
 }
 
@@ -81,12 +88,12 @@ def index_data(tokenized_sentences, vocab_size):
     vocab = freq_dist.most_common(vocab_size)
     print ('Vocab length: {:,}'.format(len(vocab)))
 
-    idx2word = ['_'] + [UNK] + [x[0] for x in vocab]
+    idx2word = [GO] + [UNK] + [EOS] + [PAD] +[x[0] for x in vocab]
     word2idx = dict([(w, i) for i, w in enumerate(idx2word)])
 
     return (idx2word, word2idx, freq_dist)
 
-def pad_seq(seq, lookup, max_length):
+def pad_seq(seq, lookup, max_length, old_flag=False):
     indices = []
 
     for word in seq:
@@ -95,17 +102,31 @@ def pad_seq(seq, lookup, max_length):
         else:
             indices.append(lookup[UNK])
 
-    return indices + [0]*(max_length - len(seq))
+    if old_flag:
+        return indices + [lookup[EOS]] + [lookup[PAD]]*(max_length - len(seq) - 1)
+    else:
+        pad_arr = []
+        while len(pad_arr) < (max_length - len(seq)):
+            for i in indices:
+                pad_arr.append(i)
+                if len(pad_arr) + len(indices) == max_length:
+                    break
+        # return indices + [lookup[EOS]] + [lookup[PAD]]*(max_length - len(seq) - 1)
+        return indices + pad_arr
+
 
 def zero_pad(tokenized_headings, tokenized_descriptions, word2idx):
     data_length = len(tokenized_descriptions)
-
-    idx_descriptions = np.zeros([data_length, limit['max_descriptions']], dtype=np.int32)
-    idx_headings = np.zeros([data_length, limit['max_headings']], dtype=np.int32)
+    max_desc_len = len(max(tokenized_descriptions, key=len)) + 1
+    max_head_len = len(max(tokenized_headings, key=len)) + 1
+    idx_descriptions = np.zeros([data_length, max_desc_len], dtype=np.int32)
+    idx_headings = np.zeros([data_length, max_head_len], dtype=np.int32)
+    # idx_descriptions = []
+    # idx_headings = []
 
     for i in range(data_length):
-        description_indices = pad_seq(tokenized_descriptions[i], word2idx, limit['max_descriptions'])
-        heading_indices = pad_seq(tokenized_headings[i], word2idx, limit['max_headings'])
+        description_indices = pad_seq(tokenized_descriptions[i], word2idx, max_desc_len, old_flag=True)
+        heading_indices = pad_seq(tokenized_headings[i], word2idx, max_head_len, old_flag=True)
 
         idx_descriptions[i] = np.array(description_indices)
         idx_headings[i] = np.array(heading_indices)
@@ -121,7 +142,7 @@ def remove_underscore(data, where=None):
 def process_data():
 
     #load data from file
-    filename = path.join(file_path, 'train_1K.json')
+    filename = path.join(file_path, file_name)
     raw_data = load_raw_data(filename)
     raw_data['category'] = raw_data['category'].apply(lambda x: x.replace('_', " "))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('{(.*?)}', "", x))
@@ -140,6 +161,9 @@ def process_data():
     headings = [filter(heading, WHITELIST) for heading in headings]
     descriptions = [filter(sentence, WHITELIST) for sentence in descriptions]
     headings, descriptions = filter_length(headings, descriptions)
+
+    np.savetxt('dp_target.txt', headings, fmt='%s')
+    np.savetxt('dp_target.txt', descriptions, fmt='%s')
 
     #convert list of sentences into list of list of words
     word_tokenized_headings = [word_list.split(' ') for word_list in headings]
