@@ -7,7 +7,7 @@ cursor = conn.cursor()
 cursor.execute('select version();')
 cursor.execute('SET CHARACTER SET utf8;')
 
-query1 = '''select convert(c.cl_to using utf8mb4) as cat from wiki.categorylinks c limit 10;'''
+query1 = '''select convert(c.cl_to using utf8mb4) as cat, c.cl_from from wiki.categorylinks c limit 10;'''
 query = '''
     select * from (
 select
@@ -38,12 +38,13 @@ where 1=1
 	and t.cat not like '%stubs'
     and t.cat not regexp '[[:digit:]]'
     and length(t.txt) < 5000
-limit 5000
+limit 10000
 '''
 
 
 
 df = pd.read_sql_query(query, conn)
+df = df.drop_duplicates(subset=['page_title'], keep='last').head(4000)
 print(len(df))
 with open('mysql_select_out.json', 'w') as f:
     f.write(df.to_json( orient='records'))

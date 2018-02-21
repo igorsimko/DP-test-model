@@ -47,6 +47,8 @@ class Seq2Seq(object):
         self.go_token = 0
         self.eos_token = 2
 
+        self.n_epoch = 0
+
         self.init_graph()
 
     def init_graph(self):
@@ -220,10 +222,10 @@ class Seq2Seq(object):
             # init all variables
             sess.run(tf.global_variables_initializer())
             summary_writer = tf.summary.FileWriter(log_dir, graph=tf.get_default_graph())
-
         prt('Training started\n')
         tf.summary.scalar("bleu", self.bleu)
         tf.summary.scalar("loss", self.loss)
+        tf.summary.scalar("training_epochs", self.n_epoch)
 
         merged_summary_op = tf.summary.merge_all()
 
@@ -236,6 +238,7 @@ class Seq2Seq(object):
                                                                 self.Yseq_len_ph: Y_train_batch_lens,
                                                                 self.batch_size_ph: batch_size})
                 if local_step % display_step == 0:
+                    self.n_epoch = epoch
                     val_loss = sess.run(self.loss, {self.batch_ph: X_train_batch,
                                                     self.target_ph: Y_train_batch,
                                                     self.Xseq_len_ph: X_train_batch_lens,

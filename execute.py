@@ -15,10 +15,10 @@ idx_a, idx_q = metadata['idx_headings'], metadata['idx_descriptions']
 
 # hyperparams
 batch_size = 32
-emb_dim = 50
+emb_dim = 15
 num_layers = 2
-epochs = 10
-num_units = 256
+epochs = 1
+num_units = 50
 
 now = datetime.now()
 #now.strftime("%Y%m%d-%H%M%S")
@@ -31,7 +31,6 @@ yseq_len = len(trainY[0])
 # yseq_len = 6
 xvocab_size = len(metadata['idx2word'])
 yvocab_size = xvocab_size
-embedding = tf.nn.embedding_lookup(trainX, emb_dim)
 
 model = seq2seq_wrapper.Seq2Seq(xseq_len=xseq_len,
                                 yseq_len=yseq_len,
@@ -42,8 +41,7 @@ model = seq2seq_wrapper.Seq2Seq(xseq_len=xseq_len,
                                 num_layers=num_layers,
                                 num_units=num_units,
                                 epochs=epochs,
-                                emb_size=emb_dim,
-                                embedding=embedding
+                                emb_size=emb_dim
                                 )
 
 val_batch_gen = data_utils.rand_batch_gen(validX, validY, batch_size)
@@ -54,15 +52,15 @@ test_batch_gen = data_utils.rand_batch_gen(testX, testY, batch_size)
 sess = model.fit(trainX, trainY, log_dir=logdir, val_data=(testX, testY), batch_size=batch_size)
 
 
-for x in range(len(trainX)):
+for x in range(len(testX)):
     pred_y = model.predict(sess, testX[x].tolist(), metadata['idx2word'])
     true_y = [metadata['idx2word'][i] for i in testY[x]]
 
     p_y = ' '.join(pred_y).replace("<PAD>", "").replace("<EOS>","")
     t_y = ' '.join(true_y).replace("<PAD>", "").replace("<EOS>","")
 
-    prt('Predicted:\t{}\tTrue:\t{}'.format(p_y, t_y))
     model.bleu = bleu(t_y.split(" "), p_y.split(" "))
+    prt('BLEU:{} | \tPredicted:\t{} | \tTrue:\t{}'.format(model.bleu, p_y, t_y))
 
     # for ii, oi in zip(input_.T, output):
     #     q = data_utils.decode(sequence=ii, lookup=metadata['idx2word'], separator=' ')

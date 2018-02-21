@@ -18,7 +18,7 @@ PAD = '<PAD>'
 
 file_path = 'data'
 file_name = 'train_10K_5K-len.json'
-file_name = '5K.json'
+file_name = '4K.json'
 
 
 limit = {
@@ -126,7 +126,7 @@ def zero_pad(tokenized_headings, tokenized_descriptions, word2idx):
 
     for i in range(data_length):
         description_indices = pad_seq(tokenized_descriptions[i], word2idx, max_desc_len, old_flag=True)
-        heading_indices = pad_seq(tokenized_headings[i], word2idx, max_head_len, old_flag=True)
+        heading_indices = pad_seq(tokenized_headings[i], word2idx, max_head_len, old_flag=False)
 
         idx_descriptions[i] = np.array(description_indices)
         idx_headings[i] = np.array(heading_indices)
@@ -162,8 +162,8 @@ def process_data():
     descriptions = [filter(sentence, WHITELIST) for sentence in descriptions]
     headings, descriptions = filter_length(headings, descriptions)
 
-    np.savetxt('dp_target.txt', headings, fmt='%s')
-    np.savetxt('dp_target.txt', descriptions, fmt='%s')
+    # np.savetxt('dp_target.txt', headings, fmt='%s')
+    # np.savetxt('dp_target.txt', descriptions, fmt='%s')
 
     #convert list of sentences into list of list of words
     word_tokenized_headings = [word_list.split(' ') for word_list in headings]

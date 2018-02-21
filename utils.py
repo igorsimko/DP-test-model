@@ -2,7 +2,7 @@ import datetime
 import nltk
 import numpy as np
 
-EOS_EL = 3
+EOS_EL = 2
 
 def prt(str):
     print("[%s] - %s" % (datetime.datetime.now(), str))
