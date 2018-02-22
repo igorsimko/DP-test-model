@@ -9,7 +9,7 @@ import pandas as pd
 import re
 
 WHITELIST = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ '
-VOCAB_SIZE = 10000
+VOCAB_SIZE = 20000
 
 UNK = '<UNK>'
 GO = '<GO>'
@@ -18,7 +18,8 @@ PAD = '<PAD>'
 
 file_path = 'data'
 file_name = 'train_10K_5K-len.json'
-file_name = '4K.json'
+file_name = '4K_unique.json'
+file_name = '5K_cat_unique.json'
 
 
 limit = {
@@ -126,7 +127,7 @@ def zero_pad(tokenized_headings, tokenized_descriptions, word2idx):
 
     for i in range(data_length):
         description_indices = pad_seq(tokenized_descriptions[i], word2idx, max_desc_len, old_flag=True)
-        heading_indices = pad_seq(tokenized_headings[i], word2idx, max_head_len, old_flag=False)
+        heading_indices = pad_seq(tokenized_headings[i], word2idx, max_head_len, old_flag=True)
 
         idx_descriptions[i] = np.array(description_indices)
         idx_headings[i] = np.array(heading_indices)

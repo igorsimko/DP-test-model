@@ -3,32 +3,51 @@ from utils import *
 from dataprocessing import *
 import seq2seq_wrapper
 import tensorflow as tf
-from datetime import datetime
+import os.path
+import sys
+import json
 
 # tensorboard --logdir=run1:/tf_logs/ --port 6006
+
+conf_number = sys.argv[1]
+
+config = []
+
+if os.path.exists("config.json"):
+    with open('config.json', 'r') as f:
+        config = json.load(f)
+    actual_config = config['config_number_' + conf_number]
+else:
+    # default hyperparams
+    actual_config = {
+        'batch_size' : 32,
+        'emb_dim' : 15,
+        'num_layers' : 2,
+        'epochs' : 10,
+        'num_units' : 50,
+        'learning_rate' : 0.001,
+        'ckpt' : "ckpt/",
+        'logdir' : "/tf_logs/"
+    }
+
+learning_rate = actual_config['learning_rate']
+epochs = actual_config['epochs']
+num_units = actual_config['num_units']
+num_layers = actual_config['num_layers']
+emb_dim = actual_config['emb_dim']
+epochs = actual_config['epochs']
+batch_size = actual_config['batch_size']
+ckpt = actual_config['ckpt']
+logdir = actual_config['logdir']
 
 metadata = unpickle_articles()  # data.load_data(PATH='datasets/twitter/')
 idx_a, idx_q = metadata['idx_headings'], metadata['idx_descriptions']
 
 (trainX, trainY), (testX, testY), (validX, validY) = data_utils.split_data(idx_q, idx_a)
 
-
-# hyperparams
-batch_size = 32
-emb_dim = 15
-num_layers = 2
-epochs = 1
-num_units = 50
-
-now = datetime.now()
-#now.strftime("%Y%m%d-%H%M%S")
-logdir = "/tf_logs/"  + ""
-
 # parameters
 xseq_len = len(trainX[0])
 yseq_len = len(trainY[0])
-# xseq_len = 30
-# yseq_len = 6
 xvocab_size = len(metadata['idx2word'])
 yvocab_size = xvocab_size
 
@@ -36,7 +55,7 @@ model = seq2seq_wrapper.Seq2Seq(xseq_len=xseq_len,
                                 yseq_len=yseq_len,
                                 xvocab_size=xvocab_size,
                                 yvocab_size=yvocab_size,
-                                ckpt_path='ckpt/',
+                                ckpt_path=ckpt,
                                 emb_dim=emb_dim,
                                 num_layers=num_layers,
                                 num_units=num_units,
@@ -48,26 +67,23 @@ val_batch_gen = data_utils.rand_batch_gen(validX, validY, batch_size)
 train_batch_gen = data_utils.rand_batch_gen(trainX, trainY, batch_size)
 test_batch_gen = data_utils.rand_batch_gen(testX, testY, batch_size)
 
-# sess = model.train(train_batch_gen, val_batch_gen)
-sess = model.fit(trainX, trainY, log_dir=logdir, val_data=(testX, testY), batch_size=batch_size)
 
+if os.path.exists("/ckpt/model.ckpt"):
+    with tf.Session() as sess:
+      # Initialize v1 since the saver will not.
+      saver = tf.train.Saver()
+      saver.restore(sess, "/ckpt/model.ckpt")
+
+sess = model.fit(trainX, trainY, log_dir=logdir, val_data=(testX, testY), batch_size=batch_size)
 
 for x in range(len(testX)):
     pred_y = model.predict(sess, testX[x].tolist(), metadata['idx2word'])
     true_y = [metadata['idx2word'][i] for i in testY[x]]
 
-    p_y = ' '.join(pred_y).replace("<PAD>", "").replace("<EOS>","")
-    t_y = ' '.join(true_y).replace("<PAD>", "").replace("<EOS>","")
+    p_y = ' '.join(pred_y).replace("<PAD>", "").replace("<EOS>","").rstrip().lstrip()
+    t_y = ' '.join(true_y).replace("<PAD>", "").replace("<EOS>","").rstrip().lstrip()
 
-    model.bleu = bleu(t_y.split(" "), p_y.split(" "))
-    prt('BLEU:{} | \tPredicted:\t{} | \tTrue:\t{}'.format(model.bleu, p_y, t_y))
+    b = bleu(t_y, p_y)
+    model.bleu = b
 
-    # for ii, oi in zip(input_.T, output):
-    #     q = data_utils.decode(sequence=ii, lookup=metadata['idx2word'], separator=' ')
-    #     decoded = data_utils.decode(sequence=oi, lookup=metadata['idx2word'], separator=' ').split(' ')
-    #     if decoded.count('unk') == 0:
-    #         if decoded not in replies:
-    #             model.bleu = bleu(data_utils.decode(sequence=testY[x], lookup=metadata['idx2word'], separator=' '),
-    #                               decoded)
-    #             print('description : [{0}]; category : [{1}]'.format(q, ' '.join(decoded)))
-    #             replies.append(decoded)
+    prt('BLEU:{} | \tPredicted:\t{} | \tTrue:\t{}'.format(b, p_y, t_y))

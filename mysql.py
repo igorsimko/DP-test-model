@@ -38,13 +38,13 @@ where 1=1
 	and t.cat not like '%stubs'
     and t.cat not regexp '[[:digit:]]'
     and length(t.txt) < 5000
-limit 10000
 '''
 
 
 
 df = pd.read_sql_query(query, conn)
-df = df.drop_duplicates(subset=['page_title'], keep='last').head(4000)
+print(len(df.groupby(['cat']).groups))
+df = df.drop_duplicates(subset=['page_title'], keep='last').groupby('cat').first().reset_index().sample(5000)
 print(len(df))
 with open('mysql_select_out.json', 'w') as f:
     f.write(df.to_json( orient='records'))

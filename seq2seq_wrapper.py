@@ -1,8 +1,9 @@
 import tensorflow as tf
 import numpy as np
-
 from tensorflow.python.layers.core import Dense
 from utils import *
+from datetime import datetime
+
 #
 tf.logging.set_verbosity(tf.logging.DEBUG)
 setattr(tf.contrib.rnn.GRUCell, '__deepcopy__', lambda self, _: self)
@@ -214,8 +215,9 @@ class Seq2Seq(object):
 
     # end method next_batch
 
-
     def fit(self, X_train, Y_train, val_data, log_dir, sess=None, display_step=50, batch_size=128):
+        saver = tf.train.Saver()
+
         if not sess:
             # create a session
             sess = tf.Session()
@@ -223,9 +225,13 @@ class Seq2Seq(object):
             sess.run(tf.global_variables_initializer())
             summary_writer = tf.summary.FileWriter(log_dir, graph=tf.get_default_graph())
         prt('Training started\n')
-        tf.summary.scalar("bleu", self.bleu)
-        tf.summary.scalar("loss", self.loss)
-        tf.summary.scalar("training_epochs", self.n_epoch)
+
+        now = datetime.now()
+        self.tag = now.strftime("%Y%m%d-%H%M%S")
+
+        tf.summary.scalar("bleu-" + self.tag, self.bleu)
+        tf.summary.scalar("loss-" + self.tag, self.loss)
+        tf.summary.scalar("training_epochs-" + self.tag, self.n_epoch)
 
         merged_summary_op = tf.summary.merge_all()
 
@@ -247,5 +253,6 @@ class Seq2Seq(object):
                     prt("Epoch %d/%d |  test_loss: %.3f" % (epoch, self.epochs, val_loss))
 
                 summary_writer.add_summary(summary, epoch)
-
+        save_path = saver.save(sess, self.ckpt_path + "model.ckpt")
+        prt("Model saved in path: %s" % save_path)
         return sess
