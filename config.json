@@ -17,13 +17,13 @@
     "num_units": 50,
     "learning_rate": 0.001,
     "ckpt": "ckpt/",
-    "logdir": "/tf_logs/"
+    "logdir": "/home/simko_igor/bucket/tf_logs/"
   },
   "config_number_test": {
     "batch_size": 32,
     "emb_dim": 3,
     "num_layers": 2,
-    "epochs": 11,
+    "epochs": 1,
     "num_units": 15,
     "learning_rate": 0.001,
     "ckpt": "ckpt/",

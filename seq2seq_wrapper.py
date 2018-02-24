@@ -35,7 +35,8 @@ class Seq2Seq(object):
         self.model_name = model_name
         self.lr = lr
 
-        self.bleu = 0
+        self.merged_summary_op = None
+
         self.keep_prob = 0
         self.batch_ph = 0
         self.target_ph = 0
@@ -47,8 +48,6 @@ class Seq2Seq(object):
         self.source_seq_len = xseq_len
         self.go_token = 0
         self.eos_token = 2
-
-        self.n_epoch = 0
 
         self.init_graph()
 
@@ -224,21 +223,22 @@ class Seq2Seq(object):
             # init all variables
             sess.run(tf.global_variables_initializer())
             summary_writer = tf.summary.FileWriter(log_dir, graph=tf.get_default_graph())
+
+
+
         prt('Training started\n')
 
         now = datetime.now()
         self.tag = now.strftime("%Y%m%d-%H%M%S")
 
-        tf.summary.scalar("bleu-" + self.tag, self.bleu)
         tf.summary.scalar("loss-" + self.tag, self.loss)
-        tf.summary.scalar("training_epochs-" + self.tag, self.n_epoch)
 
-        merged_summary_op = tf.summary.merge_all()
+        self.merged_summary_op = tf.summary.merge_all()
 
         for epoch in range(1, self.epochs + 1):
             for local_step, (X_train_batch, Y_train_batch, X_train_batch_lens, Y_train_batch_lens) in enumerate(
                     self.next_batch(X_train, Y_train, batch_size)):
-                _, summary = sess.run([self.train_op, merged_summary_op], {self.batch_ph: X_train_batch,
+                _, summary = sess.run([self.train_op, self.merged_summary_op], {self.batch_ph: X_train_batch,
                                                                 self.target_ph: Y_train_batch,
                                                                 self.Xseq_len_ph: X_train_batch_lens,
                                                                 self.Yseq_len_ph: Y_train_batch_lens,

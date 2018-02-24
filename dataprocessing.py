@@ -7,6 +7,7 @@ import numpy as np
 import cloudpickle as pickle
 import pandas as pd
 import re
+from join import parse_text
 
 WHITELIST = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ '
 VOCAB_SIZE = 20000
@@ -37,6 +38,10 @@ def load_raw_data(filename):
     return raw_data
 
 def tokenize_sentence(sentence):
+    if not sentence:
+        return []
+    if isinstance(sentence, list):
+        return sentence
     return ' '.join(list(tokenize(sentence)))
 
 def article_is_complete(article):
@@ -156,6 +161,7 @@ def process_data():
 
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x[:limit['max_descriptions']])
 
+    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: parse_text(x))
     headings, descriptions = tokenize_articles(raw_data)
 
     #keep only whitelisted characters and articles satisfying the length limits

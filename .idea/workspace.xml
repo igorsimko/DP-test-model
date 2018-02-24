@@ -2,17 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd28bb7d-df27-4f01-b204-9bb7366b994c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/4K.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/5K.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/file_name.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/seq2seq_attn.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/seq2seq_attn_test.py" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rouge.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ckpt/checkpoint" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ckpt/model.ckpt.data-00000-of-00001" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ckpt/model.ckpt.index" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ckpt/model.ckpt.meta" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.json" afterPath="$PROJECT_DIR$/config.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/article_data.pkl" afterPath="$PROJECT_DIR$/data/article_data.pkl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataprocessing.py" afterPath="$PROJECT_DIR$/dataprocessing.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/execute.py" afterPath="$PROJECT_DIR$/execute.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mysql.py" afterPath="$PROJECT_DIR$/mysql.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/join.py" afterPath="$PROJECT_DIR$/join.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/seq2seq_wrapper.py" afterPath="$PROJECT_DIR$/seq2seq_wrapper.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test_seq2seq.py" afterPath="$PROJECT_DIR$/test_seq2seq.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils.py" afterPath="$PROJECT_DIR$/utils.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,11 +27,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="execute.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="execute.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/execute.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="60" column="51" lean-forward="false" selection-start-line="60" selection-start-column="51" selection-end-line="60" selection-end-column="51" />
+            <state relative-caret-position="272">
+              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -36,24 +39,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config.json">
+      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="408">
+              <caret line="74" column="13" lean-forward="false" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mysql.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysql.py">
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="355">
+              <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -61,8 +64,8 @@
       <file leaf-file-name="seq2seq_wrapper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/seq2seq_wrapper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="233" column="70" lean-forward="true" selection-start-line="233" selection-start-column="70" selection-end-line="233" selection-end-column="70" />
+            <state relative-caret-position="291">
+              <caret line="247" column="50" lean-forward="false" selection-start-line="247" selection-start-column="50" selection-end-line="247" selection-end-column="50" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -73,51 +76,11 @@
       <file leaf-file-name="join.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/join.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data_histogram.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_histogram.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
               <folding>
-                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data_utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="saver.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/Software/Anaconda3/Lib/site-packages/tensorflow/python/training/saver.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="1138" column="0" lean-forward="false" selection-start-line="1138" selection-start-column="0" selection-end-line="1138" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -125,11 +88,21 @@
       <file leaf-file-name="dataprocessing.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataprocessing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="39" column="45" lean-forward="true" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+            <state relative-caret-position="130">
+              <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="python_message.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/Software/Anaconda3/Lib/site-packages/google/protobuf/internal/python_message.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="471">
+              <caret line="1246" column="41" lean-forward="true" selection-start-line="1246" selection-start-column="41" selection-end-line="1246" selection-end-column="41" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -145,8 +118,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>,</find>
-      <find>end</find>
       <find>batch</find>
       <find>t.no</find>
       <find>writer</find>
@@ -154,7 +125,6 @@
       <find>num_la</find>
       <find>num_layer</find>
       <find>float</find>
-      <find>bleu</find>
       <find>xvocab_size</find>
       <find>seq_len_ph</find>
       <find>sess.run</find>
@@ -175,10 +145,15 @@
       <find>Articles</find>
       <find>txt</find>
       <find>'</find>
+      <find>bleu</find>
+      <find>np.random.rand()</find>
+      <find>()()</find>
     </findStrings>
     <replaceStrings>
       <replace>\n</replace>
       <replace>&quot;</replace>
+      <replace>random.rand()</replace>
+      <replace>()</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -195,26 +170,27 @@
         <option value="$PROJECT_DIR$/data_histogram.py" />
         <option value="$PROJECT_DIR$/a" />
         <option value="$PROJECT_DIR$/data_utils.py" />
-        <option value="$PROJECT_DIR$/join.py" />
-        <option value="$PROJECT_DIR$/test_seq2seq.py" />
         <option value="C:/Software/Anaconda3/Lib/site-packages/tensorflow/contrib/legacy_seq2seq/python/ops/seq2seq.py" />
         <option value="$PROJECT_DIR$/seq2seq_attn.py" />
         <option value="$PROJECT_DIR$/seq2seq_attn_test.py" />
         <option value="$PROJECT_DIR$/mysql_select_out.json" />
-        <option value="$PROJECT_DIR$/utils.py" />
         <option value="$PROJECT_DIR$/mysql.py" />
-        <option value="$PROJECT_DIR$/dataprocessing.py" />
-        <option value="$PROJECT_DIR$/seq2seq_wrapper.py" />
+        <option value="$PROJECT_DIR$/join.py" />
+        <option value="$PROJECT_DIR$/rouge.py" />
+        <option value="$PROJECT_DIR$/test_seq2seq.py" />
         <option value="$PROJECT_DIR$/config.json" />
         <option value="$PROJECT_DIR$/execute.py" />
+        <option value="$PROJECT_DIR$/seq2seq_wrapper.py" />
+        <option value="$PROJECT_DIR$/utils.py" />
+        <option value="$PROJECT_DIR$/dataprocessing.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-288" />
-    <option name="y" value="-1088" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="x" value="-8" />
+    <option name="y" value="-1032" />
+    <option name="width" value="1296" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -232,7 +208,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -261,6 +236,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -291,7 +267,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.execute">
+  <component name="RunManager" selected="Python.dataprocessing (1)">
     <configuration default="false" name="dataprocessing (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -328,24 +304,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="seq2seq_attn_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="DP-test-model" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/seq2seq_attn_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="mysql" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -364,6 +322,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
+    <configuration default="false" name="test_seq2seq" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="DP-test-model" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test_seq2seq.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
     <configuration default="false" name="execute" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -377,7 +353,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="DP-test-model" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/execute.py" />
-      <option name="PARAMETERS" value="1" />
+      <option name="PARAMETERS" value="test" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
@@ -450,17 +426,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.dataprocessing (1)" />
       <item index="1" class="java.lang.String" itemvalue="Python.join" />
-      <item index="2" class="java.lang.String" itemvalue="Python.seq2seq_attn_test" />
-      <item index="3" class="java.lang.String" itemvalue="Python.mysql" />
+      <item index="2" class="java.lang.String" itemvalue="Python.mysql" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test_seq2seq" />
       <item index="4" class="java.lang.String" itemvalue="Python.execute" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.execute" />
-        <item index="1" class="java.lang.String" itemvalue="Python.dataprocessing (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python.mysql" />
-        <item index="3" class="java.lang.String" itemvalue="Python.seq2seq_attn_test" />
-        <item index="4" class="java.lang.String" itemvalue="Python.join" />
+        <item index="0" class="java.lang.String" itemvalue="Python.dataprocessing (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.execute" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test_seq2seq" />
+        <item index="3" class="java.lang.String" itemvalue="Python.join" />
+        <item index="4" class="java.lang.String" itemvalue="Python.mysql" />
       </list>
     </recent_temporary>
   </component>
@@ -478,20 +454,20 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-288" y="-1088" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-1032" width="1296" height="1040" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15138593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15372169" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855567" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39581037" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39667705" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855567" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281412" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32745314" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37045205" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3707165" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23720682" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -528,17 +504,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dataprocessing.py</url>
-          <line>189</line>
+          <line>195</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dataprocessing.py</url>
-          <line>190</line>
+          <line>196</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dataprocessing.py</url>
-          <line>187</line>
+          <line>193</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -557,34 +533,24 @@
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/join.py</url>
-          <line>72</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dataprocessing.py</url>
-          <line>173</line>
+          <line>179</line>
           <option name="timeStamp" value="131" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/seq2seq_wrapper.py</url>
-          <line>212</line>
+          <line>211</line>
           <option name="timeStamp" value="133" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dataprocessing.py</url>
-          <line>134</line>
+          <line>139</line>
           <option name="timeStamp" value="137" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/mysql.py</url>
           <line>50</line>
           <option name="timeStamp" value="141" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/execute.py</url>
-          <line>53</line>
-          <option name="timeStamp" value="142" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/mysql.py</url>
@@ -598,64 +564,57 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/dataprocessing.py</url>
-          <line>35</line>
-          <option name="timeStamp" value="148" />
+          <line>164</line>
+          <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/execute.py</url>
-          <line>79</line>
-          <option name="timeStamp" value="149" />
+          <url>file://$PROJECT_DIR$/join.py</url>
+          <line>73</line>
+          <option name="timeStamp" value="156" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/execute.py</url>
-          <line>48</line>
-          <option name="timeStamp" value="150" />
+          <url>file://$PROJECT_DIR$/test_seq2seq.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="161" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dataprocessing.py</url>
+          <line>61</line>
+          <option name="timeStamp" value="163" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dataprocessing.py</url>
+          <line>44</line>
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/dataprocessing.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="165" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="151" />
+      <option name="time" value="166" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="now.strftime(&quot;%Y%m%d-%H%M%S&quot;)" language="Python" />
+        <watch expression="print(sess.run(tf.all_variables()))" language="Python" />
+        <watch expression="r[i][0]" language="Python" />
+        <watch expression="raw_data.first(0)" language="Python" />
+        <watch expression="' '.join(sentence)" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/Software/Anaconda3/Lib/site-packages/tensorflow/python/layers/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="475" column="0" lean-forward="false" selection-start-line="475" selection-start-column="0" selection-end-line="475" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Software/Anaconda3/Lib/site-packages/tensorflow/contrib/legacy_seq2seq/python/ops/seq2seq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="359" column="21" lean-forward="true" selection-start-line="359" selection-start-column="21" selection-end-line="359" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Software/Anaconda3/Lib/copy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="160" column="0" lean-forward="false" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Software/Anaconda3/Lib/site-packages/tensorflow/python/framework/tensor_shape.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Software/Anaconda3/Lib/site-packages/tensorflow/python/summary/summary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Software/Anaconda3/Lib/random.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5304">
@@ -688,13 +647,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1870">
           <caret line="123" column="0" lean-forward="false" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Software/Anaconda3/Lib/codecs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5236">
-          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -822,13 +774,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/mysql_select_out.json" />
     <entry file="file://$PROJECT_DIR$/data/train_10K_5K-len.json" />
-    <entry file="file://$PROJECT_DIR$/data/5K.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="0" column="2316" lean-forward="true" selection-start-line="0" selection-start-column="2316" selection-end-line="0" selection-end-column="2316" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/5K.json" />
     <entry file="file://C:/Software/Anaconda3/Lib/site-packages/pymysql/err.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1547">
@@ -836,22 +782,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seq2seq_attn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="18" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seq2seq_attn_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/seq2seq_attn.py" />
+    <entry file="file://$PROJECT_DIR$/seq2seq_attn_test.py" />
     <entry file="file://$PROJECT_DIR$/data/train_1K.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -859,10 +791,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/file_name.txt" />
+    <entry file="file://$PROJECT_DIR$/data_histogram.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mysql.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        <state relative-caret-position="527">
+          <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -871,105 +822,135 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/5K_cat_unique.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="170">
+          <caret line="0" column="1403" lean-forward="true" selection-start-line="0" selection-start-column="1403" selection-end-line="0" selection-end-column="1403" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataprocessing.py">
+    <entry file="file://C:/Software/Anaconda3/Lib/site-packages/nltk/tokenize/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="39" column="45" lean-forward="true" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_seq2seq.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="58" lean-forward="false" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="58" />
+        <state relative-caret-position="89">
+          <caret line="114" column="4" lean-forward="false" selection-start-line="114" selection-start-column="4" selection-end-line="114" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils.py">
+    <entry file="file://C:/Software/Anaconda3/Lib/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        <state relative-caret-position="512">
+          <caret line="308" column="0" lean-forward="false" selection-start-line="308" selection-start-column="0" selection-end-line="308" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://C:/Software/Anaconda3/Lib/site-packages/tensorflow/python/training/saver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="1138" column="0" lean-forward="false" selection-start-line="1138" selection-start-column="0" selection-end-line="1138" selection-end-column="0" />
+        <state relative-caret-position="173">
+          <caret line="1528" column="6" lean-forward="false" selection-start-line="1528" selection-start-column="6" selection-end-line="1528" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ckpt/checkpoint">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Software/Anaconda3/Lib/site-packages/google/protobuf/internal/python_message.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="1246" column="41" lean-forward="true" selection-start-line="1246" selection-start-column="41" selection-end-line="1246" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/join.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file_name.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="64" lean-forward="true" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_histogram.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/seq2seq_wrapper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="233" column="70" lean-forward="true" selection-start-line="233" selection-start-column="70" selection-end-line="233" selection-end-column="70" />
+        <state relative-caret-position="291">
+          <caret line="247" column="50" lean-forward="false" selection-start-line="247" selection-start-column="50" selection-end-line="247" selection-end-column="50" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.json">
+    <entry file="file://$PROJECT_DIR$/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="408">
+          <caret line="74" column="13" lean-forward="false" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Software/Anaconda3/Lib/site-packages/nltk/tokenize/punkt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="1286" column="0" lean-forward="false" selection-start-line="1286" selection-start-column="0" selection-end-line="1286" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rouge.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2862">
+          <caret line="128" column="38" lean-forward="true" selection-start-line="128" selection-start-column="38" selection-end-line="128" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_seq2seq.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="37" column="19" lean-forward="true" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/execute.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="60" column="51" lean-forward="false" selection-start-line="60" selection-start-column="51" selection-end-line="60" selection-end-column="51" />
+        <state relative-caret-position="272">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>

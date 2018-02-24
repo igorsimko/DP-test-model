@@ -1,6 +1,7 @@
 import data_utils
 from utils import *
 from dataprocessing import *
+from rouge import *
 import seq2seq_wrapper
 import tensorflow as tf
 import os.path
@@ -67,23 +68,18 @@ val_batch_gen = data_utils.rand_batch_gen(validX, validY, batch_size)
 train_batch_gen = data_utils.rand_batch_gen(trainX, trainY, batch_size)
 test_batch_gen = data_utils.rand_batch_gen(testX, testY, batch_size)
 
+sess = None
 
-if os.path.exists("/ckpt/model.ckpt"):
+if os.path.exists(ckpt + "checkpoint"):
     with tf.Session() as sess:
-      # Initialize v1 since the saver will not.
-      saver = tf.train.Saver()
-      saver.restore(sess, "/ckpt/model.ckpt")
+        # Initialize v1 since the saver will not.
+        saver = tf.train.Saver()
+        saver.restore(sess, ckpt + "model.ckpt")
 
-sess = model.fit(trainX, trainY, log_dir=logdir, val_data=(testX, testY), batch_size=batch_size)
+        test(sess, model, metadata, testX, testY, logdir)
+else:
+    sess = model.fit(trainX, trainY, log_dir=logdir, val_data=(testX, testY), batch_size=batch_size)
+    test(sess, model, metadata, testX, testY, logdir)
 
-for x in range(len(testX)):
-    pred_y = model.predict(sess, testX[x].tolist(), metadata['idx2word'])
-    true_y = [metadata['idx2word'][i] for i in testY[x]]
 
-    p_y = ' '.join(pred_y).replace("<PAD>", "").replace("<EOS>","").rstrip().lstrip()
-    t_y = ' '.join(true_y).replace("<PAD>", "").replace("<EOS>","").rstrip().lstrip()
 
-    b = bleu(t_y, p_y)
-    model.bleu = b
-
-    prt('BLEU:{} | \tPredicted:\t{} | \tTrue:\t{}'.format(b, p_y, t_y))
