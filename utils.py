@@ -24,7 +24,7 @@ def get_eos_pos(arr, return_val):
 
 
 def test(sess, model, metadata, testX, testY, logdir):
-    tf.reset_default_graph()
+   # tf.reset_default_graph()
 
     now = datetime.datetime.now()
     tag = now.strftime("%Y%m%d-%H%M%S")
@@ -45,8 +45,8 @@ def test(sess, model, metadata, testX, testY, logdir):
     tf.summary.scalar("rouge3_f1-p-r", rouge3)
 
     write_op = tf.summary.merge_all()
-    session = tf.InteractiveSession()
-    session.run(tf.global_variables_initializer())
+    # session = tf.InteractiveSession()
+    sess.run(tf.global_variables_initializer())
 
     for x in range(len(testX)):
         pred_y = model.predict(sess, testX[x].tolist(), metadata['idx2word'])
@@ -63,11 +63,11 @@ def test(sess, model, metadata, testX, testY, logdir):
 
         # r = [[random.rand(),random.rand(),random.rand()], [random.rand(),random.rand(),random.rand()], [random.rand(),random.rand(),random.rand()]]
 
-        summary = session.run(write_op, {bleu: b})
+        summary = sess.run(write_op, {bleu: b})
         writers[0].add_summary(summary, x)
 
         for i in range(3):
-            summary = session.run(write_op, {rouge1: r[0][i], rouge2: r[1][i], rouge3: r[2][i]})
+            summary = sess.run(write_op, {rouge1: r[0][i], rouge2: r[1][i], rouge3: r[2][i]})
             writers[i + 1].add_summary(summary, x)
             writers[i + 1].flush()
 
