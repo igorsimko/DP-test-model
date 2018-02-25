@@ -24,6 +24,8 @@ def get_eos_pos(arr, return_val):
 
 
 def test(sess, model, metadata, testX, testY, logdir):
+    tf.reset_default_graph()
+
     now = datetime.datetime.now()
     tag = now.strftime("%Y%m%d-%H%M%S")
     writers = [None, None, None, None]
@@ -37,15 +39,13 @@ def test(sess, model, metadata, testX, testY, logdir):
     rouge3 = tf.Variable(0.0)
 
     tf.summary.scalar("bleu-" + tag, bleu)
-    tf.summary.scalar("rouge1 (f1/p/r) - " + tag, rouge1)
-    tf.summary.scalar("rouge2 (f1/p/r) - " + tag, rouge2)
-    tf.summary.scalar("rouge3 (f1/p/r) - " + tag, rouge3)
+    tf.summary.scalar("rouge1_f1/p/r-" + tag, rouge1)
+    tf.summary.scalar("rouge2_f1/p/r-" + tag, rouge2)
+    tf.summary.scalar("rouge3_f1/p/r-" + tag, rouge3)
 
     write_op = tf.summary.merge_all()
     session = tf.InteractiveSession()
     session.run(tf.global_variables_initializer())
-
-    rouge_f1 = []
 
     for x in range(len(testX)):
         pred_y = model.predict(sess, testX[x].tolist(), metadata['idx2word'])
@@ -60,7 +60,7 @@ def test(sess, model, metadata, testX, testY, logdir):
              rouge_n(p_y.split(" "), t_y.split(" "), 2),
              rouge_n(p_y.split(" "), t_y.split(" "), 3)]
 
-        r = [[random.rand(),random.rand(),random.rand()], [random.rand(),random.rand(),random.rand()], [random.rand(),random.rand(),random.rand()]]
+        # r = [[random.rand(),random.rand(),random.rand()], [random.rand(),random.rand(),random.rand()], [random.rand(),random.rand(),random.rand()]]
 
         summary = session.run(write_op, {bleu: b})
         writers[0].add_summary(summary, x)
@@ -72,4 +72,4 @@ def test(sess, model, metadata, testX, testY, logdir):
 
         # model.bleu = tf.convert_to_tensor(b)
 
-        prt('Predicted:\t{} | \tTrue:\t{}'.format(b, p_y, t_y))
+        prt('Predicted:\t{} | \tTrue:\t{}'.format(p_y, t_y))

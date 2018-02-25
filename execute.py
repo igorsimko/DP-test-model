@@ -70,16 +70,19 @@ test_batch_gen = data_utils.rand_batch_gen(testX, testY, batch_size)
 
 sess = None
 
-if os.path.exists(ckpt + "checkpoint"):
+def restore_session():
     with tf.Session() as sess:
         # Initialize v1 since the saver will not.
         saver = tf.train.Saver()
         saver.restore(sess, ckpt + "model.ckpt")
 
         test(sess, model, metadata, testX, testY, logdir)
+
+if os.path.exists(ckpt + "checkpoint"):
+    restore_session()
 else:
-    sess = model.fit(trainX, trainY, log_dir=logdir, val_data=(testX, testY), batch_size=batch_size)
-    test(sess, model, metadata, testX, testY, logdir)
+    model.fit(trainX, trainY, log_dir=logdir, val_data=(testX, testY), batch_size=batch_size)
+    restore_session()
 
 
 

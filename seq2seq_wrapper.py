@@ -224,8 +224,6 @@ class Seq2Seq(object):
             sess.run(tf.global_variables_initializer())
             summary_writer = tf.summary.FileWriter(log_dir, graph=tf.get_default_graph())
 
-
-
         prt('Training started\n')
 
         now = datetime.now()

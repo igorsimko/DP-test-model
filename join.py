@@ -69,6 +69,6 @@ def parse_text(text):
         for word in term:
             ret_val.append(word)
 
-    return ret_val
+    return ' '.join(ret_val)
 
 # parse_text("my name is potato. potato is good. it tastes very very nice.")
