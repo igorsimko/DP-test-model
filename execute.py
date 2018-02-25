@@ -28,7 +28,7 @@ else:
         'num_units' : 50,
         'learning_rate' : 0.001,
         'ckpt' : "ckpt/",
-        'logdir' : "/tf_logs/"
+        'logdir' : "./tf_logs"
     }
 
 learning_rate = actual_config['learning_rate']
@@ -40,6 +40,8 @@ epochs = actual_config['epochs']
 batch_size = actual_config['batch_size']
 ckpt = actual_config['ckpt']
 logdir = actual_config['logdir']
+
+logdir = '%s/%s' % (logdir, datetime.datetime.now().strftime("%Y%m%d-%H%M%S"))
 
 metadata = unpickle_articles()  # data.load_data(PATH='datasets/twitter/')
 idx_a, idx_q = metadata['idx_headings'], metadata['idx_descriptions']

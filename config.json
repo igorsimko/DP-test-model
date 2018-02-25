@@ -3,11 +3,11 @@
     "batch_size": 32,
     "emb_dim": 15,
     "num_layers": 2,
-    "epochs": 10,
+    "epochs": 1,
     "num_units": 50,
     "learning_rate": 0.001,
     "ckpt": "ckpt/",
-    "logdir": "/tf_logs/"
+    "logdir": "E:\\git\\DP-test-model\\tf_logs"
   },
   "config_number_2": {
     "batch_size": 32,
@@ -16,8 +16,8 @@
     "epochs": 100,
     "num_units": 50,
     "learning_rate": 0.001,
-    "ckpt": "ckpt/",
-    "logdir": "/home/simko_igor/bucket/tf_logs/"
+    "ckpt": "./",
+    "logdir": "/home/simko_igor/bucket/tf_logs"
   },
   "config_number_test": {
     "batch_size": 32,

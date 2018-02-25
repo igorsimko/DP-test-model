@@ -226,10 +226,9 @@ class Seq2Seq(object):
 
         prt('Training started\n')
 
-        now = datetime.now()
-        self.tag = now.strftime("%Y%m%d-%H%M%S")
 
-        tf.summary.scalar("loss-" + self.tag, self.loss)
+
+        tf.summary.scalar("loss", self.loss)
 
         self.merged_summary_op = tf.summary.merge_all()
 

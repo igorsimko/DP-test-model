@@ -30,18 +30,19 @@ def test(sess, model, metadata, testX, testY, logdir):
     tag = now.strftime("%Y%m%d-%H%M%S")
     writers = [None, None, None, None]
 
+    tags = ['bleu','f1_score','precision','recall']
     for x in range(len(writers)):
-        writers[x] = tf.summary.FileWriter(logdir + "w" + str(x))
+        writers[x] = tf.summary.FileWriter(logdir + "/test/" + tags[x])
 
     bleu = tf.Variable(0.0)
     rouge1 = tf.Variable(0.0)
     rouge2 = tf.Variable(0.0)
     rouge3 = tf.Variable(0.0)
 
-    tf.summary.scalar("bleu-" + tag, bleu)
-    tf.summary.scalar("rouge1_f1/p/r-" + tag, rouge1)
-    tf.summary.scalar("rouge2_f1/p/r-" + tag, rouge2)
-    tf.summary.scalar("rouge3_f1/p/r-" + tag, rouge3)
+    tf.summary.scalar("bleu", bleu)
+    tf.summary.scalar("rouge1_f1-p-r", rouge1)
+    tf.summary.scalar("rouge2_f1-p-r", rouge2)
+    tf.summary.scalar("rouge3_f1-p-r", rouge3)
 
     write_op = tf.summary.merge_all()
     session = tf.InteractiveSession()
