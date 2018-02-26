@@ -8,7 +8,8 @@ import os.path
 import sys
 import json
 
-# tensorboard --logdir=run1:/tf_logs/ --port 6006
+# tensorboard --logdir=E:\git\DP-test-model\tf_logs --port 6006
+
 
 conf_number = sys.argv[1]
 

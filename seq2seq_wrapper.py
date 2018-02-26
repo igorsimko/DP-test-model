@@ -207,10 +207,11 @@ class Seq2Seq(object):
             # padded_Y_batch, Y_batch_lens = self.pad_sentence_batch(Y_batch, self._y_pad)
             yield (np.array(X_batch),
                    np.array(Y_batch),
-                   [len(X_batch[0]) for i in range(len(X_batch))],
+                   [get_eos_pos(i, self.xseq_len) for i in X_batch],
+
+                   # [len(X_batch[0]) for i in range(len(X_batch))],
                    [len(Y_batch[0]) for i in range(len(Y_batch))])
-                    # [get_eos_pos(i, self.xseq_len) for i in X_batch],
-                    # [get_eos_pos(i, self.yseq_len) for i in Y_batch])
+                   #  [get_eos_pos(i, self.yseq_len) for i in Y_batch])
 
     # end method next_batch
 
