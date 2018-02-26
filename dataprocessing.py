@@ -1,5 +1,7 @@
 import json
 from os import path
+
+import unicodedata
 from nltk.tokenize import word_tokenize as tokenize
 import nltk
 import itertools
@@ -40,6 +42,9 @@ def load_raw_data(filename):
 def tokenize_sentence(sentence):
     if not sentence:
         return []
+
+    if isinstance(sentence, bytes):
+        sentence = sentence.decode('utf8')
     if isinstance(sentence, list):
         return sentence
     return ' '.join(list(tokenize(sentence)))
@@ -162,6 +167,9 @@ def process_data():
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x[:limit['max_descriptions']])
 
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: parse_text(x))
+    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: unicodedata.normalize('NFKD', x).encode('ascii','ignore'))
+
+    raw_data.to_json('parsed.json', orient='records')
     headings, descriptions = tokenize_articles(raw_data)
 
     #keep only whitelisted characters and articles satisfying the length limits
