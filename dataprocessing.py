@@ -12,7 +12,7 @@ import re
 from join import parse_text
 
 WHITELIST = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ '
-VOCAB_SIZE = 20000
+VOCAB_SIZE = 50000
 
 UNK = '<UNK>'
 GO = '<GO>'
@@ -20,11 +20,13 @@ EOS = '<EOS>'
 PAD = '<PAD>'
 
 file_path = 'data'
+
 file_name = 'train_10K_5K-len.json'
 file_name = '4K_unique.json'
 file_name = '5K_cat_unique.json'
 file_name = '7K_not_unique.json'
 file_name = '3523_train_3521_test.json'
+file_name = 'train-4557_test-1212.json'
 
 limit = {
     'max_descriptions' : 500,

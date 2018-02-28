@@ -1,5 +1,16 @@
+import os
+import pickle
+import matplotlib.pyplot as plt
+import plotly.plotly as py
+
+from os import path
+
 import pymysql
 import pandas as pd
+
+file_path = 'data/mysql'
+pickle_file_name = "mysql_data.pkl"
+ratio_int = 0.7
 
 conn = pymysql.connect("localhost", "root", "root", "wiki",charset="utf8mb4",use_unicode=True)
 cursor = conn.cursor()
@@ -36,28 +47,51 @@ where 1=1
 	and t.cat not like '%Redirects%'
     and t.cat not like '%All%articles%'
 	and t.cat not like '%stubs'
+	and t.cat not like '%needing%'
     and t.cat not regexp '[[:digit:]]'
-    and length(t.txt) < 5000
+    and length(t.txt) < 10000
 '''
+def pickle_data(article_data):
+    with open(path.join(file_path, pickle_file_name), 'wb') as fp:
+        pickle.dump(article_data, fp, 2)
+
+def unpickle_articles():
+    with open(path.join(file_path, pickle_file_name), 'rb') as fp:
+        article_data = pickle.load(fp)
+
+    return article_data
 
 def get_head_count(x):
     if len(x) % 2 == 0:
-        return int(len(x)/2)
+        return int(len(x)*ratio_int)
     else:
-        return int(len(x)/2) + 1
+        return int(len(x)*ratio_int) + 1
 
 def get_last_count(x):
-    return int(len(x) / 2)
+    return int(len(x) * (1-ratio_int))
 
-df = pd.read_sql_query(query, conn)
-print(len(df.groupby(['cat']).groups))
-df_train = df.drop_duplicates(subset=['page_title'], keep='last').groupby('cat').filter(lambda x: len(x) > 1).groupby('cat').apply(lambda x: x.head(get_head_count(x)))
-df_test = df.drop_duplicates(subset=['page_title'], keep='last').groupby('cat').filter(lambda x: len(x) > 1).groupby('cat').apply(lambda x: x.tail(get_last_count(x)))
+df = None
+if os.path.exists(file_path + "/" + pickle_file_name):
+    df = unpickle_articles()
+else:
+    df = pd.read_sql_query(query, conn)
+    pickle_data(df)
+
+df_temp = df.drop_duplicates(subset=['page_title'], keep='last').groupby('cat').filter(lambda x: len(x) > 1 and len(x) <= 10 )
+
+print("Groups count: " + str(len(df_temp.groupby('cat').groups)))
+df_test = df_temp.groupby('cat').apply(lambda x: x.tail(get_last_count(x)))
+df_train = df_temp.groupby('cat').apply(lambda x: x.head(get_head_count(x)))
 
 # df = df.drop_duplicates(subset=['page_title'], keep='last').groupby('cat').head(5).reset_index().sample(7000)
 # print(len(df_train))
 # print(len(df_test))
-with open('df_train-%d_test-%d.json' % (len(df_train), len(df_test)), 'w') as f:
+plt.hist(df_temp.groupby('cat').size().values)
+plt.title("Početnosť kategórií")
+plt.xlabel("Počet článkov v kategórii")
+plt.ylabel("Frekvencia výskytu")
+fig = plt.gcf()
+plt.savefig('histogram.png')
+
+with open('txtwiki/train-%d_test-%d.json' % (len(df_train), len(df_test)), 'w') as f:
     f.write(df_train.append(df_test).to_json(orient='records'))
-result = cursor.fetchone()
-print(result)

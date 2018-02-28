@@ -1,11 +1,12 @@
 {
   "config_number_1": {
     "batch_size": 32,
-    "emb_dim": 15,
-    "num_layers": 2,
+    "emb_dim": 32,
+    "num_layers": 4,
     "epochs": 1,
-    "num_units": 50,
+    "num_units": 128,
     "learning_rate": 0.001,
+    "split_idx": 4557,
     "ckpt": "ckpt/",
     "logdir": "E:\\git\\DP-test-model\\tf_logs"
   },
@@ -13,9 +14,10 @@
     "batch_size": 32,
     "emb_dim": 15,
     "num_layers": 2,
-    "epochs": 100,
+    "epochs": 200,
     "num_units": 50,
     "learning_rate": 0.001,
+    "split_idx": 4557,
     "ckpt": "./",
     "logdir": "/home/simko_igor/bucket/tf_logs"
   },
@@ -26,6 +28,7 @@
     "epochs": 1,
     "num_units": 15,
     "learning_rate": 0.001,
+    "split_idx": 4557,
     "ckpt": "ckpt/",
     "logdir": "/tf_logs/"
   }

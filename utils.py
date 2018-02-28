@@ -2,6 +2,7 @@ import datetime
 import nltk
 from rouge import *
 import tensorflow as tf
+import os
 from numpy import random
 
 EOS_EL = 2
@@ -10,6 +11,9 @@ EOS_EL = 2
 def prt(str):
     print("[%s] - %s" % (datetime.datetime.now(), str))
 
+def prt_out(str):
+    print("[%s] - %s" % (datetime.datetime.now(), str))
+    return "[%s] - %s" % (datetime.datetime.now(), str)
 
 def bleuMetric(reference, hypothesis):
     return nltk.translate.bleu(reference, hypothesis)
@@ -25,9 +29,11 @@ def get_eos_pos(arr, return_val):
 
 def test(sess, model, metadata, testX, testY, logdir):
    # tf.reset_default_graph()
-
     now = datetime.datetime.now()
     tag = now.strftime("%Y%m%d-%H%M%S")
+    test_path = './test_logs/test-' + tag
+    os.makedirs(test_path, 0o755)
+
     writers = [None, None, None, None]
 
     rouges_arr = []
@@ -51,6 +57,7 @@ def test(sess, model, metadata, testX, testY, logdir):
     # session = tf.InteractiveSession()
     # session.run(tf.global_variables_initializer())
 
+    text_out = []
     for x in range(len(testX)):
         pred_y = model.predict(sess, testX[x].tolist(), metadata['idx2word'])
         true_y = [metadata['idx2word'][i] for i in testY[x]]
@@ -77,8 +84,7 @@ def test(sess, model, metadata, testX, testY, logdir):
         #     writers[i + 1].flush()
 
         # model.bleu = tf.convert_to_tensor(b)
-
-        prt('Predicted:\t{} | \tTrue:\t{}'.format(p_y, t_y))
+        text_out.append(prt_out('Predicted:\t{} | \tTrue:\t{}'.format(p_y, t_y)))
 
     metric_text = "\n\nROUGE-1 f1: \t\t%f\nROUGE-1 recall: \t%f\nROUGE-1 precision: \t%f\nROUGE-2 f1: \t\t%f\nROUGE-2 recall: \t%f\nROUGE-2 precision: \t%f\nROUGE-L f1: \t\t%f\nROUGE-L recall: \t%f\nROUGE-L precision: \t%f\n\nBLEU: \t%f\n" % (np.average([x['rouge_1/f_score'] for x in rouges_arr]),
                         np.average([x['rouge_1/r_score'] for x in rouges_arr]),
@@ -93,12 +99,21 @@ def test(sess, model, metadata, testX, testY, logdir):
 
     prt(metric_text)
 
-    sess = tf.InteractiveSession()
-    summary_op = tf.summary.text('config/config', tf.convert_to_tensor(metric_text))
-    summary_writer = tf.summary.FileWriter(logdir + "/test/", sess.graph)
-    text = sess.run(summary_op)
-    summary_writer.add_summary(text, 0)
-    summary_writer.add_summary(text, 100)
-    summary_writer.add_summary(text, 200)
-    summary_writer.flush()
-    summary_writer.close()
+    text_file = open(test_path + "/metric.log", "w")
+    text_file.write(metric_text)
+    text_file.close()
+
+    text_file = open(test_path + "/output_text.log", "w")
+    text_file.write('\n'.join(text_out))
+    text_file.close()
+
+    #
+    # sess = tf.InteractiveSession()
+    # summary_op = tf.summary.text('config/config', tf.convert_to_tensor(metric_text))
+    # summary_writer = tf.summary.FileWriter(logdir + "/test/", sess.graph)
+    # text = sess.run(summary_op)
+    # summary_writer.add_summary(text, 0)
+    # summary_writer.add_summary(text, 100)
+    # summary_writer.add_summary(text, 200)
+    # summary_writer.flush()
+    # summary_writer.close()

@@ -28,6 +28,7 @@ else:
         'epochs' : 10,
         'num_units' : 50,
         'learning_rate' : 0.001,
+        'split_idx': 4557,
         'ckpt' : "ckpt/",
         'logdir' : "./tf_logs"
     }
@@ -39,6 +40,7 @@ num_layers = actual_config['num_layers']
 emb_dim = actual_config['emb_dim']
 epochs = actual_config['epochs']
 batch_size = actual_config['batch_size']
+split_idx = actual_config['split_idx']
 ckpt = actual_config['ckpt']
 logdir = actual_config['logdir']
 
@@ -67,12 +69,12 @@ model = seq2seq_wrapper.Seq2Seq(xseq_len=xseq_len,
                                 emb_size=emb_dim
                                 )
 
-val_batch_gen = data_utils.rand_batch_gen(validX, validY, batch_size)
-train_batch_gen = data_utils.rand_batch_gen(trainX, trainY, batch_size)
-test_batch_gen = data_utils.rand_batch_gen(testX, testY, batch_size)
+# val_batch_gen = data_utils.rand_batch_gen(validX, validY, batch_size)
+# train_batch_gen = data_utils.rand_batch_gen(trainX, trainY, batch_size)
+# test_batch_gen = data_utils.rand_batch_gen(testX, testY, batch_size)
 
-train_batch_gen = data_utils.rand_batch_gen(idx_q[:3523], idx_a[:3523], batch_size)
-test_batch_gen = data_utils.rand_batch_gen(idx_q[3523:], idx_a[3523:], batch_size)
+train_batch_gen = data_utils.rand_batch_gen(idx_q[:split_idx], idx_a[:split_idx], batch_size)
+test_batch_gen = data_utils.rand_batch_gen(idx_q[split_idx:], idx_a[split_idx:], batch_size)
 
 sess = None
 
