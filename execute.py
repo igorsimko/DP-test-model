@@ -71,6 +71,9 @@ val_batch_gen = data_utils.rand_batch_gen(validX, validY, batch_size)
 train_batch_gen = data_utils.rand_batch_gen(trainX, trainY, batch_size)
 test_batch_gen = data_utils.rand_batch_gen(testX, testY, batch_size)
 
+train_batch_gen = data_utils.rand_batch_gen(idx_q[:3523], idx_a[:3523], batch_size)
+test_batch_gen = data_utils.rand_batch_gen(idx_q[3523:], idx_a[3523:], batch_size)
+
 sess = None
 
 def restore_session():

@@ -51,7 +51,7 @@ def test(sess, model, metadata, testX, testY, logdir):
     # session = tf.InteractiveSession()
     # session.run(tf.global_variables_initializer())
 
-    for x in range(len(testX) -490):
+    for x in range(len(testX)):
         pred_y = model.predict(sess, testX[x].tolist(), metadata['idx2word'])
         true_y = [metadata['idx2word'][i] for i in testY[x]]
 

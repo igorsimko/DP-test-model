@@ -24,7 +24,7 @@ file_name = 'train_10K_5K-len.json'
 file_name = '4K_unique.json'
 file_name = '5K_cat_unique.json'
 file_name = '7K_not_unique.json'
-
+file_name = '3523_train_3521_test.json'
 
 limit = {
     'max_descriptions' : 500,
@@ -168,6 +168,8 @@ def process_data():
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x[:limit['max_descriptions']])
 
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: parse_text(x))
+    raw_data['category'] = raw_data['category'].apply(lambda x: parse_text(x))
+
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: unicodedata.normalize('NFKD', x).encode('ascii','ignore'))
 
     raw_data.to_json('parsed.json', orient='records')

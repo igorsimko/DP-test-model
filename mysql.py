@@ -40,13 +40,24 @@ where 1=1
     and length(t.txt) < 5000
 '''
 
+def get_head_count(x):
+    if len(x) % 2 == 0:
+        return int(len(x)/2)
+    else:
+        return int(len(x)/2) + 1
 
+def get_last_count(x):
+    return int(len(x) / 2)
 
 df = pd.read_sql_query(query, conn)
 print(len(df.groupby(['cat']).groups))
-df = df.drop_duplicates(subset=['page_title'], keep='last').groupby('cat').first().reset_index().sample(5000)
-print(len(df))
-with open('mysql_select_out.json', 'w') as f:
-    f.write(df.to_json( orient='records'))
+df_train = df.drop_duplicates(subset=['page_title'], keep='last').groupby('cat').filter(lambda x: len(x) > 1).groupby('cat').apply(lambda x: x.head(get_head_count(x)))
+df_test = df.drop_duplicates(subset=['page_title'], keep='last').groupby('cat').filter(lambda x: len(x) > 1).groupby('cat').apply(lambda x: x.tail(get_last_count(x)))
+
+# df = df.drop_duplicates(subset=['page_title'], keep='last').groupby('cat').head(5).reset_index().sample(7000)
+# print(len(df_train))
+# print(len(df_test))
+with open('df_train-%d_test-%d.json' % (len(df_train), len(df_test)), 'w') as f:
+    f.write(df_train.append(df_test).to_json(orient='records'))
 result = cursor.fetchone()
 print(result)
