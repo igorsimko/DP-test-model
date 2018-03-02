@@ -2,6 +2,8 @@ import json
 from os import path
 
 import unicodedata
+
+from gensim.models import Word2Vec
 from nltk.tokenize import word_tokenize as tokenize
 import nltk
 import itertools
@@ -34,6 +36,18 @@ limit = {
     'max_headings' : 100,
     'min_headings' : 0,
 }
+
+def loadGloveModel(gloveFile):
+    print("Loading Glove Model")
+    f = open(gloveFile,'r', encoding='utf8')
+    model = {}
+    for line in f:
+        splitLine = line.split()
+        word = splitLine[0]
+        embedding = np.array([float(val) for val in splitLine[1:]])
+        model[word] = embedding
+    print("Done.",len(model)," words loaded!")
+    return model
 
 def load_raw_data(filename):
     with open(filename, 'r', encoding='utf8') as fp:
@@ -174,7 +188,10 @@ def process_data():
 
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: unicodedata.normalize('NFKD', x).encode('ascii','ignore'))
 
-    raw_data.to_json('parsed.json', orient='records')
+    # raw_data.to_json('parsed.json', orient='records')
+
+    # model = loadGloveModel("glove/glove.6B.50d.txt")
+
     headings, descriptions = tokenize_articles(raw_data)
 
     #keep only whitelisted characters and articles satisfying the length limits
@@ -208,6 +225,9 @@ def process_data():
     idx_descriptions = new_idx_d
     # unk_percentage = calculate_unk_percentage(idx_headings, idx_descriptions, word2idx)
     # print (calculate_unk_percentage(idx_headings, idx_descriptions, word2idx))
+
+    # model = Word2Vec(word_tokenized_descriptions + word_tokenized_headings, min_count=1, size=50)
+    # model.save('model.bin')
 
     article_data = {
         'word2idx' : word2idx,

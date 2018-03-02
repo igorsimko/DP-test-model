@@ -1,10 +1,10 @@
 {
   "config_number_1": {
     "batch_size": 32,
-    "emb_dim": 32,
-    "num_layers": 4,
+    "emb_dim": 50,
+    "num_layers": 2,
     "epochs": 1,
-    "num_units": 128,
+    "num_units": 50,
     "learning_rate": 0.001,
     "split_idx": 4557,
     "ckpt": "ckpt/",
@@ -12,9 +12,9 @@
   },
   "config_number_2": {
     "batch_size": 32,
-    "emb_dim": 15,
+    "emb_dim": 50,
     "num_layers": 2,
-    "epochs": 200,
+    "epochs": 150,
     "num_units": 50,
     "learning_rate": 0.001,
     "split_idx": 4557,

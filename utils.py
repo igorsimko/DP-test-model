@@ -1,9 +1,10 @@
 import datetime
 import nltk
 from rouge import *
-import tensorflow as tf
 import os
-from numpy import random
+import tensorflow as tf
+import numpy as np
+from tensorflow.contrib.tensorboard.plugins import projector
 
 EOS_EL = 2
 
@@ -27,7 +28,7 @@ def get_eos_pos(arr, return_val):
             return return_val
 
 
-def test(sess, model, metadata, testX, testY, logdir):
+def test(sess, model, metadata, testX, testY, logdir, embedding):
    # tf.reset_default_graph()
     now = datetime.datetime.now()
     tag = now.strftime("%Y%m%d-%H%M%S")
@@ -59,7 +60,7 @@ def test(sess, model, metadata, testX, testY, logdir):
 
     text_out = []
     for x in range(len(testX)):
-        pred_y = model.predict(sess, testX[x].tolist(), metadata['idx2word'])
+        pred_y = model.predict(sess, testX[x].tolist(), metadata['idx2word'], embedding)
         true_y = [metadata['idx2word'][i] for i in testY[x]]
 
         p_y = ' '.join(pred_y).replace("<PAD>", "").replace("<EOS>", "").rstrip().lstrip()
@@ -117,3 +118,41 @@ def test(sess, model, metadata, testX, testY, logdir):
     # summary_writer.add_summary(text, 200)
     # summary_writer.flush()
     # summary_writer.close()
+
+
+
+
+
+def visualize(model, output_path, tag):
+    meta_file = "w2x_metadata.tsv"
+    placeholder = np.zeros((len(model.wv.index2word), 50))
+
+    with open(os.path.join(output_path,meta_file), 'wb') as file_metadata:
+        for i, word in enumerate(model.wv.index2word):
+            placeholder[i] = model[word]
+            # temporary solution for https://github.com/tensorflow/tensorflow/issues/9094
+            if word == '':
+                print("Emply Line, should replaced by any thing else, or will cause a bug of tensorboard")
+                file_metadata.write("{0}".format('<Empty Line>').encode('utf-8') + b'\n')
+            else:
+                file_metadata.write("{0}".format(word).encode('utf-8') + b'\n')
+
+    # define the model without training
+    sess = tf.InteractiveSession()
+
+    embedding = tf.Variable(placeholder, trainable = False, name = 'w2x_metadata')
+    tf.global_variables_initializer().run()
+
+    saver = tf.train.Saver()
+    writer = tf.summary.FileWriter(tag, sess.graph)
+
+    # adding into projector
+    config = projector.ProjectorConfig()
+    embed = config.embeddings.add()
+    embed.tensor_name = 'w2x_metadata'
+    embed.metadata_path = meta_file
+
+    # Specify the width and height of a single thumbnail.
+    projector.visualize_embeddings(writer, config)
+    saver.save(sess, os.path.join(tag,'w2x_metadata.ckpt'))
+    # print('Run `tensorboard --logdir={0}` to run visualize result on tensorboard'.format(output_path))

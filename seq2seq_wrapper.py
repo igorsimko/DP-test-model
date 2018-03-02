@@ -65,17 +65,18 @@ class Seq2Seq(object):
 
         self.keep_prob = tf.placeholder(tf.float32)
         self.batch_size_ph = tf.placeholder(tf.int32, [])
+        self.encoder_embedding_ph = tf.placeholder(tf.float32, [None, self.emb_size])
 
         prt("Encoder start.")
         # ENCODER
-        encoder_embedding = tf.get_variable('encoder_embedding', [self.xvocab_size, self.emb_size],
-                                            tf.float32, tf.random_uniform_initializer(-1.0, 1.0))
-
-        tf.summary.histogram('embeddings_var', encoder_embedding)
+        # encoder_embedding = tf.get_variable('encoder_embedding', [self.xvocab_size, self.emb_size],
+        #                                     tf.float32, tf.random_uniform_initializer(-1.0, 1.0))
+        #
+        # tf.summary.histogram('embeddings_var', encoder_embedding)
 
         self.encoder_out, self.encoder_state = tf.nn.dynamic_rnn(
             cell=tf.nn.rnn_cell.MultiRNNCell([self.lstm_cell() for _ in range(self.num_layers)]),
-            inputs=tf.nn.embedding_lookup(encoder_embedding, self.batch_ph),
+            inputs=tf.nn.embedding_lookup(self.encoder_embedding_ph, self.batch_ph),
             sequence_length=self.Xseq_len_ph,
             dtype=tf.float32)
         self.encoder_state = tuple(self.encoder_state[-1] for _ in range(self.num_layers))
@@ -85,12 +86,12 @@ class Seq2Seq(object):
         with tf.variable_scope(tf.get_variable_scope(), reuse=None) as scope:
             prt("Decoder start.")
 
-            decoder_embedding = tf.get_variable('decoder_embedding',
-                                                [self.yvocab_size, self.emb_size],
-                                                tf.float32, tf.random_uniform_initializer(-1.0, 1.0))
+            # decoder_embedding = tf.get_variable('decoder_embedding',
+            #                                     [self.yvocab_size, self.emb_size],
+            #                                     tf.float32, tf.random_uniform_initializer(-1.0, 1.0))
             decoder_cell = self.attention()
             training_helper = tf.contrib.seq2seq.TrainingHelper(
-                inputs=tf.nn.embedding_lookup(decoder_embedding, self.processed_decoder_input()),
+                inputs=tf.nn.embedding_lookup(self.encoder_embedding_ph, self.processed_decoder_input()),
                 sequence_length=self.Yseq_len_ph,
                 time_major=False)
             training_decoder = tf.contrib.seq2seq.BasicDecoder(
@@ -112,7 +113,7 @@ class Seq2Seq(object):
         with tf.variable_scope(tf.get_variable_scope(), reuse=True):
             decoder_cell = self.attention(True)
             predicting_helper = tf.contrib.seq2seq.GreedyEmbeddingHelper(
-                embedding=tf.get_variable('decoder_embedding'),
+                embedding=self.encoder_embedding_ph,
                 start_tokens=tf.tile(tf.constant([self.go_token], dtype=tf.int32), [self.batch_size_ph]),
                 end_token=self.eos_token)
             predicting_decoder = tf.contrib.seq2seq.BasicDecoder(
@@ -191,11 +192,12 @@ class Seq2Seq(object):
 
 
     # prediction
-    def predict(self, sess, X, idx2word):
+    def predict(self, sess, X, idx2word, embedding):
         out = sess.run(self.predicting_ids, {
             self.batch_ph: [X] * self.batch_size,
             self.Xseq_len_ph: [len(X)] * self.batch_size,
-            self.batch_size_ph: self.batch_size})[0]
+            self.batch_size_ph: self.batch_size,
+            self.encoder_embedding_ph: embedding})[0]
 
         return [idx2word[i] for i in out]
 
@@ -215,7 +217,7 @@ class Seq2Seq(object):
 
     # end method next_batch
 
-    def fit(self, X_train, Y_train, val_data, log_dir, sess=None, display_step=50, batch_size=128):
+    def fit(self, X_train, Y_train, val_data, log_dir, embedding, sess=None, display_step=50, batch_size=128):
         saver = tf.train.Saver()
 
         if not sess:
@@ -232,6 +234,7 @@ class Seq2Seq(object):
         tf.summary.scalar("loss", self.loss)
 
         self.merged_summary_op = tf.summary.merge_all()
+        # embedding = tf.cast(embedding, tf.float32)
 
         for epoch in range(1, self.epochs + 1):
             for local_step, (X_train_batch, Y_train_batch, X_train_batch_lens, Y_train_batch_lens) in enumerate(
@@ -240,14 +243,16 @@ class Seq2Seq(object):
                                                                 self.target_ph: Y_train_batch,
                                                                 self.Xseq_len_ph: X_train_batch_lens,
                                                                 self.Yseq_len_ph: Y_train_batch_lens,
-                                                                self.batch_size_ph: batch_size})
+                                                                self.batch_size_ph: batch_size,
+                                                                self.encoder_embedding_ph: embedding})
                 if local_step % display_step == 0:
                     self.n_epoch = epoch
                     val_loss = sess.run(self.loss, {self.batch_ph: X_train_batch,
                                                     self.target_ph: Y_train_batch,
                                                     self.Xseq_len_ph: X_train_batch_lens,
                                                     self.Yseq_len_ph: Y_train_batch_lens,
-                                                    self.batch_size_ph: batch_size})
+                                                    self.batch_size_ph: batch_size,
+                                                    self.encoder_embedding_ph: embedding})
                     prt("Epoch %d/%d |  test_loss: %.3f" % (epoch, self.epochs, val_loss))
 
                 summary_writer.add_summary(summary, epoch)

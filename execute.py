@@ -57,6 +57,19 @@ yseq_len = len(trainY[0])
 xvocab_size = len(metadata['idx2word'])
 yvocab_size = xvocab_size
 
+model = Word2Vec.load('model.bin')
+
+embedding_matrix = np.zeros((len(metadata['idx2word']), emb_dim))
+for i in range(len(metadata['idx2word'])):
+    if metadata['idx2word'][i] not in model.wv:
+        embedding_vector = np.zeros((emb_dim))
+    else:
+        embedding_vector = model.wv[metadata['idx2word'][i]]
+    if embedding_vector is not None:
+        embedding_matrix[i] = embedding_vector
+embedding_matrix = np.array(embedding_matrix, dtype=np.float64)
+
+visualize(model, "tf_logs", logdir)
 model = seq2seq_wrapper.Seq2Seq(xseq_len=xseq_len,
                                 yseq_len=yseq_len,
                                 xvocab_size=xvocab_size,
@@ -84,12 +97,13 @@ def restore_session():
         saver = tf.train.Saver()
         saver.restore(sess, ckpt + "model.ckpt")
 
-        test(sess, model, metadata, testX, testY, logdir)
+        test(sess, model, metadata, testX, testY, logdir, embedding_matrix)
 
 if os.path.exists(ckpt + "checkpoint"):
     restore_session()
 else:
-    model.fit(trainX, trainY, log_dir=logdir, val_data=(testX, testY), batch_size=batch_size)
+    # saved_embeddings = np.append(np.zeros((4, emb_dim)), embedding_matrix, axis=0)
+    model.fit(trainX, trainY, log_dir=logdir, val_data=(testX, testY), batch_size=batch_size, embedding=embedding_matrix)
     restore_session()
 
 
