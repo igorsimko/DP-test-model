@@ -235,8 +235,10 @@ class Seq2Seq(object):
 
         self.merged_summary_op = tf.summary.merge_all()
         # embedding = tf.cast(embedding, tf.float32)
-
+        good_loss = False
         for epoch in range(1, self.epochs + 1):
+            if good_loss:
+                break
             for local_step, (X_train_batch, Y_train_batch, X_train_batch_lens, Y_train_batch_lens) in enumerate(
                     self.next_batch(X_train, Y_train, batch_size)):
                 _, summary = sess.run([self.train_op, self.merged_summary_op], {self.batch_ph: X_train_batch,
@@ -254,6 +256,10 @@ class Seq2Seq(object):
                                                     self.batch_size_ph: batch_size,
                                                     self.encoder_embedding_ph: embedding})
                     prt("Epoch %d/%d |  test_loss: %.3f" % (epoch, self.epochs, val_loss))
+                    save_path = saver.save(sess, self.ckpt_path + "model.ckpt")
+                    if val_loss <= 0.001:
+                        good_loss = True
+                        break
 
                 summary_writer.add_summary(summary, epoch)
         save_path = saver.save(sess, self.ckpt_path + "model.ckpt")
