@@ -24,5 +24,9 @@ def rand_batch_gen(x, y, batch_size):
         sample_idx = sample(list(np.arange(len(x))), batch_size)
         yield np.array(x)[sample_idx].T, np.array(y)[sample_idx].T
 
+
+def split_by_idx(x, y, idx):
+    return (x[:idx], y[:idx]), (x[idx:], y[idx:])
+
 def decode(sequence, lookup, separator=''): # 0 used for padding, is ignored
     return separator.join([ lookup[element] for element in sequence if element ])

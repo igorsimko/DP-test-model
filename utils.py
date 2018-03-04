@@ -4,6 +4,8 @@ from rouge import *
 import os
 import tensorflow as tf
 import numpy as np
+import textwrap
+import sentence_similarity as sensim
 from tensorflow.contrib.tensorboard.plugins import projector
 
 EOS_EL = 2
@@ -28,7 +30,7 @@ def get_eos_pos(arr, return_val):
             return return_val
 
 
-def test(sess, model, metadata, testX, testY, logdir, embedding):
+def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
    # tf.reset_default_graph()
     now = datetime.datetime.now()
     tag = now.strftime("%Y%m%d-%H%M%S")
@@ -39,6 +41,7 @@ def test(sess, model, metadata, testX, testY, logdir, embedding):
 
     rouges_arr = []
     bleu_arr = []
+    sensim_arr = []
 
     tags = ['bleu','f1_score','precision','recall']
     for x in range(len(writers)):
@@ -57,23 +60,25 @@ def test(sess, model, metadata, testX, testY, logdir, embedding):
     # write_op = tf.summary.merge_all()
     # session = tf.InteractiveSession()
     # session.run(tf.global_variables_initializer())
-
     text_out = []
+
     for x in range(len(testX)):
         pred_y = model.predict(sess, testX[x].tolist(), metadata['idx2word'], embedding)
-        true_y = [metadata['idx2word'][i] for i in testY[x]]
+        true_y = [metadata['idx2word'][i] for i in testY[x]] if len(testY) > 0 else ""
 
         p_y = ' '.join(pred_y).replace("<PAD>", "").replace("<EOS>", "").rstrip().lstrip()
         t_y = ' '.join(true_y).replace("<PAD>", "").replace("<EOS>", "").rstrip().lstrip()
 
         b = bleuMetric(t_y.split(" "), p_y.split(" "))
-
-        r = [rouge_n(p_y.split(" "), t_y.split(" "), 1),
-             rouge_n(p_y.split(" "), t_y.split(" "), 2),
-             rouge_n(p_y.split(" "), t_y.split(" "), 3)]
+        ss = sensim.sentence_similarity(p_y, t_y)
 
         rouges_arr.append(rouge(p_y.split(" "), t_y.split(" ")))
         bleu_arr.append(b)
+        sensim_arr.append(ss)
+        # r = [rouge_n(p_y.split(" "), t_y.split(" "), 1),
+        #      rouge_n(p_y.split(" "), t_y.split(" "), 2),
+        #      rouge_n(p_y.split(" "), t_y.split(" "), 3)]
+
         # r = [[random.rand(),random.rand(),random.rand()], [random.rand(),random.rand(),random.rand()], [random.rand(),random.rand(),random.rand()]]
 
         # summary = session.run(write_op, {bleu: b})
@@ -85,9 +90,15 @@ def test(sess, model, metadata, testX, testY, logdir, embedding):
         #     writers[i + 1].flush()
 
         # model.bleu = tf.convert_to_tensor(b)
-        text_out.append(prt_out('Predicted:\t{} | \tTrue:\t{}'.format(p_y, t_y)))
+        if ss != 0:
+            if trace:
+                text_sample = ' '.join([metadata['idx2word'][i] for i in testX[x]])[:280] + "..."
+                text_out.append(prt_out('Sample {}\n\nMachine generated category: {}\nReal category: {}\n'.format(x + 1, p_y, t_y) + '\nSimilarity: %f\n' % ss + textwrap.fill('Text sample: {}'.format(text_sample), 78)))
 
-    metric_text = "\n\nROUGE-1 f1: \t\t%f\nROUGE-1 recall: \t%f\nROUGE-1 precision: \t%f\nROUGE-2 f1: \t\t%f\nROUGE-2 recall: \t%f\nROUGE-2 precision: \t%f\nROUGE-L f1: \t\t%f\nROUGE-L recall: \t%f\nROUGE-L precision: \t%f\n\nBLEU: \t%f\n" % (np.average([x['rouge_1/f_score'] for x in rouges_arr]),
+        if trace != True:
+            text_out.append(prt_out('Predicted:\t{} | \tTrue:\t{}'.format(p_y, t_y)))
+
+    metric_text = "\n\nROUGE-1 f1: \t\t%f\nROUGE-1 recall: \t%f\nROUGE-1 precision: \t%f\nROUGE-2 f1: \t\t%f\nROUGE-2 recall: \t%f\nROUGE-2 precision: \t%f\nROUGE-L f1: \t\t%f\nROUGE-L recall: \t%f\nROUGE-L precision: \t%f\n\nBLEU: \t%f\n\nSentence similarity: \t%f\n" % (np.average([x['rouge_1/f_score'] for x in rouges_arr]),
                         np.average([x['rouge_1/r_score'] for x in rouges_arr]),
                         np.average([x['rouge_1/p_score'] for x in rouges_arr]),
                         np.average([x['rouge_2/f_score'] for x in rouges_arr]),
@@ -96,7 +107,23 @@ def test(sess, model, metadata, testX, testY, logdir, embedding):
                         np.average([x['rouge_l/f_score'] for x in rouges_arr]),
                         np.average([x['rouge_l/r_score'] for x in rouges_arr]),
                         np.average([x['rouge_l/p_score'] for x in rouges_arr]),
-                        np.average(bleu_arr))
+                        np.average(bleu_arr),
+                        np.average(sensim_arr))
+
+    prt(metric_text)
+
+    metric_text = "\n\nROUGE-1 f1: \t\t%f\nROUGE-1 recall: \t%f\nROUGE-1 precision: \t%f\nROUGE-2 f1: \t\t%f\nROUGE-2 recall: \t%f\nROUGE-2 precision: \t%f\nROUGE-L f1: \t\t%f\nROUGE-L recall: \t%f\nROUGE-L precision: \t%f\n\nBLEU: \t%f\n\nSentence similarity: \t%f\n" % (
+    np.average(([x['rouge_1/f_score'] for x in rouges_arr if x['rouge_1/f_score'] != 0])),
+    np.average(([x['rouge_1/r_score'] for x in rouges_arr if x['rouge_1/r_score'] != 0])),
+    np.average(([x['rouge_1/p_score'] for x in rouges_arr if x['rouge_1/p_score'] != 0])),
+    np.average(([x['rouge_2/f_score'] for x in rouges_arr if x['rouge_2/f_score'] != 0])),
+    np.average(([x['rouge_2/r_score'] for x in rouges_arr if x['rouge_2/r_score'] != 0])),
+    np.average(([x['rouge_2/p_score'] for x in rouges_arr if x['rouge_2/p_score'] != 0])),
+    np.average(([x['rouge_l/f_score'] for x in rouges_arr if x['rouge_l/f_score'] != 0])),
+    np.average(([x['rouge_l/r_score'] for x in rouges_arr if x['rouge_l/r_score'] != 0])),
+    np.average(([x['rouge_l/p_score'] for x in rouges_arr if x['rouge_l/p_score'] != 0])),
+    np.average([x for x in bleu_arr if x != 0]),
+    np.average([x for x in sensim_arr if x != 0 ]))
 
     prt(metric_text)
 
@@ -123,9 +150,9 @@ def test(sess, model, metadata, testX, testY, logdir, embedding):
 
 
 
-def visualize(model, output_path, tag):
+def visualize(model, output_path, tag, emb):
     meta_file = "w2x_metadata.tsv"
-    placeholder = np.zeros((len(model.wv.index2word), 50))
+    placeholder = np.zeros((len(model.wv.index2word), emb))
 
     with open(os.path.join(output_path,meta_file), 'wb') as file_metadata:
         for i, word in enumerate(model.wv.index2word):

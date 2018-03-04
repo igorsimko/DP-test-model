@@ -26,6 +26,9 @@ grammar = r"""
         {<NBAR>}
         {<NBAR><IN><NBAR>}  # Above, connected with in/of/etc...
 """
+
+grammar = r"""NP: {<NN.>*<JJ.>*}"""
+
 chunker = nltk.RegexpParser(grammar)
 stopwords = stopwords.words('english')
 
@@ -71,4 +74,6 @@ def parse_text(text):
 
     return ' '.join(ret_val)
 
-# parse_text("my name is potato. potato is good. it tastes very very nice.")
+# txt = "His mythologies and powers are similar, though not identical, to those of Indo-European deities such as Indra, Jupiter, Perkūnas, Perun, Thor, and Odin"
+# print(parse_text("my potato name is nice potato. potato is good. it tastes very very nice."))
+# print(parse_text(txt))

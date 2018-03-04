@@ -143,10 +143,10 @@ def pad_seq(seq, lookup, max_length, old_flag=False):
         return indices + pad_arr
 
 
-def zero_pad(tokenized_headings, tokenized_descriptions, word2idx):
+def zero_pad(tokenized_headings, tokenized_descriptions, word2idx, only_desc=False):
     data_length = len(tokenized_descriptions)
     max_desc_len = len(max(tokenized_descriptions, key=len)) + 1
-    max_head_len = len(max(tokenized_headings, key=len)) + 1
+    max_head_len = len(max(tokenized_headings, key=len)) + 1 if not only_desc else 0
     idx_descriptions = np.zeros([data_length, max_desc_len], dtype=np.int32)
     idx_headings = np.zeros([data_length, max_head_len], dtype=np.int32)
     # idx_descriptions = []
@@ -154,7 +154,7 @@ def zero_pad(tokenized_headings, tokenized_descriptions, word2idx):
 
     for i in range(data_length):
         description_indices = pad_seq(tokenized_descriptions[i], word2idx, max_desc_len, old_flag=True)
-        heading_indices = pad_seq(tokenized_headings[i], word2idx, max_head_len, old_flag=True)
+        heading_indices = pad_seq(tokenized_headings[i], word2idx, max_head_len, old_flag=True) if not only_desc else []
 
         idx_descriptions[i] = np.array(description_indices)
         idx_headings[i] = np.array(heading_indices)
@@ -184,7 +184,7 @@ def process_data():
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x[:limit['max_descriptions']])
 
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: parse_text(x))
-    raw_data['category'] = raw_data['category'].apply(lambda x: parse_text(x))
+    # raw_data['category'] = raw_data['category'].apply(lambda x: parse_text(x))
 
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: unicodedata.normalize('NFKD', x).encode('ascii','ignore'))
 
@@ -226,8 +226,8 @@ def process_data():
     # unk_percentage = calculate_unk_percentage(idx_headings, idx_descriptions, word2idx)
     # print (calculate_unk_percentage(idx_headings, idx_descriptions, word2idx))
 
-    # model = Word2Vec(word_tokenized_descriptions + word_tokenized_headings, min_count=1, size=50)
-    # model.save('model.bin')
+    model = Word2Vec(word_tokenized_descriptions + word_tokenized_headings, min_count=1, size=15)
+    model.save('model.bin')
 
     article_data = {
         'word2idx' : word2idx,

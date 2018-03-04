@@ -7,18 +7,28 @@ import tensorflow as tf
 import os.path
 import sys
 import json
+import argparse
+from pathlib import Path
+
+parser = argparse.ArgumentParser()
 
 # tensorboard --logdir=E:\git\DP-test-model\tf_logs --port 6006
 
 
-conf_number = sys.argv[1]
+parser.add_argument('--txt_path',  dest='text_file_path', default=None,
+                    help='Text file path')
+parser.add_argument('--config', dest='conf_number',
+                    help='Configuration number')
+parser.add_argument('--trace', dest='trace',
+                    help='Trace logging', default=False)
+
+results = parser.parse_args()
 
 config = []
-
 if os.path.exists("config.json"):
     with open('config.json', 'r') as f:
         config = json.load(f)
-    actual_config = config['config_number_' + conf_number]
+    actual_config = config['config_number_' + results.conf_number]
 else:
     # default hyperparams
     actual_config = {
@@ -44,13 +54,23 @@ split_idx = actual_config['split_idx']
 ckpt = actual_config['ckpt']
 logdir = actual_config['logdir']
 
+
 logdir = '%s/%s' % (logdir, datetime.datetime.now().strftime("%Y%m%d-%H%M%S"))
 
 metadata = unpickle_articles()  # data.load_data(PATH='datasets/twitter/')
 idx_a, idx_q = metadata['idx_headings'], metadata['idx_descriptions']
 
-(trainX, trainY), (testX, testY), (validX, validY) = data_utils.split_data(idx_q, idx_a)
+# (trainX, trainY), (testX, testY), (validX, validY) = data_utils.split_data(idx_q, idx_a)
+(trainX, trainY), (testX, testY) = data_utils.split_by_idx(idx_q, idx_a, split_idx)
 
+text_file_path = results.text_file_path
+if text_file_path != None:
+    my_file = Path(text_file_path)
+    if my_file.is_file():
+        with open(text_file_path, 'r', encoding='utf8') as f:
+            data = f.readlines()
+            testX = zero_pad([], [ parse_text(x.replace('\n', '')).split(" ") for x in data], metadata['word2idx'], only_desc=True)[1]
+            testY = []
 # parameters
 xseq_len = len(trainX[0])
 yseq_len = len(trainY[0])
@@ -69,7 +89,7 @@ for i in range(len(metadata['idx2word'])):
         embedding_matrix[i] = embedding_vector
 embedding_matrix = np.array(embedding_matrix, dtype=np.float64)
 
-visualize(model, "tf_logs", logdir)
+visualize(model, "./", logdir, emb_dim)
 model = seq2seq_wrapper.Seq2Seq(xseq_len=xseq_len,
                                 yseq_len=yseq_len,
                                 xvocab_size=xvocab_size,
@@ -86,8 +106,8 @@ model = seq2seq_wrapper.Seq2Seq(xseq_len=xseq_len,
 # train_batch_gen = data_utils.rand_batch_gen(trainX, trainY, batch_size)
 # test_batch_gen = data_utils.rand_batch_gen(testX, testY, batch_size)
 
-train_batch_gen = data_utils.rand_batch_gen(idx_q[:split_idx], idx_a[:split_idx], batch_size)
-test_batch_gen = data_utils.rand_batch_gen(idx_q[split_idx:], idx_a[split_idx:], batch_size)
+# train_batch_gen = data_utils.rand_batch_gen(idx_q[:split_idx], idx_a[:split_idx], batch_size)
+# test_batch_gen = data_utils.rand_batch_gen(idx_q[split_idx:], idx_a[split_idx:], batch_size)
 
 sess = None
 
@@ -97,7 +117,7 @@ def restore_session():
         saver = tf.train.Saver()
         saver.restore(sess, ckpt + "model.ckpt")
 
-        test(sess, model, metadata, testX, testY, logdir, embedding_matrix)
+        test(sess, model, metadata, testX, testY, logdir, embedding_matrix, results.trace)
 
 if os.path.exists(ckpt + "checkpoint"):
     restore_session()

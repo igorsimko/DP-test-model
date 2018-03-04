@@ -1,9 +1,9 @@
 {
   "config_number_1": {
     "batch_size": 32,
-    "emb_dim": 50,
+    "emb_dim": 15,
     "num_layers": 2,
-    "epochs": 1,
+    "epochs": 10,
     "num_units": 50,
     "learning_rate": 0.001,
     "split_idx": 4557,
