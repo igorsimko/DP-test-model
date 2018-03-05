@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import plotly.plotly as py
 
 from os import path
+from nltk.corpus import wordnet
 
 import pymysql
 import pandas as pd
@@ -48,8 +49,10 @@ where 1=1
     and t.cat not like '%All%articles%'
 	and t.cat not like '%stubs'
 	and t.cat not like '%needing%'
+	and t.cat not like '%List%'
+	and t.cat not like '%people%'
     and t.cat not regexp '[[:digit:]]'
-    and length(t.txt) < 10000
+    and length(t.txt) < 30000
 '''
 def pickle_data(article_data):
     with open(path.join(file_path, pickle_file_name), 'wb') as fp:
@@ -70,6 +73,17 @@ def get_head_count(x):
 def get_last_count(x):
     return int(len(x) * (1-ratio_int))
 
+def contains_only_english_words(tokenized_sentence):
+    contains = True
+
+    for word in tokenized_sentence:
+        if not wordnet.synsets(word):
+            # Not an English Word
+            contains = False
+    if contains: return None
+
+    return ' '.join(tokenized_sentence)
+
 df = None
 if os.path.exists(file_path + "/" + pickle_file_name):
     df = unpickle_articles()
@@ -77,7 +91,8 @@ else:
     df = pd.read_sql_query(query, conn)
     pickle_data(df)
 
-df_temp = df.drop_duplicates(subset=['page_title'], keep='last').groupby('cat').filter(lambda x: len(x) > 1 and len(x) <= 10 )
+
+df_temp = df.drop_duplicates(subset=['page_title'], keep='last').groupby('cat').filter(lambda x: len(x) > 4 and len(x) <= 15 )
 
 print("Groups count: " + str(len(df_temp.groupby('cat').groups)))
 df_test = df_temp.groupby('cat').apply(lambda x: x.tail(get_last_count(x)))

@@ -2,11 +2,11 @@
   "config_number_1": {
     "batch_size": 32,
     "emb_dim": 15,
-    "num_layers": 2,
-    "epochs": 10,
-    "num_units": 50,
+    "num_layers": 4,
+    "epochs": 5,
+    "num_units": 64,
     "learning_rate": 0.001,
-    "split_idx": 4557,
+    "split_idx": 3503,
     "ckpt": "ckpt/",
     "logdir": "E:\\git\\DP-test-model\\tf_logs"
   },

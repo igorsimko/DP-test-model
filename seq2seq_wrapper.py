@@ -72,7 +72,7 @@ class Seq2Seq(object):
         # encoder_embedding = tf.get_variable('encoder_embedding', [self.xvocab_size, self.emb_size],
         #                                     tf.float32, tf.random_uniform_initializer(-1.0, 1.0))
         #
-        # tf.summary.histogram('embeddings_var', encoder_embedding)
+        tf.summary.histogram('embeddings_var', self.encoder_embedding_ph)
 
         self.encoder_out, self.encoder_state = tf.nn.dynamic_rnn(
             cell=tf.nn.rnn_cell.MultiRNNCell([self.lstm_cell() for _ in range(self.num_layers)]),
@@ -228,9 +228,6 @@ class Seq2Seq(object):
             summary_writer = tf.summary.FileWriter(log_dir, graph=tf.get_default_graph())
 
         prt('Training started\n')
-
-
-
         tf.summary.scalar("loss", self.loss)
 
         self.merged_summary_op = tf.summary.merge_all()

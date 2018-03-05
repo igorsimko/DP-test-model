@@ -10,6 +10,7 @@ import itertools
 import numpy as np
 import cloudpickle as pickle
 import pandas as pd
+from nltk.corpus import wordnet
 import re
 from join import parse_text
 
@@ -23,17 +24,19 @@ PAD = '<PAD>'
 
 file_path = 'data'
 
+global_separator = 5185
+
 file_name = 'train_10K_5K-len.json'
 file_name = '4K_unique.json'
 file_name = '5K_cat_unique.json'
 file_name = '7K_not_unique.json'
-file_name = '3523_train_3521_test.json'
 file_name = 'train-4557_test-1212.json'
+file_name = 'train-5185_test-1671.json'
 
 limit = {
-    'max_descriptions' : 500,
+    'max_descriptions' : 100,
     'min_descriptions' : 0,
-    'max_headings' : 100,
+    'max_headings' : 5,
     'min_headings' : 0,
 }
 
@@ -66,6 +69,21 @@ def tokenize_sentence(sentence):
         return sentence
     return ' '.join(list(tokenize(sentence)))
 
+def contains_only_english_words(tokenized_sentence):
+    contains = True
+
+    for word in tokenized_sentence:
+        if not wordnet.synsets(word):
+            # Not an English Word
+            contains = False
+
+    return contains
+
+def cut_limits(x, limit):
+    return ' '.join(x.split(" ")[:limit])
+
+# English Word
+
 def article_is_complete(article):
     if ('category' not in article) or ('parsed_text' not in article):
         return False
@@ -79,13 +97,20 @@ def tokenize_articles(raw_data):
     num_articles = len(raw_data)
     nltk.download('punkt')
 
+    separator_counter = 0
+    new_separator = 0
     for i, row in raw_data.iterrows():
-        if article_is_complete(row):
+        if i == global_separator:
+            new_separator = separator_counter
+        if article_is_complete(row) and contains_only_english_words(row['category'].split(" ")):
+            separator_counter = separator_counter + 1
+
             headings.append(tokenize_sentence(row['category']))
             descriptions.append(tokenize_sentence(row['parsed_text']))
         if i % 1 == 0:
             print('Tokenized {:,} / {:,} articles'.format(i, num_articles))
 
+    print("New separator idx: " + str(new_separator))
     return (headings, descriptions)
 
 def filter(line, whitelist):
@@ -181,9 +206,12 @@ def process_data():
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('== External links ==\s*([^\n\r]*)', "", x))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x.split('Category:')[0])
 
-    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x[:limit['max_descriptions']])
+    raw_data['category'] = raw_data['category'].apply(lambda x: ' '.join(x.split(' ')[:limit['max_headings']]))
+    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: ' '.join(x.split(' ')[:limit['max_descriptions']]))
 
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: parse_text(x))
+
+    # raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x[:limit['max_descriptions']])
     # raw_data['category'] = raw_data['category'].apply(lambda x: parse_text(x))
 
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: unicodedata.normalize('NFKD', x).encode('ascii','ignore'))
