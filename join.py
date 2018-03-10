@@ -27,7 +27,7 @@ grammar = r"""
         {<NBAR><IN><NBAR>}  # Above, connected with in/of/etc...
 """
 
-grammar = r"""NP: {<NN.>*<JJ.>*}"""
+# grammar = r"""NP: {<NN.>*<JJ.>*}"""
 
 chunker = nltk.RegexpParser(grammar)
 stopwords = stopwords.words('english')

@@ -2,6 +2,8 @@ import json
 from os import path
 
 import unicodedata
+import sentence_similarity
+import utils
 
 from gensim.models import Word2Vec
 from nltk.tokenize import word_tokenize as tokenize
@@ -24,7 +26,7 @@ PAD = '<PAD>'
 
 file_path = 'data'
 
-global_separator = 5185
+global_separator = 61
 
 file_name = 'train_10K_5K-len.json'
 file_name = '4K_unique.json'
@@ -32,6 +34,7 @@ file_name = '5K_cat_unique.json'
 file_name = '7K_not_unique.json'
 file_name = 'train-4557_test-1212.json'
 file_name = 'train-5185_test-1671.json'
+file_name = 'train-61_test-19.json'
 
 limit = {
     'max_descriptions' : 100,
@@ -92,8 +95,8 @@ def article_is_complete(article):
 
     return True
 
-def tokenize_articles(raw_data):
-    headings, descriptions = [], []
+def tokenize_articles(raw_data, test_arr):
+    headings, descriptions, test_categories = [], [], []
     num_articles = len(raw_data)
     nltk.download('punkt')
 
@@ -105,13 +108,14 @@ def tokenize_articles(raw_data):
         if article_is_complete(row) and contains_only_english_words(row['category'].split(" ")):
             separator_counter = separator_counter + 1
 
+            test_categories.append(test_arr.loc[test_arr['page_id']==row['page_id']]['categories'].values)
             headings.append(tokenize_sentence(row['category']))
             descriptions.append(tokenize_sentence(row['parsed_text']))
         if i % 1 == 0:
             print('Tokenized {:,} / {:,} articles'.format(i, num_articles))
 
     print("New separator idx: " + str(new_separator))
-    return (headings, descriptions)
+    return (headings, descriptions, test_categories, new_separator)
 
 def filter(line, whitelist):
     return ''.join([ch for ch in line if ch in whitelist])
@@ -205,27 +209,62 @@ def process_data():
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('[\n]+', "", x))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('== External links ==\s*([^\n\r]*)', "", x))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x.split('Category:')[0])
+    utils.prt("Start parsing n-grams")
+    # raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: unicodedata.normalize('NFKD', x).encode('ascii','ignore'))
+    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: parse_text(x))
 
     raw_data['category'] = raw_data['category'].apply(lambda x: ' '.join(x.split(' ')[:limit['max_headings']]))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: ' '.join(x.split(' ')[:limit['max_descriptions']]))
 
-    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: parse_text(x))
+
+    group_by_id = raw_data.groupby('page_id')
+    test_arr = pd.DataFrame(columns=['page_id', 'parsed_text', 'categories'])
+    for i in group_by_id.groups.keys():
+        test_arr = test_arr.append(pd.DataFrame([[i, group_by_id.get_group(i)['parsed_text'].head(1), group_by_id.get_group(i)['category'].values]], columns=['page_id', 'parsed_text', 'categories']))
+
+    # with open('data/test_data_%d.json' % global_separator , 'w') as f:
+    #     f.write(test_arr.to_json(orient='records'))
+
+    # utils.prt('Spliting test/train DF')
+    # train_df = raw_data.head(global_separator).groupby('category')
+    # test_df = raw_data.tail(len(raw_data) - global_separator).groupby('category')
+    # sim_train_df = pd.DataFrame(columns=['category', 'parsed_text'])
+    # sim_test_df = pd.DataFrame(columns=['category', 'parsed_text'])
+    #
+    # # train data
+    # for i, group in enumerate(list(train_df.groups.keys())):
+    #     print(group + " | %d/%d" % (i, len(train_df)))
+    #     sim_cat_words = sentence_similarity.get_most_similiar_words_by_category(
+    #         train_df.get_group(group)['parsed_text'].values, treshold=0.8)[:limit['max_descriptions']]
+    #     if len (sim_cat_words) > 0:
+    #         sim_train_df = sim_train_df.append(pd.DataFrame([[group, ' '.join(sim_cat_words)]], columns=['category', 'parsed_text', 'categories']))
+    #
+    # # test data
+    # for i, group in enumerate(list(test_df.groups.keys())):
+    #     print(group + " | %d/%d" % (i, len(train_df)))
+    #     sim_cat_words = sentence_similarity.get_most_similiar_words_by_category(
+    #         test_df.get_group(group)['parsed_text'].values, treshold=0.8)[:limit['max_descriptions']]
+    #     if len(sim_cat_words) > 0:
+    #         # categories = list(raw_data[raw_data['page_id'].isin(raw_data.groupby('category').get_group(group)['page_id'].values)].groupby('category').groups.keys())
+    #         sim_test_df = sim_test_df.append(pd.DataFrame([[group, ' '.join(sim_cat_words)]], columns=['category', 'parsed_text']))
+    #
+    #
+    # raw_data = sim_train_df.append(sim_test_df)
 
     # raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x[:limit['max_descriptions']])
     # raw_data['category'] = raw_data['category'].apply(lambda x: parse_text(x))
 
-    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: unicodedata.normalize('NFKD', x).encode('ascii','ignore'))
 
     # raw_data.to_json('parsed.json', orient='records')
 
     # model = loadGloveModel("glove/glove.6B.50d.txt")
 
-    headings, descriptions = tokenize_articles(raw_data)
+    headings, descriptions, test_categories, new_separator = tokenize_articles(raw_data, test_arr)
 
     #keep only whitelisted characters and articles satisfying the length limits
-    headings = [filter(heading, WHITELIST) for heading in headings]
-    descriptions = [filter(sentence, WHITELIST) for sentence in descriptions]
-    headings, descriptions = filter_length(headings, descriptions)
+    # headings = [filter(heading, WHITELIST) for heading in headings]
+    # descriptions = [filter(sentence, WHITELIST) for sentence in descriptions]
+    # headings, descriptions = filter_length(headings, descriptions)
 
     # np.savetxt('dp_target.txt', headings, fmt='%s')
     # np.savetxt('dp_target.txt', descriptions, fmt='%s')
@@ -243,11 +282,13 @@ def process_data():
     #check percentage of unks
     new_idx_h = []
     new_idx_d = []
+    new_test_arr = []
 
     for index, i in enumerate(idx_headings):
         if 1 not in i:
             new_idx_h.append(i)
             new_idx_d.append(idx_descriptions[index])
+            if len(test_categories) > 0 : new_test_arr.append(test_categories[index])
 
     idx_headings = new_idx_h
     idx_descriptions = new_idx_d
@@ -263,7 +304,8 @@ def process_data():
         'limit': limit,
         'freq_dist': freq_dist,
         'idx_headings' : idx_headings,
-        'idx_descriptions': idx_descriptions
+        'idx_descriptions': idx_descriptions,
+        'test_categories': new_test_arr[new_separator:]
     }
 
     pickle_data(article_data)

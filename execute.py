@@ -63,6 +63,7 @@ idx_a, idx_q = metadata['idx_headings'], metadata['idx_descriptions']
 # (trainX, trainY), (testX, testY), (validX, validY) = data_utils.split_data(idx_q, idx_a)
 (trainX, trainY), (testX, testY) = data_utils.split_by_idx(idx_q, idx_a, split_idx)
 
+
 text_file_path = results.text_file_path
 if text_file_path != None:
     my_file = Path(text_file_path)

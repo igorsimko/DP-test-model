@@ -1,5 +1,6 @@
 import datetime
 import nltk
+import pandas as pd
 from rouge import *
 import os
 import tensorflow as tf
@@ -31,7 +32,10 @@ def get_eos_pos(arr, return_val):
 
 
 def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
-   # tf.reset_default_graph()
+    # tf.reset_default_graph()
+    # with open('data/parsed.json', 'w') as f:
+    #     pd.read_json(f.reorient='records')
+
     now = datetime.datetime.now()
     tag = now.strftime("%Y%m%d-%H%M%S")
     test_path = './test_logs/test-' + tag
@@ -64,6 +68,7 @@ def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
 
     for x in range(len(testX)):
         pred_y = model.predict(sess, testX[x].tolist(), metadata['idx2word'], embedding)
+
         true_y = [metadata['idx2word'][i] for i in testY[x]] if len(testY) > 0 else ""
 
         p_y = ' '.join(pred_y).replace("<PAD>", "").replace("<EOS>", "").rstrip().lstrip()
@@ -71,10 +76,30 @@ def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
 
         b = bleuMetric(t_y.split(" "), p_y.split(" "))
         ss = sensim.sentence_similarity(p_y, t_y)
+        rr = rouge(p_y.split(" "), t_y.split(" "))
 
-        rouges_arr.append(rouge(p_y.split(" "), t_y.split(" ")))
+        rouges_arr.append(rr)
         bleu_arr.append(b)
         sensim_arr.append(ss)
+
+        for category in metadata['test_categories'][x][0]:
+            temp_b = bleuMetric(category.split(" "), p_y.split(" "))
+            temp_ss = sensim.sentence_similarity(p_y, category)
+            temp_rr = rouge(p_y.split(" "), category.split(" "))
+
+            if temp_b > b:
+                b = temp_b
+                t_y = ("(%s)"% t_y) + category
+            if temp_ss > ss:
+                ss = temp_ss
+                t_y = ("(%s)"% t_y) + category
+            if temp_rr['rouge_1/f_score'] > rr['rouge_1/f_score']:
+                rr = temp_rr
+                t_y = ("(%s)"% t_y) + category
+
+
+
+
         # r = [rouge_n(p_y.split(" "), t_y.split(" "), 1),
         #      rouge_n(p_y.split(" "), t_y.split(" "), 2),
         #      rouge_n(p_y.split(" "), t_y.split(" "), 3)]
@@ -99,31 +124,31 @@ def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
             text_out.append(prt_out('Predicted:\t{} | \tTrue:\t{}'.format(p_y, t_y)))
 
     metric_text = "\n\nROUGE-1 f1: \t\t%f\nROUGE-1 recall: \t%f\nROUGE-1 precision: \t%f\nROUGE-2 f1: \t\t%f\nROUGE-2 recall: \t%f\nROUGE-2 precision: \t%f\nROUGE-L f1: \t\t%f\nROUGE-L recall: \t%f\nROUGE-L precision: \t%f\n\nBLEU: \t%f\n\nSentence similarity: \t%f\n" % (np.average([x['rouge_1/f_score'] for x in rouges_arr]),
-                        np.average([x['rouge_1/r_score'] for x in rouges_arr]),
-                        np.average([x['rouge_1/p_score'] for x in rouges_arr]),
-                        np.average([x['rouge_2/f_score'] for x in rouges_arr]),
-                        np.average([x['rouge_2/r_score'] for x in rouges_arr]),
-                        np.average([x['rouge_2/p_score'] for x in rouges_arr]),
-                        np.average([x['rouge_l/f_score'] for x in rouges_arr]),
-                        np.average([x['rouge_l/r_score'] for x in rouges_arr]),
-                        np.average([x['rouge_l/p_score'] for x in rouges_arr]),
-                        np.average(bleu_arr),
-                        np.average(sensim_arr))
+                                                                                                                                                                                                                                                                                np.average([x['rouge_1/r_score'] for x in rouges_arr]),
+                                                                                                                                                                                                                                                                                np.average([x['rouge_1/p_score'] for x in rouges_arr]),
+                                                                                                                                                                                                                                                                                np.average([x['rouge_2/f_score'] for x in rouges_arr]),
+                                                                                                                                                                                                                                                                                np.average([x['rouge_2/r_score'] for x in rouges_arr]),
+                                                                                                                                                                                                                                                                                np.average([x['rouge_2/p_score'] for x in rouges_arr]),
+                                                                                                                                                                                                                                                                                np.average([x['rouge_l/f_score'] for x in rouges_arr]),
+                                                                                                                                                                                                                                                                                np.average([x['rouge_l/r_score'] for x in rouges_arr]),
+                                                                                                                                                                                                                                                                                np.average([x['rouge_l/p_score'] for x in rouges_arr]),
+                                                                                                                                                                                                                                                                                np.average(bleu_arr),
+                                                                                                                                                                                                                                                                                np.average(sensim_arr))
 
     prt(metric_text)
 
     metric_text = "\n\nROUGE-1 f1: \t\t%f\nROUGE-1 recall: \t%f\nROUGE-1 precision: \t%f\nROUGE-2 f1: \t\t%f\nROUGE-2 recall: \t%f\nROUGE-2 precision: \t%f\nROUGE-L f1: \t\t%f\nROUGE-L recall: \t%f\nROUGE-L precision: \t%f\n\nBLEU: \t%f\n\nSentence similarity: \t%f\n" % (
-    np.average(([x['rouge_1/f_score'] for x in rouges_arr if x['rouge_1/f_score'] != 0])),
-    np.average(([x['rouge_1/r_score'] for x in rouges_arr if x['rouge_1/r_score'] != 0])),
-    np.average(([x['rouge_1/p_score'] for x in rouges_arr if x['rouge_1/p_score'] != 0])),
-    np.average(([x['rouge_2/f_score'] for x in rouges_arr if x['rouge_2/f_score'] != 0])),
-    np.average(([x['rouge_2/r_score'] for x in rouges_arr if x['rouge_2/r_score'] != 0])),
-    np.average(([x['rouge_2/p_score'] for x in rouges_arr if x['rouge_2/p_score'] != 0])),
-    np.average(([x['rouge_l/f_score'] for x in rouges_arr if x['rouge_l/f_score'] != 0])),
-    np.average(([x['rouge_l/r_score'] for x in rouges_arr if x['rouge_l/r_score'] != 0])),
-    np.average(([x['rouge_l/p_score'] for x in rouges_arr if x['rouge_l/p_score'] != 0])),
-    np.average([x for x in bleu_arr if x != 0]),
-    np.average([x for x in sensim_arr if x != 0 ]))
+        np.average(([x['rouge_1/f_score'] for x in rouges_arr if x['rouge_1/f_score'] != 0])),
+        np.average(([x['rouge_1/r_score'] for x in rouges_arr if x['rouge_1/r_score'] != 0])),
+        np.average(([x['rouge_1/p_score'] for x in rouges_arr if x['rouge_1/p_score'] != 0])),
+        np.average(([x['rouge_2/f_score'] for x in rouges_arr if x['rouge_2/f_score'] != 0])),
+        np.average(([x['rouge_2/r_score'] for x in rouges_arr if x['rouge_2/r_score'] != 0])),
+        np.average(([x['rouge_2/p_score'] for x in rouges_arr if x['rouge_2/p_score'] != 0])),
+        np.average(([x['rouge_l/f_score'] for x in rouges_arr if x['rouge_l/f_score'] != 0])),
+        np.average(([x['rouge_l/r_score'] for x in rouges_arr if x['rouge_l/r_score'] != 0])),
+        np.average(([x['rouge_l/p_score'] for x in rouges_arr if x['rouge_l/p_score'] != 0])),
+        np.average([x for x in bleu_arr if x != 0]),
+        np.average([x for x in sensim_arr if x != 0 ]))
 
     prt(metric_text)
 
