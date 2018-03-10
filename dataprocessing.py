@@ -212,8 +212,8 @@ def process_data():
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('== External links ==\s*([^\n\r]*)', "", x))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x.split('Category:')[0])
     utils.prt("Start parsing n-grams")
-    # raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: unicodedata.normalize('NFKD', x).encode('ascii','ignore'))
-    # raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: parse_text(x))
+    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: unicodedata.normalize('NFKD', x).encode('ascii','ignore'))
+    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: parse_text(x))
 
     raw_data['category'] = raw_data['category'].apply(lambda x: ' '.join(x.split(' ')[:limit['max_headings']]))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: ' '.join(x.split(' ')[:limit['max_descriptions']]))
