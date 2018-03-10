@@ -26,7 +26,7 @@ PAD = '<PAD>'
 
 file_path = 'data'
 
-global_separator = 61
+global_separator = 5185
 
 file_name = 'train_10K_5K-len.json'
 file_name = '4K_unique.json'
@@ -34,7 +34,7 @@ file_name = '5K_cat_unique.json'
 file_name = '7K_not_unique.json'
 file_name = 'train-4557_test-1212.json'
 file_name = 'train-5185_test-1671.json'
-file_name = 'train-61_test-19.json'
+# file_name = 'train-61_test-19.json'
 
 limit = {
     'max_descriptions' : 100,
@@ -91,6 +91,8 @@ def article_is_complete(article):
     if ('category' not in article) or ('parsed_text' not in article):
         return False
     if (article['category'] is None) or (article['parsed_text'] is None):
+        return False
+    if (len(article['category']) == 0 ) or (len(article['parsed_text']) == 0):
         return False
 
     return True
@@ -211,7 +213,7 @@ def process_data():
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x.split('Category:')[0])
     utils.prt("Start parsing n-grams")
     # raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: unicodedata.normalize('NFKD', x).encode('ascii','ignore'))
-    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: parse_text(x))
+    # raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: parse_text(x))
 
     raw_data['category'] = raw_data['category'].apply(lambda x: ' '.join(x.split(' ')[:limit['max_headings']]))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: ' '.join(x.split(' ')[:limit['max_descriptions']]))
