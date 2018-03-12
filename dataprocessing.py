@@ -26,15 +26,13 @@ PAD = '<PAD>'
 
 file_path = 'data'
 
-global_separator = 5185
-
-file_name = 'train_10K_5K-len.json'
-file_name = '4K_unique.json'
-file_name = '5K_cat_unique.json'
-file_name = '7K_not_unique.json'
 file_name = 'train-4557_test-1212.json'
 file_name = 'train-5185_test-1671.json'
+file_name = 'train-8562_test-2807.json'
 # file_name = 'train-61_test-19.json'
+# file_name = 'train-223_test-70.json'
+
+global_separator = int(file_name.split("_")[0].split('-')[1])
 
 limit = {
     'max_descriptions' : 100,
@@ -72,7 +70,9 @@ def tokenize_sentence(sentence):
         return sentence
     return ' '.join(list(tokenize(sentence)))
 
-def contains_only_english_words(tokenized_sentence):
+def contains_only_english_words(tokenized_sentence, enable=True):
+    if not enable:
+        return True
     contains = True
 
     for word in tokenized_sentence:
@@ -97,7 +97,7 @@ def article_is_complete(article):
 
     return True
 
-def tokenize_articles(raw_data, test_arr):
+def tokenize_articles(raw_data, test_arr, split_separator=0):
     headings, descriptions, test_categories = [], [], []
     num_articles = len(raw_data)
     nltk.download('punkt')
@@ -105,18 +105,18 @@ def tokenize_articles(raw_data, test_arr):
     separator_counter = 0
     new_separator = 0
     for i, row in raw_data.iterrows():
-        if i == global_separator:
+        if i == global_separator or (split_separator != 0 and i == split_separator):
             new_separator = separator_counter
-        if article_is_complete(row) and contains_only_english_words(row['category'].split(" ")):
+        if article_is_complete(row) and contains_only_english_words(row['category'].split(" "), enable=False):
             separator_counter = separator_counter + 1
 
-            test_categories.append(test_arr.loc[test_arr['page_id']==row['page_id']]['categories'].values)
+            if len(test_arr) > 0 and 'page_id' in row: test_categories.append(test_arr.loc[test_arr['page_id']==row['page_id']]['categories'].values)
             headings.append(tokenize_sentence(row['category']))
             descriptions.append(tokenize_sentence(row['parsed_text']))
         if i % 1 == 0:
-            print('Tokenized {:,} / {:,} articles'.format(i, num_articles))
+            print('Tokenized {:,} / {:,} articles'.format(separator_counter, num_articles))
 
-    print("New separator idx: " + str(new_separator))
+    print("New separator idx: " + str(new_separator if new_separator != 0 else split_separator))
     return (headings, descriptions, test_categories, new_separator)
 
 def filter(line, whitelist):
@@ -211,8 +211,9 @@ def process_data():
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('[\n]+', "", x))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('== External links ==\s*([^\n\r]*)', "", x))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x.split('Category:')[0])
+
     utils.prt("Start parsing n-grams")
-    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: unicodedata.normalize('NFKD', x).encode('ascii','ignore'))
+    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: str(unicodedata.normalize('NFKD', x).encode('ascii','ignore')))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: parse_text(x))
 
     raw_data['category'] = raw_data['category'].apply(lambda x: ' '.join(x.split(' ')[:limit['max_headings']]))
@@ -222,6 +223,7 @@ def process_data():
     group_by_id = raw_data.groupby('page_id')
     test_arr = pd.DataFrame(columns=['page_id', 'parsed_text', 'categories'])
     for i in group_by_id.groups.keys():
+        print("%s : %d" %(i, len(group_by_id.get_group(i)['category'].values)))
         test_arr = test_arr.append(pd.DataFrame([[i, group_by_id.get_group(i)['parsed_text'].head(1), group_by_id.get_group(i)['category'].values]], columns=['page_id', 'parsed_text', 'categories']))
 
     # with open('data/test_data_%d.json' % global_separator , 'w') as f:
@@ -237,27 +239,30 @@ def process_data():
     # for i, group in enumerate(list(train_df.groups.keys())):
     #     print(group + " | %d/%d" % (i, len(train_df)))
     #     sim_cat_words = sentence_similarity.get_most_similiar_words_by_category(
-    #         train_df.get_group(group)['parsed_text'].values, treshold=0.8)[:limit['max_descriptions']]
+    #         train_df.get_group(group)['parsed_text'].values, treshold=0.9)[:limit['max_descriptions']]
     #     if len (sim_cat_words) > 0:
-    #         sim_train_df = sim_train_df.append(pd.DataFrame([[group, ' '.join(sim_cat_words)]], columns=['category', 'parsed_text', 'categories']))
+    #         # train_df.get_group(group)['page_id'].values
+    #         sim_train_df = sim_train_df.append(pd.DataFrame([[group, ' '.join(sim_cat_words)]], columns=['category', 'parsed_text']))
     #
     # # test data
     # for i, group in enumerate(list(test_df.groups.keys())):
     #     print(group + " | %d/%d" % (i, len(train_df)))
     #     sim_cat_words = sentence_similarity.get_most_similiar_words_by_category(
-    #         test_df.get_group(group)['parsed_text'].values, treshold=0.8)[:limit['max_descriptions']]
+    #         test_df.get_group(group)['parsed_text'].values, treshold=0.9)[:limit['max_descriptions']]
     #     if len(sim_cat_words) > 0:
     #         # categories = list(raw_data[raw_data['page_id'].isin(raw_data.groupby('category').get_group(group)['page_id'].values)].groupby('category').groups.keys())
     #         sim_test_df = sim_test_df.append(pd.DataFrame([[group, ' '.join(sim_cat_words)]], columns=['category', 'parsed_text']))
-    #
-    #
+    # #
+    # #
     # raw_data = sim_train_df.append(sim_test_df)
-
+    #
     # raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x[:limit['max_descriptions']])
+    # raw_data['category'] = raw_data['category'].apply(lambda x: ' '.join(x.split(' ')[:limit['max_headings']]))
+
     # raw_data['category'] = raw_data['category'].apply(lambda x: parse_text(x))
 
 
-    # raw_data.to_json('parsed.json', orient='records')
+    raw_data.to_json('parsed.json', orient='records')
 
     # model = loadGloveModel("glove/glove.6B.50d.txt")
 
@@ -268,8 +273,6 @@ def process_data():
     # descriptions = [filter(sentence, WHITELIST) for sentence in descriptions]
     # headings, descriptions = filter_length(headings, descriptions)
 
-    # np.savetxt('dp_target.txt', headings, fmt='%s')
-    # np.savetxt('dp_target.txt', descriptions, fmt='%s')
 
     #convert list of sentences into list of list of words
     word_tokenized_headings = [word_list.split(' ') for word_list in headings]

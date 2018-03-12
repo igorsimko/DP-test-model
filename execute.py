@@ -123,7 +123,6 @@ def restore_session():
 if os.path.exists(ckpt + "checkpoint"):
     restore_session()
 else:
-    # saved_embeddings = np.append(np.zeros((4, emb_dim)), embedding_matrix, axis=0)
     model.fit(trainX, trainY, log_dir=logdir, val_data=(testX, testY), batch_size=batch_size, embedding=embedding_matrix)
     restore_session()
 

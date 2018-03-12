@@ -61,6 +61,8 @@ def get_terms(tree):
 
 
 def parse_text(text):
+    if not text:
+        return ''
     ret_val = []
     toks = nltk.word_tokenize(text)
     postoks = nltk.tag.pos_tag(toks)

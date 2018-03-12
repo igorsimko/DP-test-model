@@ -48,6 +48,7 @@ function f() {
     // ptext = "";
     new_items.push({
         page_id: item.page_id,
+        page_title: item.page_title,
         parsed_text: ptext,
         category: item.cat
     });

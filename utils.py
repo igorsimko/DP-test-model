@@ -30,6 +30,14 @@ def get_eos_pos(arr, return_val):
         else:
             return return_val
 
+def postprocess_predict(predicate):
+    ret = []
+    for word in predicate:
+        if (len(ret) == 0) or (len(ret) > 0 and ret[len(ret) - 1] != word):
+            ret.append(word)
+
+    return ret
+
 
 def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
     # tf.reset_default_graph()
@@ -68,6 +76,7 @@ def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
 
     for x in range(len(testX)):
         pred_y = model.predict(sess, testX[x].tolist(), metadata['idx2word'], embedding)
+        pred_y = postprocess_predict(pred_y)
 
         true_y = [metadata['idx2word'][i] for i in testY[x]] if len(testY) > 0 else ""
 
@@ -82,21 +91,31 @@ def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
         bleu_arr.append(b)
         sensim_arr.append(ss)
 
-        for category in metadata['test_categories'][x][0]:
-            temp_b = bleuMetric(category.split(" "), p_y.split(" "))
-            temp_ss = sensim.sentence_similarity(p_y, category)
-            temp_rr = rouge(p_y.split(" "), category.split(" "))
+        if metadata['test_categories']:
+            t_y_metric_temp = []
+            t_y_cat_temp = ""
+            for category in metadata['test_categories'][x][0]:
+                temp_b = bleuMetric(category.split(" "), p_y.split(" "))
+                temp_ss = sensim.sentence_similarity(p_y, category)
+                temp_rr = rouge(p_y.split(" "), category.split(" "))
 
-            if temp_b > b:
-                b = temp_b
-                t_y = ("(%s)"% t_y) + category
-            if temp_ss > ss:
-                ss = temp_ss
-                t_y = ("(%s)"% t_y) + category
-            if temp_rr['rouge_1/f_score'] > rr['rouge_1/f_score']:
-                rr = temp_rr
-                t_y = ("(%s)"% t_y) + category
+                if temp_b > b:
+                    b = temp_b
+                    t_y_metric_temp.append("bleu")
+                    t_y_cat_temp = category
 
+                if temp_ss > ss:
+                    ss = temp_ss
+                    t_y_metric_temp.append("sim")
+                    t_y_cat_temp = category
+
+                if temp_rr['rouge_1/f_score'] > rr['rouge_1/f_score']:
+                    rr = temp_rr
+                    t_y_metric_temp.append("(rouge)")
+                    t_y_cat_temp = category
+
+            if len(t_y_metric_temp) != 0:
+                t_y = ','.join(set(t_y_metric_temp)) + " | " + t_y_cat_temp + " (instead of) " + t_y
 
 
 
@@ -123,7 +142,17 @@ def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
         if trace != True:
             text_out.append(prt_out('Predicted:\t{} | \tTrue:\t{}'.format(p_y, t_y)))
 
-    metric_text = "\n\nROUGE-1 f1: \t\t%f\nROUGE-1 recall: \t%f\nROUGE-1 precision: \t%f\nROUGE-2 f1: \t\t%f\nROUGE-2 recall: \t%f\nROUGE-2 precision: \t%f\nROUGE-L f1: \t\t%f\nROUGE-L recall: \t%f\nROUGE-L precision: \t%f\n\nBLEU: \t%f\n\nSentence similarity: \t%f\n" % (np.average([x['rouge_1/f_score'] for x in rouges_arr]),
+    metric_text = "\n\nROUGE-1 f1: \t\t%f\n" \
+                  "ROUGE-1 recall: \t%f\n" \
+                  "ROUGE-1 precision: \t%f\n" \
+                  "ROUGE-2 f1: \t\t%f\n" \
+                  "ROUGE-2 recall: \t%f\n" \
+                  "ROUGE-2 precision: \t%f\n" \
+                  "ROUGE-L f1: \t\t%f\n" \
+                  "ROUGE-L recall: \t%f\n" \
+                  "ROUGE-L precision: \t%f\n\n" \
+                  "BLEU: \t%f\n\n" \
+                  "Sentence similarity: \t%f\n" % (np.average([x['rouge_1/f_score'] for x in rouges_arr]),
                                                                                                                                                                                                                                                                                 np.average([x['rouge_1/r_score'] for x in rouges_arr]),
                                                                                                                                                                                                                                                                                 np.average([x['rouge_1/p_score'] for x in rouges_arr]),
                                                                                                                                                                                                                                                                                 np.average([x['rouge_2/f_score'] for x in rouges_arr]),

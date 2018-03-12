@@ -1,10 +1,6 @@
-import tensorflow as tf
-import numpy as np
 from tensorflow.python.layers.core import Dense
 from utils import *
-from datetime import datetime
 
-#
 tf.logging.set_verbosity(tf.logging.DEBUG)
 setattr(tf.contrib.rnn.GRUCell, '__deepcopy__', lambda self, _: self)
 setattr(tf.contrib.rnn.BasicLSTMCell, '__deepcopy__', lambda self, _: self)

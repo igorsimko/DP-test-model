@@ -52,7 +52,7 @@ where 1=1
 	and t.cat not like '%List%'
 	and t.cat not like '%people%'
     and t.cat not regexp '[[:digit:]]'
-    and length(t.txt) < 30000
+    and length(t.txt) < 5000
 '''
 def pickle_data(article_data):
     with open(path.join(file_path, pickle_file_name), 'wb') as fp:
@@ -92,7 +92,7 @@ else:
     pickle_data(df)
 
 
-df_temp = df.drop_duplicates(subset=['page_title'], keep='last').groupby('cat').filter(lambda x: len(x) > 4 and len(x) <= 15 )
+df_temp = df.groupby('cat').filter(lambda x: len(x) > 4 and len(x) <= 15 )
 
 print("Groups count: " + str(len(df_temp.groupby('cat').groups)))
 df_test = df_temp.groupby('cat').apply(lambda x: x.tail(get_last_count(x)))
