@@ -94,29 +94,30 @@ def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
         if metadata['test_categories']:
             t_y_metric_temp = []
             t_y_cat_temp = ""
-            for category in metadata['test_categories'][t_y]:
-                metric_ratio = metadata['test_categories'][t_y].count(t_y) / len(metadata['test_categories'][t_y])
-                temp_b = bleuMetric(category.split(" "), p_y.split(" ")) *  metric_ratio
-                temp_ss = sensim.sentence_similarity(p_y, category) * metric_ratio
-                temp_rr = rouge(p_y.split(" "), category.split(" "))
+            if t_y in metadata['test_categories']:
+                for category in metadata['test_categories'][t_y]:
+                    metric_ratio = metadata['test_categories'][t_y].count(t_y) / len(metadata['test_categories'][t_y])
+                    temp_b = bleuMetric(category.split(" "), p_y.split(" ")) *  metric_ratio
+                    temp_ss = sensim.sentence_similarity(p_y, category) * metric_ratio
+                    temp_rr = rouge(p_y.split(" "), category.split(" "))
 
-                if temp_b > b:
-                    b = temp_b
-                    t_y_metric_temp.append("bleu")
-                    t_y_cat_temp = category
+                    if temp_b > b:
+                        b = temp_b
+                        t_y_metric_temp.append("bleu")
+                        t_y_cat_temp = category
 
-                if temp_ss > ss:
-                    ss = temp_ss
-                    t_y_metric_temp.append("sim")
-                    t_y_cat_temp = category
+                    if temp_ss > ss:
+                        ss = temp_ss
+                        t_y_metric_temp.append("sim")
+                        t_y_cat_temp = category
 
-                if temp_rr['rouge_1/f_score'] * metric_ratio > rr['rouge_1/f_score']:
-                    rr = temp_rr
-                    t_y_metric_temp.append("(rouge)")
-                    t_y_cat_temp = category
+                    if temp_rr['rouge_1/f_score'] * metric_ratio > rr['rouge_1/f_score']:
+                        rr = temp_rr
+                        t_y_metric_temp.append("(rouge)")
+                        t_y_cat_temp = category
 
-            if len(t_y_metric_temp) != 0:
-                t_y = ','.join(set(t_y_metric_temp)) + " | " + t_y_cat_temp + " (instead of) " + t_y
+                if len(t_y_metric_temp) != 0:
+                    t_y = ','.join(set(t_y_metric_temp)) + " | " + t_y_cat_temp + " (instead of) " + t_y
 
 
 
