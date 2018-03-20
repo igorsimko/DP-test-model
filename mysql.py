@@ -11,7 +11,7 @@ import pandas as pd
 
 file_path = 'data/mysql'
 pickle_file_name = "mysql_data.pkl"
-ratio_int = 0.7
+ratio_int = 0.5
 
 conn = pymysql.connect("localhost", "root", "root", "wiki",charset="utf8mb4",use_unicode=True)
 cursor = conn.cursor()

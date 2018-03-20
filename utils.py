@@ -19,8 +19,8 @@ def prt_out(str):
     print("[%s] - %s" % (datetime.datetime.now(), str))
     return "[%s] - %s" % (datetime.datetime.now(), str)
 
-def bleuMetric(reference, hypothesis):
-    return nltk.translate.bleu(reference, hypothesis)
+def bleuMetric(reference, hypothesis, smoothing_function=None):
+    return nltk.translate.bleu_score.sentence_bleu([reference], hypothesis, smoothing_function=smoothing_function)
 
 
 def get_eos_pos(arr, return_val):
@@ -51,9 +51,9 @@ def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
 
     writers = [None, None, None, None]
 
-    rouges_arr = []
-    bleu_arr = []
-    sensim_arr = []
+    rouges_arr = [None]*len(testY)
+    bleu_arr = np.zeros(len(testY))
+    sensim_arr = np.zeros(len(testY))
 
     tags = ['bleu','f1_score','precision','recall']
     for x in range(len(writers)):
@@ -87,16 +87,17 @@ def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
         ss = sensim.sentence_similarity(p_y, t_y)
         rr = rouge(p_y.split(" "), t_y.split(" "))
 
-        rouges_arr.append(rr)
-        bleu_arr.append(b)
-        sensim_arr.append(ss)
+        rouges_arr[x] = rr
+        bleu_arr[x] = b
+        sensim_arr[x] = ss
 
         if metadata['test_categories']:
             t_y_metric_temp = []
             t_y_cat_temp = ""
-            for category in metadata['test_categories'][x][0]:
-                temp_b = bleuMetric(category.split(" "), p_y.split(" "))
-                temp_ss = sensim.sentence_similarity(p_y, category)
+            for category in metadata['test_categories'][t_y]:
+                metric_ratio = metadata['test_categories'][t_y].count(t_y) / len(metadata['test_categories'][t_y])
+                temp_b = bleuMetric(category.split(" "), p_y.split(" ")) *  metric_ratio
+                temp_ss = sensim.sentence_similarity(p_y, category) * metric_ratio
                 temp_rr = rouge(p_y.split(" "), category.split(" "))
 
                 if temp_b > b:
@@ -109,7 +110,7 @@ def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
                     t_y_metric_temp.append("sim")
                     t_y_cat_temp = category
 
-                if temp_rr['rouge_1/f_score'] > rr['rouge_1/f_score']:
+                if temp_rr['rouge_1/f_score'] * metric_ratio > rr['rouge_1/f_score']:
                     rr = temp_rr
                     t_y_metric_temp.append("(rouge)")
                     t_y_cat_temp = category

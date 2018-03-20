@@ -1,11 +1,17 @@
 import json
 from os import path
+import metrics
+
+import matplotlib.pyplot as plt
+from matplotlib.ticker import MaxNLocator
+from collections import namedtuple
 
 import unicodedata
 import sentence_similarity
 import utils
 
 from gensim.models import Word2Vec
+from gensim.summarization import keywords
 from nltk.tokenize import word_tokenize as tokenize
 import nltk
 import itertools
@@ -15,9 +21,15 @@ import pandas as pd
 from nltk.corpus import wordnet
 import re
 from join import parse_text
+from rouge import rouge
 
-WHITELIST = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ '
+WHITELIST = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ .'
 VOCAB_SIZE = 50000
+
+CM_KEYWORDS = 'keywords'
+CM_PARSE = 'parse_text'
+CM_GET_MOST_SIMILIAR = 'get_most_similiar'
+CM_GET_MOST_SIMILIAR_WITH_PARSE = 'get_most_similiar_with_parse'
 
 UNK = '<UNK>'
 GO = '<GO>'
@@ -29,29 +41,18 @@ file_path = 'data'
 file_name = 'train-4557_test-1212.json'
 file_name = 'train-5185_test-1671.json'
 file_name = 'train-8562_test-2807.json'
+file_name = 'train-6441_test-5475.json'
 # file_name = 'train-61_test-19.json'
 # file_name = 'train-223_test-70.json'
 
 global_separator = int(file_name.split("_")[0].split('-')[1])
 
 limit = {
-    'max_descriptions' : 100,
-    'min_descriptions' : 0,
-    'max_headings' : 5,
-    'min_headings' : 0,
+    'max_descriptions': 100,
+    'min_descriptions': 0,
+    'max_headings': 5,
+    'min_headings': 0,
 }
-
-def loadGloveModel(gloveFile):
-    print("Loading Glove Model")
-    f = open(gloveFile,'r', encoding='utf8')
-    model = {}
-    for line in f:
-        splitLine = line.split()
-        word = splitLine[0]
-        embedding = np.array([float(val) for val in splitLine[1:]])
-        model[word] = embedding
-    print("Done.",len(model)," words loaded!")
-    return model
 
 def load_raw_data(filename):
     with open(filename, 'r', encoding='utf8') as fp:
@@ -59,6 +60,7 @@ def load_raw_data(filename):
 
     print('Loaded {:,} articles from {}'.format(len(raw_data), filename))
     return raw_data
+
 
 def tokenize_sentence(sentence):
     if not sentence:
@@ -69,6 +71,7 @@ def tokenize_sentence(sentence):
     if isinstance(sentence, list):
         return sentence
     return ' '.join(list(tokenize(sentence)))
+
 
 def contains_only_english_words(tokenized_sentence, enable=True):
     if not enable:
@@ -82,8 +85,10 @@ def contains_only_english_words(tokenized_sentence, enable=True):
 
     return contains
 
+
 def cut_limits(x, limit):
     return ' '.join(x.split(" ")[:limit])
+
 
 # English Word
 
@@ -92,10 +97,11 @@ def article_is_complete(article):
         return False
     if (article['category'] is None) or (article['parsed_text'] is None):
         return False
-    if (len(article['category']) == 0 ) or (len(article['parsed_text']) == 0):
+    if (len(article['category']) == 0) or (len(article['parsed_text']) == 0):
         return False
 
     return True
+
 
 def tokenize_articles(raw_data, test_arr, split_separator=0):
     headings, descriptions, test_categories = [], [], []
@@ -110,7 +116,8 @@ def tokenize_articles(raw_data, test_arr, split_separator=0):
         if article_is_complete(row) and contains_only_english_words(row['category'].split(" "), enable=False):
             separator_counter = separator_counter + 1
 
-            if len(test_arr) > 0 and 'page_id' in row: test_categories.append(test_arr.loc[test_arr['page_id']==row['page_id']]['categories'].values)
+            if len(test_arr) > 0 and 'page_id' in row: test_categories.append(
+                test_arr.loc[test_arr['page_id'] == row['page_id']]['categories'].values)
             headings.append(tokenize_sentence(row['category']))
             descriptions.append(tokenize_sentence(row['parsed_text']))
         if i % 1 == 0:
@@ -119,8 +126,10 @@ def tokenize_articles(raw_data, test_arr, split_separator=0):
     print("New separator idx: " + str(new_separator if new_separator != 0 else split_separator))
     return (headings, descriptions, test_categories, new_separator)
 
+
 def filter(line, whitelist):
     return ''.join([ch for ch in line if ch in whitelist])
+
 
 def filter_length(headings, descriptions):
     if len(headings) != len(descriptions):
@@ -137,20 +146,21 @@ def filter_length(headings, descriptions):
                 filtered_headings.append(headings[i])
                 filtered_descriptions.append(descriptions[i])
 
-    print ('Length of filtered headings: {:,}'.format(len(filtered_headings)))
-    print ('Length of filtered descriptions: {:,}'.format(len(filtered_descriptions)))
+    print('Length of filtered headings: {:,}'.format(len(filtered_headings)))
+    print('Length of filtered descriptions: {:,}'.format(len(filtered_descriptions)))
     return (filtered_headings, filtered_descriptions)
 
-def index_data(tokenized_sentences, vocab_size):
 
+def index_data(tokenized_sentences, vocab_size):
     freq_dist = nltk.FreqDist(itertools.chain(*tokenized_sentences))
     vocab = freq_dist.most_common(vocab_size)
-    print ('Vocab length: {:,}'.format(len(vocab)))
+    print('Vocab length: {:,}'.format(len(vocab)))
 
-    idx2word = [GO] + [UNK] + [EOS] + [PAD] +[x[0] for x in vocab]
+    idx2word = [GO] + [UNK] + [EOS] + [PAD] + [x[0] for x in vocab]
     word2idx = dict([(w, i) for i, w in enumerate(idx2word)])
 
     return (idx2word, word2idx, freq_dist)
+
 
 def pad_seq(seq, lookup, max_length, old_flag=False):
     indices = []
@@ -162,7 +172,7 @@ def pad_seq(seq, lookup, max_length, old_flag=False):
             indices.append(lookup[UNK])
 
     if old_flag:
-        return indices + [lookup[EOS]] + [lookup[PAD]]*(max_length - len(seq) - 1)
+        return indices + [lookup[EOS]] + [lookup[PAD]] * (max_length - len(seq) - 1)
     else:
         pad_arr = []
         while len(pad_arr) < (max_length - len(seq)):
@@ -172,6 +182,128 @@ def pad_seq(seq, lookup, max_length, old_flag=False):
                     break
         # return indices + [lookup[EOS]] + [lookup[PAD]]*(max_length - len(seq) - 1)
         return indices + pad_arr
+
+
+def group_by_category(category_pd, category_to_categories, method):
+    ret_df = pd.DataFrame(columns=['category', 'parsed_text'])
+    cm = {}
+
+    # groups data
+    for i, group in enumerate(list(category_pd.groups.keys())):
+        print(group + " | %d/%d" % (i, len(category_pd)))
+        
+        append_to_dict(category_to_categories, group, list(category_pd.get_group(group)['category']))
+
+        # sim_cat_words = parse_text(' '.join(
+        #     keywords(filter(category_pd.get_group(group)['parsed_text'].values[0], whitelist=WHITELIST)).split(' ')[
+        #     :limit['max_descriptions']])).split(' ')
+
+        if group not in cm:
+            cm[group] = {}
+            cm[group][CM_KEYWORDS] = {}
+            cm[group][CM_PARSE] = {}
+            cm[group][CM_GET_MOST_SIMILIAR] = {}
+            cm[group][CM_GET_MOST_SIMILIAR_WITH_PARSE] = {}
+
+        if len(category_pd.get_group(group)['parsed_text'].values) != 0:
+
+            cm[group][CM_KEYWORDS] = keywords(' '.join(category_pd.get_group(group)['parsed_text'].values)).split('\n')
+            cm[group][CM_PARSE] = parse_text(' '.join(category_pd.get_group(group)['parsed_text'].values)).split(' ')
+            cm[group][CM_GET_MOST_SIMILIAR] = sentence_similarity.get_most_similiar_words_by_category(category_pd.get_group(group)['parsed_text'].values, treshold=0.6)
+            cm[group][CM_GET_MOST_SIMILIAR_WITH_PARSE] = sentence_similarity.get_most_similiar_words_by_category([parse_text(x) for x in category_pd.get_group(group)['parsed_text'].values])
+
+            sim_cat_words = cm[group][method][:limit['max_descriptions']]
+
+        if sim_cat_words and len(sim_cat_words) > 0:
+            ret_df = ret_df.append(
+                pd.DataFrame([[group, ' '.join(sim_cat_words)]], columns=['category', 'parsed_text']))
+
+    return ret_df, cm
+
+def cm_get_arr_alias(metric, cm, arr ):
+    if metric == 'ROUGE':
+        return arr[cm].ROUGE
+    elif metric == 'SIMILARITY':
+        return arr[cm].SIMILARITY
+    elif metric == 'BLEU':
+        return arr[cm].BLEU
+
+def eval_methods(x, y):
+    compare_methods = {CM_KEYWORDS: metrics.Metrics(),
+                       CM_PARSE: metrics.Metrics(),
+                       CM_GET_MOST_SIMILIAR: metrics.Metrics(),
+                       CM_GET_MOST_SIMILIAR_WITH_PARSE: metrics.Metrics()}
+    for yi in y:
+        if yi in x:
+            for cm in list(compare_methods.keys()):
+                true_y =  y[yi][cm]
+                pred_y =  x[yi][cm]
+
+                if len(true_y) == 0 or len(pred_y) == 0:
+                    b = 0
+                    ss = 0
+                    rr = 0
+                else:
+                    b = utils.bleuMetric(true_y, pred_y)
+                    ss = sentence_similarity.sentence_similarity(' '.join(pred_y), ' '.join(true_y))
+                    rr = rouge(pred_y, true_y)['rouge_1/f_score']
+
+                compare_methods[cm].ROUGE.append(rr)
+                compare_methods[cm].SIMILARITY.append(ss)
+                compare_methods[cm].BLEU.append(b)
+
+                # print("%s\t- ROUGE: %f | BLEU: %f | SIMILARITY: %f" %(cm, rr, b, ss))
+
+    print("\n--- AVG metrics ---\n")
+
+    avg_eval = {CM_KEYWORDS: metrics.Metrics(),
+                       CM_PARSE: metrics.Metrics(),
+                       CM_GET_MOST_SIMILIAR: metrics.Metrics(),
+                       CM_GET_MOST_SIMILIAR_WITH_PARSE: metrics.Metrics()
+    }
+
+    for cm in list(compare_methods.keys()):
+        avg_bleu = np.average(compare_methods[cm].BLEU)
+        avg_rouge = np.average(compare_methods[cm].ROUGE)
+        avg_sim = np.average(compare_methods[cm].SIMILARITY)
+
+        avg_eval[cm].ROUGE.append(avg_rouge)
+        avg_eval[cm].SIMILARITY.append(avg_sim)
+        avg_eval[cm].BLEU.append(avg_bleu)
+
+        print("AVG (BLEU) - %s\t - %f" %(cm, avg_bleu))
+        print("AVG (ROUGE) - %s\t - %f" %(cm, avg_rouge))
+        print("AVG (SIM) - %s\t - %f" %(cm, avg_sim))
+
+    fig, ax = plt.subplots()
+    index = np.arange(0, 4 * 2, 2)
+    bar_width = 0.35
+
+    data_bleu = ax.bar(index, tuple([x[1].ROUGE[0] for x in list(avg_eval.items())]), bar_width,
+                alpha=1, color='blue',
+                label='ROUGE')
+    data_rouge = ax.bar(index + bar_width, tuple([x[1].BLEU[0] for x in list(avg_eval.items())]), bar_width,
+                alpha=1, color='red',
+                label='BLEU')
+    data_sim = ax.bar(index + bar_width + bar_width, tuple([x[1].SIMILARITY[0] for x in list(avg_eval.items())]), bar_width,
+                alpha=1, color='green',
+                label='SIMILARITY')
+
+    ax.set_xlabel('Methods')
+    ax.set_ylabel('Score')
+    ax.set_title('Comparision methods metrics evaulation')
+    ax.set_xticks(index + bar_width / 2)
+    ax.set_xticklabels((CM_KEYWORDS, CM_PARSE, CM_GET_MOST_SIMILIAR, CM_GET_MOST_SIMILIAR_WITH_PARSE))
+    ax.legend()
+
+    fig.tight_layout()
+    plt.savefig('eval-methods-%s.png' % file_name)
+
+    print('\n')
+    print("\n--- AVG metrics ---\n")
+
+
+    return compare_methods
 
 
 def zero_pad(tokenized_headings, tokenized_descriptions, word2idx, only_desc=False):
@@ -192,18 +324,31 @@ def zero_pad(tokenized_headings, tokenized_descriptions, word2idx, only_desc=Fal
 
     return (idx_headings, idx_descriptions)
 
+
 def remove_underscore(data, where=None):
     if where == None:
         return data
     data[where].apply(lambda x: x.replace('_', " "))
 
 
-def process_data():
+def append_to_dict(arr, key, value):
+    if key not in arr:
+        arr[key] = []
 
-    #load data from file
+    if isinstance(value, list):
+        for i in value:
+            arr[key].append(i)
+    else:
+        arr[key].append(value)
+
+
+def process_data():
+    # load data from file
     filename = path.join(file_path, file_name)
     raw_data = load_raw_data(filename)
     raw_data['category'] = raw_data['category'].apply(lambda x: x.replace('_', " "))
+    raw_data['category'] = raw_data['category'].apply(lambda x: x.lower())
+
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('{(.*?)}', "", x))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('\|(.*?)=(.*?)', "", x))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('}*', "", x))
@@ -213,49 +358,35 @@ def process_data():
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x.split('Category:')[0])
 
     utils.prt("Start parsing n-grams")
-    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: str(unicodedata.normalize('NFKD', x).encode('ascii','ignore')))
-    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: parse_text(x))
+    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: str(unicodedata.normalize('NFKD', x).encode('ascii', 'ignore')))
+    # raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: parse_text(x))
 
     raw_data['category'] = raw_data['category'].apply(lambda x: ' '.join(x.split(' ')[:limit['max_headings']]))
-    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: ' '.join(x.split(' ')[:limit['max_descriptions']]))
+    raw_data['parsed_text'] = raw_data['parsed_text'].apply(
+        lambda x: ' '.join(x.split(' ')[:limit['max_descriptions']]))
 
-
-    group_by_id = raw_data.groupby('page_id')
+    # group_by_id = raw_data.groupby('page_id')
     test_arr = pd.DataFrame(columns=['page_id', 'parsed_text', 'categories'])
-    for i in group_by_id.groups.keys():
-        print("%s : %d" %(i, len(group_by_id.get_group(i)['category'].values)))
-        test_arr = test_arr.append(pd.DataFrame([[i, group_by_id.get_group(i)['parsed_text'].head(1), group_by_id.get_group(i)['category'].values]], columns=['page_id', 'parsed_text', 'categories']))
+    # for i in group_by_id.groups.keys():
+    #     print("%s : %d" %(i, len(group_by_id.get_group(i)['category'].values)))
+    #     test_arr = test_arr.append(pd.DataFrame([[i, group_by_id.get_group(i)['parsed_text'].head(1), group_by_id.get_group(i)['category'].values]], columns=['page_id', 'parsed_text', 'categories']))
 
     # with open('data/test_data_%d.json' % global_separator , 'w') as f:
     #     f.write(test_arr.to_json(orient='records'))
 
-    # utils.prt('Spliting test/train DF')
-    # train_df = raw_data.head(global_separator).groupby('category')
-    # test_df = raw_data.tail(len(raw_data) - global_separator).groupby('category')
-    # sim_train_df = pd.DataFrame(columns=['category', 'parsed_text'])
-    # sim_test_df = pd.DataFrame(columns=['category', 'parsed_text'])
-    #
-    # # train data
-    # for i, group in enumerate(list(train_df.groups.keys())):
-    #     print(group + " | %d/%d" % (i, len(train_df)))
-    #     sim_cat_words = sentence_similarity.get_most_similiar_words_by_category(
-    #         train_df.get_group(group)['parsed_text'].values, treshold=0.9)[:limit['max_descriptions']]
-    #     if len (sim_cat_words) > 0:
-    #         # train_df.get_group(group)['page_id'].values
-    #         sim_train_df = sim_train_df.append(pd.DataFrame([[group, ' '.join(sim_cat_words)]], columns=['category', 'parsed_text']))
-    #
-    # # test data
-    # for i, group in enumerate(list(test_df.groups.keys())):
-    #     print(group + " | %d/%d" % (i, len(train_df)))
-    #     sim_cat_words = sentence_similarity.get_most_similiar_words_by_category(
-    #         test_df.get_group(group)['parsed_text'].values, treshold=0.9)[:limit['max_descriptions']]
-    #     if len(sim_cat_words) > 0:
-    #         # categories = list(raw_data[raw_data['page_id'].isin(raw_data.groupby('category').get_group(group)['page_id'].values)].groupby('category').groups.keys())
-    #         sim_test_df = sim_test_df.append(pd.DataFrame([[group, ' '.join(sim_cat_words)]], columns=['category', 'parsed_text']))
-    # #
-    # #
-    # raw_data = sim_train_df.append(sim_test_df)
-    #
+    utils.prt('Spliting test/train DF')
+
+    # train data
+    category_to_categories = {}
+    train_df = raw_data.head(global_separator).groupby('category')
+    sim_train_df, cm_train = group_by_category(train_df, category_to_categories, method=CM_GET_MOST_SIMILIAR)
+    # test data
+    test_df = raw_data.tail(len(raw_data) - global_separator).groupby('category')
+    sim_test_df, cm_test = group_by_category(test_df, category_to_categories, method=CM_GET_MOST_SIMILIAR)
+
+    eval_methods(cm_train, cm_test)
+    raw_data = sim_train_df.append(sim_test_df)
+    
     # raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x[:limit['max_descriptions']])
     # raw_data['category'] = raw_data['category'].apply(lambda x: ' '.join(x.split(' ')[:limit['max_headings']]))
 
@@ -266,25 +397,25 @@ def process_data():
 
     # model = loadGloveModel("glove/glove.6B.50d.txt")
 
-    headings, descriptions, test_categories, new_separator = tokenize_articles(raw_data, test_arr)
+    headings, descriptions, test_categories, new_separator = tokenize_articles(raw_data, test_arr, split_separator=len(sim_train_df))
 
-    #keep only whitelisted characters and articles satisfying the length limits
+    # keep only whitelisted characters and articles satisfying the length limits
     # headings = [filter(heading, WHITELIST) for heading in headings]
     # descriptions = [filter(sentence, WHITELIST) for sentence in descriptions]
     # headings, descriptions = filter_length(headings, descriptions)
 
 
-    #convert list of sentences into list of list of words
+    # convert list of sentences into list of list of words
     word_tokenized_headings = [word_list.split(' ') for word_list in headings]
     word_tokenized_descriptions = [word_list.split(' ') for word_list in descriptions]
 
-    #indexing
+    # indexing
     idx2word, word2idx, freq_dist = index_data(word_tokenized_headings + word_tokenized_descriptions, VOCAB_SIZE)
 
-    #save as numpy array and do zero padding
+    # save as numpy array and do zero padding
     idx_headings, idx_descriptions = zero_pad(word_tokenized_headings, word_tokenized_descriptions, word2idx)
 
-    #check percentage of unks
+    # check percentage of unks
     new_idx_h = []
     new_idx_d = []
     new_test_arr = []
@@ -293,7 +424,7 @@ def process_data():
         if 1 not in i:
             new_idx_h.append(i)
             new_idx_d.append(idx_descriptions[index])
-            if len(test_categories) > 0 : new_test_arr.append(test_categories[index])
+            if len(test_categories) > 0: new_test_arr.append(test_categories[index])
 
     idx_headings = new_idx_h
     idx_descriptions = new_idx_d
@@ -304,22 +435,25 @@ def process_data():
     model.save('model.bin')
 
     article_data = {
-        'word2idx' : word2idx,
+        'word2idx': word2idx,
         'idx2word': idx2word,
         'limit': limit,
         'freq_dist': freq_dist,
-        'idx_headings' : idx_headings,
+        'idx_headings': idx_headings,
         'idx_descriptions': idx_descriptions,
-        'test_categories': new_test_arr[new_separator:]
+        # 'test_categories': new_test_arr[new_separator:]
+        'test_categories': category_to_categories
     }
 
     pickle_data(article_data)
 
     return (idx_headings, idx_descriptions)
 
+
 def pickle_data(article_data):
     with open(path.join(file_path, 'article_data.pkl'), 'wb') as fp:
         pickle.dump(article_data, fp, 2)
+
 
 def unpickle_articles():
     with open(path.join(file_path, 'article_data.pkl'), 'rb') as fp:
@@ -327,14 +461,17 @@ def unpickle_articles():
 
     return article_data
 
+
 def calculate_unk_percentage(idx_headings, idx_descriptions, word2idx):
     num_unk = (idx_headings == word2idx[UNK]).sum() + (idx_descriptions == word2idx[UNK]).sum()
     num_words = (idx_headings > word2idx[UNK]).sum() + (idx_descriptions > word2idx[UNK]).sum()
 
     return (num_unk / num_words) * 100
 
+
 def main():
     process_data()
+
 
 if __name__ == '__main__':
     main()

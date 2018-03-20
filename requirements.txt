@@ -2,3 +2,6 @@ tensorflow==1.0
 numpy
 resources
 gensim
+cloudpickle
+nltk
+pandas
