@@ -5,22 +5,24 @@ from rouge import *
 import seq2seq_wrapper
 import tensorflow as tf
 import os.path
-import sys
+import dataprocessing as dp
+import glob
 import json
 import argparse
-from pathlib import Path
 
 parser = argparse.ArgumentParser()
 
 # tensorboard --logdir=E:\git\DP-test-model\tf_logs --port 6006
 
 
-parser.add_argument('--txt_path',  dest='text_file_path', default=None,
-                    help='Text file path')
+parser.add_argument('--docs_dir',  dest='docs_dir', default=None,
+                    help='Documents directory')
 parser.add_argument('--config', dest='conf_number',
                     help='Configuration number')
 parser.add_argument('--trace', dest='trace',
                     help='Trace logging', default=False)
+parser.add_argument('--category',  dest='category', default=None,
+                    help='Category for evaulation')
 
 results = parser.parse_args()
 
@@ -57,21 +59,24 @@ logdir = actual_config['logdir']
 
 logdir = '%s/%s' % (logdir, datetime.datetime.now().strftime("%Y%m%d-%H%M%S"))
 
-metadata = unpickle_articles()  # data.load_data(PATH='datasets/twitter/')
+metadata = unpickle_articles()
 idx_a, idx_q = metadata['idx_headings'], metadata['idx_descriptions']
 
-# (trainX, trainY), (testX, testY), (validX, validY) = data_utils.split_data(idx_q, idx_a)
 (trainX, trainY), (testX, testY) = data_utils.split_by_idx(idx_q, idx_a, split_idx)
 
+# load test documents
+docs_dir = results.docs_dir
+if docs_dir != None:
+    docs = []
+    for filename in glob.glob(os.path.join(docs_dir, '*.txt')):
+        with open(filename, 'r', encoding='utf8') as f:
+            docs.append(''.join(f.readlines()).replace('\n',''))
 
-text_file_path = results.text_file_path
-if text_file_path != None:
-    my_file = Path(text_file_path)
-    if my_file.is_file():
-        with open(text_file_path, 'r', encoding='utf8') as f:
-            data = f.readlines()
-            testX = zero_pad([], [ parse_text(x.replace('\n', '')).split(" ") for x in data], metadata['word2idx'], only_desc=True)[1]
-            testY = []
+    docs_representation = sentence_similarity.get_most_similiar_words_by_category([parse_text(x) for x in docs], treshold=0.7)[:dp.limit['max_descriptions']]
+
+    testY, testX = zero_pad([results.category.lower().split(' ')] if results.category else [], [docs_representation], metadata['word2idx'], only_desc=True if not results.category else False)
+
+
 # parameters
 xseq_len = len(trainX[0])
 yseq_len = len(trainY[0])

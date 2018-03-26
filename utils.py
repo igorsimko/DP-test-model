@@ -40,10 +40,6 @@ def postprocess_predict(predicate):
 
 
 def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
-    # tf.reset_default_graph()
-    # with open('data/parsed.json', 'w') as f:
-    #     pd.read_json(f.reorient='records')
-
     now = datetime.datetime.now()
     tag = now.strftime("%Y%m%d-%H%M%S")
     test_path = './test_logs/test-' + tag
@@ -59,19 +55,6 @@ def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
     for x in range(len(writers)):
         writers[x] = tf.summary.FileWriter(logdir + "/test/" + tags[x])
 
-    bleu = tf.Variable(0.0)
-    rouge1 = tf.Variable(0.0)
-    rouge2 = tf.Variable(0.0)
-    rouge3 = tf.Variable(0.0)
-
-    # tf.summary.scalar("bleu", bleu)
-    # tf.summary.scalar("rouge1_f1-p-r", rouge1)
-    # tf.summary.scalar("rouge2_f1-p-r", rouge2)
-    # tf.summary.scalar("rouge3_f1-p-r", rouge3)
-
-    # write_op = tf.summary.merge_all()
-    # session = tf.InteractiveSession()
-    # session.run(tf.global_variables_initializer())
     text_out = []
 
     for x in range(len(testX)):

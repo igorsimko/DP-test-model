@@ -1,0 +1,38 @@
+In mathematics, the cone of curves (sometimes the Kleiman-Mori cone) of an algebraic variety {\displaystyle X} X is a combinatorial invariant of much importance to the birational geometry of {\displaystyle X} X.
+
+Contents
+1	Definition
+2	Applications
+3	A structure theorem
+4	References
+Definition
+Let {\displaystyle X} X be a proper variety. By definition, a (real) 1-cycle on {\displaystyle X} X is a formal linear combination {\displaystyle C=\sum a_{i}C_{i}} C=\sum a_{i}C_{i} of irreducible, reduced and proper curves {\displaystyle C_{i}} C_{i}, with coefficients {\displaystyle a_{i}\in \mathbb {R} } a_{i}\in {\mathbb  {R}}. Numerical equivalence of 1-cycles is defined by intersections: two 1-cycles {\displaystyle C} C and {\displaystyle C'} C' are numerically equivalent if {\displaystyle C\cdot D=C'\cdot D} C\cdot D=C'\cdot D for every Cartier divisor {\displaystyle D} D on {\displaystyle X} X. Denote the real vector space of 1-cycles modulo numerical equivalence by {\displaystyle N_{1}(X)} N_{1}(X).
+
+We define the cone of curves of {\displaystyle X} X to be
+
+{\displaystyle NE(X)=\left\{\sum a_{i}[C_{i}],\ 0\leq a_{i}\in \mathbb {R} \right\}} NE(X)=\left\{\sum a_{i}[C_{i}],\ 0\leq a_{i}\in {\mathbb  {R}}\right\}
+where the {\displaystyle C_{i}} C_{i} are irreducible, reduced, proper curves on {\displaystyle X} X, and {\displaystyle [C_{i}]} [C_{i}] their classes in {\displaystyle N_{1}(X)} N_{1}(X). It is not difficult to see that {\displaystyle NE(X)} NE(X) is indeed a convex cone in the sense of convex geometry.
+
+Applications
+One useful application of the notion of the cone of curves is the Kleiman condition, which says that a (Cartier) divisor {\displaystyle D} D on a complete variety {\displaystyle X} X is ample if and only if {\displaystyle D\cdot x>0} D\cdot x>0 for any nonzero element {\displaystyle x} x in {\displaystyle {\overline {NE(X)}}} \overline {NE(X)}, the closure of the cone of curves in the usual real topology. (In general, {\displaystyle NE(X)} NE(X) need not be closed, so taking the closure here is important.)
+
+A more involved example is the role played by the cone of curves in the theory of minimal models of algebraic varieties. Briefly, the goal of that theory is as follows: given a (mildly singular) projective variety {\displaystyle X} X, find a (mildly singular) variety {\displaystyle X'} X' which is birational to {\displaystyle X} X, and whose canonical divisor {\displaystyle K_{X'}} K_{{X'}} is nef. The great breakthrough of the early 1980s (due to Mori and others) was to construct (at least morally) the necessary birational map from {\displaystyle X} X to {\displaystyle X'} X' as a sequence of steps, each of which can be thought of as contraction of a {\displaystyle K_{X}} K_{X}-negative extremal ray of {\displaystyle NE(X)} NE(X). This process encounters difficulties, however, whose resolution necessitates the introduction of the flip.
+
+A structure theorem
+The above process of contractions could not proceed without the fundamental result on the structure of the cone of curves known as the Cone Theorem. The first version of this theorem, for smooth varieties, is due to Mori; it was later generalised to a larger class of varieties by Kollár, Reid, Shokurov, and others. Mori's version of the theorem is as follows:
+
+Cone Theorem. Let {\displaystyle X} X be a smooth projective variety. Then
+
+1. There are countably many rational curves {\displaystyle C_{i}} C_{i} on {\displaystyle X} X, satisfying {\displaystyle 0<-K_{X}\cdot C_{i}\leq \operatorname {dim} X+1} 0<-K_{X}\cdot C_{i}\leq \operatorname {dim}X+1, and
+
+{\displaystyle {\overline {NE(X)}}={\overline {NE(X)}}_{K_{X}\geq 0}+\sum _{i}\mathbf {R} _{\geq 0}[C_{i}].} \overline {NE(X)}=\overline {NE(X)}_{{K_{X}\geq 0}}+\sum _{i}{\mathbf  {R}}_{{\geq 0}}[C_{i}].
+2. For any positive real number {\displaystyle \epsilon } \epsilon  and any ample divisor {\displaystyle H} H,
+
+{\displaystyle {\overline {NE(X)}}={\overline {NE(X)}}_{K_{X}+\epsilon H\geq 0}+\sum \mathbf {R} _{\geq 0}[C_{i}],} \overline {NE(X)}=\overline {NE(X)}_{{K_{X}+\epsilon H\geq 0}}+\sum {\mathbf  {R}}_{{\geq 0}}[C_{i}],
+where the sum in the last term is finite.
+
+The first assertion says that, in the closed half-space of {\displaystyle N_{1}(X)} N_{1}(X) where intersection with {\displaystyle K_{X}} K_{X} is nonnegative, we know nothing, but in the complementary half-space, the cone is spanned by some countable collection of curves which are quite special: they are rational, and their 'degree' is bounded very tightly by the dimension of {\displaystyle X} X. The second assertion then tells us more: it says that, away from the hyperplane {\displaystyle \{C:K_{X}\cdot C=0\}} \{C:K_{X}\cdot C=0\}, extremal rays of the cone cannot accumulate.
+
+If in addition the variety {\displaystyle X} X is defined over a field of characteristic 0, we have the following assertion, sometimes referred to as the Contraction Theorem:
+
+3. Let {\displaystyle F\subset {\overline {NE(X)}}} F\subset \overline {NE(X)} be an extremal face of the cone of curves on which {\displaystyle K_{X}} K_{X} is negative. Then there is a unique morphism {\displaystyle \operatorname {cont} _{F}:X\rightarrow Z} \operatorname {cont}_{F}:X\rightarrow Z to a projective variety Z, such that {\displaystyle (\operatorname {cont} _{F})_{*}{\mathcal {O}}_{X}={\mathcal {O}}_{Z}} (\operatorname {cont}_{F})_{*}{\mathcal  {O}}_{X}={\mathcal  {O}}_{Z} and an irreducible curve {\displaystyle C} C in {\displaystyle X} X is mapped to a point by {\displaystyle \operatorname {cont} _{F}} \operatorname {cont}_{F} if and only if {\displaystyle [C]\in F} [C]\in F. (See also: contraction morphism).

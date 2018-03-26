@@ -54,6 +54,9 @@ limit = {
     'min_headings': 0,
 }
 
+def get_limits():
+    return limit
+
 def load_raw_data(filename):
     with open(filename, 'r', encoding='utf8') as fp:
         raw_data = pd.DataFrame(json.load(fp))
@@ -379,10 +382,10 @@ def process_data():
     # train data
     category_to_categories = {}
     train_df = raw_data.head(global_separator).groupby('category')
-    sim_train_df, cm_train = group_by_category(train_df, category_to_categories, method=CM_GET_MOST_SIMILIAR)
+    sim_train_df, cm_train = group_by_category(train_df, category_to_categories, method=CM_PARSE)
     # test data
     test_df = raw_data.tail(len(raw_data) - global_separator).groupby('category')
-    sim_test_df, cm_test = group_by_category(test_df, category_to_categories, method=CM_GET_MOST_SIMILIAR)
+    sim_test_df, cm_test = group_by_category(test_df, category_to_categories, method=CM_PARSE)
 
     eval_methods(cm_train, cm_test)
     raw_data = sim_train_df.append(sim_test_df)
