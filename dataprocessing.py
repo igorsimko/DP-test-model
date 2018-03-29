@@ -30,6 +30,7 @@ CM_KEYWORDS = 'keywords'
 CM_PARSE = 'parse_text'
 CM_GET_MOST_SIMILIAR = 'get_most_similiar'
 CM_GET_MOST_SIMILIAR_WITH_PARSE = 'get_most_similiar_with_parse'
+CM_KEYWORDS_PARSE = 'parse_keywords'
 
 UNK = '<UNK>'
 GO = '<GO>'
@@ -208,6 +209,7 @@ def group_by_category(category_pd, category_to_categories, method):
             cm[group][CM_PARSE] = {}
             cm[group][CM_GET_MOST_SIMILIAR] = {}
             cm[group][CM_GET_MOST_SIMILIAR_WITH_PARSE] = {}
+            cm[group][CM_KEYWORDS_PARSE] = {}
 
         if len(category_pd.get_group(group)['parsed_text'].values) != 0:
 
@@ -215,6 +217,7 @@ def group_by_category(category_pd, category_to_categories, method):
             cm[group][CM_PARSE] = parse_text(' '.join(category_pd.get_group(group)['parsed_text'].values)).split(' ')
             cm[group][CM_GET_MOST_SIMILIAR] = sentence_similarity.get_most_similiar_words_by_category(category_pd.get_group(group)['parsed_text'].values, treshold=0.6)
             cm[group][CM_GET_MOST_SIMILIAR_WITH_PARSE] = sentence_similarity.get_most_similiar_words_by_category([parse_text(x) for x in category_pd.get_group(group)['parsed_text'].values])
+            cm[group][CM_KEYWORDS_PARSE] = sentence_similarity.gramatic_keyword(category_pd.get_group(group)['parsed_text'].values)
 
             sim_cat_words = cm[group][method][:limit['max_descriptions']]
 
@@ -236,7 +239,8 @@ def eval_methods(x, y):
     compare_methods = {CM_KEYWORDS: metrics.Metrics(),
                        CM_PARSE: metrics.Metrics(),
                        CM_GET_MOST_SIMILIAR: metrics.Metrics(),
-                       CM_GET_MOST_SIMILIAR_WITH_PARSE: metrics.Metrics()}
+                       CM_GET_MOST_SIMILIAR_WITH_PARSE: metrics.Metrics(),
+                       CM_KEYWORDS_PARSE: metrics.Metrics()}
     for yi in y:
         if yi in x:
             for cm in list(compare_methods.keys()):
@@ -263,7 +267,8 @@ def eval_methods(x, y):
     avg_eval = {CM_KEYWORDS: metrics.Metrics(),
                        CM_PARSE: metrics.Metrics(),
                        CM_GET_MOST_SIMILIAR: metrics.Metrics(),
-                       CM_GET_MOST_SIMILIAR_WITH_PARSE: metrics.Metrics()
+                       CM_GET_MOST_SIMILIAR_WITH_PARSE: metrics.Metrics(),
+                       CM_KEYWORDS_PARSE: metrics.Metrics()
     }
 
     for cm in list(compare_methods.keys()):
@@ -297,7 +302,7 @@ def eval_methods(x, y):
     ax.set_ylabel('Score')
     ax.set_title('Comparision methods metrics evaulation')
     ax.set_xticks(index + bar_width / 2)
-    ax.set_xticklabels((CM_KEYWORDS, CM_PARSE, CM_GET_MOST_SIMILIAR, CM_GET_MOST_SIMILIAR_WITH_PARSE))
+    ax.set_xticklabels((CM_KEYWORDS, CM_PARSE, CM_GET_MOST_SIMILIAR, CM_GET_MOST_SIMILIAR_WITH_PARSE, CM_KEYWORDS_PARSE))
     ax.legend()
 
     fig.tight_layout()
@@ -383,10 +388,10 @@ def process_data():
     # train data
     category_to_categories = {}
     train_df = raw_data.head(global_separator).groupby('category')
-    sim_train_df, cm_train = group_by_category(train_df, category_to_categories, method=CM_PARSE)
+    sim_train_df, cm_train = group_by_category(train_df, category_to_categories, method=CM_KEYWORDS_PARSE)
     # test data
     test_df = raw_data.tail(len(raw_data) - global_separator).groupby('category')
-    sim_test_df, cm_test = group_by_category(test_df, category_to_categories, method=CM_PARSE)
+    sim_test_df, cm_test = group_by_category(test_df, category_to_categories, method=CM_KEYWORDS_PARSE)
 
     eval_methods(cm_train, cm_test)
     raw_data = sim_train_df.append(sim_test_df)

@@ -72,7 +72,7 @@ if docs_dir != None:
         with open(filename, 'r', encoding='utf8') as f:
             docs.append(''.join(f.readlines()).replace('\n',''))
 
-    docs_representation = sentence_similarity.get_most_similiar_words_by_category([parse_text(x) for x in docs], treshold=0.7)[:dp.limit['max_descriptions']]
+    docs_representation = sentence_similarity.gramatic_keyword(docs)[:dp.limit['max_descriptions']]
 
     testY, testX = zero_pad([results.category.lower().split(' ')] if results.category else [], [docs_representation], metadata['word2idx'], only_desc=True if not results.category else False)
 

@@ -1,7 +1,6 @@
 import operator
-import numpy as np
 import join
-import join
+import utils
 from gensim.models import Word2Vec
 from gensim.summarization import keywords
 from nltk import word_tokenize, pos_tag
@@ -152,6 +151,21 @@ sentences = [
 
 model = Word2Vec.load('model.bin')
 
+def gramatic_keyword(docs):
+    return utils.postprocess_predict(parse_text_keywords(join.parse_text(''.join(docs), join=False),
+                                                                      keywords=[x[0] for x in
+                                                                                keywords(''.join(docs), scores=True) if
+                                                                                x[1] > 0.1]))
+
+def parse_text_keywords(text_phrases, keywords):
+    ret_val = []
+    for phrase in text_phrases:
+        for word in keywords:
+            if word in phrase:
+                ret_val.append(phrase)
+                break
+
+    return ret_val
 
 def get_most_similiar_words_by_category(category_texts, treshold=1):
     # for i in range(len(category_texts)):

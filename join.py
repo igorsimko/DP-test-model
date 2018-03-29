@@ -60,7 +60,7 @@ def get_terms(tree):
 
 
 
-def parse_text(text):
+def parse_text(text, join=True):
     if not text:
         return ''
     ret_val = []
@@ -72,9 +72,13 @@ def parse_text(text):
 
     for term in terms:
         for word in term:
-            ret_val.append(word)
+            if len(word) > 2:
+                ret_val.append(word)
 
-    return ' '.join(ret_val)
+    if join:
+        return ' '.join(ret_val)
+    else:
+        return ret_val
 
 # txt = "His mythologies and powers are similar, though not identical, to those of Indo-European deities such as Indra, Jupiter, Perkūnas, Perun, Thor, and Odin"
 # print(parse_text("my potato name is nice potato. potato is good. it tastes very very nice."))
