@@ -78,8 +78,9 @@ def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
             t_y_metric_temp = []
             t_y_cat_temp = ""
             if t_y in metadata['test_categories']:
-                for category in metadata['test_categories'][t_y]:
-                    metric_ratio = metadata['test_categories'][t_y].count(t_y) / len(metadata['test_categories'][t_y])
+                categories = [j for i in metadata['test_categories'][t_y] for j in i]
+                for category in set(categories):
+                    metric_ratio = categories.count(t_y) / len(metadata['test_categories'][t_y])
                     temp_b = bleuMetric(category.split(" "), p_y.split(" ")) *  metric_ratio
                     temp_ss = sensim.sentence_similarity(p_y, category) * metric_ratio
                     temp_rr = rouge(p_y.split(" "), category.split(" "))

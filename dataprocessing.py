@@ -45,7 +45,7 @@ file_name = 'train-8562_test-2807.json'
 file_name = 'train-6441_test-5475.json'
 # file_name = 'train-61_test-19.json'
 # file_name = 'train-223_test-70.json'
-file_name = 'train-7608_test-4247.json'
+# file_name = 'train-7608_test-4247.json'
 
 global_separator = int(file_name.split("_")[0].split('-')[1])
 
@@ -189,15 +189,16 @@ def pad_seq(seq, lookup, max_length, old_flag=False):
         return indices + pad_arr
 
 
-def group_by_category(category_pd, category_to_categories, method):
+def group_by_category(category_pd, category_to_categories, raw_data, method):
     ret_df = pd.DataFrame(columns=['category', 'parsed_text'])
     cm = {}
 
     # groups data
     for i, group in enumerate(list(category_pd.groups.keys())):
         print(group + " | %d/%d" % (i, len(category_pd)))
-        
-        append_to_dict(category_to_categories, group, list(category_pd.get_group(group)['category']))
+
+        for id in list(category_pd.get_group(group)['page_id']):
+            append_to_dict(category_to_categories, group, raw_data.loc[raw_data['page_id'] == id]['category'].values)
 
         # sim_cat_words = parse_text(' '.join(
         #     keywords(filter(category_pd.get_group(group)['parsed_text'].values[0], whitelist=WHITELIST)).split(' ')[
@@ -213,10 +214,10 @@ def group_by_category(category_pd, category_to_categories, method):
 
         if len(category_pd.get_group(group)['parsed_text'].values) != 0:
 
-            cm[group][CM_KEYWORDS] = keywords(' '.join(category_pd.get_group(group)['parsed_text'].values)).split('\n')
-            cm[group][CM_PARSE] = parse_text(' '.join(category_pd.get_group(group)['parsed_text'].values)).split(' ')
-            cm[group][CM_GET_MOST_SIMILIAR] = sentence_similarity.get_most_similiar_words_by_category(category_pd.get_group(group)['parsed_text'].values, treshold=0.6)
-            cm[group][CM_GET_MOST_SIMILIAR_WITH_PARSE] = sentence_similarity.get_most_similiar_words_by_category([parse_text(x) for x in category_pd.get_group(group)['parsed_text'].values])
+            # cm[group][CM_KEYWORDS] = keywords(' '.join(category_pd.get_group(group)['parsed_text'].values)).split('\n')
+            # cm[group][CM_PARSE] = parse_text(' '.join(category_pd.get_group(group)['parsed_text'].values)).split(' ')
+            # cm[group][CM_GET_MOST_SIMILIAR] = sentence_similarity.get_most_similiar_words_by_category(category_pd.get_group(group)['parsed_text'].values, treshold=0.6)
+            # cm[group][CM_GET_MOST_SIMILIAR_WITH_PARSE] = sentence_similarity.get_most_similiar_words_by_category([parse_text(x) for x in category_pd.get_group(group)['parsed_text'].values])
             cm[group][CM_KEYWORDS_PARSE] = sentence_similarity.gramatic_keyword(category_pd.get_group(group)['parsed_text'].values)
 
             sim_cat_words = cm[group][method][:limit['max_descriptions']]
@@ -388,12 +389,12 @@ def process_data():
     # train data
     category_to_categories = {}
     train_df = raw_data.head(global_separator).groupby('category')
-    sim_train_df, cm_train = group_by_category(train_df, category_to_categories, method=CM_KEYWORDS_PARSE)
+    sim_train_df, cm_train = group_by_category(train_df, category_to_categories, raw_data, method=CM_KEYWORDS_PARSE)
     # test data
     test_df = raw_data.tail(len(raw_data) - global_separator).groupby('category')
-    sim_test_df, cm_test = group_by_category(test_df, category_to_categories, method=CM_KEYWORDS_PARSE)
+    sim_test_df, cm_test = group_by_category(test_df, category_to_categories, raw_data, method=CM_KEYWORDS_PARSE)
 
-    eval_methods(cm_train, cm_test)
+    # eval_methods(cm_train, cm_test)
     raw_data = sim_train_df.append(sim_test_df)
     
     # raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x[:limit['max_descriptions']])
