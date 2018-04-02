@@ -212,19 +212,25 @@ def group_by_category(category_pd, category_to_categories, raw_data, method):
             cm[group][CM_GET_MOST_SIMILIAR_WITH_PARSE] = {}
             cm[group][CM_KEYWORDS_PARSE] = {}
 
+        sim_cat_words_arr = []
+
         if len(category_pd.get_group(group)['parsed_text'].values) != 0:
 
-            # cm[group][CM_KEYWORDS] = keywords(' '.join(category_pd.get_group(group)['parsed_text'].values)).split('\n')
-            # cm[group][CM_PARSE] = parse_text(' '.join(category_pd.get_group(group)['parsed_text'].values)).split(' ')
+            cm[group][CM_KEYWORDS] = keywords(' '.join(category_pd.get_group(group)['parsed_text'].values)).split('\n')
+            cm[group][CM_PARSE] = parse_text(' '.join(category_pd.get_group(group)['parsed_text'].values)).split(' ')
             # cm[group][CM_GET_MOST_SIMILIAR] = sentence_similarity.get_most_similiar_words_by_category(category_pd.get_group(group)['parsed_text'].values, treshold=0.6)
             # cm[group][CM_GET_MOST_SIMILIAR_WITH_PARSE] = sentence_similarity.get_most_similiar_words_by_category([parse_text(x) for x in category_pd.get_group(group)['parsed_text'].values])
             cm[group][CM_KEYWORDS_PARSE] = sentence_similarity.gramatic_keyword(category_pd.get_group(group)['parsed_text'].values)
 
-            sim_cat_words = cm[group][method][:limit['max_descriptions']]
+            sim_cat_words_arr.append(cm[group][CM_KEYWORDS][:limit['max_descriptions']])
+            sim_cat_words_arr.append(cm[group][CM_PARSE][:limit['max_descriptions']])
+            sim_cat_words_arr.append(cm[group][CM_KEYWORDS_PARSE][:limit['max_descriptions']])
 
-        if sim_cat_words and len(sim_cat_words) > 0:
-            ret_df = ret_df.append(
-                pd.DataFrame([[group, ' '.join(sim_cat_words)]], columns=['category', 'parsed_text']))
+
+        if sim_cat_words_arr and len(sim_cat_words_arr) > 0:
+            for sim_cat_words in sim_cat_words_arr:
+                ret_df = ret_df.append(
+                    pd.DataFrame([[group, ' '.join(sim_cat_words)]], columns=['category', 'parsed_text']))
 
     return ret_df, cm
 
