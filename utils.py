@@ -61,7 +61,6 @@ def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
         x_for_test = testX[x]
         # remove unk tokens
         x_for_test = [x for x in x_for_test if x != 1]
-        print(x_for_test)
 
         pred_y = model.predict(sess, x_for_test, metadata['idx2word'], embedding)
         pred_y = postprocess_predict(pred_y)
