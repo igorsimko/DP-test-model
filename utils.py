@@ -58,7 +58,12 @@ def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
     text_out = []
 
     for x in range(len(testX)):
-        pred_y = model.predict(sess, testX[x].tolist(), metadata['idx2word'], embedding)
+        x_for_test = testX[x]
+        # remove unk tokens
+        x_for_test = [x for x in x_for_test if x != 1]
+        print(x_for_test)
+
+        pred_y = model.predict(sess, x_for_test, metadata['idx2word'], embedding)
         pred_y = postprocess_predict(pred_y)
 
         true_y = [metadata['idx2word'][i] for i in testY[x]] if len(testY) > 0 else ""
@@ -122,13 +127,13 @@ def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
         # model.bleu = tf.convert_to_tensor(b)
         if ss != 0:
             if trace:
-                text_sample = ' '.join([metadata['idx2word'][i] for i in testX[x]])[:280] + "..."
-                text_out.append(prt_out('Sample {}\n\nMachine generated category: {}\nReal category: {}\n'.format(x + 1, p_y, t_y) + '\nSimilarity: %f\n' % ss + textwrap.fill('Text sample: {}'.format(text_sample), 78)))
+                text_sample = ' '.join([metadata['idx2word'][i] for i in x_for_test])[:280] + "..."
+                text_out.append(prt_out('Sample {}\n\nMachine generated category: {}\nReal category: {}\n'.format(x + 1, p_y, t_y) + '\nSimilarity: %f\n\n' % ss + textwrap.fill('Text sample: {}\n\n'.format(text_sample), 78)))
 
         if trace != True:
             text_out.append(prt_out('Predicted:\t{} | \tTrue:\t{}'.format(p_y, t_y)))
 
-    metric_text = "\n\nROUGE-1 f1: \t\t%f\n" \
+    metric_text = "===== All predics =====\n\nROUGE-1 f1: \t\t%f\n" \
                   "ROUGE-1 recall: \t%f\n" \
                   "ROUGE-1 precision: \t%f\n" \
                   "ROUGE-2 f1: \t\t%f\n" \
@@ -152,7 +157,7 @@ def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
 
     prt(metric_text)
 
-    metric_text = "\n\nROUGE-1 f1: \t\t%f\nROUGE-1 recall: \t%f\nROUGE-1 precision: \t%f\nROUGE-2 f1: \t\t%f\nROUGE-2 recall: \t%f\nROUGE-2 precision: \t%f\nROUGE-L f1: \t\t%f\nROUGE-L recall: \t%f\nROUGE-L precision: \t%f\n\nBLEU: \t%f\n\nSentence similarity: \t%f\n" % (
+    metric_text = "===== At least one good average =====\n\nROUGE-1 f1: \t\t%f\nROUGE-1 recall: \t%f\nROUGE-1 precision: \t%f\nROUGE-2 f1: \t\t%f\nROUGE-2 recall: \t%f\nROUGE-2 precision: \t%f\nROUGE-L f1: \t\t%f\nROUGE-L recall: \t%f\nROUGE-L precision: \t%f\n\nBLEU: \t%f\n\nSentence similarity: \t%f\n" % (
         np.average(([x['rouge_1/f_score'] for x in rouges_arr if x['rouge_1/f_score'] != 0])),
         np.average(([x['rouge_1/r_score'] for x in rouges_arr if x['rouge_1/r_score'] != 0])),
         np.average(([x['rouge_1/p_score'] for x in rouges_arr if x['rouge_1/p_score'] != 0])),
