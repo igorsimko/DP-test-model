@@ -76,7 +76,6 @@ if docs_dir != None:
 
     testY, testX = zero_pad([results.category.lower().split(' ')] if results.category else [], [docs_representation], metadata['word2idx'], only_desc=True if not results.category else False)
 
-
 # parameters
 xseq_len = len(trainX[0])
 yseq_len = len(trainY[0])
