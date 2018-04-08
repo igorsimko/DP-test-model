@@ -50,9 +50,9 @@ file_name = 'train-6441_test-5475.json'
 global_separator = int(file_name.split("_")[0].split('-')[1])
 
 limit = {
-    'max_descriptions': 100,
+    'max_descriptions': 150,
     'min_descriptions': 0,
-    'max_headings': 5,
+    'max_headings': 8,
     'min_headings': 0,
 }
 
@@ -368,12 +368,20 @@ def process_data():
     raw_data['category'] = raw_data['category'].apply(lambda x: x.lower())
 
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('{(.*?)}', "", x))
-    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('\|(.*?)=(.*?)', "", x))
+    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('\|(.*?)=(.*?)', " ", x))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('}*', "", x))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('{*', "", x))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('[\n]+', "", x))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('== External links ==\s*([^\n\r]*)', "", x))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x.split('Category:')[0])
+
+    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x.replace('=', " "))
+    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x.replace('.', " "))
+    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x.replace('\\', " "))
+    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x.replace('b\'', " "))
+    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x.replace('/', " "))
+    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x.replace('*', " "))
+    raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: re.sub('\s+', " ", x))
 
     utils.prt("Start parsing n-grams")
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: str(unicodedata.normalize('NFKD', x).encode('ascii', 'ignore')))
@@ -449,7 +457,7 @@ def process_data():
     # unk_percentage = calculate_unk_percentage(idx_headings, idx_descriptions, word2idx)
     # print (calculate_unk_percentage(idx_headings, idx_descriptions, word2idx))
 
-    model = Word2Vec(word_tokenized_descriptions + word_tokenized_headings, min_count=1, size=15)
+    model = Word2Vec(word_tokenized_descriptions + word_tokenized_headings, min_count=1, size=30)
     model.save('model.bin')
 
     article_data = {

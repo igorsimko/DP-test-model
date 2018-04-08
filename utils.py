@@ -84,7 +84,7 @@ def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
             if t_y in metadata['test_categories']:
                 categories = [j for i in metadata['test_categories'][t_y] for j in i]
                 for category in set(categories):
-                    metric_ratio = categories.count(t_y) / len(metadata['test_categories'][t_y])
+                    metric_ratio = categories.count(t_y) / len(categories)
                     temp_b = bleuMetric(category.split(" "), p_y.split(" ")) *  metric_ratio
                     temp_ss = sensim.sentence_similarity(p_y, category) * metric_ratio
                     temp_rr = rouge(p_y.split(" "), category.split(" "))
@@ -101,7 +101,7 @@ def test(sess, model, metadata, testX, testY, logdir, embedding, trace=False):
 
                     if temp_rr['rouge_1/f_score'] * metric_ratio > rr['rouge_1/f_score']:
                         rr = temp_rr
-                        t_y_metric_temp.append("(rouge)")
+                        t_y_metric_temp.append("rouge")
                         t_y_cat_temp = category
 
                 if len(t_y_metric_temp) != 0:

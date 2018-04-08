@@ -100,9 +100,6 @@ def sentence_similarity(sentence1, sentence2, trace=False):
 
     score, count = 0.0, 0
 
-    sim_arr = {}
-    category = "Greek mythology".split(" ")
-
     # For each word in the first sentence
     for synset in synsets1:
         arr_simi_score = []
