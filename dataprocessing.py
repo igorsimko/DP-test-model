@@ -26,8 +26,9 @@ from rouge import rouge
 WHITELIST = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ .'
 VOCAB_SIZE = 50000
 
-split_ratio = 0.8
+split_ratio = 0.7
 embedding = 30
+just_test_changes = True
 
 CM_KEYWORDS = 'keywords'
 CM_PARSE = 'n-grams'
@@ -421,16 +422,16 @@ def process_data():
     # train data
     category_to_categories = {}
     train_df = raw_data.head(global_separator).groupby('category')
-    sim_train_df, cm_train = group_by_category(train_df, category_to_categories, raw_data, methods=[CM_KEYWORDS_PARSE, CM_KEYWORDS, CM_PARSE, CM_GET_MOST_SIMILIAR, CM_GET_MOST_SIMILIAR_WITH_PARSE])
+    sim_train_df, cm_train = group_by_category(train_df, category_to_categories, raw_data, methods=[CM_KEYWORDS_PARSE, CM_KEYWORDS, CM_PARSE])
     # test data
     split_ratio_index = len(raw_data.groupby('category')) * (1 - split_ratio)
     test_df = raw_data.tail(len(raw_data) - global_separator).groupby('category')
     test_df = test_df.tail(split_ratio_index).groupby('category')
     utils.prt("Length whole: %d" % (len(raw_data.groupby('category'))))
     utils.prt("Length train: %d | Length test: %d" % (len(train_df), len(test_df)))
-    sim_test_df, cm_test = group_by_category(test_df, category_to_categories, raw_data, methods=[CM_KEYWORDS_PARSE, CM_KEYWORDS, CM_PARSE, CM_GET_MOST_SIMILIAR, CM_GET_MOST_SIMILIAR_WITH_PARSE])
+    sim_test_df, cm_test = group_by_category(test_df, category_to_categories, raw_data, methods=[CM_KEYWORDS_PARSE])
 
-    eval_methods(cm_train, cm_test)
+    #eval_methods(cm_train, cm_test)
     raw_data = sim_train_df.append(sim_test_df)
 
     raw_data.to_json('parsed.json', orient='records')
@@ -473,16 +474,30 @@ def process_data():
     model = Word2Vec(word_tokenized_descriptions + word_tokenized_headings, min_count=1, size=embedding)
     model.save('model.bin')
 
-    article_data = {
-        'word2idx': word2idx,
-        'idx2word': idx2word,
-        'limit': limit,
-        'freq_dist': freq_dist,
-        'idx_headings': idx_headings,
-        'idx_descriptions': idx_descriptions,
-        # 'test_categories': new_test_arr[new_separator:]
-        'test_categories': category_to_categories
-    }
+    tmp_pickle = unpickle_articles()
+
+    if tmp_pickle != None and just_test_changes:
+        article_data = {
+            'word2idx': tmp_pickle['word2idx'],
+            'idx2word': tmp_pickle['idx2word'],
+            'limit': tmp_pickle['limit'],
+            'freq_dist': tmp_pickle['freq_dist'],
+            'idx_headings': idx_headings,
+            'idx_descriptions': idx_descriptions,
+            # 'test_categories': new_test_arr[new_separator:]
+            'test_categories': tmp_pickle['test_categories']
+        }
+    else:
+        article_data = {
+            'word2idx': word2idx,
+            'idx2word': idx2word,
+            'limit': limit,
+            'freq_dist': freq_dist,
+            'idx_headings': idx_headings,
+            'idx_descriptions': idx_descriptions,
+            # 'test_categories': new_test_arr[new_separator:]
+            'test_categories': category_to_categories
+        }
 
     pickle_data(article_data)
 

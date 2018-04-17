@@ -73,18 +73,18 @@ if parent_dir != None:
     testX, testY = [], []
     for dir in [x[0] for x in os.walk(parent_dir) if x[0] != parent_dir]:
         docs = []
-        category_name = dir.split(parent_dir + "\\")[1]
+        category_name = dir.split(parent_dir)[1][1:]
+        print(category_name)
 
         for filename in glob.glob(os.path.join(dir, '*.txt')):
             with open(filename, 'r', encoding='utf8') as f:
                 docs.append(''.join(f.readlines()).replace('\n', ''))
 
         docs_representation = sentence_similarity.gramatic_keyword(docs)[:dp.limit['max_descriptions']]
-        print(docs_representation)
         docs_vectorized = zero_pad([category_name.lower().split(' ')] if category_name else [], [docs_representation], metadata['word2idx'], only_desc=True if not category_name else False)
 
-        testY.append(docs_vectorized[0])
-        testX.append(docs_vectorized[1])
+        testY.append(docs_vectorized[0][0])
+        testX.append(docs_vectorized[1][0])
 
 
 if docs_dir != None:
