@@ -1,0 +1,36 @@
+James Stanger is a writer, technologist, security consultant, and open source advocate. He currently works at CompTIA, where he helps develop its certifications. He has worked closely in the open source movement with Jon "maddog" Hall, John H Terpstra,[1] as well as with the Linux Professional Institute (LPI).[2] He is best known as the author and editor of Information Technology books and manuals, and for creating Information Technology certifications. He was a contributing author of O'Reilly Media's LPI Linux Certification in a Nutshell, 2nd Edition,[3] and lead author of Eselvier Press's How to Cheat at Securing Linux,[4] and many others.[5] He has also participated in the writing of the 3rd edition of O'Reilly's LPI Linux Certification in a Nutshell.
+Stanger has created certifications and courses of instruction for companies and organizations such as IBM, Symantec, and CompTIA. He also sits on several boards and councils, including advisory committees for University of Phoenix, American Public University System, Mesa Community College, and Snow College. He has worked with other advisory councils, including those for the Linux Professional Institute (LPI) and Kaplan University. He is an award-winning blogger, and regularly consults concerning social media, Linux and open source. A respected speaker, he has been invited to present at various forums in the United Kingdom,[6] China, the Middle East, and North America.[7]
+He holds a Doctor of Philosophy in English Literature from University of California, Riverside (1997).
+Sources[edit]
+
+Admin Magazine article: "Bro Security Monitoring": http://www.admin-magazine.com/Archive/2016/35/Implementing-custom-security-frameworks-with-Bro
+Dice.com article: "Getting a Programming Job When You're 50": http://insights.dice.com/2016/06/07/getting-a-programming-job-when-youre-over-50
+GovTechWorks: "New Directive Could Redefine Cybersecurity Certification": https://www.govtechworks.com/new-directive-could-redefine-cybersecurity-certification/#gs.null
+BBC News article "Should you cross this line to get a job": http://www.bbc.com/capital/story/20160620-should-you-cross-this-line-to-get-a-job
+Ubuntu User Magazine article "Locked Down": http://www.ubuntu-user.com/content/download/459/2900/file/026-029_firewall.pdf
+LPI Linux in a Nutshell, 2nd Edition Awarded 2006 Editor's Choice Award from Linux Journal: http://www.linuxjournal.com/article/9368
+Interview with James Stanger: https://www.youtube.com/watch?v=tNWDrO8qkXQ
+Announcement concerning the LPI Advisory Council: http://www.lpi.org/eng/about_lpi/what_s_new/news_archive__1/2007/lpi_hosts_events_during_linuxworld_san_francisco_2007
+EdTechTalk interview with James Stanger: http://edtechtalk.com/node/1907
+Review of Dr. Stanger's presentation at the ACTE: http://www.mnactesnp.org/Echo/08.01.16/echo.08.01.16.htm
+Presentation at the Scottish Qualification Authority (SQA): http://www.sqa.org.uk/mini/27049.html
+John Terpstra and James Stanger at an LPI Advisory Council meeting: http://gallery.hosef.org/main.php/v/lwsf05/Dr_James_Stanger_LPI_and_John_Terpstra.jpg.html
+
+References[edit]
+
+
+
+^ John H Terpstra Samba site web page.
+^ Stanger giving a Webcast for the LPI
+^ O'Reilly's LPI Linux in a Nutshell, 2nd Edition
+^ Review of How to Cheat at Securing Linux
+^ List of texts with Stanger as author or contributor
+^ Stanger presenting at the SQA
+^ Stanger presenting at OSCON
+
+
+
+
+
+
+

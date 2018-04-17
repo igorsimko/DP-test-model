@@ -1,0 +1,1999 @@
+For other uses, see Reading (disambiguation).
+
+
+
+
+
+
+
+This article has multiple issues. Please help improve it or discuss these issues on the talk page. (Learn how and when to remove these template messages)
+
+
+
+
+
+
+
+This article needs additional citations for verification. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed. (November 2015) (Learn how and when to remove this template message)
+
+
+
+
+
+
+
+
+
+This article may require cleanup to meet Wikipedia's quality standards. No cleanup reason has been specified. Please help improve this article if you can. (June 2009) (Learn how and when to remove this template message)
+
+
+
+
+
+(Learn how and when to remove this template message)
+
+
+
+
+
+Part of a series on
+
+
+Reading
+
+
+
+
+
+Language
+
+
+
+
+Language
+Writing
+Writing system
+Orthography
+Braille
+
+
+
+
+Types of Reading
+
+
+
+
+Slow reading
+Speed reading
+Subvocalization
+
+
+
+
+Learning to Read
+
+
+
+
+Learning to read
+Comprehension
+Spelling
+Vocabulary
+Reading disability
+Dyslexia
+Reading for special needs
+
+
+
+
+Reading Instruction
+
+
+
+
+Alphabetic principle
+Phonics
+Whole language
+
+
+
+
+Literacy
+
+
+
+
+Literacy
+Functional illiteracy
+Family literacy
+English orthography
+
+
+
+
+Lists
+
+
+
+
+Languages by writing system
+Management of dyslexia
+
+
+
+
+
+
+
+v
+t
+e
+
+
+
+
+
+Reading education is the process by which individuals are taught to derive meaning from text.
+Government-funded research on reading and reading instruction in the United States began in the 1960s. In the 1970s and 1980s, researchers began publishing findings based on converging evidence from multiple studies. However, these findings have been slow to move into typical classroom practice.
+
+
+
+Contents
+
+
+1 Competencies for proficient reading
+2 Instructional methods
+
+2.1 Research
+
+2.1.1 Phonemic awareness
+
+
+2.2 Lexical reading
+
+2.2.1 Whole Word
+
+
+2.3 Sub-lexical reading
+
+2.3.1 Phonics
+2.3.2 Pronunciation guides
+
+
+2.4 Other instructional methods
+2.5 Guided Reading
+
+2.5.1 Native reading
+2.5.2 Reading Workshop
+
+
+2.6 Examples of Improving Reading
+
+2.6.1 Reading comprehension
+2.6.2 Non-traditional approaches
+
+
+
+
+3 Success rate of reading education in the US
+4 Print exposure
+5 Alphabetic principle and English orthography
+
+5.1 Spelling reform
+
+5.1.1 Initial teaching alphabet
+
+
+5.2 Augmenting spelling with pronunciation information
+
+
+6 Practical application
+7 History
+8 See also
+9 References
+
+9.1 Notes
+9.2 Bibliography
+
+
+10 External links
+
+
+
+Competencies for proficient reading[edit]
+Proficient reading is equally dependent on two critical skills: the ability to understand the language in which the text is written, and the ability to recognize and process printed text. Each of these competencies is likewise dependent on lower level skills and cognitive abilities.[1]
+Children who readily understand spoken language and who are able to fluently and easily recognize printed words do not usually have difficulty with reading comprehension. However, students must be proficient in both competencies to read well; difficulty in either domain undermines the overall reading process. At the conclusion of reading, children should be able to retell the story in their own words including characters, setting, and the events of the story.[2] Reading researchers define a skilled reader as one who can understand written text as well as they can understand the same passage if spoken. [3]
+There is some debate as to whether print recognition requires the ability to perceive printed text and translate it into spoken language, or rather to translate printed text directly into meaningful symbolic models and relationships. The existence of speed reading, and its typically high comprehension rate would suggest that the translation into verbal form as an intermediate to understanding is not a prerequisite for effective reading comprehension. This aspect of reading is the crux of much of the reading debate.
+The purpose of reading is to have access to the literature of a specific language. Reading materials have traditionally been chosen from literary texts that represent 'higher' forms of culture. According to many traditional approaches, the learner's aim is to study vocabulary items, grammar and sentence structures, with a concern for learning the syntax of these 'higher' cultures. These approaches assume that authentic reading material is limited to the work or experience of great authors.
+Instructional methods[edit]
+A variety of different methods of teaching reading have been advocated in English-speaking countries. In the United States, the debate is often more political than objective.[4] Parties often divide into two camps which refuse to accept each other's terminology or frame of reference. Despite this both camps often incorporate aspects of the other's methods. Both camps accuse the other of causing failure to learn to read and write.[4] Phonics advocates assert that, to read a large vocabulary of words correctly and fluently requires detailed knowledge of the structure of the English language, particularly spelling-speech patterns.[5] Whole Language advocates assert that students do not need to be able to sound out words, but should look at unknown words and figure them out using context.[5]
+Research[edit]
+In 2000, the National Reading Panel (NRP) issued a report based on a meta-analysis of published research on effective reading instruction. The report found varying evidence-based support for some common approaches to teaching reading.[6]
+Phonemic awareness[edit]
+The NRP called phonemic awareness (PA) instruction "impressive":
+
+Overall, the findings showed that teaching children to manipulate phonemes in words was highly effective under a variety of teaching conditions with a variety of learners across a range of grade and age levels and that teaching phonemic awareness to children significantly improves their reading more than instruction that lacks any attention to PA.
+
+The report singles out PA instruction based on teaching children to manipulate phonemes with letters as highly effective. Phonemic awareness instruction also improved spelling in grade-level students, although it did not improve spelling in disabled readers.
+Lexical reading[edit]
+Lexical reading[7][8][9][10] involve acquiring words or phrases without attention to the characters or groups of characters that compose them or by using Whole language learning and teaching methodology. Sometimes argued to be in competition with phonics methods, and that the whole language approach tends to impair learning how to spell.
+Historically, the two camps have been called Whole Language and Phonics[citation needed], although the Whole Language instructional method has also been referred to as "literature-based reading program" and "integrated language arts curriculum".[11] Currently (2007), the differing perspectives are frequently referred to as "balanced reading instruction" (Whole Language) and "scientifically-based reading instruction" (Phonics).[12]
+Whole Word[edit]
+Whole word, also known as "Sight Word" and "Look and Say", teaches reading skills and strategies in the context of authentic literature. Word recognition accuracy is considered less important than meaning accuracy; therefore, there is an emphasis on comprehension as the ultimate goal.
+Students in this method memorize the appearance of words, or learn to recognize words by looking at the first and last letter from rigidly selected vocabularies in progressive texts (such as The Cat in the Hat). Often preliminary results show children taught with this method have higher reading levels than children learning phonics, because they learn to automatically recognise a small selection of words.[13] However, later tests demonstrate that literacy development becomes stunted when hit with longer and more complex words later.[5]
+Sub-lexical reading[edit]
+Sub-lexical reading,[7][8][9][10] involves teaching reading by associating characters or groups of characters with sounds or by using Phonics learning and teaching methodology. Sometimes argued to be in competition with whole language methods.
+Phonics[edit]
+Main article: Phonics
+[14][15] Phonics refers to an instructional method for teaching children to read. The method teaches sounds to be associated with letters and combinations of letters.[11][16] "Phonics" is distinct from the linguistics terms "phoneme" and "phonetics", which refer to sounds and the study of sounds respectively.[citation needed]
+Varieties of phonics include:
+
+Embedded phonics is an instructional approach where letter sounds are taught opportunistically, as the need arises and in meaningful contexts, such as the reading of a storybook. Embedded phonics is often associated with a whole language approach to teaching reading.[citation needed]
+Synthetic phonics and analytic phonics are different but popular methods of teaching phonics. Synthetic and analytic phonics approaches both generally involve explicit, carefully sequenced instruction that teach a large body of phonics patterns.[citation needed]
+
+Synthetic phonics emphasizes the one-to-one correspondences between phonemes and graphemes. In synthetic phonics programs students say the sounds for the graphemes they see and orally blend them together to produce a spoken word. In the context of phonics, the word "blend" takes on a different meaning from its use in linguistics.
+In analytic phonics, students often learn phonograms, the rime parts of words including the vowel and what follows it. Students are taught to generalize the phonogram to multiple words. The phonogram -ail can be used to read fail, trail, mail, wail, sail, and other words.[citation needed]
+
+
+
+The Orton phonography, originally developed to teach brain-damaged adults to read, is a form of phonics instruction that blends synthetic and analytic components. Orton described 73 "phonograms", or letter combinations, and 23 rules for spelling and pronunciation which Orton claimed would allow the reader to correctly pronounce and spell all but 123 of the 13,000 most common English words.[17]
+Pronunciation guides[edit]
+In contrast to phonics which teaches the pronunciation rules of English, a new technology Phonetically Intuitive English directly shows English words' pronunciation by adding diacritical marks on them. This solves the problem that pronunciation rules can often be confusing (for example, "ea" has a wide range of diverse pronunciations in "speak", "steak", "bread", "Korea", "reality", "create" and "ocean").
+The pronunciation-guide approach has been proven very successful in reading education for languages with very complex orthography such as Chinese. Pinyin and Zhuyin are systems of phonetic transcription for Mandarin Chinese used in China and Taiwan respectively, and are printed above or next to Chinese characters in children's books, textbooks and newspapers as a pronunciation guide, and have enabled Chinese-speaking countries to achieve high literacy rates for one of the most difficult languages in the world.
+Other instructional methods[edit]
+Guided Reading[edit]
+During guided reading teachers work with small groups of students. These are students with similar reading levels. Students will read with teachers in books at their personal reading level, not where the grade level is at. During this time the teachers will work with students to practice decoding, fluency, vocabulary and comprehension skills.
+Native reading[edit]
+Some methods of mix phonics and whole word. Native reading, for example, differs from both in that it emphasizes teaching reading beginning at a very early age, when the human brain is neurodevelopmentally most receptive to learning language.[18] Native readers learn to read as toddlers, starting at the same time they learn to speak, or very soon thereafter.[19]
+Reading Workshop[edit]
+Reading Workshop is based on the premise that readers need time to read and discuss their reading. Readers need access to a wide variety of reading materials of their choice. Classrooms must acquire a wide variety of reading materials to accommodate this need. Readers need to respond to the text and demonstrate quality literate behaviors. There is not a script to follow but a frame work to guide instruction. Students are exposed to a variety of learning experiences. There is time for student collaboration and a time for engaged reading.[20]
+During reading workshop, the teacher models a whole-group strategy lesson and then gives students large blocks of time to read and to practice the strategy. This practice can occur independently, with partners, or in small groups with a book or text chosen by the student. The teacher moves around the room and confers with the students about their reading. The teacher can meet with small, flexible groups to provide additional needs-based instruction. At the end of the workshop the whole groups comes together to share their learning.[21]
+Examples of Improving Reading[edit]
+An adult or peer reads with the student by modeling fluent reading and then asking the student to read the same passage aloud with encouragement and feedback by the adult or peer. A student listens to a tape of a fluent reader reading text at the student's independent level at a pace of about 80-100 words a minute. The student listens to the tape the first time and then practices reading along with the tape until the student is able to read fluently. The student reads with a peer partner. Each partner takes a turn reading to the other. A more fluent reader can be paired with a less fluent reader to model fluent reading. The more fluent reader can provide feedback and encouragement to the less fluent reader. Students of similar reading skills can also be paired, particularly if the teacher has modeled fluent reading and the partner reading involves practice.[22]
+The following is a list of the seven important strategies that all readers must be able to apply to text in order to read and understand content. The seven strategies are:
+
+1. Making Connections;
+2. Creating Mental Images;
+3. Making Inferences/Drawing Conclusions;
+4. Asking Questions;
+5. Determining What Is Important;
+6. Synthesizing; and
+7. Monitoring Comprehension and Meaning.[20][21][23]
+
+Reading comprehension[edit]
+Main article: Reading comprehension
+Reading comprehension requires making sense of text, which allows a reader to gain knowledge, enjoy a story, and make connections with the larger world.[24] Several skills support reading comprehension, including making predictions and inferences, monitoring understanding, using text structures, and using prior knowledge effectively.[24][25] Two of the most important aspects of successful comprehension are activating prior knowledge and metacognition, which are two of the principles of learning identified in the National Research Council's report.[26]
+Many studies have identified the importance of prior knowledge in reading comprehension.[27] "Many researchers have shown that having some prior knowledge about the topic of a passage enables both greater comprehension of the text and better memory for it."[28] "if we have prior knowledge about a topic in a text, we construct meaning based on our experience, and we can adjust and change those plans as we go along."[25] Some authors specify two types of prior knowledge necessary for successful comprehension. World knowledge aids in understanding fiction and domain-specific knowledge facilitates comprehension of nonfiction.[29] Students who lack this, request background information, so as to make connections with and within the text.[30]
+Another learning principle that greatly influences reading comprehension is the use of metacognition. The 'metacognitive' approach to instruction can help students learn to take control of their own learning by defining learning goals and monitoring their progress in achieving them."[26] A great deal of research indicates that accomplished readers "monitor their comprehension as they read by engag[ing] in strategic processing, such as rereading previous text, to resolve comprehension failure."[24] Students who are not able to track their own understanding gain neither information or enjoyment from reading as they do not know how to obtain meaning from the text.[citation needed]
+Many strategies have been applied.[29][30] Many studies point to the success of strategy instruction, particularly for students who are poor comprehenders.[29][30] Some strategies that have been helpful are summarization, question generation, making predictions and inferences, image making, knowledge and use of text structure, rereading, self-regulation, activation of prior knowledge, questioning the author, and using graphic organizers.[24][29][30][31] The variety of strategies allows the teacher to choose a strategy or strategies to suit the text and the needs of the student.[citation needed]
+For an example of a specific intervention incorporating four strategies for comprehension building, utilized reciprocal teaching to model summarizing, questioning, clarifying, and predicting.[32] The authors indicate that they choose these skills due to their dual functions as "comprehension-fostering and comprehension monitoring activities."[32] The reciprocal teaching method, which involves the teacher modeling the designated activities and gradually turning the procedure over to the students themselves, uses Vygotsky's idea of scaffolding. In this process, "children first experience a particular set of cognitive activities in the presence of experts, and only gradually come to perform these functions by themselves.[32] In this study, the students who participated in the reciprocal teaching intervention showed dramatic improvement in comprehension scores and maintained them for at least eight weeks.[32]
+Non-traditional approaches[edit]
+Programs have been established to provide certified therapy animals, such as dogs, as non-judgmental "listeners" to build motivation and help children build proficiency and gain confidence in their reading ability.[33]
+Success rate of reading education in the US[edit]
+Main article: Literacy in the United States
+National literacy rates range from about 10 percent to 99+ percent.
+Print exposure[edit]
+Print exposure the amount of time a child or person spends being visually aware of the written word (reading)--whether that be through newspapers, magazines, books, journals, scientific papers, or more. Research has shown that the amount of print material that a child accesses has deep cognitive consequences. In addition, the act of reading itself, for the most part irrespective of what is being read, increases the achievement difference among children.[citation needed]
+Children who are exposed to large amounts of print often have more success in reading and have a larger vocabulary to draw from than children who see less print. The average conversations among college graduates, spouses or adult friends contain less rare (advanced) words than the average preschool reading book. Other print sources have increasingly higher amounts of rare words, from children's books, to adult books, to popular magazines, newspapers, and scientific articles (listed in increasing level of difficulty). Television, even adult news shows, do not have the same level of rare words that children's books do.[citation needed]
+The issue is that oral language is very repetitive. To learn to read effectively a child needs to have a large vocabulary. Without this, when the child does read they stumble over words that they do not know, and have trouble following the idea of the sentence. This leads to frustration and a dislike of reading. When a child is faced with this difficulty he or she is less likely to read, thus further inhibiting the growth of their vocabulary.
+Children who enjoy reading do it more frequently and improve their vocabulary. A study of out-of-school reading of fifth graders, found that a student in the 50th percentile read books about 5 minutes a day, while a student in the 20th percentile read books for less than a minute a day. This same study found that the amount of time a child in the 10th percentile spent reading in two days, was the amount of time a child in the 90th percentile spent reading all year.[citation needed]
+Print exposure can also be a big factor in learning English as a second language. Book flood experiments are an example of this. The book flood program brought books in English to the classroom. Through focusing their English language learning on reading books instead of endless worksheets the teachers were able to improve the rate at which their students learned English.[citation needed]
+Alphabetic principle and English orthography[edit]
+Main article: Alphabetic principle
+Beginning readers must understand the concept of the alphabetic principle in order to master basic reading skills. A writing system is said to be alphabetic if it uses symbols to represent individual language sounds. In comparison, Logographic writing systems such as Japanese kanji and Chinese hanzi use a symbol to represent a word. And both cultures also use syllabic writing systems such as Japanese kana and Chinese Yi script, there are also many Chinese alphabets.
+English is one of several languages using the Latin Alphabet writing system. The orthographic depth of such languages varies. The Italian and Finnish languages have the purest, or shallowest orthographies, and English orthography is the deepest or most complex. In the shallow Spanish orthography; most words are spelled the way they sound, that is, word spellings are almost always regular. English orthography, on the other hand, is far more complex in that it does not have a one-to-one correspondence between symbols and sounds. English has individual sounds that can be represented by more than one symbol or symbol combination. For example, the long |a| sound can be represented by a-consonant-e as in ate, -ay as in hay, -ea as in steak, -ey as in they, -ai as in pain, and -ei as in vein. In addition, there are many words with irregular spelling and many homophones (words that sound the same but have different meanings and often different spellings as well). Pollack Pickeraz (1963) asserted that there are 45 phonemes in the English language, and that the 26 letters of the English alphabet can represent them in about 350 ways.
+The irregularity of English spelling is largely an artifact of how the language developed. English is a West Germanic language with substantial influences and additional vocabulary from Latin, Greek, and French, among others. Imported words usually follow the spelling patterns of their language of origin.[34] Advanced English phonics instruction includes studying words according to their origin, and how to determine the correct spelling of a word using its language of origin.
+Clearly, the complexity of English orthography makes it more difficult for children to learn decoding and encoding rules, and more difficult for teachers to teach them.[34] However, effective word recognition relies on the basic understanding that letters represent the sounds of spoken language, that is, word recognition relies on the reader's understanding of the alphabetic principle[35]
+Further information: History of the English language
+Spelling reform[edit]
+Attempts to make English spelling behave phonetically have given rise to various campaigns for spelling reform; none have been generally accepted. Opponents of simplified spellings point to the impossibility of phonetic spelling for a language with many diverse accents and dialects. Several distinguished scholars, however, have thoroughly disproven all reasonable objections to spelling reform, including this objection. See, for example, Dictionary of Simplified American Spelling.[36] Thomas Lounsbury presented a devastating rebuttal to all reasonable objections to spelling reform in 1909.[37] A shorter rebuttal of all the reasonable objections to spelling reform was made by Bob C Cleckler in 2005.[38]
+Linguists documenting the sounds of speech use various special symbols, of which the International Phonetic Alphabet is the most widely known. Linguistics makes a distinction between a phone and phoneme, and between phonology and phonetics.[citation needed] The study of words and their structure is morphology, and the smallest units of meaning are morphemes.[citation needed] The study of the relationship between words present in the language at one time is synchronic etymology, part of descriptive linguistics, and the study of word origins and evolution is diachronic etymology, part of historical linguistics.[citation needed]
+English orthography gives priority first to morphology, then to etymology, and lastly to phonetics. Thus the spelling of a word is dependent principally upon its structure, its relationship to other words, and its language or origin. It is usually necessary to know the meaning of a word in order to spell it correctly, and its meaning will be indicated by the similarity to words of the same meaning and family.[citation needed]
+English uses a 26 letter Latin alphabet, but the number of graphemes is expanded by several digraphs, trigraphs, and tetragraphs, while the letter "q" is not used as a grapheme by itself, only in the digraph "qu".[citation needed]
+Each grapheme may represent a limited number of phonemes depending on etymology and location in the word. Likewise each phoneme may be represented by a limited number of graphemes. Some letters are not part of any grapheme, but function as etymological markers. Graphemes do not cross morpheme boundaries.[citation needed]
+Morphemes are spelt consistently, following rules inflection and word-formation, and allow readers and writers to understand and produce words they have not previously encountered.[citation needed]
+Initial teaching alphabet[edit]
+Main article: Initial teaching alphabet
+This method was designed to overcome the fact that English orthography has a many-to-many relationship between graphemes and phonemes. The method fell into disuse because children still had to learn the Latin alphabet and the conventional English spellings in order to integrate with society outside of school. It also recreated the problem of dialect dependent spelling, which the standardisation of spelling had been created to eliminate.[citation needed]
+Augmenting spelling with pronunciation information[edit]
+Unlike spelling reforms, we can actually keep a word's original spelling intact but add pronunciation information to it, e.g. using diacritics. Phonetically Intuitive English is a Chrome browser extension that automatically adds such a pronunciation guide to English words on Web pages, for English-speaking children to recognize a written word's pronunciation and therefore map the written word to the mental word in his mind.
+Practical application[edit]
+In practice, many children are exposed to both "Phonic" and "Whole Language" methods, coupled with reading programs that combine both elements.[citation needed] For example, the extremely popular book, Teach Your Child to Read in 100 Easy Lessons, by Siegfried Engelman, et al. (ISBN 0-671-63198-5), teaches pronunciation and simple phonics, then supplements it with progressive texts and practice in directed reading. The end result of a mixed method is a casually phonetic student, a much better first-time pronouncer and speller, who still also has look-say acquisition, quick fluency and comprehension. Using an eclectic method, students can select their preferred learning style. This lets all students make progress, yet permits a motivated student to use and recognize the best traits of each method.[citation needed]
+Speed reading continues where basic education stops. Usually after some practice, many students' reading speed can be significantly increased. There are various speed-reading techniques.[citation needed]
+However, speed reading does not guarantee comprehension or retention of what was read.
+Readability indicates the ease of understanding or comprehension due to the style of writing.[citation needed] Reading recovery is a method for helping students learn to read.[citation needed]
+History[edit]
+
+
+
+
+1905 edition cover of Alice's Adventures in Wonderland retold in words of one syllable
+
+
+In colonial times, reading instruction was simple and straightforward: teach children the code and then let them read. At that time, reading material was not specially written for children but consisted primarily of the Bible and some patriotic essays; the most influential early textbook was The New England Primer, published late 1680s. There was little consideration for how best to teach children to read or how to assess reading comprehension. [39] Not until the mid-19th century did this approach change significantly. Educators, in particular Horace Mann, began to advocate changes in reading instructional methods. He observed that children were bored and "death-like" at school, and that instruction needed to engage children's interest in the reading material by teaching them to read whole words.[39] The McGuffey Readers (1836) were the most popular of these more engaging graded readers. In the mid-19th century, Rebecca Smith Pollard developed a sequential reading program of intensive synthetic phonics, complete with a separate teacher's manual and spelling and reading books.[citation needed]
+From the 1890s to at least 1910, A. L. Burt of New York and other publishing companies published series of books aimed at young readers, using simple language to retell longer classics. Mrs J. C. Gorham produced three such works, Gulliver's Travels in words of one syllable (1896), Alice's Adventures in Wonderland retold in words of one syllable (1905), and Black Beauty retold in words of one syllable (1905). In the UK, Routledge published a similar series between 1900 and 1910.
+The meaning-based curriculum did not dominate reading instruction until the second quarter of the 20th century. Beginning in the 1930s and 1940s, reading programs became very focused on comprehension and taught children to read whole words by sight. Phonics was not to be taught except sparingly and as a tool to be used as a last resort.[39]
+In the 1950s Rudolf Flesch wrote a book called Why Johnny Can't Read,[40] a passionate argument in favor of teaching children to read using phonics.[39] Addressed to the mothers and fathers of America, he also hurled severe criticism at publishers' decisions that he claimed were motivated by profit, and he questioned the honesty and intelligence of experts, schools, and teachers.[39] The book was on the best seller list for 30 weeks and spurred a hue and cry in general population. It also polarized the reading debate among educators, researchers, and parents.[39]
+This polarization continues to the present time. In the 1970s an instructional philosophy called whole language (which de-emphasizes teaching phonics out of context) was introduced, and it became the primary method of reading instruction in the 1980s and 1990s.[citation needed]During this time, researchers (such as the National Institute of Health) conducted studies showing that early reading acquisition depends on the understanding of the connection between sounds and letters.[41]
+The sight-word (Whole Word) method was invented by Rev. Thomas H. Gallaudet, the director of the American Asylum at Hartford in the 1830s.[citation needed] It was designed for the education of the Deaf by juxtaposing a word, with a picture.[citation needed] In 1830, Gallaudet provided a description of his method to the American Annals of Education which included teaching children to recognize a total of 50 sight words written on cards and by 1837 the method was adopted by the Boston Primary School Committee.[citation needed] Horace Mann the then Secretary of the Board of Education of Massachusetts, USA favored the method and it soon became the dominant method statewide.[citation needed]By 1844 the defects of the new method became so apparent to Boston schoolmasters that they issued an attack against it urging a return to an intensive, systematic phonics.[citation needed] Again Dr. Samuel Orton, a neuropathologist in Iowa in 1929 sought the cause of children's reading problems and concluded that their problems were being caused by the new sight method of teaching reading.[citation needed](His results were published in the February 1929 issue of the Journal of Educational Psychology, "The Sight Reading Method of Teaching Reading as a Source of Reading Disability.")[citation needed]
+See also[edit]
+
+Accessible publishing
+Basal reader
+Common Core State Standards Initiative
+Dolch Word List
+Speaking word processor supports reading education (Gio-Key-Board)
+Phonetically Intuitive English
+Whole language
+
+References[edit]
+Notes[edit]
+
+
+^ Hoover, Wesley A.; Gough, Philip B. "Overview - The Cognitive Foundations of Learning to Read: A Framework". The Cognitive Foundations of Learning to Read: A Framework. 
+^ Wren, Sebastian. "The Cognitive Foundations of Learning to Read: A Framework" (pdf). 
+^ Byrne, Brian (2005), "Theories of Learning to Read", in Snowling, Margaret J. and Charles Hulme, The Science of Reading: A Handbook (First ed.), Blackwell Publishing, pp. 104–119, 978-1-4051-6811-3 
+^ a b Adams, Marilyn Jager (1995). Beginning to read: thinking and learning about print. Cambridge, Mass: MIT Press. p. 13. ISBN 0-262-51076-6. OCLC 469305891. 
+^ a b c Adams, Marilyn Jager (1995). Beginning to read: thinking and learning about print. Cambridge, Mass: MIT Press. pp. 23, 24. ISBN 0-262-51076-6. OCLC 469305891. 
+^ "Report of the National Reading Panel: Teaching Children to Read". 
+^ a b Borowsky R, Esopenko C, Cummine J, Sarty GE (2007). "Neural representations of visual words and objects: a functional MRI study on the modularity of reading and object processing". Brain Topogr. 20 (2): 89–96. doi:10.1007/s10548-007-0034-1. PMID 17929158. 
+^ a b Borowsky R, Cummine J, Owen WJ, Friesen CK, Shih F, Sarty GE (2006). "FMRI of ventral and dorsal processing streams in basic reading processes: insular sensitivity to phonology". Brain Topogr. 18 (4): 233–9. doi:10.1007/s10548-006-0001-2. PMID 16845597. 
+^ a b Sanabria Díaz G, Torres Mdel R, Iglesias J, et al. (November 2009). "Changes in reading strategies in school-age children". Span J Psychol. 12 (2): 441–53. doi:10.1017/S1138741600001827. PMID 19899646. 
+^ a b Chan ST, Tang SW, Tang KW, Lee WK, Lo SS, Kwong KK (November 2009). "Hierarchical coding of characters in the ventral and dorsal visual streams of Chinese language processing". NeuroImage. 48 (2): 423–35. doi:10.1016/j.neuroimage.2009.06.078. PMID 19591947. 
+^ a b Chall, Jeanne S. and Helen M. Popp, Teaching and Assessing Phonics: Why, What, When and How, Educators Publishing Service, 1996
+^ Louisa Moats, Whole Language Lives On: The Illusion of "Balanced" Reading Instruction, The Fordham Foundation, Oct 2000. Downloaded from http://www.edexcellence.net/doc/moats.pdf July 30, 2007.
+^ Adams, Marilyn (1995). Beginning to Read: Thinking and Learning About Print. Cambridge, MA: The MIT Press. p. 38. 
+^ Smith, Nila B. (1 January 1957). "What Research Says about Phonics Instruction". The Journal of Educational Research. 51 (1): 1–9. JSTOR 27530006. 
+^ Smith, Nila B. (September 1957). "What Research Says about Phonics Instruction". The Journal of Educational Research. Taylor & Francis, Ltd. 51 (1). JSTOR 27530006. 
+^ Moats, Louisa (1995). Spelling: development, disabilities, and instruction. Baltimore, Md: York Press. ISBN 0-912752-40-8. OCLC 33404834. 
+^ "Teaching of Reading - ESL Articles - eslHQ". www.eslhq.com. Retrieved 2017-02-16. 
+^ Native Reading Chapter 1 by Timothy Kailing
+^ Kailing, Timothy D. (2008). Native Reading. Elliptical Research Books. ISBN 978-1-4348-4881-9. 
+^ a b Serafini, Frank. "Workshop Handouts Serafini, F. (2008)". Retrieved March 26, 2011. 
+^ a b Anne Goudvis; Stephanie Harvey (2007). Strategies that work: teaching comprehension for understanding and engagement. York, Me: Stenhouse Publishers. pp. 37–38. ISBN 1-57110-481-X. OCLC 232347335. 
+^ "What Is Guided Oral Reading?". Reading Rockets. Retrieved 4 March 2015. 
+^ Miller, Debbie S. (2002). Reading with meaning: teaching comprehension in the primary grades. York, Me: Stenhouse Publishers. pp. 53–157. ISBN 1-57110-307-4. OCLC 48773960. 
+^ a b c d Cain, Kate (2009). "Making Sense of Text: Skills That Support Text Comprehension and Its Development" (PDF). Expert Perspectives on Interventions for Reading: A Collection of Best Practice Articles from the International Dyslexia Association. 
+^ a b Duffy, Gerald (2009). Explaining Reading: A Resource for Teaching Concepts, Skills, and Strategies. New York: The Guilford Press. p. 19. ISBN 978-1-60623-075-6. 
+^ a b Donovan, M. S.; J. D. Bransford (2005). "Introduction". How Students Learn: History Mathematics, and Science in the Classroom. pp. 1–28. ISBN 0-309-07433-9. OCLC 61353694. 
+^ Carr, S. C.; B. Thompson (1996). "The Effects of Prior Knowledge and Schema Activation Strategies on the Inferential Reading Comprehension of Children With and Without Learning Disabilities". Learning Disability Quarterly. 19 (1): 49. Retrieved 2/7/2012.  Check date values in: |access-date= (help)
+^ Priebe SJ, Keenan JM, Miller AC (July 2011). "How Prior Knowledge Affects Word Identification and Comprehension". Read Writ. 7: 581–586. doi:10.1007/s11145-010-9260-0. PMC 3142886 . PMID 21799586. 
+^ a b c d McNamara, Danielle (2009). "The Importance of Teaching Reading Strategies" (PDF). Expert Perspectives on Interventions for Reading: A Collection of Best-Practice Articles form the International Dyslexia Association. 
+^ a b c d McKeown, Margaret; Isabel Beck; Ronette Blake (2009). "Reading Comprehension Instruction: Focus on Content or Strategies?" (PDF). Expert Perspectives on Interventions for Reading: A Collection of Best-Practice Articles from the International Dyslexia Association. 
+^ Tolman, Carol (2012). "Working Smarter, Not Harder: What Teachers of Reading Need to Know and Be Able to Teach". Expert Perspectives on Interventions for Reading: A Collection of Best-Practice Articles from the International Dyslexia Association. 
+^ a b c d Palinscar, Aannemarie Sullivan; Brown, Ann L. (1984). "Reciprocal Teaching of Comprehension-Fostering and Comprehension-Monitoring Activities". Cognition and Instruction. 1 (2): 117–175. doi:10.1207/s1532690xci0102_1. ISSN 0737-0008. 
+^ Newton, Ronni (editor) (June 21, 2013). "Reading with Dogs Benefits All in Bugbee Classroom". West Hartford Patch. Archived from the original on July 21, 2013. CS1 maint: Extra text: authors list (link)
+^ a b Diana Hanbury King (2000). English isn't crazy!: the elements of our language and how to teach them. Baltimore, Md: York Press. pp. xii, 15. ISBN 0-912752-59-9. OCLC 45166702. 
+^ Adams, Marilyn (1995). Beginning to Read: Thinking and Learning About Print. Cambridge, MA: The MIT Press. p. 29. 
+^ Rondthaler, Edward and Edward J. Lias, Dictionary of Simplified American Spelling (New York: The American Language Academy, 1986)
+^ Lounsbury, Thomas Raynesford (1970). English spelling and spelling reform. Westport, Conn: Greenwood Press. pp. 331–341. ISBN 0-8371-4264-4. OCLC 134359. 
+^ Bob C. Cleckler (2005). Lets End Our Literacy Crisis: The Desperately Needed Idea Whose Time Has Come. Salt Lake City: American University & Colleges Press. pp. 166–170. ISBN 1-58982-230-7. OCLC 636405856. 
+^ a b c d e f Adams, Marilyn Jager (1990). Beginning to read: thinking and learning about print. Cambridge, Mass: MIT Press. pp. 21–25. ISBN 0-262-01112-3. OCLC 256731826. 
+^ Flesch, Rudolf Franz (1986). Why Johnny can't read: and what you can do about it. San Francisco: Harper & Row. ISBN 0-06-091340-1. OCLC 12837722. 
+^ Adams, Marilyn Jager (1994). Beginning to read: thinking and learning about print. Cambridge, Mass: MIT Press. ISBN 0-262-51076-6. OCLC 256731826. 
+
+
+Bibliography[edit]
+
+National Right To Read Foundation - Many articles on comparison between Phonics and Whole language techniques and effects
+
+External links[edit]
+
+The Cognitive Foundations of Learning to Read: A Framework - Southwest Educational Development Laboratory
+"Reading Can Make You Smarter" by Anne Cunningham and Keith Stanovich; National Academy of Elementary School Principles
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Literacy
+
+
+
+Teaching literacy
+
+
+
+Reading education in the US
+Phonics
+Whole language
+Dick and Jane
+National Council of Teachers of English
+No Child Left Behind Act
+Family literacy
+Adolescent literacy
+
+
+
+
+
+Defining literacy
+
+
+
+Functional illiteracy
+Critical literacy
+
+
+
+
+
+Literacy internationally
+
+
+
+International Literacy Association
+List of countries by literacy rate
+Literacy in India
+International Literacy Day
+List of Chinese administrative divisions by illiteracy rate
+
+
+
+
+
+Major contributors to literacy
+
+
+
+Frank Laubach
+Ruth Johnson Colvin
+Paulo Freire
+Griffith Jones
+Marie Clay
+James Paul Gee
+
+
+
+
+
+Related concepts
+
+
+
+Agricultural literacy
+Aliteracy
+Asemic writing
+Computer literacy
+Cultural literacy
+Data literacy
+Dyslexia
+Diaspora literacy
+Early literacy
+Ecological literacy
+Electracy
+Emergent literacy
+Emotional literacy
+Financial literacy
+Graph literacy
+Health literacy
+Information literacy
+Information and media literacy
+Literacy test
+Media consumption
+Media literacy
+Mental health literacy
+New literacies
+Numeracy
+Oracy
+Orality
+Oral literature
+Postliterate society
+Racial literacy
+Scientific literacy
+Statistical literacy
+Technological literacy
+Transliteracy
+Visual literacy
+Writing system
+
+
+
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Topics in education
+
+
+
+
+
+
+
+General
+
+
+
+Glossary
+Index
+Outline
+Aims and objectives
+Anthropology
+Assessment
+Economics
+Evaluation
+History
+Leadership
+Philosophy
+Policy
+Politics
+Psychology
+Research
+Rights
+Sociology
+Technology
+Theory
+Types of institutions
+
+
+
+
+
+By subject
+
+
+
+Agricultural
+Art
+Bilingual
+Business
+Chemistry
+Design
+Economics
+Engineering
+Environmental
+Euthenics
+Health
+Language
+Legal
+Mathematics
+Medical
+Military
+Music
+Nursing
+Peace
+Performing arts
+Philosophy
+Physical
+Physics
+Reading
+Religious
+Science
+Sex
+Teacher
+Technology
+Values
+Vocational
+More...
+
+
+
+
+
+Alternative
+
+
+
+Autodidacticism
+Education reform
+Gifted education
+Homeschooling
+Religious education
+Special education
+More...
+
+
+
+
+
+Wikimedia
+
+
+
+Books
+Definitions
+Images
+Learning resources
+News
+Quotes
+Texts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Stages of formal education
+
+
+
+
+
+
+
+Early childhood education
+Primary education
+Secondary education
+Tertiary education
+
+
+
+
+
+
+
+
+
+Preschool
+
+→
+Kindergarten
+
+→
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Elementary school
+
+→
+
+
+
+
+
+
+
+
+
+Infant
+
+→
+Junior
+
+→
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+High school
+
+→
+
+
+
+
+
+
+
+
+
+Junior high school
+
+→
+Senior high school
+
+→
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Higher education
+
+ 
+Vocational
+Further
+
+continuing
+
+
+
+
+
+
+
+
+
+Undergraduate
+
+→
+Postgraduate
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Alternative education
+
+Homeschooling
+
+
+Adult education
+ Portal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Education by region
+
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Education in Africa
+
+
+
+Sovereign states
+
+
+
+Algeria
+Angola
+Benin
+Botswana
+Burkina Faso
+Burundi
+Cameroon
+Cape Verde (Cabo Verde)
+Central African Republic
+Chad
+Comoros
+Democratic Republic of the Congo
+Republic of the Congo
+Djibouti
+Egypt
+Equatorial Guinea
+Eritrea
+Ethiopia
+Gabon
+The Gambia
+Ghana
+Guinea
+Guinea-Bissau
+Ivory Coast (Côte d'Ivoire)
+Kenya
+Lesotho
+Liberia
+Libya
+Madagascar
+Malawi
+Mali
+Mauritania
+Mauritius
+Morocco
+Mozambique
+Namibia
+Niger
+Nigeria
+Rwanda
+São Tomé and Príncipe
+Senegal
+Seychelles
+Sierra Leone
+Somalia
+South Africa
+South Sudan
+Sudan
+Swaziland
+Tanzania
+Togo
+Tunisia
+Uganda
+Zambia
+Zimbabwe
+
+
+
+
+
+
+States with limited
+
+recognition
+
+
+
+
+Sahrawi Arab Democratic Republic
+Somaliland
+
+
+
+
+
+
+Dependencies and
+
+other territories
+
+
+
+
+
+Canary Islands / Ceuta / Melilla  (Spain)
+Madeira (Portugal)
+Mayotte / Réunion (France)
+Saint Helena / Ascension Island / Tristan da Cunha (United Kingdom)
+
+
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Education in Asia
+
+
+
+Sovereign states
+
+
+
+Afghanistan
+Armenia
+Azerbaijan
+Bahrain
+Bangladesh
+Bhutan
+Brunei
+Cambodia
+China
+Cyprus
+East Timor (Timor-Leste)
+Egypt
+Georgia
+India
+Indonesia
+Iran
+Iraq
+Israel
+Japan
+Jordan
+Kazakhstan
+North Korea
+South Korea
+Kuwait
+Kyrgyzstan
+Laos
+Lebanon
+Malaysia
+Maldives
+Mongolia
+Myanmar
+Nepal
+Oman
+Pakistan
+Philippines
+Qatar
+Russia
+Saudi Arabia
+Singapore
+Sri Lanka
+Syria
+Tajikistan
+Thailand
+Turkey
+Turkmenistan
+United Arab Emirates
+Uzbekistan
+Vietnam
+Yemen
+
+
+
+
+
+States with
+
+limited recognition
+
+
+
+Abkhazia
+Artsakh
+Northern Cyprus
+Palestine
+South Ossetia
+Taiwan
+
+
+
+
+
+Dependencies and
+
+other territories
+
+
+
+British Indian Ocean Territory
+Christmas Island
+Cocos (Keeling) Islands
+Hong Kong
+Macau
+
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Education in Europe
+
+
+
+Sovereign states
+
+
+
+Albania
+Andorra
+Armenia
+Austria
+Azerbaijan
+Belarus
+Belgium
+Bosnia and Herzegovina
+Bulgaria
+Croatia
+Cyprus
+Czech Republic
+Denmark
+Estonia
+Finland
+France
+Georgia
+Germany
+Greece
+Hungary
+Iceland
+Ireland
+
+Italy
+Kazakhstan
+Latvia
+Liechtenstein
+Lithuania
+Luxembourg
+Macedonia
+Malta
+Moldova
+Monaco
+Montenegro
+Netherlands
+Norway
+Poland
+Portugal
+Romania
+Russia
+San Marino
+Serbia
+Slovakia
+Slovenia
+Spain
+Sweden
+Switzerland
+Turkey
+Ukraine
+United Kingdom
+
+
+
+
+
+States with limited
+
+recognition
+
+
+
+Abkhazia
+Artsakh
+Kosovo
+Northern Cyprus
+South Ossetia
+Transnistria
+
+
+
+
+
+Dependencies and
+
+other entities
+
+
+
+Åland
+Faroe Islands
+Gibraltar
+Guernsey
+Isle of Man
+Jersey
+Svalbard
+
+
+
+
+
+Other entities
+
+
+
+European Union
+
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Education in North America
+
+
+
+Sovereign states
+
+
+
+Antigua and Barbuda
+Bahamas
+Barbados
+Belize
+Canada
+Costa Rica
+Cuba
+Dominica
+Dominican Republic
+El Salvador
+Grenada
+Guatemala
+Haiti
+Honduras
+Jamaica
+Mexico
+Nicaragua
+Panama
+Saint Kitts and Nevis
+Saint Lucia
+Saint Vincent and the Grenadines
+Trinidad and Tobago
+United States
+
+
+
+
+
+
+Dependencies and
+
+other territories
+
+
+
+
+Anguilla
+Aruba
+Bermuda
+Bonaire
+British Virgin Islands
+Cayman Islands
+Curaçao
+Greenland
+Guadeloupe
+Martinique
+Montserrat
+Puerto Rico
+Saint Barthélemy
+Saint Martin
+Saint Pierre and Miquelon
+Saba
+Sint Eustatius
+Sint Maarten
+Turks and Caicos Islands
+United States Virgin Islands
+
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Education in Oceania
+
+
+
+Sovereign states
+
+
+
+Australia
+Federated States of Micronesia
+Fiji
+Kiribati
+Marshall Islands
+Nauru
+New Zealand
+Palau
+Papua New Guinea
+Samoa
+Solomon Islands
+Tonga
+Tuvalu
+Vanuatu
+
+
+
+
+
+Associated states
+
+of New Zealand
+
+
+
+Cook Islands
+Niue
+
+
+
+
+
+Dependencies
+
+and other territories
+
+
+
+American Samoa
+Christmas Island
+Cocos (Keeling) Islands
+Easter Island
+French Polynesia
+Guam
+Hawaii
+New Caledonia
+Norfolk Island
+Northern Mariana Islands
+Pitcairn Islands
+Tokelau
+Wallis and Futuna
+
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Education in South America
+
+
+
+Sovereign states
+
+
+
+Argentina
+Bolivia
+Brazil
+Chile
+Colombia
+Ecuador
+Guyana
+Paraguay
+Peru
+Suriname
+Uruguay
+Venezuela
+
+
+
+
+
+
+Dependencies and
+
+other territories
+
+
+
+
+Falkland Islands
+French Guiana
+South Georgia and the South Sandwich Islands
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ Category
+ Portal
+ WikiProject
+
+
+
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+United States articles
+
+
+
+History
+
+
+
+
+By event
+
+
+
+Timeline of U.S. history
+Pre-Columbian era
+Colonial era
+
+Thirteen Colonies
+military history
+Continental Congress
+
+
+American Revolution
+
+War
+
+
+American frontier
+Confederation Period
+Drafting and ratification of Constitution
+Federalist Era
+War of 1812
+Territorial acquisitions
+Territorial evolution
+Mexican–American War
+Civil War
+Reconstruction Era
+Indian Wars
+Gilded Age
+Progressive Era
+African-American civil rights movement 1865–1896 / 1896–1954 / 1954–1968
+Spanish–American War
+Imperialism
+World War I
+Roaring Twenties
+Great Depression
+World War II
+
+home front
+Nazism in the United States
+
+
+American Century
+Cold War
+Korean War
+Space Race
+Feminist Movement
+Vietnam War
+Post-Cold War (1991–2008)
+War on Terror
+
+War in Afghanistan
+Iraq War
+
+
+Recent events (2008–present)
+
+
+
+
+
+By topic
+
+
+
+Outline of U.S. history
+Demographic
+Discoveries
+Economic
+
+debt ceiling
+
+
+Inventions
+
+before 1890
+1890–1945
+1946–91
+after 1991
+
+
+Military
+Postal
+Technological and industrial
+
+
+
+
+
+
+
+
+Geography
+
+
+
+
+
+
+
+Territory
+
+counties
+federal district
+federal enclaves
+Indian reservations
+insular zones
+minor outlying islands
+populated places
+states
+
+
+Earthquakes
+Extreme points
+Islands
+Mountains
+
+peaks
+ranges
+Appalachian
+Rocky
+
+
+National Park Service
+
+National Parks
+
+
+Regions
+
+East Coast
+West Coast
+Great Plains
+Gulf
+Mid-Atlantic
+Midwestern
+New England
+Pacific
+Central
+Eastern
+Northern
+Northeastern
+Northwestern
+Southern
+Southeastern
+Southwestern
+Western
+
+
+Rivers
+
+Colorado
+Columbia
+Mississippi
+Missouri
+Ohio
+Rio Grande
+Yukon
+
+
+Time
+Water supply and sanitation
+
+
+
+
+
+
+
+
+Politics
+
+
+
+
+
+
+
+
+Federal
+
+
+
+
+Executive
+
+
+
+Cabinet
+Civil service
+Executive departments
+Executive Office
+Independent agencies
+Law enforcement
+President of the United States
+Public policy
+
+
+
+
+
+Legislative
+
+
+
+House of Representatives
+
+current members
+Speaker
+
+
+Senate
+
+current members
+President pro tempore
+Vice President
+
+
+
+
+
+
+
+Judicial
+
+
+
+Courts of appeals
+District courts
+Supreme Court
+
+
+
+
+
+Law
+
+
+
+Bill of Rights
+
+civil liberties
+
+
+Code of Federal Regulations
+Constitution
+
+federalism
+preemption
+separation of powers
+
+
+Federal Reporter
+United States Code
+United States Reports
+
+
+
+
+
+Intelligence
+
+
+
+Central Intelligence Agency
+Defense Intelligence Agency
+Federal Bureau of Investigation
+National Geospatial-Intelligence Agency
+National Reconnaissance Office
+National Security Agency
+Office of the Director of National Intelligence
+
+
+
+
+
+Uniformed
+
+
+
+Armed Forces
+
+Army
+Marine Corps
+Navy
+Air Force
+Coast Guard
+
+
+National Guard
+NOAA Corps
+Public Health Service Corps
+
+
+
+
+
+
+
+
+
+
+
+51st state
+
+political status of Puerto Rico
+District of Columbia statehood movement
+
+
+Elections
+
+Electoral College
+
+
+Foreign relations
+
+Foreign policy
+
+
+Hawaiian sovereignty movement
+Ideologies
+
+anti-Americanism
+exceptionalism
+nationalism
+
+
+Local government
+Parties
+
+Democratic
+Republican
+Third parties
+
+
+Red states and blue states
+
+Purple America
+
+
+Scandals
+State government
+
+governor
+state legislature
+state court
+
+
+Uncle Sam
+
+
+
+
+
+
+
+
+
+
+
+Economy
+
+
+
+
+
+
+
+By sector
+
+Agriculture
+Banking
+Communications
+Energy
+Insurance
+Manufacturing
+Mining
+Tourism
+Trade
+Transportation
+
+
+Companies
+
+by state
+
+
+Currency
+Exports
+Federal budget
+Federal Reserve System
+Financial position
+Labor unions
+Public debt
+Social welfare programs
+Taxation
+Unemployment
+Wall Street
+
+
+
+
+
+
+
+
+Society
+
+
+
+
+
+
+
+
+Culture
+
+
+
+Americana
+Architecture
+Cinema
+Cuisine
+Dance
+Demography
+Education
+Family structure
+Fashion
+Flag
+Folklore
+Languages
+
+American English
+Indigenous languages
+ASL
+
+Black American Sign Language
+
+
+HSL
+Plains Sign Talk
+Arabic
+Chinese
+French
+German
+Italian
+Russian
+Spanish
+
+
+Literature
+Media
+
+Journalism
+Internet
+Newspapers
+Radio
+Television
+
+
+Music
+Names
+People
+Philosophy
+Public holidays
+Religion
+Sexuality
+Sports
+Theater
+Visual art
+
+
+
+
+
+Social class
+
+
+
+Affluence
+American Dream
+Educational attainment
+Homelessness
+Home-ownership
+Household income
+Income inequality
+Middle class
+Personal income
+Poverty
+Professional and working class conflict
+Standard of living
+Wealth
+
+
+
+
+
+Issues
+
+
+
+Ages of consent
+Capital punishment
+Crime
+
+incarceration
+
+
+Criticism of government
+Discrimination
+
+affirmative action
+antisemitism
+intersex rights
+islamophobia
+LGBT rights
+racism
+same-sex marriage
+
+
+Drug policy
+Energy policy
+Environmental movement
+Gun politics
+Health care
+
+abortion
+health insurance
+hunger
+obesity
+smoking
+
+
+Human rights
+Immigration
+
+illegal
+
+
+International rankings
+National security
+
+Mass surveillance
+Terrorism
+
+
+Separation of church and state
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Outline
+Index
+
+
+
+Book
+Category
+Portal
+
+
+
+
+
+
+
+
+
+

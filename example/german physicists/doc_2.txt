@@ -1,0 +1,116 @@
+Valentine "Valya" Bargmann (April 6, 1908 – July 20, 1989)[1] was a German-American mathematician and theoretical physicist.
+
+
+
+Contents
+
+
+1 Biography
+2 References
+3 External links
+4 Selected bibliography
+
+
+
+Biography[edit]
+Born in Berlin, Germany, to a German Jewish family, Bargmann studied there from 1925 to 1933. After the National Socialist Machtergreifung, he moved to Switzerland to the University of Zürich where he received his Ph.D. under Gregor Wentzel.
+He emigrated to the U.S., barely managing immigration acceptance as his German passport was to be revoked—with only two days of validity left.
+At the Institute for Advanced Study in Princeton (1937–46) he worked as an assistant to Albert Einstein,[2] publishing with him and Peter Bergmann on classical five-dimensional Kaluza-Klein theory (1941). He taught at Princeton University since 1946, to the rest of his career.
+He pioneered understanding of the irreducible unitary representations of SL2(R) and the Lorentz group (1947). He further formulated the Bargmann–Wigner equations with Eugene Wigner (1948), for particles of arbitrary spin, building up on work of several theorists who pioneered quantum mechanics.[3][4]
+Bargmann's theorem (1954) on projective unitary representations of Lie groups gives a condition for when a projective unitary representation of a Lie group comes from an ordinary unitary representation of its universal cover.
+Bargmann further discovered the Bargmann–Michel–Telegdi equation (1959) describing relativistic precession; Bargmann's limit of the maximum number of QM bound states of a potential (1952); and, influentially, the holomorphic representation in the Segal–Bargmann space (1961), including the celebrated Bargmann kernel.
+Bargmann was elected a Fellow of the American Academy of Arts and Sciences in 1968.[5] In 1978 he received The Wigner Medal, together with Wigner himself, in the founding year of the prize. In 1988 he received the Max Planck medal of the German Physical Society.
+He was also a talented pianist.
+He died in Princeton in 1989.
+References[edit]
+
+
+
+^ "Valentine Bargmann". Biographical Memoirs, Vol. 76. National Academy Press. 1999. pp. 37–50. ISBN 0-309-06434-1. 
+^ Witten, E. (2014). "A Note On Einstein, Bergmann, and the Fifth Dimension", arXiv:1401.8048 pdf
+^ V. Bargmann Irreducible Unitary Representations of the Lorentz Group The Annals of Mathematics 2nd Ser., Vol. 48, No. 3 (Jul., 1947), pp. 568-640
+^ Bargmann, V.; Wigner, E. P. (1948). "Group theoretical discussion of relativistic wave equations". Proc. Natl. Acad. Sci. USA. 34 (5): 211–23. Bibcode:1948PNAS...34..211B. doi:10.1073/pnas.34.5.211. 
+^ "Book of Members, 1780-2010: Chapter B" (PDF). American Academy of Arts and Sciences. Retrieved May 17, 2011. 
+
+
+
+External links[edit]
+
+National Academy of Sciences Biographical Memoir by J R Klauder
+The Princeton Mathematics Community in the 1930s, interview of Valentine Bargmann at Princeton University on 12 April 1984
+Valentine Bargmann at the Mathematics Genealogy Project
+Photo from a website
+
+Selected bibliography[edit]
+1934
+Über den Zusammenhang zwischen Semivektoren and Spinoren und die Reduktion der Diracgleichung für Semivektoren. Helv. Phys. Acta 7:57-82.
+1936
+Zur Theorie des Wasserstoffatoms. Z. Phys. 99:576-82.
+1937
+Über die durch Elektronenstrahlen in Kristallen angeregte Lichtemission. Helv. Phys. Acta 10:361-86.
+1941
+With A. Einstein and P. G. Bergmann. On the five-dimensional representation of gravitation and electricity. In Theodore von Kármán Anniversary Volume, pp. 212–25,(Pasadena, California Institute of Technology).
+1944
+With A. Einstein. Bivector fields. Ann. Math. 45:1-14.
+1945
+On the glancing reflection of shock waves. Applied Mathematics Panel Report No. 108.
+1946
+With D. Montgomery and J. von Neumann. Solution of linear sys- tems of high order. Report to the Bureau of Ordinance, U. S. Navy.
+1947
+Irreducible unitary representations of the Lorentz group. Ann. Math. 48:568-640.
+1948
+With E. P. Wigner. Group theoretical discussion of relativistic wave equations. Proc. Natl. Acad. Sci. U. S. A. 34:211-23.
+1949
+Remarks on the determination of a central field of force from the elastic scattering phase shifts. Phys. Rev. 75:301-303.
+On the connection between phase shifts and scattering potential. Rev. Mod. Phys. 21:488-93.
+1952
+On the number of bound states in a central field of force. Proc. Natl. Acad. Sci. U. S. A. 38:961-66.
+1954
+On unitary ray representations of continuous groups. Ann. Math. 59:1-46.
+1959
+With L. Michel and V. Telegdi. Precession of the polarization of particles moving in a homogeneous electromagnetic field. Phys. Rev. Lett. 2:435-36.
+1960
+Relativity. In Theoretical Physics in the Twentieth Century (Pauli Memo- rial Volume), eds., M. Fierz and V. F. Weisskopf, pp. 187–98. New York: Interscience Publishers.
+With M. Moshinsky. Group theory of harmonic oscillators. I. The collective modes. Nucl. Phys. 18:697-712.
+1961
+With M. Moshinsky. Group theory of harmonic oscillators. II. The integrals of motion for the quadrupole-quadrupole interaction. Nucl. Phys. 23:177-99.
+On a Hilbert space of analytic functions and an associated integral transform. Part I. Commun. Pure Appl. Math. 14:187-214.
+1962
+On the representations of the rotation group. Rev. Mod. Phys. 34:829-45.
+1964
+Note on Wigner’s theorem on symmetry operations. J. Math. Phys. 5:862-68.
+1967
+On a Hilbert space of analytic functions and an associated integral transform. Part II. A family of related function spaces application to distribution theory. Commun. Pure Appl. Math. 20:1-101.
+1971
+With P. Butera, L. Girardello, and J. R. Klauder. On the completeness of the coherent states. Rep. Math. Phys. 2:221-28.
+1972
+Notes on some integral inequalities. Helv. Phys. Acta 45:249-57.
+1977
+With I. T. Todorov. Spaces of analytic functions on a complex cone as carriers for the symmetric tensor representations of SO(n). J. Math. Phys. 18:1141-48.
+1979
+Erinnerungen eines Assistanten Einsteins. Vierteljahrsschrift der Naturforschenden Gesellschaft in Zürich, Jahrgang 124, Heft 1, pp. 39–44. Zürich: Druck und Verlag Orell Fussli Graphische Betriebe AG.
+
+
+
+Authority control
+
+
+
+WorldCat Identities
+VIAF: 112232146
+LCCN: n88274485
+ISNI: 0000 0001 1005 3614
+GND: 123229774
+SUDOC: 081059175
+MGP: 117922
+SNAC: w6xw8h0d
+
+
+
+
+
+
+
+
+
+

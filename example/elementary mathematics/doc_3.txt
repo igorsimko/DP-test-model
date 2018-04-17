@@ -1,0 +1,1808 @@
+
+
+Numeral systems
+
+
+
+
+
+Hindu–Arabic numeral system
+
+
+
+
+
+Western Arabic
+Eastern Arabic
+
+
+Bengali
+Gurmukhi
+Indian
+Sinhala
+Tamil
+
+
+Balinese
+Burmese
+Dzongkha
+Gujarati
+Javanese
+Khmer
+Lao
+Mongolian
+Thai
+
+
+
+
+
+East Asian
+
+
+
+
+Chinese
+
+Suzhou
+
+
+Hokkien
+Japanese
+Korean
+Vietnamese
+
+
+Counting rods
+
+
+
+
+Alphabetic
+
+
+
+
+Abjad
+Armenian
+Āryabhaṭa
+Cyrillic
+Ge'ez
+Georgian
+Greek
+Hebrew
+Roman
+
+
+
+
+Former
+
+
+
+
+Aegean
+Attic
+Babylonian
+Brahmi
+Chuvash
+Egyptian
+Etruscan
+Inuit
+Kharosthi
+Mayan
+Muisca
+Quipu
+
+
+Prehistoric
+
+
+
+
+Positional systems by base
+
+
+
+
+2
+3
+4
+5
+6
+8
+10
+12
+16
+20
+60
+
+
+
+
+Non-standard positional numeral systems
+
+
+
+
+Bijective numeration (1)
+Signed-digit representation (Balanced ternary)
+factorial
+negative
+Complex-base system (2i)
+Non-integer representation (φ)
+mixed
+Asymmetric numeral systems
+
+
+
+
+List of numeral systems
+
+
+
+
+
+v
+t
+e
+
+
+
+
+
+
+
+
+
+Arabic and Western Arabic numerals on a road sign in Abu Dhabi
+
+
+The Hindu–Arabic numeral system[1] (also called the Arabic numeral system or Hindu numeral system)[2][note 1] is a positional decimal numeral system that is the most common system for the symbolic representation of numbers in the world. It was an ancient Indian numeral system which was re-introduced in the book On the Calculation with Hindu Numerals written by the medieval-era Iranian mathematician and engineer al-Khwarizmi, whose name was latinized as Algoritmi.[note 2][3] The system later spread to medieval Europe by the High Middle Ages.
+The system is based upon ten (originally nine) different glyphs. The symbols (glyphs) used to represent the system are in principle independent of the system itself. The glyphs in actual use are descended from Brahmi numerals and have split into various typographical variants since the Middle Ages.
+These symbol sets can be divided into three main families: Arabic numerals used in the Greater Maghreb and in Europe, Eastern Arabic numerals (also called "Indic numerals") used in the Middle East, and the Indian numerals used in the Indian subcontinent.
+
+
+
+Contents
+
+
+1 Etymology
+2 Positional notation
+3 Symbols
+
+3.1 Glyph comparison
+
+
+4 History
+
+4.1 Predecessors
+4.2 Development
+4.3 Adoption in Europe
+4.4 Adoption in East Asia
+4.5 Spread of the Western Arabic variant
+
+
+5 See also
+6 Notes
+7 References
+8 Bibliography
+
+
+
+Etymology[edit]
+The Hindu-Arabic or Indo-Persian numerals originated from India. Following its re-introduction in the book On the Calculation with Hindu Numerals written by the medieval-era Persian mathematician and engineer al-Khwarizmi, whose name was latinized as Algoritmi,[3] it began to be referred to by the Persian and Arabic mathematicians as the "Hindu numerals" (where "Hindu" meant Indian). After its subsequent introduction to Europe, the Europeans referred to it as the "Arabic Numerals" based on a common misconception of associating the origin of oriental science with Arabic peoples.[4]
+Positional notation[edit]
+Main articles: Positional notation and 0 (number)
+The Hindu–Arabic system is designed for positional notation in a decimal system. In a more developed form, positional notation also uses a decimal marker (at first a mark over the ones digit but now more usually a decimal point or a decimal comma which separates the ones place from the tenths place), and also a symbol for "these digits recur ad infinitum". In modern usage, this latter symbol is usually a vinculum (a horizontal line placed over the repeating digits). In this more developed form, the numeral system can symbolize any rational number using only 13 symbols (the ten digits, decimal marker, vinculum, and a prepended dash to indicate a negative number).
+Although generally found in text written with the Arabic abjad ("alphabet"), numbers written with these numerals also place the most-significant digit to the left, so they read from left to right. The requisite changes in reading direction are found in text that mixes left-to-right writing systems with right-to-left systems.
+Symbols[edit]
+Various symbol sets are used to represent numbers in the Hindu–Arabic numeral system, most of which developed from the Brahmi numerals.
+The symbols used to represent the system have split into various typographical variants since the Middle Ages, arranged in three main groups:
+
+The widespread Western "Arabic numerals" used with the Latin, Cyrillic, and Greek alphabets in the table, descended from the "West Arabic numerals" which were developed in al-Andalus and the Maghreb (there are two typographic styles for rendering western Arabic numerals, known as lining figures and text figures).
+The "Arabic–Indic" or "Eastern Arabic numerals" used with Arabic script, developed primarily in what is now Iraq. A variant of the Eastern Arabic numerals is used in Persian and Urdu.
+The Indian numerals in use with scripts of the Brahmic family in India and Southeast Asia. Each of the roughly dozen major scripts of India has its own numeral glyphs (as one will note when perusing Unicode character charts).
+
+Glyph comparison[edit]
+
+
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+Script
+See
+
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+Latin script
+Arabic numerals
+
+
+〇/零
+一
+二
+三
+四
+五
+六
+七
+八
+九
+East Asia
+Chinese numerals, Japanese numerals, Korean numerals
+
+
+ο/ō
+Αʹ
+Βʹ
+Γʹ
+Δʹ
+Εʹ
+Ϛʹ
+Ζʹ
+Ηʹ
+Θʹ
+Modern Greek
+Greek numerals
+
+
+
+א
+ב
+ג
+ד
+ה
+ו
+ז
+ח
+ט
+Hebrew
+Hebrew numerals
+
+
+०
+१
+२
+३
+४
+५
+६
+७
+८
+९
+Devanagari
+Indian numerals
+
+
+૦
+૧
+૨
+૩
+૪
+૫
+૬
+૭
+૮
+૯
+Gujarati
+
+
+
+੦
+੧
+੨
+੩
+੪
+੫
+੬
+੭
+੮
+੯
+Gurmukhi
+
+
+
+༠
+༡
+༢
+༣
+༤
+༥
+༦
+༧
+༨
+༩
+Tibetan
+
+
+
+০
+১
+২
+৩
+৪
+৫
+৬
+৭
+৮
+৯
+Assamese / Bengali / Sylheti
+Bengali-Assamese numerals
+
+
+೦
+೧
+೨
+೩
+೪
+೫
+೬
+೭
+೮
+೯
+Kannada
+
+
+
+୦
+୧
+୨
+୩
+୪
+୫
+୬
+୭
+୮
+୯
+Odia
+
+
+
+൦
+൧
+൨
+൩
+൪
+൫
+൬
+൭
+൮
+൯
+Malayalam
+
+
+
+௦
+௧
+௨
+௩
+௪
+௫
+௬
+௭
+௮
+௯
+Tamil
+Tamil numerals
+
+
+0
+౧
+౨
+౩
+౪
+౫
+౬
+౭
+౮
+౯
+Telugu
+
+
+
+០
+១
+២
+៣
+៤
+៥
+៦
+៧
+៨
+៩
+Khmer
+Khmer numerals
+
+
+๐
+๑
+๒
+๓
+๔
+๕
+๖
+๗
+๘
+๙
+Thai
+Thai numerals
+
+
+໐
+໑
+໒
+໓
+໔
+໕
+໖
+໗
+໘
+໙
+Lao
+
+
+
+၀
+၁
+၂
+၃
+၄
+၅
+၆
+၇
+၈
+၉
+Burmese
+
+
+
+٠
+١
+٢
+٣
+٤
+٥
+٦
+٧
+٨
+٩
+Arabic
+Eastern Arabic numerals
+
+
+۰
+۱
+۲
+۳
+۴
+۵
+۶
+۷
+۸
+۹
+Persian (Farsi) / Dari / Pashto
+
+
+
+
+
+
+
+
+
+
+
+
+
+Urdu / Shahmukhi
+
+
+
+As in many numbering systems, the numbers 1, 2, and 3 represent simple tally marks; 1 being a single line, 2 being two lines (now connected by a diagonal) and 3 being three lines (now connected by two vertical lines). After three, numbers tend to become more complex symbols (examples are the Chinese numerals and Roman numerals). Theorists believe that this is because it becomes difficult to instantaneously count objects past three.[5]
+History[edit]
+Main article: History of the Hindu–Arabic numeral system
+Predecessors[edit]
+The Brahmi numerals at the basis of the system predate the Common Era. They replaced the earlier Kharosthi numerals used since the 4th century BC. Brahmi and Kharosthi numerals were used alongside one another in the Maurya Empire period, both appearing on the 3rd century BC edicts of Ashoka.[6]
+Buddhist inscriptions from around 300 BC use the symbols that became 1, 4 and 6. One century later, their use of the symbols that became 2, 4, 6, 7 and 9 was recorded. These Brahmi numerals are the ancestors of the Hindu–Arabic glyphs 1 to 9, but they were not used as a positional system with a zero, and there were rather separate numerals for each of the tens (10, 20, 30, etc.).
+The actual numeral system, including positional notation and use of zero, is in principle independent of the glyphs used, and significantly younger than the Brahmi numerals.
+Development[edit]
+
+
+
+
+The "Galley" method of division.
+
+
+The place-value system is used in the Bakhshali Manuscript. Although date of the composition of the manuscript is uncertain, the language used in the manuscript indicates that it could not have been composed any later than 400.[7] The development of the positional decimal system takes its origins in Hindu mathematics during the Gupta period. Around 500, the astronomer Aryabhata uses the word kha ("emptiness") to mark "zero" in tabular arrangements of digits. The 7th century Brahmasphuta Siddhanta contains a comparatively advanced understanding of the mathematical role of zero. The Sanskrit translation of the lost 5th century Prakrit Jaina cosmological text Lokavibhaga may preserve an early instance of positional use of zero.[8]
+These Indian developments were taken up in Islamic mathematics in the 8th century, as recorded in al-Qifti's Chronology of the scholars (early 13th century).[9]
+The numeral system came to be known to both the Perso-Arabic mathematician Khwarizmi, who wrote a book, On the Calculation with Hindu Numerals in about 825, and the Arab mathematician Al-Kindi, who wrote four volumes, On the Use of the Hindu Numerals (كتاب في استعمال العداد الهندي [kitāb fī isti'māl al-'adād al-hindī]) around 830. These earlier texts did not use the Hindu numerals. Kushyar ibn Labban who wrote Kitab fi usul hisab al-hind (Principles of Hindu Reckoning) is one of the oldest surviving manuscripts using the Hindu numerals.[10] These books are principally responsible for the diffusion of the Hindu system of numeration throughout the Islamic world and ultimately also to Europe.
+The first dated and undisputed inscription showing the use of a symbol for zero appears on a stone inscription found at the Chaturbhuja Temple at Gwalior in India, dated 876.[11]
+In 10th century Islamic mathematics, the system was extended to include fractions, as recorded in a treatise by Syrian mathematician Abu'l-Hasan al-Uqlidisi in 952–953.[12]
+Adoption in Europe[edit]
+
+
+
+
+The bottom row shows the numeral glyphs as they appear in type in German incunabula (Nicolaus Kesler, Basel, 1486)
+
+
+Main article: Arabic numerals
+In Christian Europe, the first mention and representation of Hindu-Arabic numerals (from one to nine, without zero), is in the Codex Vigilanus, an illuminated compilation of various historical documents from the Visigothic period in Spain, written in the year 976 by three monks of the Riojan monastery of San Martín de Albelda. Between 967 and 969, Gerbert of Aurillac discovered and studied Arab science in the Catalan abbeys. Later he obtained from these places the book De multiplicatione et divisione (On multiplication and division). After becoming Pope Sylvester II in the year 999, he introduced a new model of abacus, the so-called Abacus of Gerbert, by adopting tokens representing Hindu-Arab numerals, from one to nine.
+Leonardo Fibonacci brought this system to Europe. His book Liber Abaci introduced Arabic numerals, the use of zero, and the decimal place system to the Latin world. The numeral system came to be called "Arabic" by the Europeans. It was used in European mathematics from the 12th century, and entered common use from the 15th century to replace Roman numerals.[13][14]
+The familiar shape of the Western Arabic glyphs as now used with the Latin alphabet (0, 1, 2, 3, 4, 5, 6, 7, 8, 9) are the product of the late 15th to early 16th century, when they enter early typesetting. Muslim scientists used the Babylonian numeral system, and merchants used the Abjad numerals, a system similar to the Greek numeral system and the Hebrew numeral system. Similarly, Fibonacci's introduction of the system to Europe was restricted to learned circles. The credit for first establishing widespread understanding and usage of the decimal positional notation among the general population goes to Adam Ries, an author of the German Renaissance, whose 1522 Rechenung auff der linihen und federn was targeted at the apprentices of businessmen and craftsmen.
+
+
+
+
+
+
+
+Gregor Reisch, Madame Arithmatica, 1508
+
+
+
+
+
+
+
+
+
+A calculation table (de), used for arithmetic using Roman numerals
+
+
+
+
+
+
+
+
+
+Adam Ries, Rechenung auff der linihen und federn, 1522
+
+
+
+
+
+
+
+
+
+Two arithmetic books published in 1514—Köbel (left) using a calculation table and Böschenteyn using numerals
+
+
+
+
+
+
+
+
+
+Adam Ries, Rechenung auff der linihen und federn (2nd Ed.), 1525
+
+
+
+
+
+
+
+
+
+Robert Recorde, The ground of artes, 1543
+
+
+
+
+
+
+
+
+
+Peter Apian, Kaufmanns Rechnung, 1527
+
+
+
+
+
+
+
+
+
+Adam Ries, Rechenung auff der linihen und federn (2nd Ed.), 1525
+
+
+
+
+Adoption in East Asia[edit]
+In AD 690, Empress Wu promulgated Zetian characters, one of which was "〇". The word is now used as a synonym for the number zero.
+In China, Gautama Siddha introduced Hindu numerals with zero in 718, but Chinese mathematicians did not find them useful, as they had already had the decimal positional counting rods.[15][16]
+In Chinese numerals, a circle (〇) is used to write zero in Suzhou numerals. Many historians think it was imported from Indian numerals by Gautama Siddha in 718, but some Chinese scholars think it was created from the Chinese text space filler "□".[15]
+Chinese and Japanese finally adopted the Hindu–Arabic numerals in the 19th century, abandoning counting rods.
+Spread of the Western Arabic variant[edit]
+
+
+
+
+An Arab telephone keypad with both the Western "Arabic numerals" and the Arabic "Arabic–Indic numerals" variants.
+
+
+The "Western Arabic" numerals as they were in common use in Europe since the Baroque period have secondarily found worldwide use together with the Latin alphabet, and even significantly beyond the contemporary spread of the Latin alphabet, intruding into the writing systems in regions where other variants of the Hindu–Arabic numerals had been in use, but also in conjunction with Chinese and Japanese writing (see Chinese numerals, Japanese numerals).
+See also[edit]
+
+Arabic numerals
+Decimal
+Positional notation
+Numeral system
+History of mathematics
+0 (number)
+
+Notes[edit]
+
+
+
+^ Hindu was the Persian name for "Indian" in the 10th century, when the Arabs adopted the number system. The connotation of "Hindu" as a religion was a later development.
+^ Other Latin transliterations include Algaurizin.[citation needed]
+
+
+
+References[edit]
+
+Flegg, Graham (2002). Numbers: Their History and Meaning. Courier Dover Publications. ISBN 0-486-42165-1.
+The Arabic numeral system – MacTutor History of Mathematics
+
+
+
+^ David Eugene Smith and Louis Charles Karpinski, The Hindu–Arabic Numerals, 1911
+^ William Darrach Halsey, Emanuel Friedman (1983). Collier's Encyclopedia, with bibliography and index. 
+^ a b Brezina, Corona (2006), Al-Khwarizmi: The Inventor of Algebra, The Rosen Publishing Group, pp. 39–40, ISBN 978-1-4042-0513-0 , c.825)
+^ Rowlett, Russ (2004-07-04), Roman and "Arabic" Numerals, University of North Carolina at Chapel Hill, retrieved 2009-06-22 
+^ Language may shape human thought, New Scientist, news service, Celeste Biever, 19:00 19 August 2004.
+^ Flegg (2002), p. 6ff.
+^ Pearce, Ian (May 2002). "The Bakhshali manuscript". The MacTutor History of Mathematics archive. Retrieved 2007-07-24. 
+^ Ifrah, G. The Universal History of Numbers: From prehistory to the invention of the computer. John Wiley and Sons Inc., 2000. Translated from the French by David Bellos, E.F. Harding, Sophie Wood and Ian Monk
+^ al-Qifti's Chronology of the scholars (early 13th century):
+
+... a person from India presented himself before the Caliph al-Mansur in the year 776 who was well versed in the siddhanta method of calculation related to the movement of the heavenly bodies, and having ways of calculating equations based on the half-chord [essentially the sine] calculated in half-degrees ... Al-Mansur ordered this book to be translated into Arabic, and a work to be written, based on the translation, to give the Arabs a solid base for calculating the movements of the planets ...
+
+
+^ Martin Levey and Marvin Petruck, Principles of Hindu Reckoning, translation of Kushyar ibn Labban Kitab fi usul hisab al-hind, p3, University of Wisconsin Press, 1965
+^ Bill Casselman (February 2007). "All for Nought". Feature Column. AMS. 
+^ Berggren, J. Lennart (2007). "Mathematics in Medieval Islam". The Mathematics of Egypt, Mesopotamia, China, India, and Islam: A Sourcebook. Princeton University Press. p. 518. ISBN 978-0-691-11485-9. 
+^ "Fibonacci Numbers". www.halexandria.org. 
+^ Leonardo Pisano – page 3: "Contributions to number theory". Encyclopædia Britannica Online, 2006. Retrieved 18 September 2006.
+^ a b Qian, Baocong (1964), Zhongguo Shuxue Shi (The history of Chinese mathematics), Beijing: Kexue Chubanshe 
+^ Wáng, Qīngxiáng (1999), Sangi o koeta otoko (The man who exceeded counting rods), Tokyo: Tōyō Shoten, ISBN 4-88595-226-3 
+
+
+Bibliography[edit]
+
+Menninger, Karl W. (1969). Number Words and Number Symbols: A Cultural History of Numbers. MIT Press. ISBN 0-262-13040-8.
+On the genealogy of modern numerals by Edward Clive Bayley
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Types of writing systems
+
+
+
+
+
+
+
+Overview
+
+
+
+History of writing
+Grapheme
+
+
+
+
+
+Lists
+
+
+
+Writing systems
+
+undeciphered
+inventors
+constructed
+
+
+Languages by writing system / by first written accounts
+
+
+
+
+
+
+
+
+
+
+
+
+
+Types
+
+
+
+
+
+
+
+
+
+
+
+
+Abjads
+
+
+
+
+
+
+Numerals
+
+
+Aramaic
+
+Hatran
+
+
+Arabic
+Pitman shorthand
+Hebrew
+
+Ashuri
+Cursive
+Rashi
+Solitreo
+
+
+Tifinagh
+Manichaean
+Nabataean
+Old North Arabian
+Pahlavi
+Pegon
+Phoenician
+
+Paleo-Hebrew
+
+
+Proto-Sinaitic
+Psalter
+Punic
+Samaritan
+South Arabian
+
+Zabur
+Musnad
+
+
+Sogdian
+Syriac
+
+ʾEsṭrangēlā
+Serṭā
+Maḏnḥāyā
+
+
+Teeline Shorthand
+Ugaritic
+
+
+
+
+
+
+
+
+
+
+
+
+
+Abugidas
+
+
+
+
+
+
+
+Brahmic
+
+
+
+
+Northern
+
+
+
+Asamiya (Ôxômiya)
+Bānglā
+Bhaikshuki
+Bhujinmol
+Brāhmī
+Devanāgarī
+Dogri
+Gujarati
+Gupta
+Gurmukhī
+Kaithi
+Kalinga
+Khojki
+Khotanese
+Khudawadi
+Laṇḍā
+Lepcha
+Limbu
+Mahajani
+Meitei Mayek
+Modi
+Multani
+Nāgarī
+Nandinagari
+Odia
+'Phags-pa
+Newar
+Ranjana
+Sharada
+Saurashtra
+Siddhaṃ
+Soyombo
+Sylheti Nagari
+Takri
+Tibetan
+
+Uchen
+Umê
+
+
+Tirhuta
+Tocharian
+Zanabazar Square
+Zhang-Zhung
+
+Drusha
+Marchen
+Marchung
+Pungs-chen
+Pungs-chung
+
+
+
+
+
+
+
+Southern
+
+
+
+Ahom
+Balinese
+Batak
+Baybayin
+Bhattiprolu
+Buhid
+Burmese
+Chakma
+Cham
+Grantha
+Goykanadi
+Hanunó'o
+Javanese
+Kadamba
+Kannada
+Karen
+Kawi
+Khmer
+Kulitan
+Lanna
+Lao
+Leke
+Lontara
+Malayalam
+Maldivian
+
+Dhives Akuru
+Eveyla Akuru
+Thaana
+
+
+Mon
+Old Makassarese
+Old Sundanese
+Pallava
+Pyu
+Rejang
+Rencong
+Sinhala
+Sundanese
+Tagbanwa
+Tai Le
+Tai Tham
+Tai Viet
+Tamil
+Telugu
+Thai
+Tigalari
+Vatteluttu
+
+Kolezhuthu
+Malayanma
+
+
+Visayan
+
+
+
+
+
+
+
+
+Others
+
+
+
+Boyd's syllabic shorthand
+Canadian syllabics
+
+Blackfoot
+Déné syllabics
+
+
+Fox I
+Ge'ez
+Gunjala Gondi
+Japanese Braille
+Jenticha
+Kayah Li
+Kharosthi
+Mandombe
+Masaram Gondi
+Meroitic
+Miao
+Mwangwego
+Sorang Sompeng
+Pahawh Hmong
+Thomas Natural Shorthand
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Alphabets
+
+
+
+
+
+
+
+Linear
+
+
+
+Abkhaz
+Adlam
+Armenian
+Avestan
+Avoiuli
+Bassa Vah
+Borama
+Carian
+Caucasian Albanian
+Coorgi–Cox alphabet
+Coptic
+Cyrillic
+Deseret
+Duployan shorthand
+
+Chinook writing
+
+
+Early Cyrillic
+Eclectic shorthand
+Elbasan
+Etruscan
+Evenki
+Fox II
+Fraser
+Gabelsberger shorthand
+Garay
+Georgian
+
+Asomtavruli
+Nuskhuri
+Mkhedruli
+
+
+Glagolitic
+Gothic
+Gregg shorthand
+Greek
+Greco-Iberian alphabet
+Hangul
+Hanifi
+IPA
+Kaddare
+Latin
+
+Beneventan
+Blackletter
+Carolingian minuscule
+Fraktur
+Gaelic
+Insular
+Kurrent
+Merovingian
+Sigla
+Sütterlin
+Tironian notes
+Visigothic
+
+
+Luo
+Lycian
+Lydian
+Manchu
+Mandaic
+Medefaidrin
+Molodtsov
+Mongolian
+Mru
+Neo-Tifinagh
+New Tai Lue
+N'Ko
+Ogham
+Oirat
+Ol Chiki
+Old Hungarian
+Old Italic
+Old Permic
+Orkhon
+Old Uyghur
+Osage
+Osmanya
+Pau Cin Hau
+Runic
+
+Anglo-Saxon
+Cipher
+Dalecarlian
+Elder Futhark
+Younger Futhark
+Gothic
+Marcomannic
+Medieval
+Staveless
+
+
+Sidetic
+Shavian
+Somali
+Tifinagh
+Vagindra
+Visible Speech
+Vithkuqi
+Wancho
+Zaghawa
+
+
+
+
+
+Non-linear
+
+
+
+Braille
+Maritime flags
+Morse code
+New York Point
+Semaphore line
+Flag semaphore
+Moon type
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ideograms/Pictograms
+
+
+
+
+
+
+Adinkra
+Aztec
+Blissymbol
+Dongba
+Ersu Shaba
+Emoji
+IConji
+Isotype
+Kaidā
+Míkmaq
+Mixtec
+New Epoch Notation Painting
+Nsibidi
+Ojibwe Hieroglyphs
+Siglas poveiras
+Testerian
+Yerkish
+Zapotec
+
+
+
+
+
+
+
+
+
+
+
+
+
+Logograms
+
+
+
+
+
+
+
+Chinese family of scripts
+
+
+
+
+Chinese Characters
+
+
+
+Simplified
+Traditional
+Oracle bone script
+Bronze Script
+Seal Script
+
+large
+small
+bird-worm
+
+
+Hanja
+Idu
+Kanji
+Chữ nôm
+Zhuang
+
+
+
+
+
+Chinese-influenced
+
+
+
+Jurchen
+Khitan large script
+Sui
+Tangut
+
+
+
+
+
+
+
+
+Cuneiform
+
+
+
+Akkadian
+Assyrian
+Elamite
+Hittite
+Luwian
+Sumerian
+
+
+
+
+
+Other logo-syllabic
+
+
+
+Anatolian
+Bagam
+Cretan
+Isthmian
+Maya
+Proto-Elamite
+Yi (Classical)
+
+
+
+
+
+Logo-consonantal
+
+
+
+Demotic
+Hieratic
+Hieroglyphs
+
+
+
+
+
+Numerals
+
+
+
+Hindu-Arabic
+Abjad
+Attic (Greek)
+Muisca
+Roman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Semi-syllabaries
+
+
+
+
+
+
+
+Full
+
+
+
+Celtiberian
+Northeastern Iberian
+Southeastern Iberian
+Khom
+
+
+
+
+
+Redundant
+
+
+
+Espanca
+Pahawh Hmong
+Khitan small script
+Southwest Paleohispanic
+Zhuyin fuhao
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Somacheirograms
+
+
+
+
+
+
+ASLwrite
+SignWriting
+si5s
+Stokoe Notation
+
+
+
+
+
+
+
+
+
+
+
+
+
+Syllabaries
+
+
+
+
+
+
+Afaka
+Bamum
+Bété
+Byblos
+Cherokee
+Cypriot
+Cypro-Minoan
+Ditema tsa Dinoko
+Eskayan
+Geba
+Great Lakes Algonquian syllabics
+Iban
+Japanese
+
+Hiragana
+Katakana
+Man'yōgana
+Hentaigana
+Sogana
+Jindai moji
+
+
+Kikakui
+Kpelle
+Linear B
+Linear Elamite
+Lisu
+Loma
+Nüshu
+Nwagu Aneke script
+Old Persian Cuneiform
+Vai
+Woleai
+Yi (Modern)
+Yugtun
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Braille  ⠃⠗⠁⠊⠇⠇⠑
+
+
+
+Braille cell
+
+
+
+1829 braille
+International uniformity
+ASCII braille
+Unicode braille patterns
+
+
+
+
+
+Braille scripts
+
+
+
+
+French-ordered scripts
+
+(see for more)
+
+
+
+Albanian
+Amharic
+Arabic
+Armenian
+Azerbaijani
+Belarusian
+Bharati
+
+Devanagari (Hindi  /  Marathi  /  Nepali)
+Bengali
+Punjabi
+Sinhalese
+Tamil
+Urdu
+etc.
+
+
+Bulgarian
+Burmese
+Cambodian
+Cantonese
+Catalan
+Chinese (Mandarin, mainland)
+Czech
+Dutch
+Dzongkha (Bhutanese)
+English (Unified English)
+Esperanto
+Estonian
+Faroese
+French
+Georgian
+German
+Ghanaian
+Greek
+Guarani
+Hawaiian
+Hebrew
+Hungarian
+Icelandic
+Inuktitut (reassigned vowels)
+Iñupiaq
+IPA
+Irish
+Italian
+Kazakh
+Kyrgyz
+Latvian
+Lithuanian
+Maltese
+Mongolian
+Māori
+Navajo
+Nigerian
+Northern Sami
+Persian
+Philippine
+Polish
+Portuguese
+Romanian
+Russian
+Samoan
+Scandinavian
+Slovak
+South African
+Spanish
+Tatar
+Taiwanese Mandarin (largely reassigned)
+Thai & Lao (Japanese vowels)
+Tibetan
+Turkish
+Ukrainian
+Vietnamese
+Welsh
+Yugoslav
+
+
+
+
+
+Reordered scripts
+
+
+
+Algerian Braille (obsolete)
+
+
+
+
+
+Frequency-based scripts
+
+
+
+American Braille (obsolete)
+
+
+
+
+
+Independent scripts
+
+
+
+Japanese
+Korean
+Two-Cell Chinese
+
+
+
+
+
+Eight-dot scripts
+
+
+
+Luxembourgish
+Kanji
+Gardner–Salinas braille codes (GS8)
+
+
+
+
+
+
+
+
+Symbols in braille
+
+
+
+Braille music
+Canadian currency marks
+Computer Braille Code
+Gardner–Salinas braille codes (GS8/GS6)
+International Phonetic Alphabet (IPA)
+Nemeth braille code
+
+
+
+
+
+Braille technology
+
+
+
+Braille e-book
+Braille embosser
+Braille translator
+Braille watch
+Mountbatten Brailler
+Optical braille recognition
+Perforation
+Perkins Brailler
+Refreshable braille display
+Slate and stylus
+Braigo
+
+
+
+
+
+Persons
+
+
+
+Louis Braille
+Charles Barbier
+Valentin Haüy
+Thakur Vishva Narain Singh
+Sabriye Tenberken
+William Bell Wait
+
+
+
+
+
+Organisations
+
+
+
+Braille Institute of America
+Braille Without Borders
+Japan Braille Library
+National Braille Association
+Blindness organizations
+Schools for the blind
+American Printing House for the Blind
+
+
+
+
+
+Other tactile alphabets
+
+
+
+Decapoint
+Moon type
+New York Point
+Night writing
+Vibratese
+
+
+
+
+
+Related topics
+
+
+
+Accessible publishing
+Braille literacy
+RoboBraille
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Electronic writing systems
+
+
+
+
+
+
+Emoticons
+Emoji
+iConji
+Leet
+Unicode
+
+
+
+
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Internet slang dialects
+
+
+
+
+
+
+3arabizi
+Alay (Indonesia)
+Denglisch
+Doge
+Fingilish (Persian)
+Greeklish
+Gyaru-moji (Japan)
+Jejemon (Philippines)
+Leet ("1337")
+Lolspeak / LOLspeak / Kitteh
+Martian language (Chinese)
+Miguxês (Portuguese)
+Padonkaffsky jargon (Russian)
+Translit
+Volapuk
+
+
+
+
+
+
+
+
+See also English internet slang (at Wiktionary)
+SMS language
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

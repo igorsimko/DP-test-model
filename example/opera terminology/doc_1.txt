@@ -1,0 +1,402 @@
+Chest voice is a term used within vocal music. The use of this term varies widely within vocal pedagogical circles and there is currently no one consistent opinion among vocal music professionals in regard to this term. Chest voice can be used in relation to the following:
+
+A particular part of the vocal range or type of vocal register
+A vocal resonance area
+A specific vocal timbre[1]
+
+
+
+
+Contents
+
+
+1 History
+2 Physiological process
+
+2.1 Bel canto understanding
+2.2 Vocal resonance understanding
+
+
+3 See also
+4 Notes and references
+
+
+
+History[edit]
+The first recorded mention of the term chest voice was around the 13th century, when it was distinguished from the throat and the head voice (pectoris, guttoris, capitis—at this time it is likely head voice referred to the falsetto register) by the writers Johannes de Garlandia and Jerome of Moravia.[2] The term was later redefined during the bel canto period when it was identified as the lowest of three vocal registers: the chest, passaggio and head registers. This approach is still taught by some vocal pedagogists today.[3]
+However as knowledge of human physiology has increased over the past two hundred years, so has the understanding of the physical process of singing and vocal production. As a result, many vocal pedagogists have redefined or even abandoned the use of the term chest voice.[3] In particular, the use of the term chest register has become controversial since vocal registration is more commonly seen today as a product of laryngeal function that is unrelated to the physiology of the chest and lungs. For this reason, many vocal pedagogists argue that it is meaningless to speak of registers being produced in the chest. The vibratory sensations which are felt in these areas are resonance phenomena and should be described in terms related to vocal resonance, not to registers. These vocal pedagogists prefer the term "chest voice" over the term "chest register". These vocal pedagogists also hold that many of the problems which people identify as register problems are really problems of resonance adjustment. This helps to explain the controversy over this terminology. Also, the term chest register is not used within speech pathology and is not one of the four main vocal registers identified by speech pathologists. For the purposes of this article, the term "chest voice" is adopted as it is less controversial.[1]
+The contemporary use of the term chest voice often refers to a specific kind of vocal coloration or vocal timbre. In classical singing, its use is limited entirely to the lower part of the modal register or normal voice. Chest timbre can add a wonderful array of sounds to a singer’s vocal interpretive palette. The introduction of chest timbre is common to singers trained in the historic Italian school, but largely shunned among singers who have emerged from the Nordic/Germanic tradition. Such approval or disapproval is largely an aesthetic decision.[4] However, the use of overly strong chest voice in the higher registers in an attempt to hit higher notes in the chest can lead to forcing. Forcing can lead consequently to vocal deterioration.[5]
+Physiological process[edit]
+As the opinions on what exactly chest voice is vary greatly, there is no one consensus on the physiological production of chest voice. However there is a developing body of scientific knowledge regarding the production of various definitions of chest voice:
+Bel canto understanding[edit]
+
+
+
+
+Vocal fold, scheme
+
+
+
+
+
+
+Glottal cycle, chest voice
+
+
+This view understands chest voice as the vocal register used within normal speech. It was discovered via stroboscope that during ordinary phonation, or speaking in a man the vocal folds contact with each other completely during each vibration closing the gap between them fully, if just for a small length of time. This closure cuts off the escaping air. When the air pressure in the trachea rises as a result of this closure, the folds are blown apart, while the vocal processes of the arytenoid cartilages remain in apposition. This creates an oval shaped gap between the folds and some air escapes, lowering the pressure inside the trachea. Rhythmic repetition of this movement a certain number of times a second creates a pitched note. This is how the chest voice is created.[2]
+Vocal resonance understanding[edit]
+This view believes that the chest voice is a product not of vocal registration but vocal resonation. Opinions within this understanding vary. Although some pedagogists believe the chest is an effective resonator, most agree that chest voice actually resonates in the head while creating vibratory sensations in the chest. Tarneaud says,
+
+"during singing, the vibration of the vocal folds impresses periodic shakes on the laryngeal cartilage which transmits them to the bones in the thorax via the laryngeal depressors, and to the bony structures in the head via the laryngeal elevators. Singers feel these shakes in the form of thoracic and facial vibrations".
+
+These internal phonatory sensations produced by laryngeal vibrations are called "resonance" by singers and teachers of singing.[6]
+During singing in the lower register, the larynx is lowered since the muscles which connect it to the rib cage are tensed whereas the muscles above the larynx are not tensed. Consequently, a large proportion of the vibratory energy is transmitted to the thoracic area, giving singers the impression that their voice is resonating in the chest. This impression however is false. The chest by virtue of its design and location can make no significant contribution to the resonance system of the voice. The chest is on the wrong side of the vocal folds and there is nothing in the design of the lungs that could serve to reflect sound waves back toward the larynx.[1]
+See also[edit]
+
+Head voice
+Tessitura
+Vocal register
+Vocal resonation
+
+Notes and references[edit]
+
+
+
+^ a b c McKinney, James (1994). The Diagnosis and Correction of Vocal Faults. Genovex Music Group. ISBN 978-1-56593-940-0. 
+^ a b The New Grove Dictionary of Music & Musicians. Edited by Stanley Sadie, Volume 6. Edmund to Fryklund. ISBN 1-56159-174-2, Copyright Macmillan 1980.
+^ a b Stark, James (2003). Bel Canto: A History of Vocal Pedagogy. University of Toronto Press. ISBN 978-0-8020-8614-3. 
+^ Miller, Richard (2004). Solutions for Singers. Oxford University Press. ISBN 978-0-19-516005-5. 
+^ The Oxford Dictionary of Opera. John Warrack and Ewan West, ISBN 0-19-869164-5
+^ Tarneaud, J. (November 1933). "Study of larynx and of voice by stroboscopy". Clinique (Paris). 28: 337–341. 
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Opera terms by origin
+
+
+
+English
+
+
+
+Breeches role
+Chest voice
+Concert version
+Head voice
+Mad scene
+Opera house
+Prompter
+Surtitles
+
+
+
+
+
+French
+
+
+
+Claque
+Coup de glotte
+Divertissement
+Entr'acte
+Melodrama
+Overture
+Répétiteur
+Timbre
+
+
+
+
+
+German
+
+
+
+Fach
+Gesamtkunstwerk
+Kammersänger
+Leitmotif
+Literaturoper
+Regietheater
+Sitzprobe
+Sprechgesang
+
+
+
+
+
+Italian
+
+
+
+Aria
+Aria di sorbetto
+Arioso
+Banda
+Bel canto
+Burletta
+Cabaletta
+Cadenza
+Cantabile
+Castrato
+Cavatina
+Coloratura
+Comprimario
+Convenienze
+Da capo aria
+Diva
+Falsetto
+Falsettone
+Fioritura
+Intermezzo
+Legato
+Libretto
+Maestro
+Melodramma
+Messa di voce
+Musico
+Opera seria
+Passaggio
+Portamento
+Prima donna
+Recitative
+Ritornello
+Solita forma
+Spinto
+Squillo
+Stagione
+Stile rappresentativo
+Tessitura
+Verismo
+Vibrato
+
+
+
+
+
+Other
+
+
+
+Duodrama
+Hovsångare
+Insertion aria
+Monodrama
+Overture
+Travesti
+
+
+
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Musical range or compass and register
+
+
+
+Vocal register
+
+
+
+Whistle
+Falsetto
+Modal
+Vocal fry
+
+
+
+
+
+
+
+
+Voice type
+
+
+
+Soprano
+Boy soprano
+Castrato
+Mezzo-soprano
+Contralto
+Countertenor
+Tenor
+Baritone
+Bass
+
+
+
+
+
+Sound
+
+
+
+Treble
+Bass
+Sub-bass
+
+
+
+
+
+
+
+
+Chest voice
+Clef
+Extension
+Head voice
+Passaggio
+Pedal tone
+Organ registration
+Tessitura
+Timbre
+Vocal range
+Vocal weight
+
+
+
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Vocal music
+
+
+
+Types · Genres
+
+
+
+Singing
+Choral
+Opera
+Lied
+Vocables
+
+
+
+
+
+
+
+
+Voice classification
+
+
+
+Voice type
+
+Bass voice
+Bass-baritone
+Baritone
+Tenor voice
+Countertenor
+Contralto
+Mezzo-soprano
+Soprano
+
+
+Fach
+Non-classical music
+
+
+
+
+
+Concepts · Techniques
+
+
+
+Backup vocals
+Coloratura
+Chest voice
+Crooning
+Falsetto
+Head voice
+Lead vocals
+Passaggio
+Quintus
+Rapping
+Scat singing
+Sprechgesang
+Tessitura
+Timbre
+Vocal pedagogy
+Vocal range
+Vocal register
+Vocal resonation
+Vocal weight
+Death growl
+
+
+
+
+
+Sound equipment
+
+(popular music)
+
+
+
+Microphone
+Monitor speaker
+In-ear monitor
+Pitch correction
+Sound reinforcement system
+
+
+
+
+
+Miscellaneous
+
+
+
+
+Choirmaster
+Vocal coach
+
+
+
+
+
+
+
+
+
+

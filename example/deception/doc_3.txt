@@ -1,0 +1,231 @@
+
+
+
+
+
+
+This article does not cite any sources. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed. (November 2017) (Learn how and when to remove this template message)
+
+
+
+Psychological subversion (PsychSub) is the name given by Susan Headley to a method of verbally manipulating people for information. It is similar in practice to so-called social engineering and pretexting, but has a more military focus to it. It was developed by Headley as an extension of knowledge she gained during hacking sessions with notorious early computer network hackers like Kevin Mitnick and Lewis de Payne.
+
+
+
+Contents
+
+
+1 Usage example
+2 Scientific methodology
+3 Classified thesis
+4 References
+
+
+
+Usage example[edit]
+Headley often gave the following example[1] of the use of psychological subversion: Suppose the hacker needed access to a certain classified military computer called, say, IBAS. He would obtain the name of the base commander or other high-ranking official, gain access to the DNS network, (which is the separate military telephone network) and dial up the computer center he needed to reach, which was often in a secured facility. The person who answered the phone would usually be a low-ranking enlisted person, and the hacker would say something like, "This is Lieutenant Johanson, and General Robertson cannot access his IBAS account, and he'd like to know WHY?" This is all said in a very threatening tone of voice, clearly implying that if the general can't get into his account right away, there will be severe negative repercussions, most likely targeting the hapless person who answered the phone.
+The hacker has the subject off guard and very defensive, wanting nothing more than to appease the irritated general as quickly as possible. The hacker then goes silent, giving the victim ample time to stammer into the phone and build up his fear level, while listening for clues from the victim as to how best to proceed. Eventually, the hacker suggests that the tech create a temporary account for the general, or change the general's password to that of the hacker's choice.
+The hacker would then have gained access to a classified military computer. It is important to note that this technique would not work any more, in no small part thanks to Headley's teaching of the military agencies about such methods during the 1980s.[citation needed]
+Scientific methodology[edit]
+While pretexting methods and so-called social engineering are based on on-the-fly adaptations during a phone call made to the victim with very little pre-planning or forethought, the practice of PsychSub is based on the principles of NLP and practical psychology. The goal of the hacker or attacker who is using PsychSub is generally more complex and involves preparation, analysis of the situation, and careful thought about what exact words to use and the tone of voice in which to use them.
+Classified thesis[edit]
+Headley's thesis entitled "The Psychological Subversion of Trusted Systems" was classified by the DOD in 1984 and so far has not seen the light of day. As a result, further information about PsychSub is generally unavailable outside of Headley's own seminars on the subject during the 1980s at CIA technology and spycraft-type seminars such as Surveillance Expo.
+References[edit]
+
+
+^ DEF CON III Archives
+
+
+(1) Headley's talk at a hacker convention in Las Vegas
+
+
+
+
+
+
+v
+t
+e
+
+
+Psychological manipulation
+
+
+
+
+Rewarding: pleasant
+
+(positive reinforcement)
+
+
+
+
+Attention
+Bribery
+Child grooming
+Flattery
+Gifts
+Ingratiation
+Love bombing
+Nudging
+Praise
+Seduction
+Smiling
+Superficial charm
+Superficial sympathy
+
+
+
+
+
+
+Aversive: unpleasant
+
+(positive punishment)
+
+
+
+
+Anger
+Character assassination
+Crying
+Emotional blackmail
+Fearmongering
+Frowning
+Glaring
+Guilt trip
+Inattention
+Intimidation
+Nagging
+Nit-picking criticism
+Passive aggression
+Relational aggression
+Sadism
+Shaming
+Silent treatment
+Social rejection
+Swearing
+Threats
+Victim blaming
+Victim playing
+Yelling
+
+
+
+
+
+Intermittent or partial
+
+negative reinforcement
+
+
+
+Climate of fear
+Traumatic bonding
+
+
+
+
+
+Other techniques
+
+
+
+Bait-and-switch
+Deception
+Denial
+Deprogramming
+Disinformation
+Distortion
+Diversion
+Divide and rule
+Double bind
+Entrapment
+Evasion
+Exaggeration
+Gaslighting
+Good cop/bad cop
+Indoctrination
+Low-balling
+Lying
+Minimisation
+Moving the goalposts
+Pride-and-ego down
+Rationalization
+Reid technique
+Setting up to fail
+Trojan horse
+You're either with us, or against us
+
+
+
+
+
+Contexts
+
+
+
+Abuse
+Abusive power and control
+Advertising
+Bullying
+Catholic guilt
+Confidence trick
+Guilt culture
+Interrogation
+Jewish guilt
+Jewish mother stereotype
+Moral panic
+Media manipulation
+Mind control
+Mind games
+Mobbing
+Propaganda
+Salesmanship
+Scapegoating
+Shame culture
+Smear campaign
+Social engineering (blagging)
+Spin
+Suggestibility
+Whispering campaign
+
+
+
+
+
+Related topics
+
+
+
+Antisocial personality disorder
+Assertiveness
+Blame
+Borderline personality disorder
+Carrot and stick
+Dumbing down
+Enabling
+Fallacy
+Femme fatale
+Gaming the system
+Gullibility
+Histrionic personality disorder
+Impression management
+Machiavellianism
+Narcissism
+Narcissistic personality disorder
+Personal boundaries
+Persuasion
+Popularity
+Projection
+Psychopathy
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,152 @@
+
+
+
+
+
+
+v
+t
+e
+
+
+Baseball statistics
+
+
+
+Batting
+
+
+
+Batting average
+On-base percentage
+Slugging percentage
+Hit
+
+Single
+Double
+Triple
+Home run
+Extra-base hit
+
+
+Grand slam
+RBI
+Game-winning RBI
+Walk
+Bunt
+Sacrifice bunt
+Sacrifice fly
+On-base plus slugging
+
+
+
+
+
+Base running
+
+
+
+Run
+Stolen base
+Stolen base percentage
+Caught stealing
+
+
+
+
+
+Pitching
+
+
+
+Win–loss record
+Innings pitched
+Pitchers of record
+Save
+Hold
+Run
+
+Earned
+
+
+ERA
+Strikeout
+Walk
+Perfect game
+No-hitter
+WHIP
+BB/9
+K/9
+Quality start
+Complete game
+Shutout
+Wild pitch
+
+
+
+
+
+Fielding
+
+
+
+Fielding percentage
+Assist
+Putout
+Error
+Fielder's choice
+Defensive indifference
+Passed ball
+
+
+
+
+
+Sabermetrics
+
+
+
+Adjusted ERA+
+Base runs
+Batting park factor
+Catcher's ERA
+Defensive Runs Saved
+Extrapolated Runs
+Game score
+Isolated Power
+Range factor
+Runs created
+Secondary average
+Speed Score
+NERD
+Out of zone plays made
+Ultimate zone rating
+Weighted on-base average
+Wins Above Replacement
+Win probability added
+Win Shares
+
+
+
+
+
+
+Initial visibility
+To set the template's initial visibility, the |state= parameter may be used:
+
+|state=collapsed: {{Baseball statistics|state=collapsed}} to show the template collapsed, i.e., hidden apart from its title bar
+|state=expanded: {{Baseball statistics|state=expanded}} to show the template expanded, i.e., fully visible
+|state=autocollapse: {{Baseball statistics|state=autocollapse}}
+
+shows the template collapsed to the title bar if there is a {{navbar}}, a {{sidebar}}, or some other table on the page with the collapsible attribute
+shows the template in its expanded state if there are no other collapsible items on the page
+
+
+
+If the |state= parameter is not set, the template's initial visibility is taken from the |default= parameter in the template. For this template, that currently evaluates to autocollapse.
+
+
+
+
+
+

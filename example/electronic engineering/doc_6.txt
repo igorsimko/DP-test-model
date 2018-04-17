@@ -1,0 +1,59 @@
+Fuzzy electronics is an electronic technology that uses fuzzy logic, instead of the two-state Boolean logic more commonly used in digital electronics. Fuzzy electronics is fuzzy logic implemented on dedicated hardware. This is to be compared with fuzzy logic implemented in software running on a conventional processor. Fuzzy electronics has a wide range of applications, including control systems and artificial intelligence.
+
+
+
+Contents
+
+
+1 History
+2 See also
+3 Bibliography
+4 Further reading
+5 External links
+
+
+
+History[edit]
+The first fuzzy electronic circuit was built by Takeshi Yamakawa et al. in 1980 using discrete bipolar transistors. The first industrial fuzzy application was in a cement kiln in Denmark in 1982. The first VLSI fuzzy electronics was by Masaki Togai and Hiroyuki Watanabe in 1984. In 1987, Yamakawa built the first analog fuzzy controller. The first digital fuzzy processors came in 1988 by Togai (Russo, pp. 2-6).
+See also[edit]
+
+Defuzzification
+Fuzzy set
+Fuzzy set operations
+
+Bibliography[edit]
+
+Ahmad M. Ibrahim, Introduction to Applied Fuzzy Electronics, ISBN 0-13-206400-6.
+Abraham Kandel, Gideon Langholz (eds), Fuzzy Hardware: Architectures and Applications, Springer Science & Business Media, 2012 ISBN 1461540909.
+
+Marco Russo, "Fuzzy hardware research from historical point of view", op. cit. chapt. 1.
+
+
+
+Further reading[edit]
+
+Yamakawa, T.; Inoue, T.; Ueno, F.; Shirai, Y., "Implementation of Fuzzy Logic hardware systems-Three fundamental arithmetic circuits", Transactions of the Institure of Electronics and Communications Engineers, vol. 63, 1980, pp. 720-721.
+Togai, M.; Watanabe, H., "A VLSI implementation of a fuzzy inference engine: towards an expert system on a chip", Information Sciences, vol. 38, iss. 2, April 1986, pp. 147-163
+
+External links[edit]
+
+Applications of Fuzzy logic in electronics
+
+
+
+
+This electronics-related article is a stub. You can help Wikipedia by expanding it.
+
+
+v
+t
+e
+
+
+
+
+
+
+
+
+

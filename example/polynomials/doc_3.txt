@@ -1,0 +1,3970 @@
+In mathematics, Romanovski polynomials is an informal term for one of three finite subsets of real orthogonal polynomials discovered by Vsevolod Romanovsky[1] (Romanovski in French transcription) within the context of probability distribution functions in statistics. They form an orthogonal subset of a more general family of little-known Routh polynomials introduced by Edward John Routh[2] in 1884. The term Romanovski polynomials was put forward by Raposo,[3] with reference to the so-called 'pseudo-Jacobi polynomials in Lesky's classification scheme.[4] It seems more consistent to refer to them as Romanovski–Routh polynomials, by analogy with the terms Romanovski–Bessel and Romanovski–Jacobi used by Lesky for two other sets of orthogonal polynomials.
+In some contrast to the standard classical orthogonal polynomials, the polynomials under consideration differ, in so far as for arbitrary parameters only a finite number of them are orthogonal, as discussed in more detail below.
+
+
+
+Contents
+
+
+1 The differential equation for the Romanovski polynomials
+2 Relationship between the polynomials of Romanovski and Jacobi
+3 Properties of Romanovski polynomials
+
+3.1 Explicit construction
+3.2 Orthogonality
+3.3 Generating function
+
+
+4 Recurrence relations
+5 See also
+6 References
+
+
+
+The differential equation for the Romanovski polynomials[edit]
+The Romanovski polynomials solve the following version of the hypergeometric differential equation
+
+
+
+
+
+
+  
+    
+      
+        
+          
+            
+              
+              
+                
+                  (
+                  
+                    1
+                    +
+                    
+                      x
+                      
+                        2
+                      
+                    
+                  
+                  )
+                
+                
+                  
+                    
+                      R
+                      
+                        n
+                      
+                      
+                        (
+                        α
+                        ,
+                        β
+                        )
+                      
+                    
+                  
+                  ″
+                
+                (
+                x
+                )
+                +
+                
+                  t
+                  
+                    1
+                  
+                  
+                    (
+                    α
+                    ,
+                    β
+                    )
+                  
+                
+                (
+                x
+                )
+                
+                  
+                    
+                      R
+                      
+                        n
+                      
+                      
+                        (
+                        α
+                        ,
+                        β
+                        )
+                      
+                    
+                  
+                  ′
+                
+                (
+                x
+                )
+                +
+                
+                  λ
+                  
+                    n
+                  
+                
+                
+                  R
+                  
+                    n
+                  
+                  
+                    (
+                    α
+                    ,
+                    β
+                    )
+                  
+                
+                (
+                x
+                )
+                =
+                0
+                ,
+              
+            
+            
+              
+              
+                
+                x
+                ∈
+                (
+                −
+                ∞
+                ,
+                +
+                ∞
+                )
+                ,
+                
+                
+                  t
+                  
+                    1
+                  
+                  
+                    (
+                    α
+                    ,
+                    β
+                    )
+                  
+                
+                (
+                x
+                )
+                =
+                2
+                β
+                x
+                +
+                α
+                ,
+                
+                
+                  λ
+                  
+                    n
+                  
+                
+                −
+                n
+                (
+                2
+                β
+                +
+                n
+                −
+                1
+                )
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}&\left(1+x^{2}\right){R_{n}^{(\alpha ,\beta )}}''(x)+t_{1}^{(\alpha ,\beta )}(x){R_{n}^{(\alpha ,\beta )}}'(x)+\lambda _{n}R_{n}^{(\alpha ,\beta )}(x)=0,\\[4pt]&\qquad x\in (-\infty ,+\infty ),\quad t_{1}^{(\alpha ,\beta )}(x)=2\beta x+\alpha ,\quad \lambda _{n}-n(2\beta +n-1).\end{aligned}}}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(1)
+
+
+
+
+
+Curiously, they have been omitted from the standard textbooks on special functions in mathematical physics[5][6] and in mathematics[7][8] and have only a relatively scarce presence elsewhere in the mathematical literature.[9][10][11]
+The weight functions are
+
+
+
+
+
+
+  
+    
+      
+        
+          w
+          
+            (
+            α
+            ,
+            β
+            )
+          
+        
+        (
+        x
+        )
+        =
+        
+          
+            (
+            
+              1
+              +
+              
+                x
+                
+                  2
+                
+              
+            
+            )
+          
+          
+            β
+            −
+            1
+          
+        
+        exp
+        ⁡
+        
+          (
+          
+            −
+            α
+            arccot
+            ⁡
+            x
+          
+          )
+        
+        ;
+      
+    
+    {\displaystyle w^{(\alpha ,\beta )}(x)=\left(1+x^{2}\right)^{\beta -1}\exp \left(-\alpha \operatorname {arccot} x\right);}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(2)
+
+
+
+
+
+they solve Pearson's differential equation
+
+
+
+
+
+
+  
+    
+      
+        [
+        s
+        (
+        x
+        )
+        w
+        (
+        x
+        )
+        
+          ]
+          ′
+        
+        =
+        t
+        (
+        x
+        )
+        w
+        (
+        x
+        )
+        ,
+        
+        s
+        (
+        x
+        )
+        =
+        1
+        +
+        
+          x
+          
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle [s(x)w(x)]'=t(x)w(x),\quad s(x)=1+x^{2},}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(3)
+
+
+
+
+
+that assures the self-adjointness of the differential operator of the hypergeometric ordinary differential equation.
+For α = 0 and β < 0, the weight function of the Romanovski polynomials takes the shape of the Cauchy distribution, whence the associated polynomials are also denoted as Cauchy polynomials[12] in their applications in random matrix theory.[13]
+The Rodrigues formula specifies the polynomial R(α,β)
+
+n(x) as
+
+
+
+
+
+
+  
+    
+      
+        
+          R
+          
+            n
+          
+          
+            (
+            α
+            ,
+            β
+            )
+          
+        
+        (
+        x
+        )
+        =
+        
+          N
+          
+            n
+          
+        
+        
+          
+            1
+            
+              
+                w
+                
+                  (
+                  α
+                  ,
+                  β
+                  )
+                
+              
+              (
+              x
+              )
+            
+          
+        
+        
+          
+            
+              
+                d
+              
+              
+                n
+              
+            
+            
+              
+                d
+              
+              
+                x
+                
+                  n
+                
+              
+            
+          
+        
+        
+          (
+          
+            
+              w
+              
+                (
+                α
+                ,
+                β
+                )
+              
+            
+            (
+            x
+            )
+            s
+            (
+            x
+            
+              )
+              
+                n
+              
+            
+          
+          )
+        
+        ,
+        
+        0
+        ≤
+        n
+        ,
+      
+    
+    {\displaystyle R_{n}^{(\alpha ,\beta )}(x)=N_{n}{\frac {1}{w^{(\alpha ,\beta )}(x)}}{\frac {\mathrm {d} ^{n}}{\mathrm {d} x^{n}}}\left(w^{(\alpha ,\beta )}(x)s(x)^{n}\right),\quad 0\leq n,}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(4)
+
+
+
+
+
+where Nn is a normalization constant. This constant is related to the coefficient cn of the term of degree n in the polynomial R(α,β)
+
+n(x) by the expression
+
+
+
+
+
+
+  
+    
+      
+        
+          N
+          
+            n
+          
+        
+        =
+        
+          
+            
+              (
+              −
+              1
+              
+                )
+                
+                  n
+                
+              
+              n
+              !
+              
+              
+                c
+                
+                  n
+                
+              
+            
+            
+              
+                ∏
+                
+                  k
+                  =
+                  0
+                
+                
+                  n
+                  −
+                  1
+                
+              
+              
+                λ
+                
+                  n
+                
+                
+                  (
+                  k
+                  )
+                
+              
+            
+          
+        
+        ,
+        
+        
+          λ
+          
+            n
+          
+        
+        =
+        −
+        n
+        
+          (
+          
+            
+              
+                
+                  t
+                  
+                    n
+                  
+                  
+                    (
+                    α
+                    ,
+                    β
+                    )
+                  
+                
+              
+              ′
+            
+            +
+            
+              
+                
+                  1
+                  2
+                
+              
+            
+            (
+            n
+            −
+            1
+            )
+            
+              s
+              ″
+            
+            (
+            x
+            )
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle N_{n}={\frac {(-1)^{n}n!\,c_{n}}{\prod _{k=0}^{n-1}\lambda _{n}^{(k)}}},\quad \lambda _{n}=-n\left({t_{n}^{(\alpha ,\beta )}}'+{\tfrac {1}{2}}(n-1)s''(x)\right),}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(5)
+
+
+
+
+
+which holds for n ≥ 1.
+Relationship between the polynomials of Romanovski and Jacobi[edit]
+As shown by Askey this finite sequence of real orthogonal polynomials can be expressed in terms of Jacobi polynomials of imaginary argument and thereby is frequently referred to as complexified Jacobi polynomials.[14] Namely, the Romanovski equation (1) can be formally obtained from the Jacobi equation,[15]
+
+
+
+
+
+
+  
+    
+      
+        
+          
+            
+              
+              
+                
+                  (
+                  
+                    1
+                    −
+                    
+                      x
+                      
+                        2
+                      
+                    
+                  
+                  )
+                
+                
+                  
+                    
+                      P
+                      
+                        n
+                      
+                      
+                        (
+                        γ
+                        ,
+                        δ
+                        )
+                      
+                    
+                  
+                  ″
+                
+                (
+                x
+                )
+                +
+                
+                  t
+                  
+                    1
+                  
+                  
+                    (
+                    γ
+                    ,
+                    δ
+                    )
+                  
+                
+                (
+                x
+                )
+                
+                  
+                    
+                      P
+                      
+                        n
+                      
+                      
+                        (
+                        γ
+                        ,
+                        δ
+                        )
+                      
+                    
+                  
+                  ′
+                
+                (
+                x
+                )
+                +
+                
+                  λ
+                  
+                    n
+                  
+                
+                
+                  P
+                  
+                    n
+                  
+                  
+                    (
+                    γ
+                    ,
+                    δ
+                    )
+                  
+                
+                (
+                x
+                )
+                =
+                0
+                ,
+              
+            
+            
+              
+              
+                
+                
+                  t
+                  
+                    1
+                  
+                  
+                    (
+                    γ
+                    ,
+                    δ
+                    )
+                  
+                
+                (
+                x
+                )
+                =
+                δ
+                −
+                γ
+                −
+                (
+                γ
+                +
+                δ
+                +
+                2
+                )
+                x
+                ,
+                
+                
+                  λ
+                  
+                    n
+                  
+                
+                =
+                n
+                (
+                n
+                +
+                γ
+                +
+                δ
+                +
+                1
+                )
+                ,
+                
+                x
+                ∈
+                
+                  [
+                  
+                    −
+                    1
+                    ,
+                    1
+                  
+                  ]
+                
+                ,
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}&\left(1-x^{2}\right){P_{n}^{(\gamma ,\delta )}}''(x)+t_{1}^{(\gamma ,\delta )}(x){P_{n}^{(\gamma ,\delta )}}'(x)+\lambda _{n}P_{n}^{(\gamma ,\delta )}(x)=0,\\[4pt]&\qquad t_{1}^{(\gamma ,\delta )}(x)=\delta -\gamma -(\gamma +\delta +2)x,\quad \lambda _{n}=n(n+\gamma +\delta +1),\quad x\in \left[-1,1\right],\end{aligned}}}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(6)
+
+
+
+
+
+via the replacements, for real x,
+
+
+
+
+
+
+  
+    
+      
+        x
+        →
+        i
+        x
+        ,
+        
+        
+          
+            
+              d
+            
+            
+              
+                
+                  d
+                
+              
+              x
+            
+          
+        
+        →
+        −
+        i
+        
+          
+            
+              d
+            
+            
+              
+                
+                  d
+                
+              
+              x
+            
+          
+        
+        ,
+        
+        γ
+        =
+        
+          δ
+          
+            ∗
+          
+        
+        =
+        β
+        −
+        1
+        −
+        
+          
+            
+              α
+              i
+            
+            2
+          
+        
+        ,
+      
+    
+    {\displaystyle x\to ix,\quad {\frac {\mathrm {d} }{{\mathrm {d} }x}}\to -i{\frac {\mathrm {d} }{{\mathrm {d} }x}},\quad \gamma =\delta ^{\ast }=\beta -1-{\frac {\alpha i}{2}},}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(7)
+
+
+
+
+
+in which case one finds
+
+
+
+
+
+
+  
+    
+      
+        
+          R
+          
+            n
+          
+          
+            (
+            α
+            ,
+            β
+            )
+          
+        
+        (
+        x
+        )
+        =
+        
+          i
+          
+            n
+          
+        
+        
+          P
+          
+            n
+          
+          
+            
+              (
+              
+                β
+                −
+                1
+                −
+                
+                  
+                    i
+                    2
+                  
+                
+                α
+                ,
+                β
+                −
+                1
+                +
+                
+                  
+                    i
+                    2
+                  
+                
+                α
+              
+              )
+            
+          
+        
+        (
+        i
+        x
+        )
+        ,
+      
+    
+    {\displaystyle R_{n}^{(\alpha ,\beta )}(x)=i^{n}P_{n}^{\left(\beta -1-{\frac {i}{2}}\alpha ,\beta -1+{\frac {i}{2}}\alpha \right)}(ix),}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(8)
+
+
+
+
+
+(with suitably chosen normalization constants for the Jacobi polynomials). However, this alternative expression is not useful when considering the orthogonality properties. The issue is that the orthogonality integrals of the complex Jacobi polynomials depend on the integration contour. In Kuijlaars et al. (2003)[16] an orthogonality relation for Jacobi polynomials along the imaginary axis has been given, as required by the replacements in (7), but only for a limited case of real, not integer, parameters.
+Notice the invertibility of (8) according to
+
+
+
+
+
+
+  
+    
+      
+        
+          P
+          
+            n
+          
+          
+            (
+            α
+            ,
+            β
+            )
+          
+        
+        (
+        x
+        )
+        =
+        (
+        −
+        i
+        
+          )
+          
+            n
+          
+        
+        
+          R
+          
+            n
+          
+          
+            
+              (
+              
+                i
+                (
+                α
+                −
+                β
+                )
+                ,
+                
+                  
+                    1
+                    2
+                  
+                
+                (
+                α
+                +
+                β
+                )
+                +
+                1
+                )
+              
+              )
+            
+          
+        
+        (
+        −
+        i
+        x
+        )
+        ,
+      
+    
+    {\displaystyle P_{n}^{(\alpha ,\beta )}(x)=(-i)^{n}R_{n}^{\left(i(\alpha -\beta ),{\frac {1}{2}}(\alpha +\beta )+1)\right)}(-ix),}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(9)
+
+
+
+
+
+where, now, P(α,β)
+
+n(x) is a real Jacobi polynomial and
+
+
+  
+    
+      
+        
+          R
+          
+            n
+          
+          
+            
+              (
+              
+                i
+                (
+                α
+                −
+                β
+                )
+                ,
+                
+                  
+                    1
+                    2
+                  
+                
+                (
+                α
+                +
+                β
+                )
+                +
+                1
+                )
+              
+              )
+            
+          
+        
+        (
+        −
+        i
+        x
+        )
+      
+    
+    {\displaystyle R_{n}^{\left(i(\alpha -\beta ),{\frac {1}{2}}(\alpha +\beta )+1)\right)}(-ix)}
+  
+
+
+would be a complex Romanovski polynomial.
+Properties of Romanovski polynomials[edit]
+Explicit construction[edit]
+For real α, β and n = 0, 1, 2, ..., a function R(α,β)
+
+n(x) can be defined by the Rodrigues formula in Equation (4) as
+
+
+
+
+
+
+  
+    
+      
+        
+          R
+          
+            n
+          
+          
+            (
+            α
+            ,
+            β
+            )
+          
+        
+        (
+        x
+        )
+        ≡
+        
+          
+            1
+            
+              
+                w
+                
+                  (
+                  α
+                  ,
+                  β
+                  )
+                
+              
+              (
+              x
+              )
+            
+          
+        
+        
+          
+            
+              
+                
+                  d
+                
+              
+              
+                n
+              
+            
+            
+              
+                
+                  d
+                
+              
+              
+                x
+                
+                  n
+                
+              
+            
+          
+        
+        
+          (
+          
+            
+              w
+              
+                (
+                α
+                ,
+                β
+                )
+              
+            
+            (
+            x
+            )
+            s
+            (
+            x
+            
+              )
+              
+                n
+              
+            
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle R_{n}^{(\alpha ,\beta )}(x)\equiv {\frac {1}{w^{(\alpha ,\beta )}(x)}}{\frac {{\rm {d}}^{n}}{{\rm {d}}x^{n}}}\left(w^{(\alpha ,\beta )}(x)s(x)^{n}\right),}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(10)
+
+
+
+
+
+where w(α,β) is the same weight function as in (2), and s(x) = 1 + x2 is the coefficient of the second derivative of the hypergeometric differential equation as in (1).
+Note that we have chosen the normalization constants Nn = 1, which is equivalent to making a choice of the coefficient of highest degree in the polynomial, as given by equation (5). It takes the form
+
+
+
+
+
+
+  
+    
+      
+        
+          c
+          
+            n
+          
+        
+        =
+        
+          
+            1
+            
+              n
+              !
+            
+          
+        
+        
+          ∏
+          
+            k
+            =
+            0
+          
+          
+            n
+            −
+            1
+          
+        
+        
+          
+            (
+          
+        
+        2
+        β
+        (
+        n
+        −
+        k
+        )
+        +
+        n
+        (
+        n
+        −
+        1
+        )
+        −
+        k
+        (
+        k
+        −
+        1
+        )
+        
+          
+            )
+          
+        
+        ,
+        
+        n
+        ≥
+        1.
+      
+    
+    {\displaystyle c_{n}={\frac {1}{n!}}\prod _{k=0}^{n-1}{\bigl (}2\beta (n-k)+n(n-1)-k(k-1){\bigr )},\quad n\geq 1.}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(11)
+
+
+
+
+
+Also note that the coefficient cn does not depend on the parameter α, but only on β and, for particular values of β, cn vanishes (i.e., for all the values
+
+
+  
+    
+      
+        β
+        =
+        
+          
+            
+              k
+              (
+              k
+              −
+              1
+              )
+              −
+              n
+              (
+              n
+              −
+              1
+              )
+            
+            
+              2
+              (
+              n
+              −
+              k
+              )
+            
+          
+        
+      
+    
+    {\displaystyle \beta ={\frac {k(k-1)-n(n-1)}{2(n-k)}}}
+  
+
+
+where k = 0, ..., n − 1). This observation poses a problem addressed below.
+For later reference, we write explicitly the polynomials of degree 0, 1, and 2,
+
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  R
+                  
+                    0
+                  
+                  
+                    (
+                    α
+                    ,
+                    β
+                    )
+                  
+                
+                (
+                x
+                )
+              
+              
+                
+                =
+                1
+                ,
+              
+            
+            
+              
+                
+                  R
+                  
+                    1
+                  
+                  
+                    (
+                    α
+                    ,
+                    β
+                    )
+                  
+                
+                (
+                x
+                )
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      
+                        w
+                        
+                          (
+                          α
+                          ,
+                          β
+                          )
+                        
+                      
+                      (
+                      x
+                      )
+                    
+                  
+                
+                
+                  (
+                  
+                    
+                      w
+                      
+                        ′
+                        
+                          (
+                          α
+                          ,
+                          β
+                          )
+                        
+                      
+                    
+                    (
+                    x
+                    )
+                    s
+                    (
+                    x
+                    )
+                    +
+                    
+                      s
+                      ′
+                    
+                    (
+                    x
+                    )
+                    
+                      w
+                      
+                        (
+                        α
+                        ,
+                        β
+                        )
+                      
+                    
+                    (
+                    x
+                    )
+                  
+                  )
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  t
+                  
+                    (
+                    α
+                    ,
+                    β
+                    )
+                  
+                
+                (
+                x
+                )
+                =
+                2
+                β
+                x
+                +
+                α
+                ,
+              
+            
+            
+              
+                
+                  R
+                  
+                    2
+                  
+                  
+                    (
+                    α
+                    ,
+                    β
+                    )
+                  
+                
+                (
+                x
+                )
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      
+                        w
+                        
+                          (
+                          α
+                          ,
+                          β
+                          )
+                        
+                      
+                      (
+                      x
+                      )
+                    
+                  
+                
+                
+                  
+                    
+                      d
+                    
+                    
+                      
+                        
+                          d
+                        
+                      
+                      x
+                    
+                  
+                
+                
+                  (
+                  
+                    
+                      s
+                      
+                        2
+                      
+                    
+                    (
+                    x
+                    )
+                    
+                      w
+                      
+                        ′
+                        
+                          (
+                          α
+                          ,
+                          β
+                          )
+                        
+                      
+                    
+                    (
+                    x
+                    )
+                    +
+                    2
+                    s
+                    (
+                    x
+                    )
+                    
+                      s
+                      ′
+                    
+                    (
+                    x
+                    )
+                    
+                      w
+                      
+                        (
+                        α
+                        ,
+                        β
+                        )
+                      
+                    
+                    (
+                    x
+                    )
+                  
+                  )
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      
+                        w
+                        
+                          (
+                          α
+                          ,
+                          β
+                          )
+                        
+                      
+                      (
+                      x
+                      )
+                    
+                  
+                
+                
+                  
+                    
+                      d
+                    
+                    
+                      
+                        
+                          d
+                        
+                      
+                      x
+                    
+                  
+                
+                
+                  (
+                  
+                    s
+                    (
+                    x
+                    )
+                    
+                      w
+                      
+                        (
+                        α
+                        ,
+                        β
+                        )
+                      
+                    
+                    (
+                    x
+                    )
+                    
+                      (
+                      
+                        
+                          t
+                          
+                            (
+                            α
+                            ,
+                            β
+                            )
+                          
+                        
+                        (
+                        x
+                        )
+                        +
+                        
+                          s
+                          ′
+                        
+                        (
+                        x
+                        )
+                      
+                      )
+                    
+                  
+                  )
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  (
+                  
+                    2
+                    x
+                    +
+                    
+                      t
+                      
+                        (
+                        α
+                        ,
+                        β
+                        )
+                      
+                    
+                    (
+                    x
+                    )
+                  
+                  )
+                
+                
+                  t
+                  
+                    (
+                    α
+                    ,
+                    β
+                    )
+                  
+                
+                (
+                x
+                )
+                +
+                
+                  (
+                  
+                    2
+                    +
+                    
+                      t
+                      
+                        ′
+                        
+                          (
+                          α
+                          ,
+                          β
+                          )
+                        
+                      
+                    
+                    (
+                    x
+                    )
+                  
+                  )
+                
+                s
+                (
+                x
+                )
+              
+            
+            
+              
+              
+                
+                =
+                (
+                2
+                β
+                +
+                1
+                )
+                (
+                2
+                β
+                +
+                2
+                )
+                
+                  x
+                  
+                    2
+                  
+                
+                +
+                2
+                (
+                2
+                β
+                +
+                1
+                )
+                α
+                x
+                +
+                
+                  (
+                  
+                    2
+                    β
+                    +
+                    
+                      α
+                      
+                        2
+                      
+                    
+                    +
+                    2
+                  
+                  )
+                
+                ,
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}R_{0}^{(\alpha ,\beta )}(x)&=1,\\[6pt]R_{1}^{(\alpha ,\beta )}(x)&={\frac {1}{w^{(\alpha ,\beta )}(x)}}\left(w'^{(\alpha ,\beta )}(x)s(x)+s'(x)w^{(\alpha ,\beta )}(x)\right)\\[6pt]&=t^{(\alpha ,\beta )}(x)=2\beta x+\alpha ,\\[6pt]R_{2}^{(\alpha ,\beta )}(x)&={\frac {1}{w^{(\alpha ,\beta )}(x)}}{\frac {\mathrm {d} }{{\mathrm {d} }x}}\left(s^{2}(x)w'^{(\alpha ,\beta )}(x)+2s(x)s'(x)w^{(\alpha ,\beta )}(x)\right)\\&={\frac {1}{w^{(\alpha ,\beta )}(x)}}{\frac {\mathrm {d} }{{\mathrm {d} }x}}\left(s(x)w^{(\alpha ,\beta )}(x)\left(t^{(\alpha ,\beta )}(x)+s'(x)\right)\right)\\[6pt]&=\left(2x+t^{(\alpha ,\beta )}(x)\right)t^{(\alpha ,\beta )}(x)+\left(2+t'^{(\alpha ,\beta )}(x)\right)s(x)\\[6pt]&=(2\beta +1)(2\beta +2)x^{2}+2(2\beta +1)\alpha x+\left(2\beta +\alpha ^{2}+2\right),\end{aligned}}}
+  
+
+
+which derive from the Rodrigues formula (10) in conjunction with Pearson's ODE (3).
+Orthogonality[edit]
+The two polynomials, R(α,β)
+
+m(x) and R(α,β)
+
+n(x) with m ≠ n, are orthogonal,[3]
+
+
+
+
+
+
+  
+    
+      
+        
+          ∫
+          
+            −
+            ∞
+          
+          
+            +
+            ∞
+          
+        
+        
+          w
+          
+            (
+            α
+            ,
+            β
+            )
+          
+        
+        (
+        x
+        )
+        
+          R
+          
+            m
+          
+          
+            (
+            α
+            ,
+            β
+            )
+          
+        
+        (
+        x
+        )
+        
+          R
+          
+            n
+          
+          
+            (
+            α
+            ,
+            β
+            )
+          
+        
+        (
+        x
+        )
+        =
+        0
+      
+    
+    {\displaystyle \int _{-\infty }^{+\infty }w^{(\alpha ,\beta )}(x)R_{m}^{(\alpha ,\beta )}(x)R_{n}^{(\alpha ,\beta )}(x)=0}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(12)
+
+
+
+
+
+if and only if,
+
+
+
+
+
+
+  
+    
+      
+        m
+        +
+        n
+        <
+        1
+        −
+        2
+        β
+        .
+      
+    
+    {\displaystyle m+n<1-2\beta .}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(13)
+
+
+
+
+
+In other words, for arbitrary parameters, only a finite number of Romanovski polynomials are orthogonal. This property is referred to as ``finite orthogonality. However, for some special cases in which the parameters depend in a particular way on the polynomial degree infinite orthogonality can be achieved.
+This is the case of a version of equation (1) that has been independently encountered anew within the context of the exact solubility of the quantum mechanical problem of the trigonometric Rosen–Morse potential and reported in Compean & Kirchbach (2006).[17] There, the polynomial parameters α and β are no longer arbitrary but are expressed in terms of the potential parameters, a and b, and the degree n of the polynomial according to the relations,
+
+
+
+
+
+
+  
+    
+      
+        
+          
+            
+              
+                α
+                →
+                
+                  α
+                  
+                    n
+                  
+                
+                =
+                
+                  
+                    
+                      2
+                      b
+                    
+                    
+                      n
+                      +
+                      1
+                      +
+                      a
+                    
+                  
+                
+                ,
+                
+                β
+                →
+                
+                  β
+                  
+                    n
+                  
+                
+                =
+                −
+                (
+                a
+                +
+                n
+                +
+                1
+                )
+                +
+                1
+                ,
+                
+                n
+                =
+                0
+                ,
+                1
+                ,
+                2
+                ,
+                …
+                ,
+                ∞
+                .
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\alpha \to \alpha _{n}={\frac {2b}{n+1+a}},\quad \beta \to \beta _{n}=-(a+n+1)+1,\quad n=0,1,2,\ldots ,\infty .\end{aligned}}}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(14)
+
+
+
+
+
+Correspondingly, λn emerges as λn = −n(2a + n − 1), while the weight function takes the shape
+
+
+  
+    
+      
+        
+          
+            (
+            
+              1
+              +
+              
+                x
+                
+                  2
+                
+              
+            
+            )
+          
+          
+            −
+            (
+            a
+            +
+            n
+            +
+            1
+            )
+          
+        
+        exp
+        ⁡
+        
+          (
+          
+            −
+            
+              
+                
+                  2
+                  b
+                
+                
+                  n
+                  +
+                  a
+                  +
+                  1
+                
+              
+            
+            arccot
+            ⁡
+            x
+          
+          )
+        
+        .
+      
+    
+    {\displaystyle \left(1+x^{2}\right)^{-(a+n+1)}\exp \left(-{\frac {2b}{n+a+1}}\operatorname {arccot} x\right).}
+  
+
+
+Finally, the one-dimensional variable, x, in Compean & Kirchbach (2006)[17] has been taken as
+
+
+  
+    
+      
+        x
+        =
+        cot
+        ⁡
+        
+          (
+          
+            
+              r
+              d
+            
+          
+          )
+        
+        ,
+      
+    
+    {\displaystyle x=\cot \left({\frac {r}{d}}\right),}
+  
+
+
+where r is the radial distance, while 
+  
+    
+      
+        d
+      
+    
+    {\displaystyle d}
+  
+ is an appropriate length parameter. In Compean & Kirchbach[17] it has been shown that the family of Romanovski polynomials corresponding to the infinite sequence of parameter pairs,
+
+
+
+
+
+
+  
+    
+      
+        
+          (
+          
+            
+              α
+              
+                1
+              
+            
+            ,
+            
+              β
+              
+                1
+              
+            
+          
+          )
+        
+        ,
+        
+          (
+          
+            
+              α
+              
+                2
+              
+            
+            
+              β
+              
+                2
+              
+            
+          
+          )
+        
+        ,
+        …
+        ,
+        
+          (
+          
+            
+              α
+              
+                n
+              
+            
+            
+              β
+              
+                n
+              
+            
+          
+          )
+        
+        ,
+        …
+        ,
+        
+        n
+        ⟶
+        ∞
+        ,
+      
+    
+    {\displaystyle \left(\alpha _{1},\beta _{1}\right),\left(\alpha _{2}\beta _{2}\right),\ldots ,\left(\alpha _{n}\beta _{n}\right),\ldots ,\quad n\longrightarrow \infty ,}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(15)
+
+
+
+
+
+is orthogonal.
+Generating function[edit]
+In Weber (2007)[18] polynomials Q(αn, βn + n)
+
+ν(x), with βn + n = −a, and complementary to R(αn, βn)
+
+n(x) have been studied, generated in the following way:
+
+
+
+
+
+
+  
+    
+      
+        
+          Q
+          
+            ν
+          
+          
+            
+              (
+              
+                
+                  α
+                  
+                    n
+                  
+                
+                ,
+                
+                  β
+                  
+                    n
+                  
+                
+                +
+                n
+              
+              )
+            
+          
+        
+        (
+        x
+        )
+        =
+        
+          
+            1
+            
+              w
+              
+                
+                  (
+                  
+                    
+                      α
+                      
+                        n
+                      
+                    
+                    ,
+                    
+                      β
+                      
+                        n
+                      
+                    
+                    +
+                    n
+                    −
+                    ν
+                  
+                  )
+                
+              
+            
+          
+        
+        
+          
+            
+              
+                
+                  d
+                
+              
+              
+                ν
+              
+            
+            
+              
+                
+                  d
+                
+              
+              
+                x
+                
+                  ν
+                
+              
+            
+          
+        
+        
+          w
+          
+            
+              (
+              
+                
+                  α
+                  
+                    n
+                  
+                
+                ,
+                
+                  β
+                  
+                    n
+                  
+                
+              
+              )
+            
+          
+        
+        (
+        x
+        )
+        
+          
+            (
+            
+              1
+              +
+              
+                x
+                
+                  2
+                
+              
+            
+            )
+          
+          
+            n
+          
+        
+        .
+      
+    
+    {\displaystyle Q_{\nu }^{\left(\alpha _{n},\beta _{n}+n\right)}(x)={\frac {1}{w^{\left(\alpha _{n},\beta _{n}+n-\nu \right)}}}{\frac {{\mathrm {d} }^{\nu }}{{\mathrm {d} }x^{\nu }}}w^{\left(\alpha _{n},\beta _{n}\right)}(x)\left(1+x^{2}\right)^{n}.}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(16)
+
+
+
+
+
+In taking into account the relation,
+
+
+
+
+
+
+  
+    
+      
+        
+          w
+          
+            
+              (
+              
+                
+                  α
+                  
+                    n
+                  
+                
+                ,
+                
+                  β
+                  
+                    n
+                  
+                
+              
+              )
+            
+          
+        
+        (
+        x
+        )
+        
+          
+            (
+            
+              1
+              +
+              
+                x
+                
+                  2
+                
+              
+            
+            )
+          
+          
+            δ
+          
+        
+        =
+        
+          w
+          
+            
+              (
+              
+                
+                  α
+                  
+                    n
+                  
+                
+                ,
+                
+                  β
+                  
+                    n
+                  
+                
+                +
+                δ
+              
+              )
+            
+          
+        
+        (
+        x
+        )
+        ,
+      
+    
+    {\displaystyle w^{\left(\alpha _{n},\beta _{n}\right)}(x)\left(1+x^{2}\right)^{\delta }=w^{\left(\alpha _{n},\beta _{n}+\delta \right)}(x),}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(17)
+
+
+
+
+
+Equation (16) becomes equivalent to
+
+
+
+
+
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  Q
+                  
+                    ν
+                  
+                  
+                    
+                      (
+                      
+                        
+                          α
+                          
+                            n
+                          
+                        
+                        ,
+                        
+                          β
+                          
+                            n
+                          
+                        
+                        +
+                        n
+                      
+                      )
+                    
+                  
+                
+                (
+                x
+                )
+              
+              
+                
+                =
+                
+                  
+                    1
+                    
+                      w
+                      
+                        
+                          (
+                          
+                            
+                              α
+                              
+                                n
+                              
+                            
+                            ,
+                            
+                              β
+                              
+                                n
+                              
+                            
+                            +
+                            n
+                            −
+                            ν
+                          
+                          )
+                        
+                      
+                    
+                  
+                
+                
+                  
+                    
+                      
+                        
+                          d
+                        
+                      
+                      
+                        ν
+                      
+                    
+                    
+                      
+                        
+                          d
+                        
+                      
+                      
+                        x
+                        
+                          ν
+                        
+                      
+                    
+                  
+                
+                
+                  w
+                  
+                    
+                      (
+                      
+                        
+                          α
+                          
+                            n
+                          
+                        
+                        ,
+                        
+                          β
+                          
+                            n
+                          
+                        
+                        +
+                        n
+                        −
+                        ν
+                      
+                      )
+                    
+                  
+                
+                (
+                x
+                )
+                
+                  
+                    (
+                    
+                      1
+                      +
+                      
+                        x
+                        
+                          2
+                        
+                      
+                    
+                    )
+                  
+                  
+                    ν
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  R
+                  
+                    ν
+                  
+                  
+                    
+                      (
+                      
+                        
+                          α
+                          
+                            n
+                          
+                        
+                        ,
+                        
+                          β
+                          
+                            n
+                          
+                        
+                        +
+                        n
+                        −
+                        ν
+                      
+                      )
+                    
+                  
+                
+                (
+                x
+                )
+                ,
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}Q_{\nu }^{\left(\alpha _{n},\beta _{n}+n\right)}(x)&={\frac {1}{w^{\left(\alpha _{n},\beta _{n}+n-\nu \right)}}}{\frac {{\mathrm {d} }^{\nu }}{{\mathrm {d} }x^{\nu }}}w^{\left(\alpha _{n},\beta _{n}+n-\nu \right)}(x)\left(1+x^{2}\right)^{\nu }\\[4pt]&=R_{\nu }^{\left(\alpha _{n},\beta _{n}+n-\nu \right)}(x),\end{aligned}}}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(18)
+
+
+
+
+
+and thus links the complementary to the principal Romanovski polynomials.
+The main attraction of the complementary polynomials is that their generating function can be calculated in closed form.[19] Such a generating function, written for the Romanovski polynomials based on Equation (18) with the parameters in (14) and therefore referring to infinite orthogonality, has been introduced as
+
+
+
+
+
+
+  
+    
+      
+        
+          G
+          
+            
+              (
+              
+                
+                  α
+                  
+                    n
+                  
+                
+                ,
+                
+                  β
+                  
+                    n
+                  
+                
+              
+              )
+            
+          
+        
+        (
+        x
+        ,
+        y
+        )
+        =
+        
+          ∑
+          
+            ν
+            =
+            0
+          
+          
+            ∞
+          
+        
+        
+          R
+          
+            ν
+          
+          
+            
+              (
+              
+                
+                  α
+                  
+                    n
+                  
+                
+                ,
+                
+                  β
+                  
+                    n
+                  
+                
+                +
+                n
+                −
+                ν
+              
+              )
+            
+          
+        
+        (
+        x
+        )
+        
+          
+            
+              y
+              
+                ν
+              
+            
+            
+              ν
+              !
+            
+          
+        
+        .
+      
+    
+    {\displaystyle G^{\left(\alpha _{n},\beta _{n}\right)}(x,y)=\sum _{\nu =0}^{\infty }R_{\nu }^{\left(\alpha _{n},\beta _{n}+n-\nu \right)}(x){\frac {y^{\nu }}{\nu !}}.}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(19)
+
+
+
+
+
+The notational differences between Weber[18] and those used here are summarized as follows:
+
+G(αn, βn)(x,y) here versus Q(x,y;α,−a) there, α there in place of αn here,
+a = −βn − n, and
+Q(α,−a)
+
+ν(x) in Equation (15) in Weber[18] corresponding to R(αn, βn + n − ν)
+
+ν(x) here.
+
+The generating function under discussion obtained in Weber[18] now reads:
+
+
+
+
+
+
+  
+    
+      
+        
+          G
+          
+            (
+            
+              α
+              
+                n
+              
+            
+            ,
+            
+              β
+              
+                n
+              
+            
+            )
+          
+        
+        (
+        x
+        ,
+        y
+        )
+        =
+        
+          
+            (
+            
+              1
+              +
+              
+                x
+                
+                  2
+                
+              
+            
+            )
+          
+          
+            −
+            
+              β
+              
+                n
+              
+            
+            −
+            n
+            +
+            1
+          
+        
+        exp
+        ⁡
+        
+          (
+          
+            
+              α
+              
+                n
+              
+            
+            arccot
+            ⁡
+            x
+          
+          )
+        
+        
+          
+            (
+            
+              1
+              +
+              
+                
+                  (
+                  
+                    x
+                    +
+                    y
+                    
+                      (
+                      
+                        1
+                        +
+                        
+                          x
+                          
+                            2
+                          
+                        
+                      
+                      )
+                    
+                  
+                  )
+                
+                
+                  2
+                
+              
+            
+            )
+          
+          
+            −
+            
+              (
+              
+                −
+                
+                  β
+                  
+                    n
+                  
+                
+                −
+                n
+                +
+                1
+              
+              )
+            
+          
+        
+        exp
+        ⁡
+        
+          (
+          
+            −
+            
+              α
+              
+                n
+              
+            
+            arccot
+            ⁡
+            
+              (
+              
+                x
+                +
+                y
+                
+                  (
+                  
+                    1
+                    +
+                    
+                      x
+                      
+                        2
+                      
+                    
+                  
+                  )
+                
+              
+              )
+            
+          
+          
+        
+      
+    
+    {\displaystyle G^{(\alpha _{n},\beta _{n})}(x,y)=\left(1+x^{2}\right)^{-\beta _{n}-n+1}\exp \left(\alpha _{n}\operatorname {arccot} x\right)\left(1+\left(x+y\left(1+x^{2}\right)\right)^{2}\right)^{-\left(-\beta _{n}-n+1\right)}\exp \left(-\alpha _{n}\operatorname {arccot} \left(x+y\left(1+x^{2}\right)\right)\right.}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(20)
+
+
+
+
+
+Recurrence relations[edit]
+Recurrence relations between the infinite orthogonal series of Romanovski polynomials with the parameters in the above equations (14) follow from the generating function,[18]
+
+
+
+
+
+
+  
+    
+      
+        ν
+        
+          
+            (
+          
+        
+        ν
+        +
+        1
+        −
+        2
+        (
+        
+          β
+          
+            n
+          
+        
+        +
+        n
+        )
+        
+          
+            )
+          
+        
+        
+          R
+          
+            ν
+            −
+            1
+          
+          
+            
+              (
+              
+                
+                  α
+                  
+                    n
+                  
+                
+                ,
+                
+                  β
+                  
+                    n
+                  
+                
+                +
+                n
+                −
+                ν
+                +
+                1
+              
+              )
+            
+          
+        
+        (
+        x
+        )
+        +
+        
+          
+            
+              d
+            
+            
+              
+                
+                  d
+                
+              
+              x
+            
+          
+        
+        
+          R
+          
+            ν
+          
+          
+            
+              (
+              
+                
+                  α
+                  
+                    n
+                  
+                
+                ,
+                
+                  β
+                  
+                    n
+                  
+                
+                +
+                n
+                −
+                ν
+              
+              )
+            
+          
+        
+        (
+        x
+        )
+        =
+        0
+        ,
+      
+    
+    {\displaystyle \nu {\bigl (}\nu +1-2(\beta _{n}+n){\bigr )}R_{\nu -1}^{\left(\alpha _{n},\beta _{n}+n-\nu +1\right)}(x)+{\frac {\mathrm {d} }{{\mathrm {d} }x}}R_{\nu }^{\left(\alpha _{n},\beta _{n}+n-\nu \right)}(x)=0,}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(21)
+
+
+
+
+
+and
+
+
+
+
+
+
+  
+    
+      
+        
+          R
+          
+            ν
+            +
+            1
+          
+          
+            
+              (
+              
+                
+                  α
+                  
+                    n
+                  
+                
+                ,
+                
+                  β
+                  
+                    n
+                  
+                
+                +
+                n
+                −
+                ν
+                −
+                1
+              
+              )
+            
+          
+        
+        (
+        x
+        )
+        =
+        
+          
+            (
+          
+        
+        
+          α
+          
+            n
+          
+        
+        −
+        2
+        x
+        (
+        −
+        
+          β
+          
+            n
+          
+        
+        −
+        n
+        +
+        ν
+        +
+        1
+        )
+        
+          
+            )
+          
+        
+        
+          R
+          
+            ν
+          
+          
+            
+              (
+              
+                
+                  α
+                  
+                    n
+                  
+                
+                ,
+                
+                  β
+                  
+                    n
+                  
+                
+                +
+                n
+                −
+                ν
+              
+              )
+            
+          
+        
+        −
+        ν
+        
+          (
+          
+            1
+            +
+            
+              x
+              
+                2
+              
+            
+          
+          )
+        
+        
+          
+            (
+          
+        
+        2
+        (
+        −
+        
+          β
+          
+            n
+          
+        
+        −
+        n
+        )
+        +
+        ν
+        +
+        1
+        
+          
+            )
+          
+        
+        
+          R
+          
+            ν
+            −
+            1
+          
+          
+            
+              (
+              
+                
+                  α
+                  
+                    n
+                  
+                
+                ,
+                
+                  β
+                  
+                    n
+                  
+                
+                +
+                n
+                −
+                ν
+                +
+                1
+              
+              )
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle R_{\nu +1}^{\left(\alpha _{n},\beta _{n}+n-\nu -1\right)}(x)={\bigl (}\alpha _{n}-2x(-\beta _{n}-n+\nu +1){\bigr )}R_{\nu }^{\left(\alpha _{n},\beta _{n}+n-\nu \right)}-\nu \left(1+x^{2}\right){\bigl (}2(-\beta _{n}-n)+\nu +1{\bigr )}R_{\nu -1}^{\left(\alpha _{n},\beta _{n}+n-\nu +1\right)},}
+  
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+(22)
+
+
+
+
+
+as Equations (10) and (23) of Weber (2007)[18] respectively.
+See also[edit]
+
+
+Associated Legendre functions
+Gaussian quadrature
+Gegenbauer polynomials
+Legendre rational functions
+Turán's inequalities
+Legendre wavelet
+Jacobi polynomials
+Legendre polynomials
+Spherical harmonics
+
+
+References[edit]
+
+
+
+
+
+
+This article lacks ISBNs for the books listed in it. Please make it easier to conduct research by listing ISBNs. If the {{Cite book}} or {{citation}} templates are in use, you may add ISBNs automatically, or discuss this issue on the talk page. (December 2017)
+
+
+
+
+
+^ Romanovski, V. (1929). "Sur quelques classes nouvelles de polynomes orthogonaux". C. R. Acad. Sci. Paris (in French). 188: 1023. 
+^ Routh, E. J. (1884). "On some properties of certain solutions of a differential equation of second order". Proc. London Math. Soc. 16: 245. doi:10.1112/plms/s1-16.1.245. 
+^ a b Raposo, A. P.; Weber, H. J.; Álvarez Castillo, D. E.; Kirchbach, M. (2007). "Romanovski polynomials in selected physics problems". Centr. Eur. J. Phys. 5 (3): 253. doi:10.2478/s11534-007-0018-5. 
+^ Lesky, P. A. (1996). "Endliche und unendliche Systeme von kontinuierlichen klassischen Orthogonalpolynomen". Z. Angew. Math. Mech. (in German). 76: 181. doi:10.1002/zamm.19960760317. 
+^ Abramowitz, M.; Stegun, I. (1972). Handbook of Mathematical Functions with Formulas, Graphs and Mathematical Tables (2nd ed.). New York, NY: Dover. ISBN 978-0-486-61272-0. 
+^ Nikiforov, A. F.; Uvarov, V. B. (1988). Special Functions of Mathematical Physics. Basel: Birkhäuser Verlag. 
+^ Szego, G. (1939). Orthogonal Polynomials. 23. Providence, RI: American Mathematical Society. 
+^ Ismail, M. E. H. (2005). Classical and Quantum Orthogonal Polynomials in One Variable. Cambridge University Press. 
+^ Askey, R. (1987). "An integral of Ramanujan and orthogonal polynomials". J. Indian Math. Soc. 51: 27. 
+^ Askey, R. (1987). "Beta integrals and the associated orthogonal polynomials". Number Theory. Lecture Notes in Math. 1395. Madras/Berlin: Springer. p. 84. 
+^ Zarzo Altarejos, A. (1995). Differential Equations of the Hypergeometric Type (PhD) (in Spanish). Faculty of Science, University of Granada. 
+^ Witte, N. S.; Forrester, P. J. (2000). "Gap probabilities in finite and scaled Cauchy random matrix ensembles". Nonlinearity. 13: 1965. doi:10.1088/0951-7715/13/6/305. 
+^ Forrester, P. J. (2010). Log-Gases and Random Matrices. London Mathematical Society Monographs. Princeton University Press. 
+^ Cotfas, N. (2004). "Systems of orthogonal polynomials defined by hypergeometric type equations with application to quantum mechanics". Centr. Eur. J. Phys. 2: 456. doi:10.2478/bf02476425. 
+^ Weisstein, Eric W. "Jacobi Differential Equation". MathWorld. 
+^ Kuijlaars, A. B. J.; Martinez-Finkelshtein, A.; Orive, R. (2003). "Orthogonality of Jacobi polynomials with general parameters". Electron. Trans. Num. Anal. 19: 1. 
+^ a b c Compean, C. B.; Kirchbach, M. (2006). "The trigonometric Rosen–Morse potential in supersymmetric quantum mechanics and its exact solutions". J. Phys. A: Math. Gen. 39: 547. doi:10.1088/0305-4470/39/3/007. 
+^ a b c d e f Weber, H. J. (2007). "Connection between Romanovski polynomials and other polynomials". Centr. Eur. J. Math. 5 (3): 581. doi:10.2478/s11533-007-0014-4. 
+^ Weber, H. J. (2007). "Connections between real polynomial solutions of hypergeometric-type differential equations with Rodrigues formula". Centr. Eur. J. Math. 5 (2): 415. doi:10.2478/s11533-007-0004-6. 
+
+
+
+
+
+

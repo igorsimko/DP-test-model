@@ -1,0 +1,51 @@
+Haruzo Hida (肥田 晴三 Hida Haruzo, born 6 August 1952, Sakai, Osaka) is a Japanese mathematician, known for his research in number theory, algebraic geometry, and modular forms.
+Hida received from Kyoto University a B.A. in 1975, an M.A. in 1977, and a Ph.D. in 1980 with thesis On Abelian Varieties with Complex Multiplication as Factors of the Jacobians of Shimura Curves,[1] although he left Kyoto University in 1977. He was from 1977 to 1984 an assistant professor and from 1984 to 1987 an associate professor at Hokkaidō University. Since 1987 he has been a professor at the University of California, Los Angeles. From 1979 to 1981 he was a visiting scholar at the Institute for Advanced Study.
+Hida received in 1992 for his research on p-adic L-functions of algebraic groups and p-adic Hecke rings the Spring Prize of the Mathematical Society of Japan.[2] In 2012 he was elected a Fellow of the American Mathematical Society.[3]
+Among his doctoral students are Eknath Ghate and Chandrashekhar Khare.
+Selected works[edit]
+
+Elementary theory of L-functions and Eisenstein series, Cambridge University Press, 1993[4]
+Modular forms and Galois cohomology, Cambridge University Press, 2000
+Geometric modular forms and elliptic curves, World Scientific, 2000
+p-Adic automorphic forms on Shimura varieties, Springer, 2004[5]
+Hilbert modular forms and Iwasawa theory, Oxford University Press, 2006
+
+External links[edit]
+
+Homepage for Haruzo Hida at UCLA
+
+References[edit]
+
+
+^ Haruzo Hida at the Mathematics Genealogy Project
+^ From 1973 to 1986 the Iyanaga Prize was awarded for the best mathematical research done by a Japanese mathematician under the age of 40. Since 1987 the Iyanaga Prize has been replaced by the Spring Prize and Autumn Prize for 2 of the best Japanese mathematicians under the age of 40. List of prize winners, Mathematical Society of Japan Archived 2010-12-26 at the Wayback Machine.
+^ List of Fellows of the American Mathematical Society
+^ Stevens, Glenn (1997). "Review: Elementary theory of L-functions and Eisenstein series by Haruzo Hida" (PDF). Bull. Amer. Math. Soc. (N.S.). 34 (1): 67–71. doi:10.1090/s0273-0979-97-00696-4. 
+^ Langlands, R.P. (2007). "Review: p-Adic automorphic forms on Shimura varieties by Haruzo Hida" (PDF). Bull. Amer. Math. Soc. (N.S.). 44 (2): 291–308. doi:10.1090/s0273-0979-06-01131-1. 
+
+
+
+
+
+Authority control
+
+
+
+WorldCat Identities
+VIAF: 14842769
+LCCN: n93032544
+ISNI: 0000 0001 0872 1652
+GND: 129238260
+SUDOC: 032253931
+BNF: cb12332028f (data)
+MGP: 36684
+
+
+
+
+
+
+
+
+
+

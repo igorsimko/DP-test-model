@@ -1,0 +1,90 @@
+
+
+
+
+Reproduction of a koseki certificate printout
+
+
+A koseki (戸籍) is a Japanese family registry. Japanese law requires all Japanese households (ie) to report births, acknowledgements of paternity, adoptions, disruptions of adoptions, deaths, marriages and divorces of Japanese citizens to their local authority, which compiles such records encompassing all Japanese citizens within their jurisdiction. Marriages, adoptions and acknowledgements of paternity become legally effective only when such events are recorded in the koseki. Births and deaths become legally effective as they happen, but such events must be filed by family members.
+
+
+
+Contents
+
+
+1 Format
+2 History
+3 Privacy concerns
+4 Koseki and citizenship
+5 Other criticisms
+6 Family registries in other nations
+7 Controversies
+8 See also
+9 References
+10 External links
+
+
+
+Format[edit]
+A typical koseki has one page for the household's parents and their first two children: additional children are recorded on additional pages. Any changes to this information have to be sealed by an official registrar.
+The following items are recorded in the koseki. (Law of Family Register, (戸籍法), article 13.)
+
+family name and given name
+date of birth
+date of records and causes (marriage, death, adoption, etc.)
+names of the father and the mother and the relation to them
+if adopted, names of the adoptive father and mother
+if married, whether the person is a husband or a wife
+if transferred from another koseki, the former koseki
+registered residence honseki chi
+
+History[edit]
+Introduced in the 6th century, the original population census in Japan was called the kōgo no nenjaku (庚午年籍) or the kōin no nenjaku (庚寅年籍). This census was introduced under the ritsuryō system of governance.[1] During the Bakufu, there were four major forms of population registration: the ninbetsuchō (人別帳) (Registry of Human Categories), the shūmon jinbetsu aratamechō (宗門人別改帳) (Religious Inquisition Registry) also called the shūmon aratamechō, the gonin gumichō (五人組帳) (Five Household Registry) and the kakochō (過去帳) (Death Registry). The shūmon jinbetsu aratamechō was created around 1670 and lasted almost 200 years. It combined social and religious registration, and data was renewed annually.[2] Several categories of outcasts were not registered at all under this system, or were registered in specific registers, for instance the burakumin.[3] The modern koseki, encompassing all of Japan's citizenry, appeared in 1872, immediately following the Meiji Restoration. This was the first time in history that all Japanese people were required to have family names as well as given names. Although all previous social categories were abolished and almost all Japanese people were recorded as heimin (commoners), some minorities became labelled as "new commoner" or "original eta" (shinheimin or motoeta),[3] and discrimination went on. Problems also happened at the edge of the national territory, for instance in the Ogasawara Islands.[3]
+During the course of Japanese Empire, a number of reforms were carried out after 1910 to eliminate double standards in the koseki system. In general, though, residents of the Empire's colonies held external registries (gaichi koseki) (based on the preexisting Hoju) and Japanese held domestic registries (naichi koseki).[3]
+In 2003, the "GID Law" was enacted, enabling people with "gender identity disorder" (GID) or gender dysphoria to change their gender on their koseki provided they meet certain conditions. Persons diagnosed with GID must seek an official diagnosis with letters of support from two independent psychiatrists to change their koseki gender.[4]
+Privacy concerns[edit]
+Information provided in koseki is detailed and sensitive and makes discrimination possible against such groups as burakumin or illegitimate children and unwed mothers, for example. As the burakumin liberation movement gained strength in postwar Japan some changes were made to family registries. In 1974 a notice that prohibited employers from asking prospective employees to show their family registry was released by the Ministry of Health and Welfare. In 1975 one's lineage name was deleted and in 1976 access to family registries was restricted. As of April 2007, anyone interested was eligible to get a copy of someone else's koseki. However, on May 1, 2008, a new law was implemented to limit the persons eligible for a copy to the persons whose names are recorded in a given koseki and those who need such a copy to exercise their due rights (debt collectors, executors of wills).[5][6] Anyone who is listed on a koseki, even if their name has been crossed off by reason of divorce and even if they are not a Japanese citizen, is eligible to get a copy of that koseki.[5] One can obtain a copy in person or by mail. Lawyers can also obtain copies of any koseki if a person listed is involved in legal proceedings.[7]
+Koseki and citizenship[edit]
+Only Japanese citizens may be registered in a koseki, because koseki serve as certificates of citizenship. It also guarantees the accuracy of Japanese Passport. Non-Japanese may be noted where required, such as being the spouse of a Japanese citizen[8] or the parent of a Japanese offspring, however they are not listed in the same fashion as Japanese spouses or parents.[9]
+Note that the koseki system is different from the jūminhyō residency registration, which holds current address information.
+Other criticisms[edit]
+The koseki simultaneously fills the function of birth certificates, death certificates, marriage licenses, and the census in other countries. It is based on family rather than each individual. For married couples, only one family name may appear on the koseki, which means that one person has to abandon his or her family name when he or she marries. Usually it is the woman.[3] On December 15, 2015, the Nikkei Asian Review reported that Japan's Supreme Court upheld a legal provision forcing married couples to use the same surname. Plaintiffs had argued that the legal provision amounts to "de facto discrimination against women."
+Family registries in other nations[edit]
+A similar registration system exists within the public administration structures of all East Asian states influenced by the ancient Chinese system of government. The local pronunciations of the name of the household register varies, but all are derived from the same Chinese characters as that for koseki (in traditional Chinese: 戶籍). These states include People's Republic of China (hukou), Republic of China (Taiwan) (hukou), Vietnam (Hộ khẩu (vi)), and North Korea (hoju, hojeok, hojok). In South Korea, the hoju system was abolished in 2008.
+Controversies[edit]
+In September 2010 the Japanese government completed research into 230,000 "missing" persons age 100 years old or more. Some journalists claimed koseki is an antiquated system that enabled younger family members to receive the pensions of deceased elderly relatives.[10][11]
+See also[edit]
+
+
+Japan portal
+
+
+
+Alien registration in Japan
+
+References[edit]
+
+
+
+^ Chapman, D. (2008), Sealing Japanese identity, Critical Asian Studies, Vol. 40, No. 3, pp. 423 - 443.
+^ Smith, Thomas (1977), Nakahara: Family Farming and Population in a Japanese Village, 1717-1830, Stanford University Press, pp. 15–16 
+^ a b c d e David Chapman, Geographies of Self and Other: Mapping Japan through the Koseki, in The Asia-Pacific Journal Vol 9, Issue 29 No 2, July 18, 2011
+^ Abe, Teruo "Gender identity disorder", Juntendo Medical Journal, Vol. 52, No. 1 (20060331) p. 55–61
+^ a b Law on Family Registry, Article 10, 戸籍法第10条
+^ Law on Family Registry, Article 10-2, 戸籍法第10条の2
+^ Law on Family Registry, Article 10-2 Paragraph 3, 戸籍法第10条の2第3項
+^ "国際結婚，海外での出生等に関する戸籍Ｑ＆Ａ 渉外戸籍のホームページ" (in Japanese) Answer 6. The name, date of birth and nationality of a foreign spouse of a Japanese citizen and the fact that they are married are recorded in the koseki of the Japanese citizen
+^ "THE JUUMINHYOU MONDAI" Archived 2013-04-08 at WebCite "as a foreigner, you are put down on your spouse's koseki not as a married couple, under the heading "wife" or "husband" like any Japanese, but as a "remark" (bikou, in kanji: 備考) on the form."
+^ The Independent
+^ Washington Post
+
+
+
+External links[edit]
+
+"Overview of the koseki Family Registration System" on Japan Children's Rights Network site, April 2007
+
+
+
+
+

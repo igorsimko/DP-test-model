@@ -1,0 +1,94 @@
+For other uses, see Henry Spencer (disambiguation).
+
+
+
+
+Henry Spencer in 2014.
+
+
+Henry Spencer (born 1955) is a Canadian computer programmer and space enthusiast. He wrote "regex", a widely used software library for regular expressions, and co-wrote C News, a Usenet server program. He also wrote The Ten Commandments for C Programmers.[1] He is coauthor, with David Lawrence, of the book Managing Usenet.[2] While working at the University of Toronto he ran the first active Usenet site outside the U.S., starting in 1981. His records from that period were eventually acquired by Google to provide an archive of Usenet in the 1980s.
+The first international Usenet site was run in Ottawa, in 1981; however, it is generally not remembered, as it served merely as a read-only medium. Later in 1981, Spencer acquired a Usenet feed from Duke University, and brought "utzoo" online; the earliest public archives of Usenet date from May 1981 as a result.
+The small size of Usenet in its youthful days, and Spencer's early involvement, made him a well-recognised participant; this is commemorated in Vernor Vinge's 1992 novel A Fire Upon the Deep. The novel featured an interstellar communications medium remarkably similar to Usenet, down to the author including spurious message headers; one of the characters who appeared solely through postings to this was modeled on Spencer (and, slightly obliquely, named for him).
+He is also credited with the claim that "Those who do not understand Unix are condemned to reinvent it, poorly."[3]
+
+
+
+Contents
+
+
+1 Preserving Usenet
+2 Free Software contributions
+3 Space
+4 References
+5 External links
+
+
+
+Preserving Usenet[edit]
+In mid-December 2001, Google unveiled its improved Usenet archives, which now go more than a decade deeper into the Internet's past than did the millions of posts that the company had originally acquired when it bought an existing archive called Deja News.
+Between 1981 and 1991, while running the zoology department's computer system at the University of Toronto, Spencer copied more than 2 million Usenet messages onto magnetic tapes. The 141 tapes wound up at the University of Western Ontario, where Google's Michael Schmidt tracked them down and, with the help of David Wiseman and others,[4] got them transferred onto disks and into Google's archives.[5]
+Free Software contributions[edit]
+Henry Spencer helped Geoff Collyer write C News in 1987.
+At around the same time he wrote a non-proprietary replacement for regex(3), the Unix library for handling regular expressions, and made it freely available; his API followed that of Eighth Edition Research Unix.[6] Spencer's library has been used in many software packages, including Tcl, MySQL,[7] and PostgreSQL,[8] as well as being adapted for others, including early versions of Perl. Circa 1993, Spencer donated a second version of his RE library to 4.4BSD, following the POSIX standard for regular expressions.
+Spencer was technical lead on the FreeS/WAN project, implementing an IPsec cryptographic protocol stack for Linux.
+He also wrote 'aaa' - the Amazing Awk Assembler which is one of the longest and most complex programs ever written in the awk programming language.
+He also developed a 4 point font used by entomologists in labeling pinned insect specimens.[9]
+Space[edit]
+Spencer is a founding member of the Canadian Space Society, and has served on its Board of Directors several times since 1984. He did mission analysis (planning of launch and orbits) for the CSS's Canadian Solar Sail project (now defunct), and was Software Architect for MOST, a Canadian science microsatellite dedicated to studying variable light from stars and extrasolar planets launched by Eurockot in 2003. The asteroid 117329 Spencer is named in his honour.
+He is a highly regarded space enthusiast, and is a familiar and respected presence on several space forums on Usenet and the Internet. From 1983 to 2007 Spencer posted over 34,000 messages to the sci.space.* newsgroups. His knowledge of space history and technology is such that the "I Corrected Henry Spencer" virtual T-shirt award was created as a reward for anyone who can catch him in an error of fact.[10]
+References[edit]
+
+
+^ Spencer, Henry (October 14, 1987). "Ten Commandments For C Programmers". comp.lang.c. 
+^ Lawrence, David; Spencer, Henry (January 1998). Managing Usenet. O'Reilly Media. ISBN 1-56592-198-4. 
+^ Spencer, Henry (November 14, 1987). "space news from Sept 28 AW&ST". sci.space.shuttle. 
+^ Wiseman, David G. (December 11, 2001). "Magi's NetNews Archive Involvement". Archived from the original on February 9, 2005. 
+^ Mieszkowski, Katharine (January 8, 2002). "The Geeks Who Saved Usenet". Salon.com. Archived from the original on September 2, 2003. 
+^ Henry Spencer (1986-01-19). "regexp(3)". Newsgroup: mod.sources. Usenet: 1316@panda.UUCP. Retrieved 9 January 2013. 
+^ "Regular Expressions". MySQL 5.6 Reference Manual. Oracle. 27 November 2012. 
+^ "Regular Expression Details". PostgreSQL 8.4+ Reference Manual. 1 September 2008. 
+^ Darling, D. Christopher; Plowright, R.C. (May–June 1990). "HPLABEL: A Program and Microfont for the Generation of Date / Locality Labels Using a Laser Printer" (PDF). Entomological News. 101 (3). Archived from the original (PDF) on 2017-06-05. 
+^ Yarvin, Norman. "About Yarchive.net". Archived from the original on August 1, 2003. 
+
+
+External links[edit]
+
+
+
+Wikiquote has quotations related to: Henry Spencer
+
+
+
+Brief biography of Spencer at O'Reilly Media
+Spencer presentation at the Apollo Lunar Surface Journal
+"MOST satellite to rocket into space in October" at the Wayback Machine (archived February 27, 2008) Janet Wong, News@UofT, December 5, 2001
+Asteroids 101 (6:33), The Dawn Mission (4:38), Early Days (6:38) – Moon and Back, three videos of interviews at SpaceAccess 2013 conference, April 2013.
+The Ten Commandments for C Programmers (Annotated Edition) by Henry Spencer
+#ifdef Considered Harmful, or Portability Experience With C News - A paper he wrote with Geoff Collyer about software portability.
+aaa - the Amazing Awk Assembler by Henry Spencer
+awf - the Amazingly Workable Formatter by Henry Spencer
+
+
+
+
+Authority control
+
+
+
+WorldCat Identities
+VIAF: 37706209
+LCCN: no99091072
+ISNI: 0000 0000 4634 1936
+BIBSYS: 98010267
+NDL: 00754959
+SNAC: w6g25wfb
+
+
+
+
+
+
+
+
+
+

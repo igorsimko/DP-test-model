@@ -1,0 +1,383 @@
+
+
+
+
+
+
+
+This article has multiple issues. Please help improve it or discuss these issues on the talk page. (Learn how and when to remove these template messages)
+
+
+
+
+
+
+
+A major contributor to this article appears to have a close connection with its subject. It may require cleanup to comply with Wikipedia's content policies, particularly neutral point of view. Please discuss further on the talk page. (March 2018) (Learn how and when to remove this template message)
+
+
+
+
+
+
+
+
+
+This article contains content that is written like an advertisement. Please help improve it by removing promotional content and inappropriate external links, and by adding encyclopedic content written from a neutral point of view. (March 2018) (Learn how and when to remove this template message)
+
+
+
+
+
+(Learn how and when to remove this template message)
+
+
+
+
+
+Andreas M. Antonopoulos
+
+
+
+Antonopoulos in 2004
+
+
+
+Born
+1972 (age 45–46)
+
+
+Nationality
+Greek-British[1]
+
+
+Alma mater
+University College London
+
+
+Occupation
+Tech entrepreneur[2]
+
+
+Website
+antonopoulos.com
+
+
+Andreas M. Antonopoulos (born 1972) is a Greek-British[1] bitcoin advocate. He is a host on the Let's Talk Bitcoin podcast[3] and a teaching fellow for the M.Sc. Digital Currencies at the University of Nicosia.[4]
+
+
+
+Contents
+
+
+1 Early career
+2 Bitcoin involvement
+
+2.1 Receiving of bitcoin gifts
+
+
+3 Presentations and appearances
+4 References
+
+
+
+Early career[edit]
+Antonopoulos obtained his degree in Computer Science and Data Communications and Distributed Systems from University College London. He consulted businesses on open source and open networks as early as 1990.[5] He has authored more than two hundred articles published in print and syndicated worldwide.[2][6][7][8] As a partner at Nemertes Research, Antonopoulos researched computer security, stating that the greatest threat to computer security was not experienced hackers, but overly complex systems that resulted from rapid change in business.[9]
+Bitcoin involvement[edit]
+
+
+Play media
+
+
+Antonopoulos introducing Bitcoin in 2016.
+
+
+In 2012 Antonopoulos became enamored with bitcoin. He eventually abandoned his job as a freelance consultant and started speaking at conferences about bitcoin, consulting for startups, and writing articles free of charge.[10]
+According to his podcast, Antonopoulos is a consultant on several bitcoin-related startups.[11] He served as head of the Bitcoin Foundation's anti-poverty committee until 2014, when he resigned citing a lack of transparency as the reason.[12]
+In January 2014, Antonopoulos joined Blockchain.info as chief security officer.[13] In September 2014 he left the CSO role and became an advisor to the board.[14]
+Antonopoulos was an outspoken critic of the Mt. Gox trading platform as early as April 2013, calling it "a systemic risk to bitcoin, a death trap for traders and a business run by the clueless".[15] In February 2014, following the closing of Mt. Gox, Antonopoulos published a further analysis of the collapse and its effect on the greater bitcoin ecosystem.[16]
+In April 2014, Antonopoulos organised a fundraising campaign for Dorian Nakamoto, who was identified in a Newsweek article as the creator of bitcoin, Satoshi Nakamoto. The reporting techniques used in the article were controversial among journalists and Bitcoin community members. The fundraiser, intended to assist Nakamoto after the attention he received as a result of the article, raised 50 bitcoins, worth US$23,000 at the time.[17][18]
+On 8 October 2014, Antonopoulos spoke in front of the Banking, Trade and Commerce committee of the Senate of Canada to address the senators' questions on how to regulate bitcoin in Canada.[19] In his testimony, he warned senators against premature regulation of bitcoin, stating "Wait until the technology is better understood by all of us ... there are many applications based on this model -- would stifle this technology in its early days."[2]
+In March 2016, the first edition of Mastering Bitcoin was released by Antonopoulos, in print and online.[20]
+Receiving of bitcoin gifts[edit]
+In December 2017, unsolicited donations of over 100 bitcoins were sent to Antonopoulos by over a thousand followers of his work,[21] after Roger Ver made a public post to Twitter on 5 December that complimented Antonopoulos' public speaking but questioned his investment choices.[10][22][23] The approximate value of 100 bitcoins on 6 December 2017 was $1.3 million.[24]
+Adam Back reportedly began the outpouring of support by tweeting: "if 'sign guy' can get a meaningful start from tips, we should try [to] find a way for the community to fund [Antonopoulos] to a hodler's position."[25] Erik Voorhees went on to support Antonopoulos by saying: "If you've ever learned about, participated, used or benefited from bitcoin in any way, please donate to Andreas."[10]
+Antonopoulos said he was deeply moved after the outpouring of support, saying: "Words are my craft, but tonight I am speechless."[10]
+Presentations and appearances[edit]
+All videos below are released under a Creative Commons Attribution License.[26]
+
+
+Title
+Location
+Date
+
+
+The Joe Rogan Experience, #446
+27 January 2014
+
+
+The Joe Rogan Experience, #490
+22 April 2014
+
+
+What is bitcoin?
+Disrupt Startup ScaleUP, Athens, Greece[27]
+23 November 2014
+
+
+The Joe Rogan Experience, #581
+1 December 2014
+
+
+Dumb Networks, Innovation and the Festival of the Commons
+O’Reilly Radar: Bitcoin & the Blockchain: Realities, Risks, Rewards, San Francisco, USA[28]
+27 January 2015
+
+
+Bitcoin is Punk Rock
+Wired Money: Beyond Bitcoin, London, UK[29]
+8 July 2015
+
+
+Peer-to-Peer Money in a Historical Context
+Reinvent.Money, Rotterdam, The Netherlands[30]
+26 September 2015
+
+
+Bitcoin Scaling
+Institute of Cryptoanarchy, Prague, Czech Republic[31]
+22 March 2016
+
+
+The Joe Rogan Experience, #844
+7 September 2016
+
+
+The Stories We Tell About Money
+bitcointalk, Mumbai, India[32]
+26 March 2017
+
+
+Open Blockchains for Cashless Developed Economies
+Blockchain Day, Oslo, Norway[33]
+25 April 2017
+
+
+Delivering Liberty at Scale
+Bitcoins in Bali, Bali, Indonesia[34]
+27 June 2017
+
+
+Introduction to the Internet of Money
+Internetdagarna, Stockholm, Sweden[35]
+20 November 2017
+
+
+References[edit]
+
+
+
+^ a b Victoria van Eyk (21 June 2014). "Inside Antonopoulos I/III: "I'm broke, but I'm happier than I've ever been."". Bitcoin Magazine. Coin Publishing Ltd. Retrieved 19 November 2014. 
+^ a b c "Issue 15 - Evidence - October 8, 2014". Proceedings of the Standing Senate Committee on Banking, Trade and Commerce. Parliament of Canada. 8 October 2014. Retrieved 13 November 2014. 
+^ Bailey Reutzel (9 July 2013). "A Q&A with Serial Bitcoin Entrepreneur Andreas Antonopoulos". PaymentsSource. SourceMedia. Retrieved 14 November 2014. 
+^ Elias Hazou (11 April 2014). "UNIC launches bitcoin course". Business. CyprusMail. Retrieved 14 November 2014. 
+^ Andreas M. Antonopoulos. "About Andreas M. Antonopoulos". Retrieved 14 November 2014. 
+^ "Andreas Antonopoulos". Radar. O'Reilly Media. Retrieved 18 November 2014. 
+^ "Articles by Andreas M. Antonopoulos". PC World. International Data Group. Retrieved 19 November 2014. 
+^ "Articles By Andreas Antonopoulos". IT World Canada. Retrieved 19 November 2014. 
+^ John Schwartz (12 September 2007). "Who Needs Hackers?". The New York Times. Retrieved 4 November 2014. 
+^ a b c d Lucinda Shen (8 December 2017). "Why People Are Giving This Man Almost $2 Million in Free Bitcoin". Fortune. Retrieved 8 December 2017. 
+^ David Morris (21 January 2014). "Bitcoin is not just digital currency. It's Napster for finance". Retrieved 16 October 2014. 
+^ Carlo Caraluzzo (10 July 2014). "Andreas M. Antonopoulos Leaves Bitcoin Foundation: Not Happy with Management". CoinTelegraph. Retrieved 11 November 2014. 
+^ Kyt Dotson (29 January 2014). "Bitcoin Weekly, January 29, 2014: TigerDirect on board, CEO of BitInstant arrested, Antonopoulos joins Blockchain.info". siliconANGLE. Retrieved 18 November 2014. 
+^ Jon Southurst (1 September 2014). "Antonopoulos Leaves Blockchain Security Role to Become Board Advisor". CoinDesk. Retrieved 18 November 2014. 
+^ Andreas M. Antonopoulos (11 April 2013). "Ann Mt. Gox". Retrieved 19 November 2014. 
+^ Andreas M. Antonopoulos (25 February 2014). "Statement on Mt.Gox". Retrieved 11 August 2015. 
+^ Kevin Collier (22 April 2014). "Dorian Nakamoto thanks Bitcoin community for $23,000 donation". The Daily Dot. Retrieved 11 November 2014. 
+^ Oscar Williams-Grut (17 March 2014). "Bitcoins raised for 'inventor' Dorian Nakamoto". London Evening Standard. Retrieved 19 November 2014. 
+^ Michael Carney (9 October 2014). "Bitcoin evangelist Andreas Antonopoulos wows Canada's Senate Committee on Banking". PandoDaily. Retrieved 13 November 2014. 
+^ Github (17 Mar 2016). "Release Edition1Print1 - bitcoinbook/bitcoinbook". Retrieved 7 December 2017. 
+^ "#THANKYOUANDREAS - Bitcoin". 6 December 2017. Retrieved 7 December 2017. 
+^ Joon Ian Wong (8 December 2017). "A bitcoin booster got $1.5 million after being "bitshamed" for being poor". Quartz. Retrieved 8 December 2017. 
+^ "Roger Ver on Twitter". 5 December 2017. Retrieved 7 December 2017. 
+^ "Bitcoin Rips Past $13,000 Amid Interest From Institutional Investors". 6 December 2017. Retrieved 7 December 2017. 
+^ "It's A Wonderful Life for Bitcoin Evangelist as Community Expresses Its Gratitude". Bitcoin Magazine. 7 December 2017. Retrieved 8 December 2017. 
+^ "Creative Commons License - YouTube". Retrieved 7 December 2017. 
+^ "Disrupt Startup ScaleUP (Nov 2014), Athens Greece - Conference". 23 November 2014. Retrieved 7 December 2017. 
+^ "Bitcoin & the Blockchain - An O'Reilly Radar Summit, January 27, 2015 - San Francisco, CA". 27 January 2015. Retrieved 7 December 2017. 
+^ "WIRED Events - Wired Money 2015". 8 July 2015. Retrieved 7 December 2017. 
+^ "MoneyLab: Failing Better - Report from Reinvent Money". 26 September 2015. Retrieved 7 December 2017. 
+^ "Bitcoin meetup - Paralelní Polis - Paralelní Polis". 22 March 2016. Retrieved 7 December 2017. 
+^ "Bitcoin and Blockchain by Andreas Antonopoulos, Mumbai Tickets by Zebpay Bitcoin India, 26 Mar, 2017, Mumbai Event". 26 March 2017. Retrieved 7 December 2017. 
+^ "Oslo Blockchain Day - Facebook". 25 April 2017. Retrieved 7 December 2017. 
+^ "Welcome to Bitcoins in Bali - Bitcoins in Bali". 27 June 2017. Retrieved 7 December 2017. 
+^ "Internetdagarna 2017". 20 November 2017. Retrieved 7 December 2017. 
+
+
+
+
+
+
+Find more aboutAndreas Antonopoulosat Wikipedia's sister projects
+
+Media from Wikimedia Commons
+Data from Wikidata
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Bitcoin (₿)
+
+
+
+
+
+
+History
+Economics
+Legal status
+
+
+
+
+
+People
+
+
+
+Gavin Andresen
+Andreas Antonopoulos
+Adam Back
+Wences Casares
+Hal Finney
+Satoshi Nakamoto
+Charlie Shrem
+Nick Szabo
+Amir Taaki
+Ross Ulbricht
+Roger Ver
+Winklevoss twins
+Erik Voorhees
+Mark Karpelès
+Vitalik Buterin
+Tim Draper
+Patrick Byrne
+
+
+
+
+
+Groups
+
+
+
+List of bitcoin companies
+List of bitcoin organizations
+List of people in blockchain technology
+
+
+
+
+
+Technologies
+
+
+
+Bitcoin network
+Blockchain
+Colored coins
+Cryptocurrency
+Cryptocurrency tumbler
+Bitcoin ATM
+ECDSA
+Initial coin offering
+Lightning Network
+P2P
+POW
+Segregated Witness
+SHA-2
+CoinJoin
+
+
+
+
+
+Software client
+
+
+
+Bitcoin Core
+
+
+
+
+
+Exchanges
+
+
+
+ANX
+Bitcoin Center NYC
+Bitcoin Indonesia
+Bitfinex
+Bitstamp
+Bittrex
+BTCC
+BTC Markets
+CEX.IO
+Coinbase (GDAX)
+Coinfloor
+Coins.ph
+Gatecoin
+Gemini
+Huobi
+Kraken
+LocalBitcoins
+Poloniex
+QuadrigaCX
+OKCoin
+OKEX
+
+
+
+
+Defunct
+
+
+
+Buttercoin
+Mt. Gox
+BitInstant
+BTC-e
+
+
+
+
+
+
+
+
+
+
+
+ Book
+ Category
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+
+
+
+
+
+
+This article contains content that is written like an advertisement. Please help improve it by removing promotional content and inappropriate external links, and by adding encyclopedic content written from a neutral point of view. (August 2014) (Learn how and when to remove this template message)
+
+
+
+
+
+
+
+example of gapChart used for Top14 championship
+
+
+In information visualization and computing, GapChart is a chart for displaying time series data by using non overlapped thick curves. It was invented in 2013 by Fred. Vernier (LIMSI labs at Univ. Paris Sud) and Charles Perin (LIMSI labs at Univ. Paris Sud and AVIZ-INRIA). Jeremy Boy (AVIZ-INRIA) helped them to improve the original design to its current form.
+
+
+
+Contents
+
+
+1 Main idea
+2 Visual attributes
+3 Application domains
+4 Bibliography
+5 External links
+
+
+
+Main idea[edit]
+GapChart display one thick curve by time series data. At each time step curves display a flat part and a transition part. Flat parts are separated by gaps proportional to data difference. When two or more time series have same value at the same time step they are distinguished by an external method and represented side by side. Transition steps are represented by straight or S shaped link. They can partially overlap but never totally since star Labels can fit inside thick curves where i't not too steep and different colors ca be used to better distinguish elements.
+
+
+
+GapChart can be compared to RankChart with additional space between curves to represent value difference behind the ranking
+GapChart can be compared to SlopeGraph where curve thickness is removed from the layout and equal values are distinguished with an external method
+GapChart can be compared to table of numbers which are commonly available for many rankings
+
+Visual attributes[edit]
+
+Curves can be shaded (top to bottom) to better distinguish multiple elements with the same number of points.
+Space between curves can be decorated with tick lines (i.e. marking every block of 3, 5 or 10 points according to the application domain) to better visually evaluate gaps
+Labels can be added on curves if thick enough and only where not too steep
+Consistent well chosen colors can help to follow elements of interest
+Top Right and/or Top Left labels can help drawing a full list of elements or initial/final scores
+Inspectors can be used on mouse hover in interactive gapChart to display quantitative ranks and scores (or any relevant information like match in championships)
+
+Application domains[edit]
+
+Sport: GapChart perfectly apply to all Championship with points and rankings. Colors can be used to highlight qualified teams or relegated ones.
+Finance: GapChart can be used to compare stocks, index or fund yields along time while ranking them when is pertinent
+Economy: GapChart is useful to compare a list of countries/states in different indexes (for instance NRI) or companies (i.e. Fortune 500)
+Academic: GapChart can be used to follow different rankings (i.e. Shanghai ranking, h-indexes, impact factors, ...)
+
+Bibliography[edit]
+
+Perin, Charles; Boy, Jeremy; Vernier, Frederic. (2016), Using Gap Charts to Visualize the Temporal Evolution of Ranks and Scores, IEEE Computer Graphics and Applications 
+Perin, Charles; Vernier, Frederic. (2013), R2S2: a Hybrid Technique to Visualize Sport Ranking Evolution, Atlanta: The 1st Workshop on Sports Data Visualization (VIS'13), Atlanta, GA, USA, Oct. 2013, IEEE 
+Buisine, Alexandre (2014), GapChart: la saison de l'OL, Lyon: Les potin d'angele/ 22-28 mai 2014 Issue 405. ISSN 1776-9450 
+
+External links[edit]
+
+[1] online gapChart of French rugby championship.
+
+
+
+
+

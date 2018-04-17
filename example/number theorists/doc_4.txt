@@ -1,0 +1,143 @@
+
+
+Emil Grosswald
+
+
+
+
+
+Born
+(1912-12-15)December 15, 1912
+
+Bucharest, Romania
+
+
+Died
+April 11, 1989(1989-04-11) (aged 76)
+
+
+Alma mater
+University of Bucharest
+
+University of Pennsylvania
+
+
+Scientific career
+
+
+Fields
+Mathematics
+
+
+Institutions
+University of Pennsylvania
+
+Temple University
+
+
+Doctoral advisor
+Hans Rademacher
+
+
+Doctoral students
+David Bressoud
+
+Jean-Marie De Koninck
+
+
+
+
+
+Emil Grosswald (December 15, 1912 – April 11, 1989) was a mathematician who worked primarily in number theory.
+
+
+
+Contents
+
+
+1 Life and education
+2 Career
+3 Selected publications
+4 Notes
+5 Further reading
+6 External links
+
+
+
+Life and education[edit]
+
+
+
+
+Emil Grosswald (right) and Fred van der Blij in 1968.
+
+
+Grosswald was born on December 15, 1912 in Bucharest, Romania. He received a Master's degree in both mathematics and electrical engineering from the University of Bucharest in 1933, spent 6 months in Italy and then received a Diplôme from École supérieure d'électricité in Paris.[1]
+Grosswald was Jewish. When war broke out, he fled from Paris in June, 1940 to the University of Montpellier, where he began doctoral studies in mathematics. He fled at the end of 1941, through Spain and Lisbon to Cuba. He moved to Puerto Rico in 1946 and then to the United States in 1948. He received his Ph.D. under Hans Rademacher from the University of Pennsylvania in 1950.[2] He was Visiting Professor at the University of Paris in 1964–1965 and his book, The Theory of Numbers was written that year.
+He met his wife Elisabeth (Lissy) Rosenthal in Cuba, probably in 1941 or 1942. They were married in 1950 in Saskatoon, Canada, where he had his first teaching position after receiving his Ph.D. They spent two years at the Institute for Advanced Studies in Princeton, New Jersey in 1951 and 1959. During their first stay, they met Albert Einstein, with whom Emil had a correspondence, later bequeathed to the University of Texas, and formed many friendships, among others with the physicist Freeman Dyson. Emil and Lissy had two daughters, Blanche, who became a professor of Social Work at Rutgers University but died in 2003 at the age of 50, and Vivian, a professor of law at the University of Pittsburgh. Vivian was decorated in 2007 by the Republic of Austria for her work as the United States appointee to the Austrian General Settlement Fund Committee for Nazi-era property compensation, and in 2013 by the government of France for her services in promotion of the French language and culture in the United States. Emil is the uncle of Pamela Ronald, whose father Robert Ronald (né Rosenthal) describes the family’s escape from the Nazis in his memoir, "Last Train to Freedom".  The son of Lissy’s second cousin (Ernest Beutler) is 2011 Nobel Laureate Bruce Beutler. Emil was also the nephew of the French musician Marcel Mihalovici, who arrived in Paris in the 1920s with George Enescu.
+Grosswald died April 11, 1989 in Narberth, Pennsylvania.[1]
+Career[edit]
+Grosswald's first three scientific papers, written while he was in Cuba, were published under the pseudonym E. G. Garnea.[3]:11 He published articles in English, German, French, Spanish and Italian.
+After receiving his PhD in 1950, Grosswald taught at the University of Pennsylvania from 1952 to 1968 and then moved to Temple University and stayed until his retirement in 1980. He also held positions at the University of Saskatchewan (1950), Institute for Advanced Study (1951 and 1959), the Technion (1980–1981), Swarthmore College (1982), and the University of Pennsylvania (1984).[1]
+Grosswald completed some works of his teacher Hans Rademacher, who died in 1969. Rademacher had prepared notes for an Earle Raymond Hedrick Lecture in Boulder, Colorado in 1963 on Dedekind sums, but fell ill, and Grosswald gave the lecture for him.[4] After Rademacher's death, Grosswald edited and completed the notes and published them in the Carus Mathematical Monographs series as Dedekind Sums.[5]:214 He also edited for publication Rademacher's posthumous textbook Topics in Analytic Number Theory.[1]
+Grosswald was elected to the Board of Governors of the Mathematical Association of America for 1965–1968.[6] Temple University's Mathematics Department annually sponsors the Emil Grosswald Memorial Lectures.[7]
+Selected publications[edit]
+
+Grosswald, Emil; Rademacher, Hans (1972). Dedekind Sums. Carus Mathematical Monographs. 16. Washington, DC: Mathematical Association of America. ISBN 978-0-88385-016-9. 
+Rademacher, Hans (1973). Grosswald, Emil; Lehner, Joseph; Newman, Morris, eds. Topics in Analytic Number Theory. Grundlehren der mathematischen Wissenschaften. 169. Berlin: Springer-Verlag. ISBN 978-0-387-05447-6. 
+Rademacher, Hans (1974). Grosswald, Emil, ed. Collected Papers of Hans Rademacher. vol. 1. Cambridge: MIT Press. ISBN 978-0-262-07055-3. (View 2nd volume.). vol. 2. ISBN 0-262-07055-3. 
+Grosswald, Emil (1978). Bessel Polynomials. Berlin: Springer-Verlag. ISBN 978-0-387-09104-4. [8]
+Grosswald, Emil (2008) [1984]. Topics from the Theory of Numbers (2nd ed.). Cambridge: Birkhäuser Boston. ISBN 978-0-8176-4837-4. 
+Grosswald, Emil (1985). Representations of Integers as Sums of Squares. Berlin: Springer-Verlag. ISBN 978-0-387-96126-2. 
+
+Notes[edit]
+
+
+
+^ a b c d "A Guide to the Emil Grosswald Papers, 1942–1988". University of Texas. Retrieved 2009-02-06. 
+^ Knopp, Marvin I. (July–August 1989). "Emil Grosswald 1912–1989". Notices of the American Mathematical Society. 36 (6): 685–686. Retrieved 2009-02-06. 
+^ Knopp, Marvin Isadore; Sheingorn, Mark, eds. (1993). A Tribute to Emil Grosswald: Number Theory and Related Analysis. Providence: American Mathematical Society. ISBN 978-0-8218-5155-5. Retrieved 2009-02-06. 
+^ "Hans Rademacher Collection 1942–1963" (PDF). American Philosophical Society. 2003-08-07. Archived from the original (PDF) on October 15, 2007. Retrieved 2009-02-07. 
+^ Berndt, Bruce C. (1992). "Hans Rademacher (1892–1969)" (PDF). Acta Arithmetica. 61: 209–231. Retrieved 2009-02-07. 
+^ Hailpern, Raoul (August–September 1965). "New Sectional Governors of the Association". American Mathematical Monthly. 72 (7): 813. JSTOR 2314478. 
+^ "Department of Mathematics : Grosswald Lectures". Temple University. 2010-04-20. Archived from the original on 2009-05-01. Retrieved 2009-02-07. 
+^ Boas, Ralph P. (1979). "Review: Emil Grosswald, Bessel polynomials". Bulletin of the American Mathematical Society (N.S.). 1 (5): 799–800. doi:10.1090/s0273-0979-1979-14678-0. 
+
+
+
+Further reading[edit]
+
+American Mathematical Society. Marvin Knopp ..., ed. (1993). Knopp, Marvin; Sheingorn, Mark, eds. A Tribute to Emil Grosswald (PDF). Providence: American Mathematical Society. ISBN 978-0-8218-5155-5. Retrieved 2009-02-06. CS1 maint: Extra text: authors list (link) A set of papers in honor of Grosswald; includes reminiscences, list of PhD students, and a list of papers and books.
+
+External links[edit]
+
+Emil Grosswald at the Mathematics Genealogy Project
+O'Connor, John J.; Robertson, Edmund F., "Emil Grosswald", MacTutor History of Mathematics archive, University of St Andrews .
+
+
+
+
+Authority control
+
+
+
+WorldCat Identities
+VIAF: 22211750
+LCCN: n78095421
+ISNI: 0000 0001 0878 1233
+GND: 119267551
+SUDOC: 032192029
+BNF: cb12327031b (data)
+BIBSYS: 90114478
+MGP: 7521
+SNAC: w6hx31w0
+
+
+
+
+
+
+
+
+
+

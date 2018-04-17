@@ -1,0 +1,224 @@
+
+
+Jamie Zawinski
+
+
+Born
+James Werner Zawinski
+
+(1968-11-03) November 3, 1968 (age 49)
+
+Pittsburgh, Pennsylvania
+
+
+Occupation
+DNA Lounge proprietor
+
+
+Website
+www.jwz.org
+
+
+James Werner Zawinski (born November 3, 1968), commonly known as jwz, is an American computer programmer with contributions to the free software projects Mozilla and XEmacs, and early versions of the Netscape Navigator web browser. He maintains the XScreenSaver project which provides screenblanking for Mac OS X and for Unix and Unix-like computer operating systems using the X Window System.[1]
+Zawinski is currently the proprietor of the DNA Lounge, a nightclub in San Francisco.
+
+
+
+Contents
+
+
+1 Biography
+2 Principles
+3 References
+4 External links
+
+
+
+Biography[edit]
+Zawinski's early career included stints with Scott Fahlman's Lisp research group at Carnegie Mellon University, Expert Technologies, Inc. and Robert Wilensky and Peter Norvig's group at Berkeley. In the early 1990s, he was hired by Richard P. Gabriel's Lucid Inc. where he was eventually put to work on Lucid's Energize C++ IDE. Lucid decided to use GNU Emacs as the text editor for their IDE due to its free license, popularity, and extensibility. Zawinski and the other programmers made fundamental changes to GNU Emacs to add new functionality. Tensions over how to merge these patches into the main tree eventually led to the fork of the project into GNU Emacs and XEmacs.[2]
+Zawinski, with Marc Andreessen's help, worked on the early releases of Netscape Navigator, particularly the 1.0 release of the Unix version.[3][4] He became quite well known in the early days of the World Wide Web through an easter egg in the Netscape browser: typing "about:jwz" into the address box would take the user to his home page (a similar trick worked for other Netscape staffers). In addition, Zawinski says he came up with the name "Mozilla" in a staff meeting.[5][6]
+In 2000, Zawinski starred in the 60-minute-long PBS documentary "Code Rush". The footage was taken during 1998 while Zawinski was still working for Netscape in which he is portrayed as a pivotal person in the company. In addition, he underlined his preference for the night scene which led him to buy a nightclub.[7]
+Zawinski was a major proponent of opening the source code of the Mozilla browser and a key person in the creation of the Mozilla project, but became disillusioned with the project when others decided to rewrite the code instead of incrementally improving it.[8][9] When Netscape was acquired by AOL he wrote a bulletin explaining the nature of the Free Software Mozilla code.[10] He resigned from Netscape Communications Corporation on April 1, 1999.[11] [12] His current occupation is managing his DNA Lounge nightclub in San Francisco.
+Principles[edit]
+See also: Feature creep
+Zawinski's law of software envelopment (also known as Zawinski's law) comments on the phenomenon of software bloating with popular features:[13][14]
+
+Every program attempts to expand until it can read mail. Those programs which cannot so expand are replaced by ones which can.
+
+Zawinski himself called it "Law of Software Envelopment".[14] Eric Raymond comments that while this law goes against the minimalist philosophy of Unix (a set of "small, sharp tools"), it actually addresses the real need of end users to keep together tools for interrelated tasks, even though for a coder implementation of these tools are clearly independent jobs.[13]
+Zawinski first attained prominence as a Lisp programmer, but most of his projects are written in Perl[15] and C.[16] He criticizes several language and library deficiencies he encountered while programming in Java, specifically the overhead of certain classes but also a lack of features such as C-like assertions and typedefs. Despite the positive aspects, ultimately Zawinski returned to programming in C “since it's still the only way to ship portable programs”.[17]
+In his post-Netscape life, he continued to proselytize against C++. In Peter Seibel's book Coders at Work: Reflections on the Craft of Programming, Zawinski calls C++ an "abomination".[18]
+References[edit]
+
+
+
+^ "XScreenSaver: Download". Jwz.org. Retrieved 2014-02-03. 
+^ Zawinski, Jamie (2000-02-11). "The Lemacs/FSFmacs Schism". Archived from the original on 2009-12-12. Retrieved 2013-04-29. 
+^ Netscape Navigator's "about:authors" page
+^ Steinert-Threlkeld, Tom (November 1995). "Can You Work in Netscape Time?". Fast Company magazine. 
+^ Zawinski, Jamie (1996). "the netscape dorm". Retrieved 2013-04-29. 
+^ Dave Titus with assistance from Andrew Wong (December 2002). "How was Mozilla born: The story of the first mascot on the Internet". Retrieved 2013-04-29. 
+^ Leonard, Andrew (2000-02-10). "Free the night life!". Salon. Retrieved 2013-04-29. 
+^ Suárez-Potts, Louis (2001-05-01). "Interview: Frank Hecker". 
+^ Boutin, Paul (July 1998). "Mozilla.organizer". Wired magazine. 
+^ Zawinski, Jamie (1998-11-23). "fear and loathing on the merger trail". Mozilla. Retrieved 2013-04-29. 
+^ Zawinski, Jamie (1999-03-31). "resignation and postmortem". Retrieved 2013-03-29. 
+^ Chalmers, Rachel (1999-04-06). "Mozilla Founder Resigns on Open Source Project's Birthday". Computergram International. Retrieved 2013-04-29. 
+^ a b Eric S. Raymond The Art of UNIX Programming, p.313
+^ a b Jargon File, entry "Zawinski's Law"
+^ Zawinski, Jamie (2013). "jwzhacks". Retrieved 2013-04-29. 
+^ Seibel, Peter (2009-10-16). "C++ in Coders at Work". Retrieved 2013-04-29. 
+^ Zawinski, Jamie. "java sucks". Retrieved 2013-04-29. 
+^ Seibel, Peter. "Coders at Work". Apress. Retrieved 13 April 2014. 
+
+
+
+External links[edit]
+
+
+
+Wikiquote has quotations related to: Jamie Zawinski
+
+
+
+Personal homepage
+MCOM personal employee homepage
+The Duct Tape Programmer by Joel Spolsky, and Zawinski's response
+alt.fan.jwz
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Netscape
+
+
+
+Browser versions
+
+
+
+Mosaic Netscape
+Netscape Navigator
+
+1
+2
+3
+4
+
+
+Netscape Communicator
+
+4
+5
+
+
+Netscape
+
+6
+7
+
+
+Netscape Browser 8
+Netscape Navigator 9
+Netscape Plugin Application Programming Interface (NPAPI)
+
+
+
+
+
+E-mail clients
+
+
+
+Netscape Mail & Newsgroups
+Netscape Messenger 9
+
+
+
+
+
+Other components
+
+
+
+Netscape Composer
+
+
+
+
+
+Server software
+
+
+
+Netscape Enterprise Server
+Netscape Application Server
+Netscape Proxy Server
+Netscape Directory Server
+Netscape Server Application Programming Interface (NSAPI)
+
+
+
+
+
+Web services
+
+
+
+Netscape.com
+Propeller.com
+Open Directory Project
+Netscape ISP
+
+
+
+
+
+People
+
+
+
+Eric J. Bina
+James H. Clark
+Brendan Eich
+Daniel Glazman
+Jamie Zawinski
+Lou Montulli
+Marc Andreessen
+Eric A. Meyer
+Mitchell Baker
+
+
+
+
+
+See also
+
+
+
+Gecko
+JSSS
+Mariner
+Netscape 5
+Netscape Public License
+Mozilla
+AOL
+iPlanet
+
+
+
+
+
+
+
+
+
+

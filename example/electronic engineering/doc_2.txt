@@ -1,0 +1,13 @@
+In electronic engineering, a bridging fault consists of two signals that are connected when they should not be. Depending on the logic circuitry employed, this may result in a wired-OR or wired-AND logic function. Since there are O(n^2) potential bridging faults, they are normally restricted to signals that are physically adjacent in the design.
+Modeling bridge fault[edit]
+Bridging to VDD or Vss is equivalent to stuck at fault model. Traditionally bridged signals were modeled with logic AND or OR of signals. If one driver dominates the other driver in a bridging situation, the dominant driver forces the logic to the other one, in such case a dominant bridging fault is used. To better reflect the reality of CMOS VLSI devices, a dominant AND or dominant OR bridging fault model is used where dominant driver keeps its value, while the other signal value is the result of AND (or OR) of its own value with the dominant driver.
+References[edit]
+
+"Bridging Fault Model" from Test and Diagnosis for Small-Delay Defects
+"Bridging Fault" from Integrated circuit test engineering: modern techniques
+"A bridging fault model where undetectable faults imply logic redundancy" from Design Automation and Test in Europe
+
+
+
+
+

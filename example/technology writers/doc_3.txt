@@ -1,0 +1,32 @@
+Charles L. Perkins is the Founder and Chief Scientist of Virtual Rendezvous. He co-wrote a popular book on Java in October, 1995 [2], and created some (now historical) Java class hierarchy diagrams [3].
+An edited except of "The Big Picture" section (thru "The Bytecodes Themselves" [1]) of the book was published in the Premiere issue of Java Report, March 1996.[2] He has written several other books, including a number of volumes in the "Teach Yourself Java" series.[3]
+Books written by Perkins[edit]
+1996:
+
+Teach Yourself Java in 21 Days (ISBN 1-57521-030-4)
+Teach Yourself Java for Macintosh in 21 Days (ISBN 1-56830-280-0)
+Teach Yourself Java in Cafe in 21 Days (ISBN 1-57521-157-2)
+Teach Yourself Sunsoft Java Workshop in 21 Days (ISBN 1-57521-159-9)
+Teach Yourself Java in 21 Days: Professional Reference Edition (ISBN 1-57521-183-1)
+
+1997:
+
+Teach Yourself Java 1.1 In 21 Days (ISBN 1-57521-142-4) (ISBN 978-1-57521-142-8) (ASIN B000IQZY5M)
+Teach Yourself Java 1.1 for Macintosh in 21 Days (ISBN 1-56830-342-4)
+
+2000: Ad Hoc Networking. Boston, MA: Addison-Wesley, 2000.[4]
+References[edit]
+
+
+
+^ "Archived copy". Archived from the original on 2011-11-13. Retrieved 2011-09-21. 
+^ [1]
+^ WorldCat
+^ WorldCat
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+Erich Rudolf Bagge (30 May 1912, Neustadt bei Coburg – 5 June 1996, Kiel) was a German scientist. Bagge, a student of Werner Heisenberg for his doctorate[1] and Habilitation,[2] was engaged in German Atomic Energy research and the German nuclear energy project during the Second World War. He worked as an Assistant at the Kaiser-Wilhelm-Institut für Physik in Berlin. Bagge, who became associated professor at the University of Hamburg in 1948, was in particular involved in the usage of nuclear power for trading vessels, and he was one of the founders of the Society for the Usage of Nuclear Energy in Ship-Building and Seafare. The first German nuclear vessel, the "NS Otto Hahn", was launched in 1962. A research reactor was installed in Geesthacht near Hamburg at about the same time which has over the years formed into a center for materials research with neutrons.
+
+
+
+Contents
+
+
+1 Uranium enrichment
+2 Post-war activity
+3 See also
+4 Notes
+
+
+
+Uranium enrichment[edit]
+Dr. Bagge developed a gaseous uranium enrichment device (Isotopenschleuse or isotope sluice)[3] for enriching the U-235 isotope content of uranium in 1944, using three methods; centrifugal force, electromagnetism and thermal diffusion. It was built by BAMAG-MEGUIN under the direction of Kurt Diebner.
+Yellow cake uranium oxide powder was reacted with hydrofluoric acid to form gaseous uranium hexafluoride. It was pumped into the sluice, which consisted of a centrifuge and spun at great speeds to fling heavier non-fissile 238U to the periphery. Electromagnets helped to keep 235U nearer the core of the centrifuge. Slight heating near the bottom of the "bowl" helped 238U to migrate to the bottom whilst 235U bubbled to the top of the chamber. Uranium hexafluoride gas with an enriched content of 235U was then sluiced off the top layers.
+Bagge got a patent in 1955 for the isotope sluice but it never achieved any economic importance.
+Post-war activity[edit]
+From June to December 1945, Bagge was (together with Kurt Diebner, Walther Gerlach, Otto Hahn, Paul Harteck, Werner Heisenberg, Horst Korsching, Max von Laue, Carl Friedrich von Weizsäcker, and Karl Wirtz) detained at Farm Hall near Cambridge, England. After the war, Bagge became Professor in Hamburg, later Professor and Head of the Department of Physics at the University of Kiel, Germany. He was also Head of the Gesellschaft für Kernenergieverwertung in Schiffbau und Schiffahrt (GKSS) near Hamburg.
+See also[edit]
+
+Sir Charles Frank (ed), Operation Epsilon. The Farm Hall Transcripts, Bristol and Philadelphia 1993
+Rainer Karlsch, Hitlers Bombe, DVA München 2005, ISBN 3-421-05809-1 [1]
+
+Notes[edit]
+
+
+
+^ 1938 Doctorate: "Beiträge zur Theorie der schweren Atomkerne". See Archive - Leipzig University.
+^ 1941 Habilitation: "Kernzertrümmerungen und schwere Teilchen in der kosmischen Strahlung". See Archive - Leipzig University.
+^ 'German National Socialism and the Quest for Nuclear Power, 1939-49', see pp.133-135 by Mark Walker, published by Cambridge University Press, 1992.
+
+
+
+
+
+
+Authority control
+
+
+
+WorldCat Identities
+VIAF: 8172071
+LCCN: n86114581
+ISNI: 0000 0001 0868 0643
+GND: 117707600
+SNAC: w61k1qfw
+
+
+
+
+
+
+
+
+
+

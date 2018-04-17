@@ -1,0 +1,338 @@
+In multiplayer video games, particularly in MOBAs, first-person shooters, MMORPGs and MUDs, kill stealing is the practice of obtaining credit for killing an enemy, when another player has put more effort into the kill. This usually happens when a game only keeps track of which player defeats an enemy, leading to the so called last-hitting mechanics. If one player whittles down some enemy's health points, but a different player eventually finishes the enemy off, this second player might obtain all of the loot or experience points from the enemy.[1] Kill stealing is common when the rewards for finishing enemies off is highly desired within the game.
+Some players feel that kill stealing is a dishonorable practice.[2] A good faith attempt to secure a kill on an enemy that might otherwise have gotten away can sometimes be perceived as a kill steal if the other player believes the kill was already certain.
+
+
+
+Contents
+
+
+1 Overview
+2 Prevention
+3 See also
+4 References
+
+
+
+Overview[edit]
+
+
+
+
+
+
+This article needs additional citations for verification. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed. (September 2014) (Learn how and when to remove this template message)
+
+
+
+There are two main causes for kill stealing: the desire for the reward and the desire to cause other players grief. Kill stealing is predominantly done to gain the rewards from a kill. Griefers kill steal as only one of their tactics in annoying other players.[3]
+Complaints of kill stealing are sometimes heard in online first-person shooters. In most of these games, the credit for a kill goes to the player who deals the killing shot. Players usually ignore complaints of kill stealing in FPSs because the rewards are less significant and because these games move much faster (i.e., it was probably accidental). Furthermore, in FPS combat, players are usually either allies (in which case the kill's credit going to one player or another has no in-game meaning beyond ego) or in direct enmity with one another (providing both a justification for cutthroat tactics, and a generally immediate means of redress). Kill stealing can sometimes specifically refer to the disruption of a particularly "interesting" kill that would have earned a lot of extra points beyond the kill itself.
+By contrast, in most MMORPGs players may be competing for the same in-game resources, but are not generally in direct conflict with one another. (In situations where they are, such as two opposite-faction players in a World of Warcraft player-versus-player server, there is usually little animosity towards kill-stealing, as there is a means of redress and prevention, and it is seen as part of the general struggle between Horde and Alliance)
+In team based game modes, many players overreact when they do not understand the objective is for the team to win, rather than individual progression.
+Prevention[edit]
+Many newer MMORPGs implement game designs that distributes the reward more fairly to those who fought a creature. Rewards can be distributed based on how much the player contributed to defeating the creature. A player that does 30% of the damage gains 30% of the money and experience points rewarded for defeating the creature. A game might have a more sophisticated way to measure a player's contribution to the fight as well. A character whose primary task is healing other characters might be judged based on how much he healed combatants during the fight.[citation needed]
+In some newer multiplayer first-person shooters such as Battlefield 4[4] and Battlefield 1, if a player does enough damage to an enemy player, but a teammate gets the final blow, then the player will receive what is known as 'Assist Counts as Kill'. The player then gets awarded the amount of damage they did to the enemy as points, and on their statistics it counts as kill rather than as an assist.
+See also[edit]
+
+Camping – another practice that arises when players compete for rewards
+Ninja looting – improperly taking the reward from a defeated creature
+Powerleveling – powerlevelers are frequently blamed for kill stealing
+Gold farming
+
+References[edit]
+
+
+
+^ Schell, Jesse (2014-11-06). The Art of Game Design: A Book of Lenses. CRC Press. p. 410. ISBN 1466598646. 
+^ Peter Kollock (2002). "Communities in Cyberspace". Routledge. ISBN 978-0-203-19495-9. 
+^ Jennings, Scott; Macris, Alexander (2005-12-19). Massively Multiplayer Games For Dummies. For Dummies. p. 310. ISBN 0-471-75273-8. 
+^ [DICE] H Brun (October 18, 2013). "BF4 Point Mechanics". DICE. Archived from the original on October 21, 2013. Retrieved March 25, 2017. 
+
+
+
+
+Koster, Raph. CGDC Presentation: "The Rules of Online World Design".
+
+
+
+
+
+
+
+v
+t
+e
+
+
+MUDs
+
+
+
+Major branches
+
+
+
+AberMUD
+DikuMUD
+LPMud
+
+LPC
+
+
+MU*
+
+
+
+
+
+Minor branches,
+
+codebases, libraries
+
+
+
+DGD
+GodWars
+Merc
+MOO
+MudOS
+MUSH
+SMAUG
+Talker
+TinyMUD
+TinyMUCK
+
+
+
+
+
+Concepts,
+
+terminology
+
+
+
+Alternate character
+Avatar
+Avatar customization
+Bartle taxonomy of player types
+Buff
+Camping
+Computer game bot
+Consider
+Cybersex
+God
+Gold farming
+Gold sink
+Griefer
+Grinding
+Hack and slash
+Immortal
+Implementer
+Kill stealing
+Lag
+Looting
+Mob / Monster
+MUD client
+MUD trees
+Mudflation
+Nerf
+Non-player character
+Online creation
+Online wedding
+Persistent world
+Player character
+Player versus environment
+Player versus player / Playerkilling
+Powerleveling
+Quest
+Remort
+Rent
+Spam
+Spawning
+spod
+Syntax guessing
+Tank
+Twinking
+Virtual good
+Wizard
+Zone / Area
+
+
+
+
+
+Publications
+
+
+
+Designing Virtual Worlds
+Imaginary Realities
+Life on the Screen
+"A Rape in Cyberspace"
+"A Story About a Tree"
+Terra Nova
+A Theory of Fun for Game Design
+
+
+
+
+
+Companies,
+
+organizations
+
+
+
+Areae
+Iron Realms Entertainment
+Jagex
+Lysator
+Kesmai
+The Mud Connector
+Mythic Entertainment
+Plaintext Players
+Simutronics
+Skotos
+XYZZY Awards
+
+
+
+
+
+People
+
+
+
+Alan Cox
+Amy S. Bruckman
+Andrew Gower
+Ben Laurie
+Brad McQuaid
+Brian Green
+Bruce Woodcock
+Cat Rambo
+Chip Morningstar
+Christopher Howard Wolf
+Edward Castronova
+Elonka Dunin
+Espen J. Aarseth
+Greg Stein
+J. Todd Coleman
+James Aspnes
+Jason Scott Sadofsky
+John Viega
+Joi Ito
+Judy Malloy
+Julian Dibbell
+Kelton Flinn
+Lars Pensjö
+Lennart Augustsson
+Lisbeth Klastrup
+Mark Jacobs
+Matt Mihaly
+Michael Lawrie
+Michael Seifert
+Mizuko Ito
+Nick Yee
+Noah Wardrip-Fruin
+Paul Barnett
+Pavel Curtis
+Randy Farmer
+Rich Skrenta
+Richard Bartle
+Sherry Turkle
+Stephanie Shaver
+Steve Yegge
+T. L. Taylor
+Wes Platt
+
+
+
+
+
+MUDs
+
+
+
+3Kingdoms
+Achaea, Dreams of Divine Lands
+Alter Aeon
+AmberMUSH
+Ancient Anguish
+Armageddon
+ATHEMOO
+Avalon: The Legend Lives
+AVATAR
+BatMUD
+BurningMUD
+Castle Marrach
+Costello
+Dark Age of Camelot
+Darkness Falls: The Crusade
+DartMUD
+Discworld MUD
+Diversity University
+Dragon's Gate
+DragonRealms
+Dune II
+Elendor
+Empire
+EverQuest
+Federation II
+Furcadia
+FurryMUCK
+GemStone IV
+Genesis LPMud
+Genocide
+God Wars II
+Habitat
+Holy Mission
+ifMUD
+Infinity (AberMUD)
+Infinity (LPMud)
+Island of Kesmai
+JediMUD
+LambdaMOO
+LegendMUD
+Legends of Terris
+Lost Souls
+MAD
+MOOSE Crossing
+MUD1
+MUD2
+Medievia
+Meridian 59
+MicroMUSE
+MorgenGrauen
+Muddy Waters
+NannyMUD
+Nightmare LPMud
+Northern Lights
+Nuclear War MUD
+PernMUSH
+Ragnarök
+The Realm Online
+Realms of Despair
+The Ruins of Cawdor
+RuneScape
+The Shadow of Yserbius
+Shattered World
+Star Wars MUSH
+Threshold
+TinyTIM
+TorilMUD
+TriadCity
+TubMUD
+Ultima Online
+Wyvern
+Xyllomer
+
+
+
+
+
+
+
+
+
+

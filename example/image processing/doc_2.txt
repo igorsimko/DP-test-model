@@ -1,0 +1,62 @@
+Licensing[edit]
+
+
+
+I, the copyright holder of this work, hereby release it into the public domain. This applies worldwide.
+
+If this is not legally possible:
+
+I grant any entity the right to use this work for any purpose, without any conditions, unless such conditions are required by law.
+
+PD Public domain false false
+
+
+
+
+
+
+
+This image was uploaded in the JPEG format even though it consists of non-photographic data. The information it contains could be stored more efficiently or more accurately in the PNG or SVG format.
+
+If possible, please upload a PNG or SVG version of this image, derived from a non-JPEG source so that it doesn't contain any compression artifacts (or with existing artifacts removed) and with transparency where appropriate. After doing so, please replace all instances of the JPEG version throughout Wikipedia (noted under the "File links" header), tag the JPEG version with {{obsolete|NewImage.ext}}, and remove this tag. For more information, see Wikipedia:Preparing images for upload.
+
+(Search for similar images)
+
+
+
+
+
+
+
+This file is a candidate to be copied to Wikimedia Commons.
+Any user may perform this transfer; refer to Wikipedia:Moving files to Commons for details.
+If this file has problems with attribution, copyright, or is otherwise ineligible for Commons, then remove this tag and DO NOT transfer it; repeat violators may be blocked from editing.
+
+Other Instructions
+
+
+Endorse this file for transfer by adding |human=<your username> to this Template.
+If this file is freely licensed, but otherwise unsuitable for Commons (e.g. out of Commons' scope, still copyrighted in the US), then replace this Template with {{Do not move to Commons|reason=<Why it can't be moved>}}
+If you think that a local copy of this file should be retained, then replace this Template with {{Keep local|reason=<Why a local copy is needed>}}
+Please ensure that the file has a properly descriptive and unambiguous name before transferring; see Wikipedia:File mover#What files should be renamed? for details.
+
+
+
+
+
+
+
+
+
+
+
+This file was suggested for transfer by a bot (User:Fbot). Please verify that this file is suitable for Commons before transferring it.
+
+
+
+
+
+
+
+
+

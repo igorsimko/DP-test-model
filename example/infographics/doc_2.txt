@@ -1,0 +1,357 @@
+This is a list of graphical methods with a mathematical basis. Included are diagram techniques, chart techniques, plot techniques, and other forms of visualization.
+There is also a list of computer graphics and descriptive geometry topics.
+
+
+
+Contents
+
+
+1 Simple displays
+2 Set theory
+3 Descriptive geometry
+4 Engineering drawing
+5 Systems analysis
+6 Cartography
+7 Biological sciences
+8 Physical sciences
+9 Business methods
+10 Conceptual analysis
+11 Statistics
+12 Machine Learning
+13 Other
+14 External links
+
+
+
+Simple displays[edit]
+
+Area chart
+Box plot
+
+Dispersion fan diagram
+
+
+Graph of a function
+Graph paper
+
+Logarithmic graph paper
+
+
+Heatmap
+Histogram
+
+Bar chart
+
+
+Line chart
+Pie chart
+Plotting
+Scatterplot
+Skewplot
+Sparkline
+Stemplot
+Radar chart
+
+Set theory[edit]
+
+Venn diagram
+Karnaugh diagram
+
+Descriptive geometry[edit]
+
+Isometric projection
+Orthographic projection
+Perspective (graphical)
+
+Engineering drawing[edit]
+
+Technical drawing
+
+Graphical projection
+
+
+Mohr's circle
+Pantograph
+Circuit diagram
+Smith chart
+Sankey diagram
+
+Systems analysis[edit]
+
+Binary decision diagram
+Control flow graph
+Functional flow block diagram
+Information flow diagram
+IDEF
+N2 chart
+State diagram
+System context diagram
+
+Cartography[edit]
+
+Map projection
+Orthographic projection (cartography)
+Robinson projection
+Stereographic projection
+Dymaxion map
+Topographic map
+Craig retroazimuthal projection
+Hammer retroazimuthal projection
+
+Biological sciences[edit]
+
+Cladogram
+Systems Biology Graphical Notation
+
+Physical sciences[edit]
+
+Free body diagram
+Greninger chart
+Phase diagram
+Wavenumber-frequency diagram
+Bode plot
+Nyquist plot
+Dalitz plot
+Feynman diagram
+Carnot Plot
+
+Business methods[edit]
+
+Flowchart
+
+Workflow
+
+
+Gantt chart
+Growth-share matrix (often called BCG chart)
+Work breakdown structure
+Control chart
+Ishikawa diagram
+Pareto chart (often used to prioritise outputs of an Ishikawa diagram)
+
+Conceptual analysis[edit]
+
+Mind mapping
+Concept mapping
+Conceptual graph
+Entity-relationship diagram
+Tag cloud, also known as word cloud
+
+Statistics[edit]
+See also: Statistical graphics
+
+Autocorrelation plot
+Bar chart
+Biplot
+Box plot
+Bullet graph
+Chernoff faces
+Control chart
+Fan chart
+Forest plot
+Funnel plot
+Galbraith plot
+Histogram
+Mosaic plot
+Multidimensional scaling
+np-chart
+p-chart
+Pie chart
+Probability plot
+
+Normal probability plot
+
+
+Poincaré plot
+
+Probability plot correlation coefficient plot
+
+
+Q-Q plot
+Rankit
+Run chart
+Seasonal subseries plot
+Scatter plot
+Ternary plot
+Recurrence plot
+Waterfall chart
+Violin plot
+
+Machine Learning[edit]
+
+Hinton Diagram
+
+Other[edit]
+
+Ulam spiral
+Nomogram
+Fitness landscape
+Weather map
+Predominance diagram
+One-line diagram
+Autostereogram
+Edgeworth box
+Lineweaver-Burke diagram
+Eadie-Hofstee diagram
+Population pyramid
+Parametric plot
+Causality loop diagram
+Ramachandran plot
+V model
+Sentence diagram
+Tree structure
+Treemapping
+Airfield traffic pattern diagram
+
+External links[edit]
+
+A periodic table of visualization methods.
+Speaking of Graphics.
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Visualization of technical information
+
+
+
+Fields
+
+
+
+Biological data visualization
+Chemical imaging
+Crime mapping
+Data visualization
+Educational visualization
+Flow visualization
+Geovisualization
+Information visualization
+Mathematical visualization
+Medical imaging
+Molecular graphics
+Product visualization
+Scientific visualization
+Software visualization
+Technical drawing
+User interface design
+Visual culture
+Volume visualization
+
+
+
+
+
+Image types
+
+
+
+Chart
+Diagram
+Engineering drawing
+Graph of a function
+Ideogram
+Map
+Photograph
+Pictogram
+Plot
+Schematic
+Statistical graphics
+Table
+Technical drawings
+Technical illustration
+User interface
+
+
+
+
+
+People
+
+
+
+Jacques Bertin
+Stuart Card
+Thomas A. DeFanti
+Michael Friendly
+George Furnas
+Pat Hanrahan
+Nigel Holmes
+Christopher R. Johnson
+Manuel Lima
+Alan MacEachren
+Jock D. Mackinlay
+Michael Maltz
+Bruce H. McCormick
+Miriah Meyer
+Charles Joseph Minard
+Rudolf Modley
+Gaspard Monge
+Tamara Munzner
+Otto Neurath
+Florence Nightingale
+Hanspeter Pfister
+Clifford A. Pickover
+William Playfair
+Karl Wilhelm Pohlke
+Adolphe Quetelet
+George G. Robertson
+Arthur H. Robinson
+Lawrence J. Rosenblum
+Ben Shneiderman
+Edward Tufte
+Fernanda Viégas
+Ade Olufeko
+Howard Wainer
+Martin Wattenberg
+Bang Wong
+
+
+
+
+
+Related topics
+
+
+
+Cartography
+Chartjunk
+Computer graphics
+
+in computer science
+
+
+Graph drawing
+Graphic design
+Graphic organizer
+Imaging science
+Information graphics
+Information science
+Mental visualisation
+Misleading graph
+Neuroimaging
+Patent drawing
+Scientific modelling
+Spatial analysis
+Visual analytics
+Visual perception
+Volume cartography
+Volume rendering
+
+
+
+
+
+
+
+
+
+

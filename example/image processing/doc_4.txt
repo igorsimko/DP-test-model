@@ -1,0 +1,97 @@
+
+RapidMiner
+
+Developer(s)
+RapidMiner
+
+
+Initial release
+2006; 12 years ago (2006)
+
+
+
+
+
+Stable release
+
+8.1 / 6 February 2018; 2 months ago (2018-02-06)
+
+
+
+
+
+
+Operating system
+Cross-platform
+
+
+Type
+Data science, machine learning, predictive analytics
+
+
+License
+Small, Medium, and Large Editions are Proprietary; Free Edition (10,000 rows and 1 logical processor limit) is available as AGPL
+
+
+Website
+rapidminer.com
+
+
+RapidMiner is a data science software platform developed by the company of the same name that provides an integrated environment for data preparation, machine learning, deep learning, text mining, and predictive analytics. It is used for business and commercial applications as well as for research, education, training, rapid prototyping, and application development and supports all steps of the machine learning process including data preparation, results visualization, model validation and optimization.[1] RapidMiner is developed on an open core model. The RapidMiner Studio Free Edition, which is limited to 1 logical processor and 10,000 data rows, is available under the AGPL license.[2] Commercial pricing starts at $2,500 and is available from the developer.
+
+
+
+Contents
+
+
+1 History
+2 Description
+3 Adoption
+4 Developer
+5 References
+6 External links
+
+
+
+History[edit]
+RapidMiner, formerly known as YALE (Yet Another Learning Environment), was developed starting in 2001 by Ralf Klinkenberg, Ingo Mierswa, and Simon Fischer at the Artificial Intelligence Unit of the Technical University of Dortmund.[3] Starting in 2006, its development was driven by Rapid-I, a company founded by Ingo Mierswa and Ralf Klinkenberg in the same year.[4] In 2007, the name of the software was changed from YALE to RapidMiner. In 2013, the company rebranded from Rapid-I to RapidMiner.[5]
+Description[edit]
+RapidMiner uses a client/server model with the server offered as either on-premise, or in public or private cloud infrastructures.[6]
+According to Bloor Research, RapidMiner provides 99% of an advanced analytical solution through template-based frameworks that speed delivery and reduce errors by nearly eliminating the need to write code. RapidMiner provides data mining and machine learning procedures including: data loading and transformation (Extract, transform, load (ETL)), data preprocessing and visualization, predictive analytics and statistical modeling, evaluation, and deployment. RapidMiner is written in the Java programming language. RapidMiner provides a GUI to design and execute analytical workflows. Those workflows are called “Processes” in RapidMiner and they consist of multiple “Operators”. Each operator performs a single task within the process, and the output of each operator forms the input of the next one. Alternatively, the engine can be called from other programs or used as an API. Individual functions can be called from the command line. RapidMiner provides learning schemas, models and algorithms and can be extended using R and Python scripts.[7]
+RapidMiner functionality can be extended with additional plugins which are made available via RapidMiner Marketplace. The RapidMiner Marketplace provides a platform for developers to create data analysis algorithms and publish them to the community.[8]
+With version 7.0, RapidMiner included updates to its getting started materials, an updated user interface, and improvements to its data preparation capabilities.[9]
+Adoption[edit]
+In 2018, Gartner Research placed RapidMiner in the leader quadrant of its Magic Quadrant for Data Science and Machine Learning Platforms. The report highlighted RapidMiner's "Wisdom of Crowds" guidance for recommended next steps in a predictive analytics process in addition to overall ease of use.[10] In the 2017 and 2016 annual software poll KDnuggets ranked RapidMiner as one of the most popular data analytics software with the poll’s respondents citing the software package as the tool they use.[11][12] RapidMiner received one of the strongest satisfaction ratings in the 2011 Rexer Analytics Data Miner Survey.[13] RapidMiner has received millions of total downloads and has over 250,000 users including BMW, Intel, Cisco, GE, and Samsung as paying customers. RapidMiner claims to be the market leader in the software for data science platforms against competitors such as SAS and IBM.[14]
+Developer[edit]
+About 50 developers worldwide participate in the development of the open source RapidMiner with the majority of the contributors being employees of RapidMiner.[15] The company that develops RapidMiner received a $16 million Series C funding with participation from venture capital firms Nokia Growth Partners, Ascent Venture Partners, Longworth Venture Partners, Earlybird Venture Capital and Open Ocean Capital. Open Ocean partner Michael "Monty" Widenius is a founder of MySQL.
+References[edit]
+
+
+
+^ Markus Hofmann, Ralf Klinkenberg, “RapidMiner: Data Mining Use Cases and Business Analytics Applications (Chapman & Hall/CRC Data Mining and Knowledge Discovery Series),” CRC Press, October 25, 2013.
+^ “RapidMiner, September 1, 2015.
+^ Guido Deutsch, “RapidMiner from Rapid-I at CeBIT 2010,” Data Mining Blog, March 18, 2010.
+^ “Interview with RapidMiner's Ingo Mierswa, Ralf Klinkenberg”, KDnuggets, February, 2010.
+^ “German Predictive Analytics Startup Rapid-I Rebrands As RapidMiner”, TechCrunch, November 4, 2013.
+^ David Norris, “RapidMiner - a potential game changer,” IT-Director.com, November 22, 2013.
+^ David Norris, “RapidMiner - a potential game changer,” Bloor Research, November 13, 2013.
+^ Ajay Ohri, “Interview with Rapid-I Ingo Mierswa and Simon Fischer,” KDnuggets, August 2011.
+^ RapidMiner Makes Predictive Analytics Easier Than Ever Before, RapidMiner, January 21, 2016.
+^ "Gartner Magic Quadrant For Data Science And Machine Learning Platforms," Gartner, February 12, 2018.
+^ “KDnuggets Annual Software Poll:RapidMiner and R vie for first place,” KDnuggets, June 2013.
+^ “KDnuggets 15th Annual Software Poll:RapidMiner continues to lead.,” KDnuggets, June 2014.
+^ “2011 Data Miner Survey,” Rexer Analytics.
+^ Ingrid Lunden, “German Predictive Analytics Startup Rapid-I Rebrands As RapidMiner, Takes $5M From Open Ocean, Earlybird To Tackle The U.S. Market,” TechCrunch, November 4, 2013.
+^ Evan Quinn, “Is Rapid-I the Hidden Giant of Analytics?,” QuinnSight Research, June 17, 2013.
+
+
+
+External links[edit]
+
+Official website
+RapidMiner on GitHub
+
+
+
+
+

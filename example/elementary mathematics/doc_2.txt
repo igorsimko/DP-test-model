@@ -1,0 +1,741 @@
+
+
+
+
+
+
+This article needs additional citations for verification. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed. (November 2014) (Learn how and when to remove this template message)
+
+
+
+
+
+
+
+The diagram shows the angles formed by the hands of an analog clock showing a time of 2:20
+
+
+Clock angle problems are a type of mathematical problem which involve finding the angles between the hands of an analog clock.
+
+
+
+Contents
+
+
+1 Math problem
+
+1.1 Equation for the angle of the hour hand
+1.2 Equation for the angle of the minute hand
+
+1.2.1 Example
+
+
+1.3 Equation for the angle between the hands
+
+1.3.1 Example 1
+1.3.2 Example 2
+
+
+1.4 When are the hour and minute hands of a clock superimposed?
+
+
+2 See also
+3 References
+4 External links
+
+
+
+Math problem[edit]
+Clock angle problems relate two different measurements: angles and time. The angle is typically measured in degrees from the mark of number 12 clockwise. The time is usually based on 12-hour clock.
+A method to solve such problems is to consider the rate of change of the angle in degrees per minute. The hour hand of a normal 12-hour analogue clock turns 360° in 12 hours (720 minutes) or 0.5° per minute. The minute hand rotates through 360° in 60 minutes or 6° per minute.[1]
+Equation for the angle of the hour hand[edit]
+
+
+  
+    
+      
+        
+          θ
+          
+            hr
+          
+        
+        =
+        
+          0.5
+          
+            ∘
+          
+        
+        ×
+        
+          M
+          
+            Σ
+          
+        
+        =
+        
+          0.5
+          
+            ∘
+          
+        
+        ×
+        (
+        60
+        ×
+        H
+        +
+        M
+        )
+      
+    
+    {\displaystyle \theta _{\text{hr}}=0.5^{\circ }\times M_{\Sigma }=0.5^{\circ }\times (60\times H+M)}
+  
+
+
+where:
+
+θ is the angle in degrees of the hand measured clockwise from the 12
+H is the hour.
+M is the minutes past the hour.
+MΣ is the number of minutes since 12 o'clock. 
+  
+    
+      
+        
+          M
+          
+            Σ
+          
+        
+        =
+        (
+        60
+        ×
+        H
+        +
+        M
+        )
+      
+    
+    {\displaystyle M_{\Sigma }=(60\times H+M)}
+  
+
+
+Equation for the angle of the minute hand[edit]
+
+
+  
+    
+      
+        
+          θ
+          
+            min.
+          
+        
+        =
+        
+          6
+          
+            ∘
+          
+        
+        ×
+        M
+      
+    
+    {\displaystyle \theta _{\text{min.}}=6^{\circ }\times M}
+  
+
+
+where:
+
+θ is the angle in degrees of the hand measured clockwise from the 12 o'clock position.
+M is the minute.
+
+Example[edit]
+The time is 5:24. The angle in degrees of the hour hand is:
+
+
+  
+    
+      
+        
+          θ
+          
+            hr
+          
+        
+        =
+        
+          0.5
+          
+            ∘
+          
+        
+        ×
+        (
+        60
+        ×
+        5
+        +
+        24
+        )
+        =
+        
+          162
+          
+            ∘
+          
+        
+      
+    
+    {\displaystyle \theta _{\text{hr}}=0.5^{\circ }\times (60\times 5+24)=162^{\circ }}
+  
+
+
+The angle in degrees of the minute hand is:
+
+
+  
+    
+      
+        
+          θ
+          
+            min.
+          
+        
+        =
+        
+          6
+          
+            ∘
+          
+        
+        ×
+        24
+        =
+        
+          144
+          
+            ∘
+          
+        
+      
+    
+    {\displaystyle \theta _{\text{min.}}=6^{\circ }\times 24=144^{\circ }}
+  
+
+
+Equation for the angle between the hands[edit]
+The angle between the hands can be found using the following formula:
+
+
+  
+    
+      
+        
+          
+            
+              
+                Δ
+                θ
+              
+              
+                
+                =
+                |
+                
+                  θ
+                  
+                    hr
+                  
+                
+                −
+                
+                  θ
+                  
+                    min.
+                  
+                
+                |
+              
+            
+            
+              
+              
+                
+                =
+                |
+                
+                  0.5
+                  
+                    ∘
+                  
+                
+                ×
+                (
+                60
+                ×
+                H
+                +
+                M
+                )
+                −
+                
+                  6
+                  
+                    ∘
+                  
+                
+                ×
+                M
+                |
+              
+            
+            
+              
+              
+                
+                =
+                |
+                
+                  0.5
+                  
+                    ∘
+                  
+                
+                ×
+                (
+                60
+                ×
+                H
+                +
+                M
+                )
+                −
+                
+                  0.5
+                  
+                    ∘
+                  
+                
+                ×
+                12
+                ×
+                M
+                |
+              
+            
+            
+              
+              
+                
+                =
+                |
+                
+                  0.5
+                  
+                    ∘
+                  
+                
+                ×
+                (
+                60
+                ×
+                H
+                −
+                11
+                ×
+                M
+                )
+                |
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\Delta \theta &=\vert \theta _{\text{hr}}-\theta _{\text{min.}}\vert \\&=\vert 0.5^{\circ }\times (60\times H+M)-6^{\circ }\times M\vert \\&=\vert 0.5^{\circ }\times (60\times H+M)-0.5^{\circ }\times 12\times M\vert \\&=\vert 0.5^{\circ }\times (60\times H-11\times M)\vert \\\end{aligned}}}
+  
+
+
+where
+
+H is the hour
+M is the minute
+
+If the angle is greater than 180 degrees then subtract it from 360 degrees.
+Example 1[edit]
+The time is 2:20.
+
+
+  
+    
+      
+        
+          
+            
+              
+                Δ
+                θ
+              
+              
+                
+                =
+                |
+                
+                  0.5
+                  
+                    ∘
+                  
+                
+                ×
+                (
+                60
+                ×
+                2
+                −
+                11
+                ×
+                20
+                )
+                |
+              
+            
+            
+              
+              
+                
+                =
+                |
+                
+                  0.5
+                  
+                    ∘
+                  
+                
+                ×
+                (
+                120
+                −
+                220
+                )
+                |
+              
+            
+            
+              
+              
+                
+                =
+                
+                  50
+                  
+                    ∘
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\Delta \theta &=\vert 0.5^{\circ }\times (60\times 2-11\times 20)\vert \\&=\vert 0.5^{\circ }\times (120-220)\vert \\&=50^{\circ }\end{aligned}}}
+  
+
+
+Example 2[edit]
+The time is 10:16.
+
+
+  
+    
+      
+        
+          
+            
+              
+                Δ
+                θ
+              
+              
+                
+                =
+                |
+                
+                  0.5
+                  
+                    ∘
+                  
+                
+                ×
+                (
+                60
+                ×
+                10
+                −
+                11
+                ×
+                16
+                )
+                |
+              
+            
+            
+              
+              
+                
+                =
+                |
+                
+                  0.5
+                  
+                    ∘
+                  
+                
+                ×
+                (
+                600
+                −
+                176
+                )
+                |
+              
+            
+            
+              
+              
+                
+                =
+                
+                  212
+                  
+                    ∘
+                  
+                
+                 
+                 
+                (
+                >
+                
+                  180
+                  
+                    ∘
+                  
+                
+                )
+              
+            
+            
+              
+              
+                
+                =
+                
+                  360
+                  
+                    ∘
+                  
+                
+                −
+                
+                  212
+                  
+                    ∘
+                  
+                
+              
+            
+            
+              
+              
+                
+                =
+                
+                  148
+                  
+                    ∘
+                  
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\Delta \theta &=\vert 0.5^{\circ }\times (60\times 10-11\times 16)\vert \\&=\vert 0.5^{\circ }\times (600-176)\vert \\&=212^{\circ }\ \ (>180^{\circ })\\&=360^{\circ }-212^{\circ }\\&=148^{\circ }\end{aligned}}}
+  
+
+
+When are the hour and minute hands of a clock superimposed?[edit]
+
+
+
+
+In this graphical solution, T denotes time in hours; P, hands' positions; and θ, hands' angles in degrees. The red (thick solid) line denotes the hour hand; the blue (thin solid) lines denote the minute hand. Their intersections (red circles) are when they align. Additionally, orange circles (dash-dot line) are when hands are in opposition, and pink circles (dashed line) are when they are perpendicular. In the SVG file, hover over the graph to show positions of the hands on a clock face.
+
+
+The hour and minute hands are superimposed only when their angle is the same.
+
+
+  
+    
+      
+        
+          
+            
+              
+                
+                  θ
+                  
+                    min
+                  
+                
+              
+              
+                
+                =
+                
+                  θ
+                  
+                    hr
+                  
+                
+              
+            
+            
+              
+                ⇒
+                
+                  6
+                  
+                    ∘
+                  
+                
+                ×
+                M
+              
+              
+                
+                =
+                
+                  0.5
+                  
+                    ∘
+                  
+                
+                ×
+                (
+                60
+                ×
+                H
+                +
+                M
+                )
+              
+            
+            
+              
+                ⇒
+                12
+                ×
+                M
+              
+              
+                
+                =
+                60
+                ×
+                H
+                +
+                M
+              
+            
+            
+              
+                ⇒
+                11
+                ×
+                M
+              
+              
+                
+                =
+                60
+                ×
+                H
+              
+            
+            
+              
+                ⇒
+                M
+              
+              
+                
+                =
+                
+                  
+                    60
+                    11
+                  
+                
+                ×
+                H
+              
+            
+            
+              
+                ⇒
+                M
+              
+              
+                
+                =
+                5.
+                
+                  
+                    45
+                    ¯
+                  
+                
+                ×
+                H
+              
+            
+          
+        
+      
+    
+    {\displaystyle {\begin{aligned}\theta _{\text{min}}&=\theta _{\text{hr}}\\\Rightarrow 6^{\circ }\times M&=0.5^{\circ }\times (60\times H+M)\\\Rightarrow 12\times M&=60\times H+M\\\Rightarrow 11\times M&=60\times H\\\Rightarrow M&={\frac {60}{11}}\times H\\\Rightarrow M&=5.{\overline {45}}\times H\end{aligned}}}
+  
+
+
+H is an integer in the range 0–11. This gives times of: 0:00, 1:05.45, 2:10.90, 3:16.36, 4:21.81, 5:27.27. 6:32.72, 7:38.18, 8:43.63, 9:49.09, 10:54.54, and 12:00. (0.45 minutes are exactly 27.27 seconds.)
+See also[edit]
+
+Clock position
+
+References[edit]
+
+
+
+^ Elgin, Dave (2007). "Angles on the Clock Face". Mathematics in School. The Mathematical Association. 36 (5): 4–5. JSTOR 30216063. 
+
+
+
+External links[edit]
+
+https://web.archive.org/web/20100615083701/http://delphiforfun.org/Programs/clock_angle.htm
+http://www.ldlewis.com/hospital_clock/ - extensive clock angle analysis
+https://web.archive.org/web/20100608044951/http://www.jimloy.com/puzz/clock1.htm
+
+
+
+
+

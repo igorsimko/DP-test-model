@@ -1,0 +1,74 @@
+Not to be confused with Heinrich Friedrich Weber.
+
+
+
+
+Heinrich Martin Weber, 1875
+
+
+Heinrich Martin Weber (5 March 1842, Heidelberg, Germany – 17 May 1913, Straßburg, Alsace-Lorraine, German Empire, now Strasbourg, France) was a German mathematician.[1] Weber's main work was in algebra, number theory, and analysis. He is best known for his text Lehrbuch der Algebra published in 1895 and much of it is his original research in algebra and number theory. His work Theorie der algebraischen Functionen einer Veränderlichen (with Dedekind) established an algebraic foundation for Riemann surfaces, allowing a purely algebraic formulation of the Riemann-Roch theorem. Weber's research papers were numerous, most of them appearing in Crelle's Journal or Mathematische Annalen. He was the editor of Riemann's collected works.
+Weber was born in Heidelberg, Baden, and entered the University of Heidelberg in 1860. In 1866 he became a privatdozent, and in 1869 he was appointed as extraordinary professor at that school. Weber also taught in Zurich at the Federal Polytechnic Institute, today the ETH Zurich, at the University of Königsberg, and at the Technische Hochschule in Charlottenburg. His final post was at the Kaiser-Wilhelm-Universität Straßburg, Alsace-Lorraine, where he died.
+In 1893 in Chicago, his paper Zur Theorie der ganzzahligen algebraischen Gleichungen was read (but not by him) at the International Mathematical Congress held in connection with the World's Columbian Exposition.[2] In 1895 and in 1904 he was president of the Deutsche Mathematiker-Vereinigung. His doctoral students include Heinrich Brandt, E. V. Huntington, Louis Karpinski, and Friedrich Levi.
+Publications[edit]
+
+with Richard Dedekind: Theorie der algebraischen Functionen einer Veränderlichen. J. Reine Angew. Math. 92 (1882) 181–290
+Elliptische Functionen und algebraische Zahlen. Braunschweig 1891
+Encyklopädie der Elementar-Mathematik. Ein Handbuch für Lehrer und Studierende. Leipzig 1903/07, (Vol. 1, Vol. 2, Vol. 3) (in German)
+with Bernhard Riemann (i.e. partly based on Riemann's lectures): Die partiellen Differential-Gleichungen der mathematischen Physik. Braunschweig 1900-01[3]
+Lehrbuch der Algebra. Braunschweig 1924, ed. Robert Fricke
+Weber, Heinrich Martin (1981) [1895], Lehrbuch der Algebra (in German), 1 (3rd ed.), New York: AMS Chelsea Publishing, ISBN 978-0-8218-3258-5 
+Weber, Heinrich Martin (1981) [1895], Lehrbuch der Algebra (in German), 2 (3rd ed.), New York: AMS Chelsea Publishing, ISBN 978-0-8218-2647-8 
+Weber, Heinrich Martin (1981) [1898], Lehrbuch der Algebra (in German), 3 (3rd ed.), New York: AMS Chelsea Publishing, ISBN 978-0-8218-2971-4  The third volume is an expanded version of his earlier book "Elliptische Functionen und algebraische Zahlen".
+
+See also[edit]
+
+Kronecker–Weber theorem
+Weber's theorem
+Weber's modular function
+Weber function
+
+References[edit]
+
+
+
+^ Archibald, R. C. (1913). "Review: Festschrift Heinrich Weber zu seinem siebzigsten Geburtstag am 5 März 1912". Bull. Amer. Math. Soc. 20 (3): 152–155. doi:10.1090/s0002-9904-1913-02453-4. 
+^ "Zur Theorie der ganzzahlingen algebraischen Gleichungen by Heinrich Martin Weber". Mathematical papers read at the International Mathematical Congress held in connection with the World's Columbian Exposition. NY: Macmillan as publisher for the AMS. 1896. pp. 401–407. 
+^ Ames, J. S. (1901). "Riemann-Weber: Partial Differential Equations of Mathematical Physics". Bull. Amer. Math. Soc. 8 (2): 81–85. doi:10.1090/S0002-9904-1901-00858-0. 
+
+
+
+
+O'Connor, John J.; Robertson, Edmund F., "Heinrich Martin Weber", MacTutor History of Mathematics archive, University of St Andrews .
+Schappacher, Norbert (1998), "On the history of Hilbert's twelfth problem: a comedy of errors", Matériaux pour l'histoire des mathématiques au XXe siècle (Nice, 1996), Sémin. Congr., 3, Paris: Société Mathématique de France, pp. 243–273, ISBN 978-2-85629-065-1, MR 1640262 
+Voss, A. (1914), "Heinrich Weber.", Jahresbericht der Deutschen Mathematiker-Vereinigung (in German), 23: 431–444, ISSN 0012-0456 
+Heinrich Martin Weber at the Mathematics Genealogy Project
+
+
+
+
+Authority control
+
+
+
+WorldCat Identities
+VIAF: 46841351
+LCCN: n84804288
+ISNI: 0000 0001 2131 1172
+GND: 1012808513
+SELIBR: 310868
+SUDOC: 032822057
+BNF: cb12377696m (data)
+HDS: 31705
+MGP: 16915
+RLS: 000100708
+SNAC: w6pc6qb8
+
+
+
+
+
+
+
+
+
+

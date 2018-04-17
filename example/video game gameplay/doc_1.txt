@@ -1,0 +1,338 @@
+
+
+
+
+
+
+This article needs additional citations for verification. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed. (October 2015) (Learn how and when to remove this template message)
+
+
+
+Toys-to-life is a video game feature using physical figurines or action figures to interact within the game.[1] These toys use a near field communication (NFC), radio frequency identification (RFID), or image recognition data protocol to determine the individual figurine's proximity, and save a player's progress data to a storage medium located within that piece.[2] It is one of the most lucrative branches of the video game industry, with the Skylanders franchise alone selling more than $3 billion worth over the course of four years.[3]
+Toys-to-life games generally use a third-person camera view, and have in-game power-up figurines. Toys-to-life games generally have an accompanying portal device that is used to "transport" the figurine's character and associated player data into the game. The figurines can be transferred from each game in the franchise, possibly resetting with every different installment.
+
+
+
+Contents
+
+
+1 On-going
+
+1.1 Skylanders (2011–present)
+1.2 Amiibo (2014–present)
+
+
+2 Discontinued
+
+2.1 U.B. Funkeys (2007–2010)
+2.2 Disney Infinity (2013–2016)
+2.3 Disney Playmation (2015–2016)
+2.4 Hero Plug and Play (2015–2016)
+2.5 Sick Bricks (2015)
+2.6 Lego Dimensions (2015–2017)
+
+
+3 References
+4 External links
+
+
+
+On-going[edit]
+Skylanders (2011–present)[edit]
+Main article: Skylanders
+Skylanders (2011) is one of the most successful early games of this genre.[2][3] Since its first release, each year has seen a new installment in the series, totaling six as of 2016[update]. Each game has its own portal device and a different take on the premise than past games. They star the Skylander heroes and the evil antagonist Kaos. All current figurines are compatible with its most recent installment, Skylanders: Imaginators (2016).
+Amiibo (2014–present)[edit]
+Main article: Amiibo
+Amiibo (2014) is a toys-to-life platform primarily based on Nintendo properties and characters, as well some third-party non-Nintendo characters like Pac-Man, Mega Man, Sonic the Hedgehog, Ryu and Cloud Strife that have appeared in Nintendo games. Launching in 2014 with figurines, Nintendo has since also deployed Amiibo-compatible playing cards, with plans for other media in the future. Unlike most other toys-to-life series, Amiibo does not have games dedicated exclusively to the use of the toys, but the characters are used throughout various Nintendo games. Amiibo toys can save players' progress data and information per game. They have even released plush toy Amiibo for Yoshi's Woolly World and Poochy & Yoshi's Woolly World, as well as cards for Animal Crossing: Happy Home Designer and Mario Sports Superstars.
+Discontinued[edit]
+U.B. Funkeys (2007–2010)[edit]
+Main article: U.B. Funkeys
+U.B. Funkeys (2007) was the first game of this genre. It was discontinued in 2010 and was worked on by Mattel, Arkadium, and Radica. It had multiple updates before it was discontinued. Almost every update had a portal, also referred to as a 'Hub', with the same mold but a different pattern. The Hubs were a special USB port to plug into your computer. The characters were the Funkeys, which each unlocked new in-game areas.
+Disney Infinity (2013–2016)[edit]
+Main article: Disney Infinity (series)
+Disney Infinity (2013) was a toys-to-life series based on Disney characters and franchises. Since the initial game's release in 2013, there have been three installments. Disney Infinity was the first game, focusing on classic Disney and Pixar characters. In 2014, Disney Infinity: Marvel Super Heroes was released as the second game, which focuseed on Marvel characters and properties. The third game, 2015's Disney Infinity 3.0, centered on the Star Wars franchise. All Disney Infinity figurines can interact with various games in the series. The line concluded in 2016, when Disney announced that production of the series had officially ceased, and that there would be no more future titles.[4]
+Disney Playmation (2015–2016)[edit]
+Main article: Playmation
+Disney Playmation was a longer range (~10m) networked interactive role-playing game with wearable toys that supported BLE communications with phone apps. The product was sold in collaboration with Hasbro. The single-product story line delivered was based on the Marvel Iron Man fictional universe. Other universes announced before the produced was terminated included Star Wars and Frozen.
+Hero Plug and Play (2015–2016)[edit]
+A Toys to Life Game made by Jakks Pacific. It is a console connected to a portal connected to plugs which you connect to your TV. You place the figures on the portal and it goes to your game. It was short lived, there were three themes released: DC Super Heroes, Teenage Mutant Ninja Turtles, and Power Rangers.
+Sick Bricks (2015)[edit]
+Main article: Sick Bricks
+A game by Spin Master with Lego-compatible figurines and builds. The game takes place in a small town called Sick City, which is under fire by a villain named Omega Overlord. Various heroes fight against him, and his goons combining with each other to fight them off. There were various multi-packs and special blind bags containing the toys. While the game itself was free, the additional figures would cost money. There were only three waves of figures, all of which were released in 2015. Following the third wave's release, no additional information about the series was released, and it was assumed to be discontinued. The line was based on a 2015 cartoon series of the same name.
+Lego Dimensions (2015–2017)[edit]
+Main article: Lego Dimensions
+Lego Dimensions (2015) was a toys-to-life game that used physical Lego figures, featuring characters from various Warner Brothers franchises and other third-party intellectual properties such as Back to the Future and Sonic the Hedgehog. Players must physically assemble some figurines by unlocking the levels in-game, which shows them the building instructions on-screen. Almost all of the figurines, and the base portal, have to be built by the player. No sequels were released, with the base game supporting all available figures. On October 23, 2017, Warner Bros. officially announced that they would not be developing further content for Lego Dimensions.[5]
+References[edit]
+
+
+^ Roberts, David (November 24, 2015). "What is the 'toys-to-life' genre, anyway?". GamesRadar. Retrieved November 24, 2015. 
+^ a b "Skylanders, Disney Infinity, Lego Dimensions: toys-to-life buyer's guide". Wired UK. Retrieved October 10, 2015. 
+^ a b "Why game makers are entering in the billion dollar toys to life market – Fortune". Fortune. Retrieved October 10, 2015. 
+^ Blackburn, John (2016-05-10). "An Update on Disney Infinity" (Press release). The Walt Disney Company. Retrieved 2016-05-10. 
+^ https://twitter.com/LEGODimensions/status/922504239368114176
+
+
+External links[edit]
+
+Toys-to-life: what's coming next
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Video game genres (List)
+
+
+
+Action
+
+
+
+Beat 'em up
+
+Hack and slash
+
+
+Fighting
+Maze
+
+Pac-Man clone
+
+
+Platform
+Shooter
+
+First-person
+Third-person
+Side-scrolling
+Top-down
+isometric
+Light gun
+Shoot 'em up
+Tactical
+
+
+Survival
+
+Battle royale
+
+
+
+
+
+
+
+
+
+
+Action-adventure
+
+
+
+Grand Theft Auto clone
+Immersive sim
+Metroidvania
+Stealth
+Survival horror
+
+Psychological horror
+
+
+
+
+
+
+
+Adventure
+
+
+
+Escape the room
+Interactive fiction
+Interactive movie
+Point n' click
+Visual novel
+
+
+
+
+
+MMO
+
+
+
+MMOFPS
+MMORPG
+MMORTS
+MUD
+
+
+
+
+
+Role-playing
+
+
+
+Action role-playing
+Dungeon crawl
+Roguelike
+Tactical role-playing
+
+
+
+
+
+Simulation
+
+
+
+Construction and management
+
+Business
+City
+Government
+
+
+Life simulation
+
+Dating sim
+Digital pet
+God
+Social simulation
+
+
+Sports
+
+
+
+
+
+Strategy
+
+
+
+4X
+Multiplayer online battle arena
+Real-time strategy
+
+Tower defense
+Time management
+
+
+Real-time tactics
+Turn-based strategy
+Turn-based tactics
+Wargame
+
+
+
+
+
+Vehicle simulation
+
+
+
+Flight simulator
+
+Amateur
+Combat
+Space
+
+
+Racing
+
+Kart racing
+Sim racing
+
+
+Submarine simulator
+Train simulator
+Vehicular combat
+
+
+
+
+
+Other genres
+
+
+
+Artillery
+Breakout clone
+Eroge
+Exergame
+Incremental
+Music
+
+Rhythm
+
+
+Non-game
+Party
+Programming
+Puzzle
+
+Sokoban
+Tile-matching
+
+
+
+
+
+
+
+Related concepts
+
+
+
+AAA rating
+Advertising
+Arcade game
+Art game
+Audio game
+Casual game
+Christian game
+Crossover game
+Cult game
+Educational game
+FMV
+Gamification
+Indie game
+Multiplayer video game
+Nonlinear gameplay
+
+Open world
+
+
+Nonviolent video game
+Online game
+
+Browser game
+Multiplayer online game
+Online gambling
+Social-network game
+
+
+Pervasive game
+Serious game
+Toys-to-life
+Twitch gameplay
+Video game clone
+
+
+
+
+
+
+
+
+
+

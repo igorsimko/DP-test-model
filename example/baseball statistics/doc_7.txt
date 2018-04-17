@@ -1,0 +1,377 @@
+"Win–loss record" redirects here. For the baseball statistic, see Win–loss record (pitching).
+In sports, a winning percentage is the fraction of games or matches a team or individual has won. It is defined as wins divided by the total number of matches played (i.e. wins plus draws plus losses). A draw counts as a ½ win.
+For example, if a team's season record is 30 wins and 20 losses, the winning percentage would be .600. If a team's season record is 30–15–5 (i.e. it has won thirty games, lost fifteen and tied five times), the five tie games are counted as 2½ wins, and so the team has an adjusted record of 32½ wins, resulting in a .650 winning percentage for the fifty total games from
+
+
+  
+    
+      
+        
+          winning percentage
+        
+        =
+        
+          
+            
+              
+                wins
+              
+              +
+              0.5
+              ∗
+              
+                ties
+              
+            
+            
+              total games
+            
+          
+        
+        ∗
+        100
+        %
+      
+    
+    {\displaystyle {\text{winning percentage}}={{\text{wins}}+0.5*{\text{ties}} \over {\text{total games}}}*100\%}
+  
+
+
+  
+    
+      
+        65
+        %
+        =
+        
+          
+            32.5
+            50
+          
+        
+        ∗
+        100
+        %
+      
+    
+    {\displaystyle 65\%={32.5 \over 50}*100\%}
+  
+
+
+In leagues in which points are awarded for overtime losses, it is possible for a team to have a winning percentage above .500 (50%) despite losing more than half of the games it has played.
+Winning percentage is one way to compare the record of two teams; however, another standard method most frequently used in baseball and professional basketball standings is games behind. In baseball, a pitcher is assessed wins and losses as an individual statistic and thus has his own winning percentage, based on his win–loss record.
+In North America, winning percentages are expressed to three digits and read as whole numbers (e.g. 1.000, "a thousand" or .500, "five hundred"). In this case, the name "winning percentage" is actually a misnomer, since it is not expressed as a percentage. A winning percentage such as .536 ("five thirty-six") expressed as a percentage would be 53.6%.
+However, in soccer, a manager's abilities may be measured by win percentage. In this case, the formula is wins divided by total number of matches; draws are not considered as "half-wins", and the quotient is always in percentage form.
+Some leagues and competitions may instead use a points percentage system, changing the nature of this statistic. In this type of method, used in many group tournament ranking systems, the competitors are awarded a certain number of points per win, fewer points per tie, and none for a loss. The teams are then ranked by the total number of these accumulated points. One such method is the "three points for a win", where three points are awarded for winning a game, one point is awarded for a draw, and no points are awarded for a loss. The National Hockey League (which uses an overtime and shootouts to break all ties) awards two points for a win in regulation or overtime/shootout, one point for an overtime loss, and none for a regulation loss.[1][2]
+
+
+
+Contents
+
+
+1 Statistics
+
+1.1 Major League Baseball
+1.2 National Basketball Association
+1.3 National Hockey League
+
+
+2 See also
+3 References
+
+
+
+Statistics[edit]
+Major League Baseball[edit]
+
+
+Win %
+Wins
+Losses
+Year
+Team
+Comment
+
+
+.798
+67
+17
+1882
+Chicago White Stockings
+best pre-modern season
+
+
+.763
+116
+36
+1906
+Chicago Cubs
+best 154-game NL season
+
+
+.721
+111
+43
+1954
+Cleveland Indians
+best 154-game NL season
+
+
+.716
+116
+46
+2001
+Seattle Mariners
+best 162-game AL season
+
+
+.667
+108
+54
+1975
+Cincinnati Reds
+best 162-game NL season
+
+
+.250
+40
+120
+1962
+New York Mets
+worst 162-game NL season (2 games rained out)
+
+
+.265
+43
+119
+2003
+Detroit Tigers
+worst 162-game AL season
+
+
+.248
+38
+115
+1935
+Boston Braves
+worst 154-game NL season
+
+
+.235
+36
+117
+1916
+Philadelphia Athletics
+worst 154-game AL season
+
+
+.130
+20
+134
+1899
+Cleveland Spiders
+worst season ever
+
+
+National Basketball Association[edit]
+
+
+Win %
+Wins
+Losses
+Season
+Team
+Comment
+
+
+.890
+73
+9
+2015–16
+Golden State Warriors
+best 82 game season
+
+
+.110
+9
+73
+1972–73
+Philadelphia 76ers
+worst 82-game season
+
+
+.106
+7
+59
+2011–12
+Charlotte Bobcats
+worst season statistically
+
+
+National Hockey League[edit]
+In the National Hockey League, teams are awarded two points for a win, and one point for either a tie (a discontinued statistic) or an overtime loss. It can be calculated as follows:
+
+
+  
+    
+      
+        
+          P
+          o
+          i
+          n
+          t
+          s
+        
+         
+        
+          p
+          e
+          r
+          c
+          e
+          n
+          t
+          a
+          g
+          e
+        
+        =
+        
+          
+            
+              P
+              o
+              i
+              n
+              t
+              s
+            
+            
+              T
+              o
+              t
+              a
+              l
+               
+              p
+              o
+              s
+              s
+              i
+              b
+              l
+              e
+               
+              p
+              o
+              i
+              n
+              t
+              s
+            
+          
+        
+        =
+        
+          
+            
+              O
+              v
+              e
+              r
+              t
+              i
+              m
+              e
+               
+              L
+              o
+              s
+              s
+              e
+              s
+              +
+              (
+              2
+              ×
+              W
+              i
+              n
+              s
+              )
+            
+            
+              2
+              ×
+              G
+              a
+              m
+              e
+              s
+               
+              P
+              l
+              a
+              y
+              e
+              d
+            
+          
+        
+      
+    
+    {\displaystyle \mathrm {Points} \ \mathrm {percentage} ={\frac {\mathrm {Points} }{\mathrm {Total\ possible\ points} }}={\frac {\mathrm {Overtime\ Losses+(2\times Wins)} }{\mathrm {2\times Games\ Played} }}}
+  
+
+
+
+
+Points %
+Wins
+Losses
+Ties
+Points
+Season
+Team
+Comments
+
+
+.825
+60
+8
+12
+132
+1976–77
+Montreal Canadiens
+best points % in post-expansion NHL
+
+
+.131
+8
+67
+5
+21
+1974–75
+Washington Capitals
+worst points % in post-expansion NHL
+
+
+Further information: List of NHL records (team)
+See also[edit]
+
+Group tournament ranking system
+
+References[edit]
+
+
+
+^ "Career Leaders and Records for Points Percentage (Goalie)". Hockey-Reference.com. Retrieved 24 May 2009. 
+^ "2008–2009 – REGULAR SEASON – SUMMARY – POINT PERCENTAGE". NHL.com. Retrieved 24 May 2009. 
+
+
+
+
+
+
+

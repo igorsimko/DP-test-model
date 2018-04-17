@@ -1,0 +1,257 @@
+In baseball, value over replacement player (or VORP) is a statistic popularized by Keith Woolner that demonstrates how much a hitter contributes offensively or how much a pitcher contributes to his team in comparison to a fictitious "replacement player," who is an average fielder at his position and a below average hitter.[1][2] A replacement player performs at "replacement level," which is the level of performance an average team can expect when trying to replace a player at minimal cost, also known as "freely available talent."
+VORP's usefulness is in the fact that it measures contribution at the margin (as in marginal utility). Other statistics compare players to the league average, which is good for cross-era analysis (example: 90 runs created in 1915 are much better than 90 RC in 1996, because runs were more scarce in 1915). However, league-average comparisons break down when considering a player's total, composite contribution to a team. Baseball is a zero-sum game; in other words, one team can only win if another loses. A team wins by scoring more runs than its opponent.
+It follows, then, that a contribution of any runs helps a team toward a win, no matter how small the contribution. However, the Major Leagues are highly competitive, and talent distribution in baseball does not resemble the traditional "bell curve" of a normal distribution; rather, the majority of players fall within the category of "below-average" or worse. (Since only the most talented baseball players make the Major Leagues, if all Americans' baseball talent was distributed on a bell curve then the Major Leagues would only see the uppermost edge of it, resulting in a "right-skewed" distribution.) Therefore, the so-called "average player" does not have a value of zero, like in Pete Palmer's Total Player Rating,[citation needed] but instead is a valued commodity. One alternative is to rank players using "counting stats"—simply their gross totals—but this is unacceptable as well, since it is likely that the contribution a marginal player makes, even if it does help a team win one game, is not enough to justify his presence in the Majors. This is where the concept of the replacement level enters the picture.
+VORP is a cumulative stat or counting stat, not a projected stat. For example, if Bob Jones has a VORP of +25 runs after 81 games, he has contributed 25 more runs of offense to his team than the theoretical replacement player would have, over 81 games. As Bob Jones continues to play the rest of the season, his VORP will increase or decrease, depending upon his performance, and settle at a final figure, e.g., +50 runs, at the end of the season.
+
+
+
+Contents
+
+
+1 For hitters
+2 For pitchers
+3 See also
+4 Citations
+5 References
+
+
+
+For hitters[edit]
+The currency of baseball is the out. There is a finite number of outs that a team can make in one game, and it is almost always 27 (or 3 outs/inning * 9 innings/game). A player consumes these outs to create runs, and at the simplest level, runs and outs are the only truly meaningful stats in baseball. Outs are calculated by simply taking at-bats and subtracting hits, then adding in various outs that don't count toward at-bats: sacrifice hits, sacrifice flies, caught stealing, and grounded into double-play. Runs may be estimated by one of many run-approximation methods: Bill James' runs created, Pete Palmer's linear weights,[citation needed] BaseRuns, etc. Baseball Prospectus author Keith Woolner uses Clay Davenport's Equivalent Runs in the calculation of VORP. Armed with runs and outs (for the player and that player's league), one can finally calculate VORP.
+Critics of VORP take issue with where the formula's arbitrary "replacement level" is set.[citation needed] Many equations and methods exist for finding the replacement level, but most will set the level somewhere around 80% of the league average, in terms of runs per out.[citation needed] There are two exceptions to this, though: catchers, who shoulder a larger defensive responsibility than any other player in the lineup (and are therefore more scarce), have a replacement level at 75% of the league average. At the other end of the defensive spectrum, first basemen and designated hitters must produce at a level above 85% of the average to be considered better than "replacement level," since defense is not a big consideration at either position (it is not a consideration at all for the DH).
+Therefore, to calculate VORP one must multiply the league's average runs per out by the player's total outs; this provides the number of runs an average player would have produced given that certain number of outs to work with. Now multiply that number (of runs) by .8, or whatever percentage of average the replacement level is designated to be; the result is the number of runs you could expect a "replacement player" to put up with that number of outs. Simply subtract the replacement's runs created from the player's actual runs created, and the result is VORP.
+This is not the final adjustment, however: while the replacement's run total will be park-neutral (by definition, because replacement numbers are derived from league averages), the player's raw numbers won't be. Before calculating the VORP, the individual player stats must be normalized via park factors to eliminate the distortions that can be created by each ballpark, especially extreme parks like Coors Field in Denver (where the thin high-altitude air allows baseballs to travel farther than at sea level, although the humidor has significantly decreased the runs scored in Coors Field, to the extent that Denver is no longer considered a pure hitter's haven)[3] and Petco Park in San Diego (where the heavier sea air couples with distant fences to suppress run-scoring).[4] After the final adjustment, the resultant VORP may be used to estimate how "valuable" the player in question is by providing a good picture of that player's marginal utility.
+For pitchers[edit]
+VORP can also be calculated for pitchers, as a measurement of the number of runs he has prevented from scoring that a replacement-level pitcher would have allowed. The concept is essentially the same as it was for hitters: using the player's playing time (in a pitcher's case, his innings pitched), determine how many runs a theoretical "replacement" would have given up in that playing time (at the most basic level, the replacement level is equal to 1 plus the league's average runs per game), and subtract from that number the amount actually allowed by the pitcher to arrive at VORP. As an aside, Run Average (RA9) is used as a measure of pitcher quality rather than Earned Run Average (ERA).[citation needed] ERA is heavily dependent on the concept of the error, which most sabermetricians have tried to shy away from because it is a scorer's opinion; also, we are trying to determine VORP in units of runs, so a calculation that uses earned runs is not of very much use to us in this instance.
+The "old" definition of pitching VORP, as alluded to above, was simply:[citation needed]
+
+
+  
+    
+      
+        V
+        O
+        R
+        P
+        =
+        I
+        P
+        ⋅
+        
+          
+            
+              (
+              
+                
+                  
+                    L
+                    e
+                    a
+                    g
+                    u
+                    e
+                    R
+                  
+                  
+                    L
+                    e
+                    a
+                    g
+                    u
+                    e
+                    G
+                  
+                
+              
+              +
+              1
+              )
+              −
+              R
+              A
+              9
+            
+            9
+          
+        
+      
+    
+    {\displaystyle VORP=IP\cdot {({LeagueR \over LeagueG}+1)-RA9 \over 9}}
+  
+
+
+where
+
+R = Runs
+IP = Innings pitched
+G = Games played
+RA9 = Run average, sometimes written as RA
+
+RA9 is calculated for the pitcher in question as
+
+
+  
+    
+      
+        R
+        A
+        9
+        =
+        9
+        ⋅
+        
+          
+            R
+            
+              I
+              P
+            
+          
+        
+      
+    
+    {\displaystyle RA9=9\cdot {R \over IP}}
+  
+
+
+However, further research[which?] indicated that starting pitchers and relief pitchers have different replacement thresholds, as it is easier to put up a low RA9 in relief than as a starter.[citation needed] Armed with that knowledge, Baseball Prospectus 2002 published the current formula for determining the replacement level for pitchers:
+
+For starting pitchers, 
+  
+    
+      
+        R
+        e
+        p
+        l
+        .
+        L
+        e
+        v
+        e
+        l
+        =
+        (
+        1.37
+        ⋅
+        L
+        e
+        a
+        g
+        u
+        e
+        R
+        A
+        9
+        )
+        −
+        0.66
+      
+    
+    {\displaystyle Repl.Level=(1.37\cdot LeagueRA9)-0.66}
+  
+
+For relief pitcher, 
+  
+    
+      
+        R
+        e
+        p
+        l
+        .
+        L
+        e
+        v
+        e
+        l
+        =
+        (
+        1.70
+        ⋅
+        L
+        e
+        a
+        g
+        u
+        e
+        R
+        A
+        9
+        )
+        −
+        2.27
+      
+    
+    {\displaystyle Repl.Level=(1.70\cdot LeagueRA9)-2.27}
+  
+
+
+Therefore, the current formula for VORP is:[5]
+
+
+  
+    
+      
+        V
+        O
+        R
+        P
+        =
+        I
+        P
+        ⋅
+        
+          
+            
+              R
+              e
+              p
+              l
+              .
+              L
+              e
+              v
+              e
+              l
+              −
+              R
+              A
+              9
+            
+            9
+          
+        
+      
+    
+    {\displaystyle VORP=IP\cdot {Repl.Level-RA9 \over 9}}
+  
+
+
+As was the case with hitters, run average should be normalized for park effects before VORP is calculated. Pitcher VORP is on the same scale as that of hitters.
+See also[edit]
+
+Wins above replacement: another statistic with similar intentions
+
+Citations[edit]
+
+
+
+^ Keith Woolner, "Introduction to VORP: Value Over Replacement Player," Stathead.com (2001).
+^ Keith Woolner, "VORP: Measuring the Value of a Baseball Player's performance," Stathead.com (2002).
+^ Troy E. Renck , "More humidors likely on horizon," denverpost.com (2006).
+^ Dave Studeman , "Visiting the 2004 New Baseball Stadiums," hardballtimes.com (2004).
+^ Barnes, Nate. "Ultimate Guide to Value Over Replacement Player - VoRP". Sporting Charts. Retrieved 29 August 2016. 
+
+
+
+References[edit]
+
+Keith Woolner, "Understanding and Measuring Replacement Level," in Joe Sheehan, Ed., Baseball Prospectus 2002 (Brassey's Inc: Dulles, VA, 2002): 55-66.
+Rob Neyer, "The World According to VORP," ESPN.com (February 2, 2007). ESPN.com
+Derek Jacques, "Prospectus Toolbox: Value Over Replacement Player," BaseballProspectus.com (May 15, 2007).
+
+
+
+
+

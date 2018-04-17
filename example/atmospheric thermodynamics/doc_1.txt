@@ -1,0 +1,118 @@
+
+
+
+
+Dewcell (centre) with the protective guard used for storage and transportation on the left and the cover used while in operation on the right
+
+
+Dewcells,[1][2] dewcels[3] or dew cell[1][4] are instruments used for determining the dew point. They consist of a small heating element surrounded by a solution of lithium chloride. As the LiCl absorbs moisture from the air, conduction across the heating element increases, current in it increases, and heat increases, evaporating moisture from the salt solution. At a certain temperature the amount of moisture absorbed by the salt solution equals the amount evaporated (equilibrium).
+Inside the dewcell core a thermistor composite (or other temperature measurement device) changes electrical resistance with the temperature created by the heating. A front end processor provides a reference voltage, measures the output of the network, and calculates the dew point.
+References[edit]
+
+
+
+^ a b Public Works and Government Services Canada Translation Bureau
+^ WMO and Eumetcal
+^ MANOBS Chapter 6 - Humidity 6.5 Dewcel
+^ Some limitations and errors inherent in the use of the dew cell for measurement of atmospheric dew points
+
+
+
+External links[edit]
+
+
+
+Wikimedia Commons has media related to Dewcell.
+
+
+
+Foxboro Dewcel documentation
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Earth-based meteorological equipment and instrumentation
+
+
+
+
+
+
+Anemometer
+Atmometer
+Barograph
+Barometer
+Ceiling balloon
+Ceiling projector
+Ceilometer
+Dark adaptor goggles
+Dewcell
+Disdrometer
+Dropsonde
+Field mill
+Heat flux sensor
+Hygrometer
+Ice accretion indicator
+Lidar
+Lightning detector
+Nephelometer
+Nephoscope
+Pan evaporation
+Pyranometer
+Pyrheliometer
+Radiosonde
+Rain gauge
+Snow gauge
+Snowboard
+Snow pillow
+SODAR
+Solarimeter
+Sounding rocket
+Stevenson screen
+Sunshine recorder
+Tethersonde
+Thermo-hygrograph
+Thermometer
+Tide gauge
+Transmissometer
+Weather balloon
+Weather buoy
+Weather radar
+Weather vane
+Whole sky camera
+Wind profiler
+Windsock
+
+
+
+
+
+
+
+
+
+
+
+This climatology/meteorology–related article is a stub. You can help Wikipedia by expanding it.
+
+
+v
+t
+e
+
+
+
+
+
+
+
+
+

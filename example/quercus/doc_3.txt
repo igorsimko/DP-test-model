@@ -1,0 +1,206 @@
+
+
+Oak wilt
+
+
+
+Aerial photograph of an oak wilt center (St. Paul, MN). Robert L. Anderson, USDA Forest Service, Bugwood.org
+
+
+
+Causal agents
+Bretiziella fagacearum
+
+
+Hosts
+oaks
+
+
+Symptoms
+leaf discoloration, wilt, defoliation and death
+
+
+
+
+Bretiziella fagacearum
+
+
+Scientific classification
+
+
+Kingdom:
+Fungi
+
+
+Division:
+Ascomycota
+
+
+Subdivision:
+Pezizomycotina
+
+
+Class:
+Sordariomycetes
+
+
+Order:
+Microascales
+
+
+Family:
+Ceratocystidaceae
+
+
+Genus:
+Bretiziella
+
+
+Species:
+B. fagacearum
+
+
+Binomial name
+
+
+Bretiziella fagacearum
+
+(T. W. Bretz) J. Hunt
+
+
+Oak wilt is a fungal disease affecting oak trees caused by the fungus Bretiziella fagacearum. Symptoms vary by tree species, but generally consist of leaf discoloration, wilt, defoliation, and death. The fungus spreads from diseased to healthy trees from insects or by connections between tree roots. Management of the disease historically meant preventing infection by avoiding tree wounds, removing diseased trees and breaking root connections with vibratory plows, trenchers/rocksaws or hoes. Present methods focus on the area of monocultures and restoring correct ecosystems using soils. Fungicide treatments, used in urban areas, are available and are mostly preventative as well. Oak wilt is an important disease of oak for timber production and of oak trees in urban areas.
+
+
+
+Contents
+
+
+1 Hosts and symptoms
+2 Disease Cycle
+3 Environment
+4 Management
+5 Importance
+
+5.1 July 1, 2011 Windstorm in Minnesota and Wisconsin
+
+5.1.1 Infection Levels-Spore Loads
+5.1.2 Sources
+5.1.3 Rate of Spread
+
+
+
+
+6 Host-Parasite Interaction
+7 Origin
+8 See also
+
+8.1 Mortality of oaks
+
+
+9 References
+10 External links
+
+
+
+Hosts and symptoms[edit]
+
+
+
+
+Photograph of leaf and whole tree symptoms of oak wilt in a red oak tree. Joseph O'Brien, USDA Forest Service, Bugwood.org
+
+
+Oak wilt affects all oak species, but affects the two main groups differently. Oaks in North and Central America are sorted into two groups based mostly upon porosity and corresponding leaf shape. The white oak group have rounded leaf edges and the pores are clogged with tyloses. The red oak group have pointed leaf edges and pores are large and open/not clogged. Because of this difference in porosity, red oak group trees die faster from oak wilt disease than white oak group trees. Common names of oaks are based upon common folklore or customs, which leads-to black oaks being in the red oak group. In the upper midwest, red oak group trees like black, northern red and northern pin are most threatened-by oak wilt for two reasons: they die faster and they produce spore mats. White oak group trees rarely produce spore mats, so overland spread of oak wilt from white oaks is not a problem. Oaks in the red oak group are particularly susceptible and, when infected, generally die over the course of a single summer. These oaks typically die from the top of the tree down as leaves become a bronze color and fall off the tree. Another symptom is discoloration of the vascular tissues. Brown streaks or spots can be seen under the bark in the sapwood.
+Oaks in the white oak group (white, swamp white, bur) are somewhat less susceptible when infected (white oak in particular) and can live for several years after infection, losing a few branches each season, from the top down. Some oaks in the white oak group, such as bur oak, are more susceptible than others, although not as susceptible as red oaks. Symptoms in white oak are similar to those in red oak.
+Oaks with oak wilt stand out with their dead crowns compared to a green canopy in the summer, so much so that oak wilt infections can be spotted from the air.
+Northern pin oak (Q. ellipsoidalis) susceptibility is extreme when monocultures exist. Northern pin oak forests are typically found on entisol soils (aka barren sands or lakebed sands) in Wisconsin and Minnesota, and these forests are often misidentified as oak savanna. Mistaking northern pin oak forest monocultures for oak savanna, then burning them for oak savanna restoration, has made state and federal lands north of Minneapolis-St Paul the largest oak wilt disease reservoirs in Minnesota.[1] See: https://commons.wikimedia.org/wiki/File:Cedar_Creek_2007_Oak_With_County_Line_Wiki_Version.jpg
+Live oak susceptibility is somewhat variable depending on environmental conditions but wilt and death usually occur within six months of infection. Live oak foliar symptoms differ from those of red and white oak. Infected live oak leaves develop chlorotic veins that eventually turn necrotic before falling off the tree.[2]
+Disease Cycle[edit]
+
+
+
+
+Illustration of the oak wilt disease cycle by Julie Martinez
+
+
+
+
+
+
+Photograph of spores produced by the oak wilt fungus. (a) Endoconidia (b) Conidiophore
+
+
+The oak wilt fungus spreads in two basic ways: transfer of spores from diseased to healthy trees by insect vectors and movement of the fungus from a diseased tree to a healthy tree through root grafts. If conditions are right after the oak has wilted and died, spores are produced on fungal mats that form under the bark of the tree. These mats produce asexual spores called endoconidia, which are barrel shaped spores produced in chains. If compatible mating types are present, these mats will also produce sexual spores called ascospores in fruiting structures called perithecia. Certain species of sap beetles are attracted to the fruity smell of these mats. They will visit the mats to feed and breed, thereby picking up the fungal spores. These same beetles are also attracted to the bleeding sap of wounded oak trees and can then deposit the spores picked up from the fungal mats. This method of transmission is important for introducing the fungus into a new area it could not have reached by transmission via root grafts.
+Transmission via root graft is the most common means of spread, as trees within as much as 15 m (50 feet) of a diseased tree can be infected. Oak wilt usually moves from diseased trees to healthy trees through roots that have become interconnected (root grafts). In this case, spores (also endoconidia) that have been produced inside the tree travel through the vascular tissue. Most root grafts form between oaks of the same species; red oak roots graft more commonly than do white oak roots, and grafts between red and white oaks are very rare.
+Environment[edit]
+In the Midwest and eastern United States, conditions are usually favorable for spore production and beetle activity in spring and early summer. In Texas, mat formation is most common in late fall and winter. Frequency of root graft formation, and therefore root graft transmission, is affected by soil type and stand composition (diversity of tree species). See disease cycle and management sections for details.
+Management[edit]
+Oak wilt is similar to Dutch elm disease but more controllable. Beetles that carry the oak wilt fungus do not have chewing mouth parts -and need some other creature or physical damage to create open wounds - whereas beetles that carry Dutch elm disease do have chewing mouth parts. Prevention is essential, as there is no permanent cure. To prevent beetle transmission, oaks should never be pruned in the spring months in the east and Midwest or February through June in Texas. Care should be taken to prevent injury to susceptible trees during this period, particularly from construction. If a tree is injured through a storm or accident in the spring, tree paint to cover the wound is advised. Reducing the source of spores is helpful. When an oak has died from oak wilt, trees should be debarked, split or chipped then burned or covered with plastic sheeting to effect composting. Heat from composting should destroy or severely enervate the fungus. Logs from trees infected with oak wilt should never be moved to unaffected areas, even for firewood.
+In the Lake States, if infection is discovered in a tree, a vibratory plow line, commonly called a trench (or better yet, two generally parallel trenches at different distances from the area of risk) may be plowed to a minimum depth of four and a half feet (54 inches) between it and other potentially susceptible species to prevent root graft disease transmission. Such plowing will sever root grafts that may transmit the disease to neighboring trees. In southern states like Texas, where heavy clay soils are prevalent, rocksaws are commonly used in lieu of vibratory plows. An infected tree should not be cut down before vibratory plowing, because that increases the risk of oak wilt migrating quickly via roots to nearby trees. Injections of propiconazole, a fungicide, can help prevent transmission as well; as many as a half dozen injections every six months may be required to protect a large red oak near infected trees. Injections every other year may also be used to treat a white oak, if it is not yet greatly affected.
+After 2005, treatment goals shifted towards "passive oak wilt control" on properties less than 5 acres and, for large acreages, treating to natural barriers or edges, especially when managing northern pin oaks on entisol soils. Passive control means letting the disease burn out over a few years and allowing native species to take over. Treating to natural barriers means restoring to native forest or savanna species by harvesting out to where oak wilt can no longer expand via root grafts. All oaks of the species that is infected are logged out, whether they are infected or healthy. Passive oak wilt control on large acreages creates short and long term problems for oaks. White oak group trees are at risk for infection from nearby sporulating red oak group trees for the short term; re-developing monocultures of oaks that sustain oak wilt infections for 50-100 more years are long term risks. Treating to natural barriers/edges or cover type changes is by far the best method to use when controlling oak wilt on large acreages.
+Importance[edit]
+Oak wilt is a devastating disease, killing trees rapidly in a single season. It is an important disease in urban areas where a few oak trees in a homeowner's yard may be of great value. If one tree in the homeowners yard becomes infected it will die. Not only will the homeowner need to pay to remove the dead tree, they will also need to protect the rest of the oak trees in their yard or face the prospect that nearby trees in their yard will continue to die. Loss of trees from a property can also lead to a decrease in property value. Even if a homeowner is vigilant about pruning at the correct time, storms and construction can damage trees and introduce oak wilt into a neighborhood.
+July 1, 2011 Windstorm in Minnesota and Wisconsin[edit]
+In 2012 and 2013, oak wilt disease showed-up in areas of east central Minnesota and northern Wisconsin where it had never been seen before. The infections appeared to have coincided-with the July 1, 2011 mesoscale convective vortex (MCV) windstorm,[3] which had windspeeds of over 100 mph, because foresters found that first oaks infected were 7-1-11 storm-damaged oaks. They also knew infections happened within 48 hours of storm damage. Approximately 3/4 million acres in Minnesota, possibly 10 times that area for Wisconsin and up to the Keweenaw Peninsula in Michigan, were affected by the storm. Millions of freshly wounded oak trees were now open to infection from trillions of oak wilt spores carried-in by the storm.
+Infection Levels-Spore Loads[edit]
+It's difficult for oaks to get infected in mid summer - after July 1 - because of reduced sporulation from red oaks and summerwood cell development. Two factors changed this around on July 1, 2011: the trillions of oak wilt spores carried-in from west-southwest and re-opening of oaks' 2011 earlywood cells. The oak wilt fungus is too large to fit within the smaller latewood cells, but can move upward through the much larger earlywood cells. This increased the chances of infection to storm damaged oaks 1,000 - 1,000,000 times the usual. Instead of one new infection per 1,500 acres, foresters were seeing one new infection per 10 acres. The manageable level of oak wilt disease is one infection per 640 acres. One year after the storm, in summer 2012, oak wilt specialists found 10 - 20 infections per 100 acres both in Rushseba Township, Chisago County Minnesota and at St. Croix State Park[4] in Pine County, Minnesota. Wounding & infecting at ten oaks per 100 acres, one oak per 100 acres or one oak per 200 acres, presents a serious threat to the oak resource. St. Croix State Park's northern-most infected oak and southern-most infected oak were 10 miles apart. The only way you get that broad of coverage for infection in mid-summer is, huge spore supplies and the re-opening of that years' early wood cells.
+Sources[edit]
+The only sources with that many hundreds of acres of oak wilt spores were located upwind in the three oak wilt "reservoirs" on state and federal lands in Sherburne, Anoka, Isanti and Chisago counties of Minnesota(see Hosts and Symptoms). The sources of oak wilt spores were not nearby.
+Rate of Spread[edit]
+Before the windstorm, oak wilt could spread north at three quarters of a mile per year and east or west at one and one half miles per year.[5] During the storm, oak wilt spread at up to 100 miles per hour. In the two years following the 2011 storm, infections were found at new locations in four Minnesota and at least one (Sawyer) of three Wisconsin counties.[6] These 2011 infections have serious ecological/economic impacts, including loss of stumpage and real estate values, and will only get worse if summer (aerial with ground follow up) surveys aren't established as soon as possible.
+In forest systems, oak wilt is an important disease of oak produced for hardwood lumber and railroad ties.
+Host-Parasite Interaction[edit]
+Hardwood vascular wilt diseases are characterized by blockage of the tree's water-conducting vessels by either the physical presence of the pathogen (mycelium and spores), or through the host's own response to infection. Oak trees, in response to wounding or infection often produce tyloses, balloon-like outgrowths of the vessels' cell walls that can function to wall-off pathogens and prevent infections from spreading. Red oaks appear to lack a host-response mechanism that restricts the pathogen's movement, and infection usually kills the tree by wilting the entire crown. White oaks, which produce tyloses more quickly and in greater numbers, are more resistant to the disease, though the exact mechanism for this resistance is unknown.
+Origin[edit]
+The causal agent, Bretiziella fagacearum, is found only within the borders of the United States, but the origin of the pathogen is not known. Recent evidence suggests that the pathogen was introduced into the United States, possibly from Central or South America, or Mexico.[7] The disease currently affects much of the eastern and central US, from Virginia to Minnesota to Arkansas, with pockets of infection as far southwestward as the Hill Country of central Texas. One area of infection has recently been discovered as far northeastward as Glenville, New York. It is particularly common in the Midwest.
+See also[edit]
+Mortality of oaks[edit]
+
+Japanese oak wilt - caused by Raffaelea quercivora in Japan
+Sudden oak death - caused by Phytophthora ramorum
+
+References[edit]
+
+
+^ Nelson, Steven (2011). Savanna Soils of Minnesota. Minnesota: Self. pp. 21-22,29-30. ISBN 978-0-615-50320-2.
+^ "How to identify and manage oak wilt in Texas" (PDF). Texasokwilt.org. USDA Forest Service, Southern Research Station. June 2003. Retrieved June 12, 2017. Leaves on diseased live oaks often develop chlorotic (yellow) veins that eventually turn necrotic (brown) 
+^ NWS NOAA http://www.crh.noaa.gov/images/mpx/StormReports/01July2011.pdf
+^ Minnesota DNR Forestry 2012 Forest Health Annual Report, p. 37
+^ Minnesota DNR Forestry (2001).
+^ Wisconsin DNR Division of Forestry, Annual Report 2012 p. 6
+^ Juzwik, J.; Harrington, T.C.; MacDonald, W.L.; Appel, D.N. (2008), "The origin of Ceratocystis fagacearum, the oak wilt fungus", "Annual Review of Phytopathology",46: 13-26,
+
+
+External links[edit]
+
+USDA Forest Service article
+USDA "How to prevent Oak Wilt"
+Oak Wilt in Minnesota
+
+
+
+
+
+
+Taxon identifiers
+
+
+
+Wd: Q1991788
+EoL: 190694
+EPPO: CERAFA
+Fungorum: 294206
+GBIF: 5252299
+iNaturalist: 202626
+MycoBank: 294206
+NCBI: 72029
+
+
+
+
+
+
+
+
+
+

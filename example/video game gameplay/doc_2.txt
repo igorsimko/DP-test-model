@@ -1,0 +1,149 @@
+This article is about the sport term. For the cryptographic attack, see Timing attack.
+Time attack racing is a type of motorsport where the racers compete for the best lap time. Each vehicle is timed through circuits of the track. The racers make a preliminary circuit, then run the timed laps, and then finish with a cool-down lap.
+Time attack and time trial events differ by competition format and rules. Time attack has a limited number of laps, time trial has open sessions.
+Unlike other timed motorsport disciplines such as sprinting and hillclimbing, the car is required to start off under full rolling start conditions following a warm up lap where they will have to accelerate out as fast as possible to determine how fast they enter their timed lap.[1] Commonly, as the cars are modified road going cars, they are required to have tires authorized for road use.
+Time attack events began in Japan in the mid-1960s. They have since spread around the world. An international event known as World Time Attack Challenge[2] has been held at Sydney Motorsport Park, Australia since 2010 attracting the fastest time attack teams from around the globe to compete.
+
+
+
+Contents
+
+
+1 United States
+2 Germany
+3 Video games
+4 See also
+5 References
+6 External links
+
+
+
+United States[edit]
+National Auto Sport Association Time Trial (NASA TT) series is a national auto competition program, utilizing regional series based on a time trial style format, with rules that establish car classifications to provide a contest of driver skill. NASA TT is designed to bridge the gap between NASA HPDE (High Performance Driving Events), and wheel-to-wheel racing.
+NASA TT provides a venue for spirited on-track competition with a high degree of both safety and convenience. NASA TT competition will take place during NASA HPDE-4 sessions or in separate TT run groups, depending on the event schedule and number of participants. In addition to having a set of National NASA TT Rules, the rules, safety guidelines, and driving requirements of the HPDE-4 program apply to NASA TT. These rules can be found in the NASA CCR (Club Codes and Regs).
+
+
+
+
+Mini cooper race car time attack flying pigs racing
+
+
+Other events such as Gridlife offer a time attack event taking place in various locations across North America. The competition is divided into various groups based on car specification. The level varies from everyday driven vehicles to non road legal race cars. Each class also has its own set of rules and regulations on car specifications as the higher class one goes the less regulations one is faced with.[3] The top 12 competitors regardless of class will participate in the Final grid event where the driver is allowed one warm up lap, one hot lap, and one cool down lap. The hot lap however, will not count towards the overall trackbattle event. There is also a seasonal championship with every class having a champion based on points earned throughout the season.
+Germany[edit]
+In Germany the German Timeattack Masters is a time attack championship, held since 2013. It started being limited to Japanese cars only and opened up to vehicles of all makes in 2016. From 2013 to 2017 the championship consisted of four events, in 2018 that number increased to five for the overall championship.
+Events are held on various racing tracks, most of them located in Germany, like the Nürburgring Grand Prix course, the Lausitzring and the Hockenheimring. Additionally, for years, the TT Circuit Assen is used in cooperation with the Dutch Time Attack Masters. Formerly, races also took place on the german course Oschersleben.
+Each event consists of Warm Up, Qualifying and the Hotlap finals, with Qualifying rank and Hotlap rank counting for the overall championship. The Hotlap is only driven by the five fastest starters from the Qualifying.
+Groups are split according to car specifications, mainly regarding severity of modifications and aerodynamics. With more powerful classes, safety regulations are also tighter. Classes range from Club-class, being close-to-production, via the Pro-class, with more allowed aerodynamics and allowed engine swaps, to the Extreme-class where everything is allowed, that is not forbidden explicitly. While in lower classes a distinction between 2WD and 4WD is made, this is neglected in the Extreme-class.
+The series is independent and not connected to any larger organization like the DMSB.
+Video games[edit]
+Many computer and video games include a time attack (or time trial) mode, in which the main goal is to complete levels — or, in some cases, the entire game — as quickly as possible. This mode prioritizes completion time ahead of other measures of success such as high scores. In cases where a game does not have a dedicated time attack or trial mode, a fast completion is frequently known as a speedrun.
+Usually the best results achieved in a time attack mode are stored in long-term memory by the game (on a hard disk or non-volatile memory), so they can be shared with friends or improved upon at a later date. Racing games often feature "ghost cars" which are saved when the player sets a record time. In subsequent races, the ghost car follows the path the player took when setting that record, allowing them to clearly gauge how they are performing against the previous achievement. Saved ghost cars can often be shared with other players.
+The inclusion of a time attack mode can often be an effective way of adding replay value to a game. Racing games may also include ghost cars recorded by the development staff — attempting to beat their times can provide a final challenge to players who have mastered the rest of the game. Often the game provides other incentives to use the time attack feature; GoldenEye 007, a first-person shooter on the Nintendo 64, encouraged players to revisit levels more than once by offering unlockable cheat options as a reward for completing them within target times.
+Sometimes the settings of a time attack mode are "locked" in order to standardize competition between players. For example, Soul Calibur features a time attack mode automatically set to two rounds for a win, the normal difficulty setting and a default time limit; but it also features an alternative Arcade mode, which allows any option settings to be used and saves record times separately.
+Both speedrunning and time attacking have extensive online communities dedicated to achieving the fastest times possible.
+See also[edit]
+
+Speedrun
+High score
+Time trial
+
+References[edit]
+
+
+^ Time Attack FAQ's Archived 2007-09-12 at the Wayback Machine.
+^ World Time Attack Challenge home page
+^ "TIME ATTACK RULES". #GRIDLIFE. Retrieved 2017-11-09. 
+
+
+External links[edit]
+
+
+
+
+
+
+v
+t
+e
+
+
+Speedrunning
+
+
+
+Concepts
+
+
+
+Sequence breaking
+Time attack
+Glitching
+
+
+
+
+
+Tool-assisted speedruns
+
+
+
+Emulator
+Save state
+Re-recording
+
+
+
+
+
+Communities
+
+
+
+Speed Demos Archive
+
+Games Done Quick
+
+Summer 2016
+
+
+
+
+TheSpeedGamers
+Twin Galaxies
+
+
+
+
+
+Speedrunners
+
+
+
+Bananasaurus Rex
+PangaeaPanga
+pannenkoek2012
+SethBling
+Trihex
+Narcissa Wright
+
+
+
+
+
+Notable video games
+
+
+
+Super Mario records
+The Legend of Zelda records
+Quake Done Quick
+
+
+
+
+
+
+
+
+
+

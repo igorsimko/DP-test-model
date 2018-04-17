@@ -1,0 +1,2185 @@
+In mathematics, a unit vector in a normed vector space is a vector (often a spatial vector) of length 1. A unit vector is often denoted by a lowercase letter with a circumflex, or "hat": 
+  
+    
+      
+        
+          
+            
+              ı
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {\imath }}}
+  
+ (pronounced "i-hat"). The term direction vector is used to describe a unit vector being used to represent spatial direction, and such quantities are commonly denoted as d. Two 2D direction vectors, d1 and d2 are illustrated. 2D spatial directions represented this way are numerically equivalent to points on the unit circle.
+The same construct is used to specify spatial directions in 3D. As illustrated, each unique direction is equivalent numerically to a point on the unit sphere.
+
+
+
+
+Examples of two 2D direction vectors
+
+
+
+
+
+
+Examples of two 3D direction vectors
+
+
+The normalized vector or versor û of a non-zero vector u is the unit vector in the direction of u, i.e.,
+
+
+  
+    
+      
+        
+          
+            
+              u
+              ^
+            
+          
+        
+        =
+        
+          
+            
+              u
+            
+            
+              
+                |
+              
+              
+                u
+              
+              
+                |
+              
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {u}} ={\frac {\mathbf {u} }{|\mathbf {u} |}}}
+  
+
+
+where |u| is the norm (or length) of u. The term normalized vector is sometimes used as a synonym for unit vector.
+Unit vectors are often chosen to form the basis of a vector space. Every vector in the space may be written as a linear combination of unit vectors.
+By definition, in a Euclidean space the dot product of two unit vectors is a scalar value amounting to the cosine of the smaller subtended angle. In three-dimensional Euclidean space, the cross product of two arbitrary unit vectors is a third vector orthogonal to both of them having length equal to the sine of the smaller subtended angle. The normalized cross product corrects for this varying length, and yields the mutually orthogonal unit vector to the two inputs, applying the right-hand rule to resolve one of two possible directions.
+
+
+
+Contents
+
+
+1 Orthogonal coordinates
+
+1.1 Cartesian coordinates
+1.2 Cylindrical coordinates
+1.3 Spherical coordinates
+1.4 General unit vectors
+
+
+2 Curvilinear coordinates
+3 See also
+4 Notes
+5 References
+
+
+
+Orthogonal coordinates[edit]
+Cartesian coordinates[edit]
+Main articles: Standard basis and Versor (physics)
+Unit vectors may be used to represent the axes of a Cartesian coordinate system. For instance, the unit vectors in the direction of the x, y, and z axes of a three dimensional Cartesian coordinate system are
+
+
+  
+    
+      
+        
+          
+            
+              i
+              ^
+            
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  1
+                
+              
+              
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+              
+            
+            ]
+          
+        
+        ,
+        
+        
+        
+          
+            
+              j
+              ^
+            
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  0
+                
+              
+              
+                
+                  1
+                
+              
+              
+                
+                  0
+                
+              
+            
+            ]
+          
+        
+        ,
+        
+        
+        
+          
+            
+              k
+              ^
+            
+          
+        
+        =
+        
+          
+            [
+            
+              
+                
+                  0
+                
+              
+              
+                
+                  0
+                
+              
+              
+                
+                  1
+                
+              
+            
+            ]
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {i}} ={\begin{bmatrix}1\\0\\0\end{bmatrix}},\,\,\mathbf {\hat {j}} ={\begin{bmatrix}0\\1\\0\end{bmatrix}},\,\,\mathbf {\hat {k}} ={\begin{bmatrix}0\\0\\1\end{bmatrix}}}
+  
+
+
+They are sometimes referred to as the versors of the coordinate system, and they form a set of mutually orthogonal unit vectors, typically referred to as a standard basis in linear algebra.
+They are often denoted using normal vector notation (e.g., i or 
+  
+    
+      
+        
+          
+            
+              ı
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {\imath }}}
+  
+) rather than standard unit vector notation (e.g., 
+  
+    
+      
+        
+          
+            
+              ı
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {\imath }} }
+  
+). In most contexts it can be assumed that i, j, and k, (or 
+  
+    
+      
+        
+          
+            
+              ı
+              →
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle {\vec {\imath }},}
+  
+ 
+  
+    
+      
+        
+          
+            
+              ȷ
+              →
+            
+          
+        
+        ,
+      
+    
+    {\displaystyle {\vec {\jmath }},}
+  
+ and 
+  
+    
+      
+        
+          
+            
+              k
+              →
+            
+          
+        
+      
+    
+    {\displaystyle {\vec {k}}}
+  
+) are versors of a 3-D Cartesian coordinate system. The notations 
+  
+    
+      
+        (
+        
+          
+            
+              x
+              ^
+            
+          
+        
+        ,
+        
+          
+            
+              y
+              ^
+            
+          
+        
+        ,
+        
+          
+            
+              z
+              ^
+            
+          
+        
+        )
+      
+    
+    {\displaystyle (\mathbf {\hat {x}} ,\mathbf {\hat {y}} ,\mathbf {\hat {z}} )}
+  
+, 
+  
+    
+      
+        (
+        
+          
+            
+              
+                x
+                ^
+              
+            
+          
+          
+            1
+          
+        
+        ,
+        
+          
+            
+              
+                x
+                ^
+              
+            
+          
+          
+            2
+          
+        
+        ,
+        
+          
+            
+              
+                x
+                ^
+              
+            
+          
+          
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle (\mathbf {\hat {x}} _{1},\mathbf {\hat {x}} _{2},\mathbf {\hat {x}} _{3})}
+  
+, 
+  
+    
+      
+        (
+        
+          
+            
+              
+                e
+                ^
+              
+            
+          
+          
+            x
+          
+        
+        ,
+        
+          
+            
+              
+                e
+                ^
+              
+            
+          
+          
+            y
+          
+        
+        ,
+        
+          
+            
+              
+                e
+                ^
+              
+            
+          
+          
+            z
+          
+        
+        )
+      
+    
+    {\displaystyle (\mathbf {\hat {e}} _{x},\mathbf {\hat {e}} _{y},\mathbf {\hat {e}} _{z})}
+  
+, or 
+  
+    
+      
+        (
+        
+          
+            
+              
+                e
+                ^
+              
+            
+          
+          
+            1
+          
+        
+        ,
+        
+          
+            
+              
+                e
+                ^
+              
+            
+          
+          
+            2
+          
+        
+        ,
+        
+          
+            
+              
+                e
+                ^
+              
+            
+          
+          
+            3
+          
+        
+        )
+      
+    
+    {\displaystyle (\mathbf {\hat {e}} _{1},\mathbf {\hat {e}} _{2},\mathbf {\hat {e}} _{3})}
+  
+, with or without hat, are also used, particularly in contexts where i, j, k might lead to confusion with another quantity (for instance with index symbols such as i, j, k, used to identify an element of a set or array or sequence of variables).
+When a unit vector in space is expressed, with Cartesian notation, as a linear combination of i, j, k, its three scalar components can be referred to as direction cosines. The value of each component is equal to the cosine of the angle formed by the unit vector with the respective basis vector. This is one of the methods used to describe the orientation (angular position) of a straight line, segment of straight line, oriented axis, or segment of oriented axis (vector).
+Cylindrical coordinates[edit]
+The three orthogonal unit vectors appropriate to cylindrical symmetry are:
+
+
+  
+    
+      
+        
+          
+            
+              ρ
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {\rho }} }
+  
+ (also designated 
+  
+    
+      
+        
+          
+            
+              e
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {e}} }
+  
+ or 
+  
+    
+      
+        
+          
+            
+              s
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\boldsymbol {\hat {s}}}}
+  
+), representing the direction along which the distance of the point from the axis of symmetry is measured;
+
+  
+    
+      
+        
+          
+            
+              φ
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\boldsymbol {\hat {\varphi }}}}
+  
+, representing the direction of the motion that would be observed if the point were rotating counterclockwise about the symmetry axis;
+
+  
+    
+      
+        
+          
+            
+              z
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {z}} }
+  
+, representing the direction of the symmetry axis;
+
+They are related to the Cartesian basis 
+  
+    
+      
+        
+          
+            
+              x
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {x}}}
+  
+, 
+  
+    
+      
+        
+          
+            
+              y
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {y}}}
+  
+, 
+  
+    
+      
+        
+          
+            
+              z
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\hat {z}}}
+  
+ by:
+
+
+  
+    
+      
+        
+          
+            
+              ρ
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {\rho }} }
+  
+ = 
+  
+    
+      
+        cos
+        ⁡
+        φ
+        
+          
+            
+              x
+              ^
+            
+          
+        
+        +
+        sin
+        ⁡
+        φ
+        
+          
+            
+              y
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle \cos \varphi \mathbf {\hat {x}} +\sin \varphi \mathbf {\hat {y}} }
+  
+
+
+
+
+  
+    
+      
+        
+          
+            
+              φ
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\boldsymbol {\hat {\varphi }}}}
+  
+ = 
+  
+    
+      
+        −
+        sin
+        ⁡
+        φ
+        
+          
+            
+              x
+              ^
+            
+          
+        
+        +
+        cos
+        ⁡
+        φ
+        
+          
+            
+              y
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle -\sin \varphi \mathbf {\hat {x}} +\cos \varphi \mathbf {\hat {y}} }
+  
+
+
+
+
+  
+    
+      
+        
+          
+            
+              z
+              ^
+            
+          
+        
+        =
+        
+          
+            
+              z
+              ^
+            
+          
+        
+        .
+      
+    
+    {\displaystyle \mathbf {\hat {z}} =\mathbf {\hat {z}} .}
+  
+
+
+It is important to note that 
+  
+    
+      
+        
+          
+            
+              ρ
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {\rho }} }
+  
+ and 
+  
+    
+      
+        
+          
+            
+              φ
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\boldsymbol {\hat {\varphi }}}}
+  
+ are functions of 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+, and are not constant in direction. When differentiating or integrating in cylindrical coordinates, these unit vectors themselves must also be operated on. For a more complete description, see Jacobian matrix. The derivatives with respect to 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ are:
+
+
+  
+    
+      
+        
+          
+            
+              ∂
+              
+                
+                  
+                    ρ
+                    ^
+                  
+                
+              
+            
+            
+              ∂
+              φ
+            
+          
+        
+        =
+        −
+        sin
+        ⁡
+        φ
+        
+          
+            
+              x
+              ^
+            
+          
+        
+        +
+        cos
+        ⁡
+        φ
+        
+          
+            
+              y
+              ^
+            
+          
+        
+        =
+        
+          
+            
+              φ
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {\partial \mathbf {\hat {\rho }} }{\partial \varphi }}=-\sin \varphi \mathbf {\hat {x}} +\cos \varphi \mathbf {\hat {y}} ={\boldsymbol {\hat {\varphi }}}}
+  
+
+
+
+
+  
+    
+      
+        
+          
+            
+              ∂
+              
+                
+                  
+                    φ
+                    ^
+                  
+                
+              
+            
+            
+              ∂
+              φ
+            
+          
+        
+        =
+        −
+        cos
+        ⁡
+        φ
+        
+          
+            
+              x
+              ^
+            
+          
+        
+        −
+        sin
+        ⁡
+        φ
+        
+          
+            
+              y
+              ^
+            
+          
+        
+        =
+        −
+        
+          
+            
+              ρ
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {\partial {\boldsymbol {\hat {\varphi }}}}{\partial \varphi }}=-\cos \varphi \mathbf {\hat {x}} -\sin \varphi \mathbf {\hat {y}} =-\mathbf {\hat {\rho }} }
+  
+
+
+
+
+  
+    
+      
+        
+          
+            
+              ∂
+              
+                
+                  
+                    z
+                    ^
+                  
+                
+              
+            
+            
+              ∂
+              φ
+            
+          
+        
+        =
+        
+          0
+        
+        .
+      
+    
+    {\displaystyle {\frac {\partial \mathbf {\hat {z}} }{\partial \varphi }}=\mathbf {0} .}
+  
+
+
+Spherical coordinates[edit]
+The unit vectors appropriate to spherical symmetry are: 
+  
+    
+      
+        
+          
+            
+              r
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {r}} }
+  
+, the direction in which the radial distance from the origin increases; 
+  
+    
+      
+        
+          
+            
+              φ
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\boldsymbol {\hat {\varphi }}}}
+  
+, the direction in which the angle in the x-y plane counterclockwise from the positive x-axis is increasing; and 
+  
+    
+      
+        
+          
+            
+              θ
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\boldsymbol {\hat {\theta }}}}
+  
+, the direction in which the angle from the positive z axis is increasing. To minimize degeneracy, the polar angle is usually taken 
+  
+    
+      
+        0
+        ≤
+        θ
+        ≤
+        
+          180
+          
+            ∘
+          
+        
+      
+    
+    {\displaystyle 0\leq \theta \leq 180^{\circ }}
+  
+. It is especially important to note the context of any ordered triplet written in spherical coordinates, as the roles of 
+  
+    
+      
+        
+          
+            
+              φ
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\boldsymbol {\hat {\varphi }}}}
+  
+ and 
+  
+    
+      
+        
+          
+            
+              θ
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\boldsymbol {\hat {\theta }}}}
+  
+ are often reversed. Here, the American "physics" convention[1] is used. This leaves the azimuthal angle 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ defined the same as in cylindrical coordinates. The Cartesian relations are:
+
+
+  
+    
+      
+        
+          
+            
+              r
+              ^
+            
+          
+        
+        =
+        sin
+        ⁡
+        θ
+        cos
+        ⁡
+        φ
+        
+          
+            
+              x
+              ^
+            
+          
+        
+        +
+        sin
+        ⁡
+        θ
+        sin
+        ⁡
+        φ
+        
+          
+            
+              y
+              ^
+            
+          
+        
+        +
+        cos
+        ⁡
+        θ
+        
+          
+            
+              z
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {r}} =\sin \theta \cos \varphi \mathbf {\hat {x}} +\sin \theta \sin \varphi \mathbf {\hat {y}} +\cos \theta \mathbf {\hat {z}} }
+  
+
+
+
+
+  
+    
+      
+        
+          
+            
+              θ
+              ^
+            
+          
+        
+        =
+        cos
+        ⁡
+        θ
+        cos
+        ⁡
+        φ
+        
+          
+            
+              x
+              ^
+            
+          
+        
+        +
+        cos
+        ⁡
+        θ
+        sin
+        ⁡
+        φ
+        
+          
+            
+              y
+              ^
+            
+          
+        
+        −
+        sin
+        ⁡
+        θ
+        
+          
+            
+              z
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\boldsymbol {\hat {\theta }}}=\cos \theta \cos \varphi \mathbf {\hat {x}} +\cos \theta \sin \varphi \mathbf {\hat {y}} -\sin \theta \mathbf {\hat {z}} }
+  
+
+
+
+
+  
+    
+      
+        
+          
+            
+              φ
+              ^
+            
+          
+        
+        =
+        −
+        sin
+        ⁡
+        φ
+        
+          
+            
+              x
+              ^
+            
+          
+        
+        +
+        cos
+        ⁡
+        φ
+        
+          
+            
+              y
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\boldsymbol {\hat {\varphi }}}=-\sin \varphi \mathbf {\hat {x}} +\cos \varphi \mathbf {\hat {y}} }
+  
+
+
+The spherical unit vectors depend on both 
+  
+    
+      
+        φ
+      
+    
+    {\displaystyle \varphi }
+  
+ and 
+  
+    
+      
+        θ
+      
+    
+    {\displaystyle \theta }
+  
+, and hence there are 5 possible non-zero derivatives. For a more complete description, see Jacobian matrix and determinant. The non-zero derivatives are:
+
+
+  
+    
+      
+        
+          
+            
+              ∂
+              
+                
+                  
+                    r
+                    ^
+                  
+                
+              
+            
+            
+              ∂
+              φ
+            
+          
+        
+        =
+        −
+        sin
+        ⁡
+        θ
+        sin
+        ⁡
+        φ
+        
+          
+            
+              x
+              ^
+            
+          
+        
+        +
+        sin
+        ⁡
+        θ
+        cos
+        ⁡
+        φ
+        
+          
+            
+              y
+              ^
+            
+          
+        
+        =
+        sin
+        ⁡
+        θ
+        
+          
+            
+              φ
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {\partial \mathbf {\hat {r}} }{\partial \varphi }}=-\sin \theta \sin \varphi \mathbf {\hat {x}} +\sin \theta \cos \varphi \mathbf {\hat {y}} =\sin \theta {\boldsymbol {\hat {\varphi }}}}
+  
+
+
+
+
+  
+    
+      
+        
+          
+            
+              ∂
+              
+                
+                  
+                    r
+                    ^
+                  
+                
+              
+            
+            
+              ∂
+              θ
+            
+          
+        
+        =
+        cos
+        ⁡
+        θ
+        cos
+        ⁡
+        φ
+        
+          
+            
+              x
+              ^
+            
+          
+        
+        +
+        cos
+        ⁡
+        θ
+        sin
+        ⁡
+        φ
+        
+          
+            
+              y
+              ^
+            
+          
+        
+        −
+        sin
+        ⁡
+        θ
+        
+          
+            
+              z
+              ^
+            
+          
+        
+        =
+        
+          
+            
+              θ
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {\partial \mathbf {\hat {r}} }{\partial \theta }}=\cos \theta \cos \varphi \mathbf {\hat {x}} +\cos \theta \sin \varphi \mathbf {\hat {y}} -\sin \theta \mathbf {\hat {z}} ={\boldsymbol {\hat {\theta }}}}
+  
+
+
+
+
+  
+    
+      
+        
+          
+            
+              ∂
+              
+                
+                  
+                    θ
+                    ^
+                  
+                
+              
+            
+            
+              ∂
+              φ
+            
+          
+        
+        =
+        −
+        cos
+        ⁡
+        θ
+        sin
+        ⁡
+        φ
+        
+          
+            
+              x
+              ^
+            
+          
+        
+        +
+        cos
+        ⁡
+        θ
+        cos
+        ⁡
+        φ
+        
+          
+            
+              y
+              ^
+            
+          
+        
+        =
+        cos
+        ⁡
+        θ
+        
+          
+            
+              φ
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {\partial {\boldsymbol {\hat {\theta }}}}{\partial \varphi }}=-\cos \theta \sin \varphi \mathbf {\hat {x}} +\cos \theta \cos \varphi \mathbf {\hat {y}} =\cos \theta {\boldsymbol {\hat {\varphi }}}}
+  
+
+
+
+
+  
+    
+      
+        
+          
+            
+              ∂
+              
+                
+                  
+                    θ
+                    ^
+                  
+                
+              
+            
+            
+              ∂
+              θ
+            
+          
+        
+        =
+        −
+        sin
+        ⁡
+        θ
+        cos
+        ⁡
+        φ
+        
+          
+            
+              x
+              ^
+            
+          
+        
+        −
+        sin
+        ⁡
+        θ
+        sin
+        ⁡
+        φ
+        
+          
+            
+              y
+              ^
+            
+          
+        
+        −
+        cos
+        ⁡
+        θ
+        
+          
+            
+              z
+              ^
+            
+          
+        
+        =
+        −
+        
+          
+            
+              r
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {\partial {\boldsymbol {\hat {\theta }}}}{\partial \theta }}=-\sin \theta \cos \varphi \mathbf {\hat {x}} -\sin \theta \sin \varphi \mathbf {\hat {y}} -\cos \theta \mathbf {\hat {z}} =-\mathbf {\hat {r}} }
+  
+
+
+
+
+  
+    
+      
+        
+          
+            
+              ∂
+              
+                
+                  
+                    φ
+                    ^
+                  
+                
+              
+            
+            
+              ∂
+              φ
+            
+          
+        
+        =
+        −
+        cos
+        ⁡
+        φ
+        
+          
+            
+              x
+              ^
+            
+          
+        
+        −
+        sin
+        ⁡
+        φ
+        
+          
+            
+              y
+              ^
+            
+          
+        
+        =
+        −
+        sin
+        ⁡
+        θ
+        
+          
+            
+              r
+              ^
+            
+          
+        
+        −
+        cos
+        ⁡
+        θ
+        
+          
+            
+              θ
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle {\frac {\partial {\boldsymbol {\hat {\varphi }}}}{\partial \varphi }}=-\cos \varphi \mathbf {\hat {x}} -\sin \varphi \mathbf {\hat {y}} =-\sin \theta \mathbf {\hat {r}} -\cos \theta {\boldsymbol {\hat {\theta }}}}
+  
+
+
+General unit vectors[edit]
+Main article: Orthogonal coordinates
+Common general themes of unit vectors occur throughout physics and geometry:[2]
+
+
+Unit vector
+Nomenclature
+Diagram
+
+
+Tangent vector to a curve/flux line
+
+  
+    
+      
+        
+          
+            
+              t
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {t}} }
+  
+
+ 
+A normal vector 
+  
+    
+      
+        
+          
+            
+              n
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {n}} }
+  
+ to the plane containing and defined by the radial position vector 
+  
+    
+      
+        r
+        
+          
+            
+              r
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle r\mathbf {\hat {r}} }
+  
+ and angular tangential direction of rotation 
+  
+    
+      
+        θ
+        
+          
+            
+              θ
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle \theta {\boldsymbol {\hat {\theta }}}}
+  
+ is necessary so that the vector equations of angular motion hold.
+
+
+
+Normal to a surface tangent plane/plane containing radial position component and angular tangential component
+
+  
+    
+      
+        
+          
+            
+              n
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {n}} }
+  
+
+In terms of polar coordinates; 
+  
+    
+      
+        
+          
+            
+              n
+              ^
+            
+          
+        
+        =
+        
+          
+            
+              r
+              ^
+            
+          
+        
+        ×
+        
+          
+            
+              θ
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {n}} =\mathbf {\hat {r}} \times {\boldsymbol {\hat {\theta }}}}
+  
+
+
+
+
+Binormal vector to tangent and normal
+
+  
+    
+      
+        
+          
+            
+              b
+              ^
+            
+          
+        
+        =
+        
+          
+            
+              t
+              ^
+            
+          
+        
+        ×
+        
+          
+            
+              n
+              ^
+            
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {b}} =\mathbf {\hat {t}} \times \mathbf {\hat {n}} }
+  
+[3]
+
+
+Parallel to some axis/line
+
+  
+    
+      
+        
+          
+            
+              
+                e
+                ^
+              
+            
+          
+          
+            ∥
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {e}} _{\parallel }}
+  
+
+
+One unit vector 
+  
+    
+      
+        
+          
+            
+              
+                e
+                ^
+              
+            
+          
+          
+            ∥
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {e}} _{\parallel }}
+  
+ aligned parallel to a principal direction (red line), and a perpendicular unit vector 
+  
+    
+      
+        
+          
+            
+              
+                e
+                ^
+              
+            
+          
+          
+            ⊥
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {e}} _{\bot }}
+  
+ is in any radial direction relative to the principal line.
+
+
+
+Perpendicular to some axis/line in some radial direction
+
+  
+    
+      
+        
+          
+            
+              
+                e
+                ^
+              
+            
+          
+          
+            ⊥
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {e}} _{\bot }}
+  
+
+
+
+Possible angular deviation relative to some axis/line
+
+  
+    
+      
+        
+          
+            
+              
+                e
+                ^
+              
+            
+          
+          
+            ∠
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {e}} _{\angle }}
+  
+
+
+Unit vector at acute deviation angle φ (including 0 or π/2 rad) relative to a principal direction.
+
+
+
+Curvilinear coordinates[edit]
+In general, a coordinate system may be uniquely specified using a number of linearly independent unit vectors 
+  
+    
+      
+        
+          
+            
+              
+                e
+                ^
+              
+            
+          
+          
+            n
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {e}} _{n}}
+  
+ equal to the degrees of freedom of the space. For ordinary 3-space, these vectors may be denoted 
+  
+    
+      
+        
+          
+            
+              
+                e
+                ^
+              
+            
+          
+          
+            1
+          
+        
+        ,
+        
+          
+            
+              
+                e
+                ^
+              
+            
+          
+          
+            2
+          
+        
+        ,
+        
+          
+            
+              
+                e
+                ^
+              
+            
+          
+          
+            3
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {e}} _{1},\mathbf {\hat {e}} _{2},\mathbf {\hat {e}} _{3}}
+  
+. It is nearly always convenient to define the system to be orthonormal and right-handed:
+
+
+  
+    
+      
+        
+          
+            
+              
+                e
+                ^
+              
+            
+          
+          
+            i
+          
+        
+        ⋅
+        
+          
+            
+              
+                e
+                ^
+              
+            
+          
+          
+            j
+          
+        
+        =
+        
+          δ
+          
+            i
+            j
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {e}} _{i}\cdot \mathbf {\hat {e}} _{j}=\delta _{ij}}
+  
+
+
+  
+    
+      
+        
+          
+            
+              
+                e
+                ^
+              
+            
+          
+          
+            i
+          
+        
+        ⋅
+        (
+        
+          
+            
+              
+                e
+                ^
+              
+            
+          
+          
+            j
+          
+        
+        ×
+        
+          
+            
+              
+                e
+                ^
+              
+            
+          
+          
+            k
+          
+        
+        )
+        =
+        
+          ε
+          
+            i
+            j
+            k
+          
+        
+      
+    
+    {\displaystyle \mathbf {\hat {e}} _{i}\cdot (\mathbf {\hat {e}} _{j}\times \mathbf {\hat {e}} _{k})=\varepsilon _{ijk}}
+  
+
+
+where δij is the Kronecker delta (which is 1 for i = j and 0 otherwise) and 
+  
+    
+      
+        
+          ε
+          
+            i
+            j
+            k
+          
+        
+      
+    
+    {\displaystyle \varepsilon _{ijk}}
+  
+ is the Levi-Civita symbol (which is 1 for permutations ordered as ijk and −1 for permutations ordered as kji).
+See also[edit]
+
+
+
+Look up unit vector in Wiktionary, the free dictionary.
+
+
+
+Cartesian coordinate system
+Coordinate system
+Curvilinear coordinates
+Four-velocity
+Jacobian matrix and determinant
+Polar coordinate system
+Right versor
+Unit interval
+Unit square, cube, circle, and sphere
+
+Notes[edit]
+
+
+
+^ Tevian Dray and Corinne A. Manogue,Spherical Coordinates, College Math Journal 34, 168-169 (2003).
+^ F. Ayres; E. Mandelson (2009). Calculus (Schaum's Outlines Series) (5th ed.). Mc Graw Hill. ISBN 978-0-07-150861-2. 
+^ M. R. Spiegel; S. Lipschutz; D. Spellman (2009). Vector Analysis (Schaum's Outlines Series) (2nd ed.). Mc Graw Hill. ISBN 978-0-07-161545-7. 
+
+
+
+References[edit]
+
+G. B. Arfken & H. J. Weber (2000). Mathematical Methods for Physicists (5th ed.). Academic Press. ISBN 0-12-059825-6. 
+Spiegel, Murray R. (1998). Schaum's Outlines: Mathematical Handbook of Formulas and Tables (2nd ed.). McGraw-Hill. ISBN 0-07-038203-4. 
+Griffiths, David J. (1998). Introduction to Electrodynamics (3rd ed.). Prentice Hall. ISBN 0-13-805326-X. 
+
+
+
+
+

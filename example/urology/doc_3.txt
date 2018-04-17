@@ -1,0 +1,173 @@
+
+
+
+
+
+
+v
+t
+e
+
+
+Physiology of the kidneys and acid-base physiology
+
+
+
+Renal function
+
+
+
+
+Secretion
+
+
+
+clearance
+Pharmacokinetics
+Clearance of medications
+Urine flow rate
+
+
+
+
+
+Reabsorption
+
+
+
+Solvent drag
+sodium
+chloride
+urea
+glucose
+oligopeptides
+protein
+
+
+
+
+
+Renal function
+
+
+
+Glomerular filtration rate
+Creatinine clearance
+Renal clearance ratio
+Urea reduction ratio
+Kt/V
+Standardized Kt/V
+Measures of dialysis
+
+Hemodialysis product
+
+
+PAH clearance (Effective renal plasma flow
+Extraction ratio)
+
+
+
+
+
+Filtration
+
+
+
+Renal blood flow
+Ultrafiltration
+Countercurrent exchange
+Filtration fraction
+
+
+
+
+
+
+
+
+Hormones
+
+
+
+Antidiuretic hormone
+Aldosterone
+Atrial natriuretic peptide
+Renin
+Erythropoietin
+Calcitriol
+Prostaglandins
+
+
+
+
+
+Acid-base balance
+
+
+
+Fluid balance
+Darrow Yannet diagram
+
+Body water: Intracellular fluid/Cytosol
+
+Extracellular fluid
+(Interstitial fluid
+Plasma
+Transcellular fluid)
+
+
+Base excess
+Davenport diagram
+Anion gap
+Arterial blood gas
+Winters' formula
+
+
+Buffering
+
+Bicarbonate buffer system
+Respiratory compensation
+Renal compensation
+
+
+
+
+
+
+
+Other
+
+
+
+Fractional sodium excretion
+BUN-to-creatinine ratio
+Tubuloglomerular feedback
+Natriuresis
+Urine
+
+
+
+
+
+
+Initial visibility
+To set the template's initial visibility, the |state= parameter may be used:
+
+|state=collapsed: {{Renal physiology|state=collapsed}} to show the template collapsed, i.e., hidden apart from its title bar
+|state=expanded: {{Renal physiology|state=expanded}} to show the template expanded, i.e., fully visible
+|state=autocollapse: {{Renal physiology|state=autocollapse}}
+
+shows the template collapsed to the title bar if there is a {{navbar}}, a {{sidebar}}, or some other table on the page with the collapsible attribute
+shows the template in its expanded state if there are no other collapsible items on the page
+
+
+
+If the |state= parameter is not set, the template's initial visibility is taken from the |default= parameter in the template. For this template, that currently evaluates to autocollapse. This template is part of the Medical series of navigation boxes. Refer to WP:MEDMOS, Template:Medicine and its talk page for suggestions on style and editing.
+See also[edit]
+
+WP:WikiProject Anatomy#Templates For a table of anatomy navigation boxes
+
+
+
+
+

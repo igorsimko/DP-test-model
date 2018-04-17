@@ -1,0 +1,501 @@
+
+
+
+
+The Energy Systems Language of Systems Ecology
+
+
+The Energy Systems Language, also referred to as Energese, Energy Circuit Language, or Generic Systems Symbols, was developed by the ecologist Howard T. Odum and colleagues in the 1950s during studies of the tropical forests funded by the United States Atomic Energy Commission. They are used to compose energy flow diagrams in the field of systems ecology.
+
+
+
+Contents
+
+
+1 Design intent
+2 General characteristics
+3 Pictographic icons
+4 See also
+5 References
+6 External links
+
+
+
+Design intent[edit]
+The design intent of the energy systems language was to facilitate the generic depiction of energy flows through any scale system while encompassing the laws of physics, and in particular, the laws of thermodynamics (see energy transformation for an example).
+In particular H.T. Odum aimed to produce a language which could facilitate the intellectual analysis, engineering synthesis and management of global systems such as the geobiosphere, and its many subsystems. Within this aim, H.T. Odum had a strong concern that many abstract mathematical models of such systems were not thermodynamically valid. Hence he used analog computers to make system models due to their intrinsic value; that is, the electronic circuits are of value for modelling natural systems which are assumed to obey the laws of energy flow, because, in themselves the circuits, like natural systems, also obey the known laws of energy flow, where the energy form is electrical. However Odum was interested not only in the electronic circuits themselves, but also in how they might be used as formal analogies for modeling other systems which also had energy flowing through them. As a result, Odum did not restrict his inquiry to the analysis and synthesis of any one system in isolation. The discipline that is most often associated with this kind of approach, together with the use of the energy systems language is known as systems ecology.
+General characteristics[edit]
+
+
+
+
+Passive electrical equivalent of Energy Systems Language storage icon
+
+
+When applying the electronic circuits (and schematics) to modeling ecological and economic systems, Odum believed that generic categories, or characteristic modules, could be derived. Moreover he felt that a general symbolic system, fully defined in electronic terms (including the mathematics thereof) would be useful for depicting real system characteristics, such as the general categories of production, storage, flow, transformation, and consumption. Central principles of electronics also therefore became central features of the energy systems language – Odum's generic symbolism.
+Depicted to the left is what the generic symbol for storage, which Odum named the Bertalanffy module, in honor of the general systems theorist Ludwig von Bertalanffy.
+For Odum, in order to achieve a holistic understanding of how many apparently different systems actually affect each other, it was important to have a generic language with a massively scalable modeling capacity – to model global-to-local, ecological, physical and economic systems. The intention was, and for those who still apply it, is, to make biological, physical, ecological, economic and other system models thermodynamically, and so also energetically, valid and verifiable. As a consequence the designers of the language also aimed to include the energy metabolism of any system within the scope of inquiry.
+Pictographic icons[edit]
+In order to aid learning, in Modeling for all Scales Odum and Odum (2000) suggested systems might first be introduced with pictographic icons, and then later defined in the generic symbolism. Pictograms have therefore been used in software programs like ExtendSim to depict the basic categories of the Energy Systems Language. Some have argued that such an approach shares similar motivations to Otto Neurath's isotype project, Leibniz's (Characteristica Universalis) Enlightenment Project and Buckminster Fuller's works.
+See also[edit]
+
+
+Sustainable development portal
+Environment portal
+Ecology portal
+Earth sciences portal
+Science portal
+
+
+
+
+Characteristica universalis
+Embodied energy
+Emergy
+Principles of energetics
+SysML
+Unified Modelling Language
+Universal language
+
+
+References[edit]
+
+
+M.T.Brown (2004) 'A picture is worth a thousand words: energy systems language and simulation', Ecological Modelling, 178: 83–100.
+H.T. Odum, Pigeon, R.F. (Eds.) (1970), A Tropical Rainforest, Division of Technical Information, U.S. Atomic Energy Commission (TID2470)
+H.T.Odum (1971) Environment, Society and Power, Wiley Interscience.
+H.T.Odum (1994) Ecological and General Systems: An Introduction to Systems Ecology, Colorado University Press, Colorado.
+P.J.Taylor and A.S.Blum (1991) "Ecosystems as Circuits: Diagrams and the Limits of Physical Analogies", Biology and Philosophy, 6: 275–294.
+
+
+External links[edit]
+
+
+
+
+
+
+v
+t
+e
+
+
+Ecology: Modelling ecosystems: Trophic components
+
+
+
+General
+
+
+
+Abiotic component
+Abiotic stress
+Behaviour
+Biogeochemical cycle
+Biomass
+Biotic component
+Biotic stress
+Carrying capacity
+Competition
+Ecosystem
+Ecosystem ecology
+Ecosystem model
+Keystone species
+List of feeding behaviours
+Metabolic theory of ecology
+Productivity
+Resource
+
+
+
+
+
+Producers
+
+
+
+Autotrophs
+Chemosynthesis
+Chemotrophs
+Foundation species
+Mixotrophs
+Myco-heterotrophy
+Mycotroph
+Organotrophs
+Photoheterotrophs
+Photosynthesis
+Photosynthetic efficiency
+Phototrophs
+Primary nutritional groups
+Primary production
+
+
+
+
+
+Consumers
+
+
+
+Apex predator
+Bacterivore
+Carnivores
+Chemoorganotroph
+Foraging
+Generalist and specialist species
+Intraguild predation
+Herbivores
+Heterotroph
+Heterotrophic nutrition
+Insectivore
+Mesopredators
+Mesopredator release hypothesis
+Omnivores
+Optimal foraging theory
+Predation
+Prey switching
+
+
+
+
+
+Decomposers
+
+
+
+Chemoorganoheterotrophy
+Decomposition
+Detritivores
+Detritus
+
+
+
+
+
+Microorganisms
+
+
+
+Archaea
+Bacteriophage
+Environmental microbiology
+Lithoautotroph
+Lithotrophy
+Microbial cooperation
+Microbial ecology
+Microbial food web
+Microbial intelligence
+Microbial loop
+Microbial mat
+Microbial metabolism
+Phage ecology
+
+
+
+
+
+Food webs
+
+
+
+Biomagnification
+Ecological efficiency
+Ecological pyramid
+Energy flow
+Food chain
+Trophic level
+
+
+
+
+
+Example webs
+
+
+
+Cold seeps
+Hydrothermal vents
+Intertidal
+Kelp forests
+Lakes
+North Pacific Subtropical Gyre
+Rivers
+San Francisco Estuary
+Soil
+Tide pool
+
+
+
+
+
+Processes
+
+
+
+Ascendency
+Bioaccumulation
+Cascade effect
+Climax community
+Competitive exclusion principle
+Consumer-resource systems
+Copiotrophs
+Dominance
+Ecological network
+Ecological succession
+Energy quality
+Energy Systems Language
+f-ratio
+Feed conversion ratio
+Feeding frenzy
+Mesotrophic soil
+Nutrient cycle
+Oligotroph
+Paradox of the plankton
+Trophic cascade
+Trophic mutualism
+Trophic state index
+
+
+
+
+
+Defense,
+
+counter
+
+
+
+Animal coloration
+Antipredator adaptations
+Camouflage
+Deimatic behaviour
+Herbivore adaptations to plant defense
+Mimicry
+Plant defense against herbivory
+Predator avoidance in schooling fish
+
+
+
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Ecology: Modelling ecosystems: Other components
+
+
+
+Population
+
+ecology
+
+
+
+Abundance
+Allee effect
+Depensation
+Ecological yield
+Effective population size
+Intraspecific competition
+Logistic function
+Malthusian growth model
+Maximum sustainable yield
+Overpopulation in wild animals
+Overexploitation
+Population cycle
+Population dynamics
+Population modeling
+Population size
+Predator–prey (Lotka–Volterra) equations
+Recruitment
+Resilience
+Small population size
+Stability
+
+
+
+
+
+Species
+
+
+
+Biodiversity
+Density-dependent inhibition
+Ecological effects of biodiversity
+Ecological extinction
+Endemic species
+Flagship species
+Gradient analysis
+Indicator species
+Introduced species
+Invasive species
+Latitudinal gradients in species diversity
+Minimum viable population
+Neutral theory
+Occupancy–abundance relationship
+Population viability analysis
+Priority effect
+Rapoport's rule
+Relative abundance distribution
+Relative species abundance
+Species diversity
+Species homogeneity
+Species richness
+Species distribution
+Species-area curve
+Umbrella species
+
+
+
+
+
+Species
+
+interaction
+
+
+
+Antibiosis
+Biological interaction
+Commensalism
+Community ecology
+Ecological facilitation
+Interspecific competition
+Mutualism
+Storage effect
+
+
+
+
+
+Spatial
+
+ecology
+
+
+
+Biogeography
+Cross-boundary subsidy
+Ecocline
+Ecotone
+Ecotype
+Disturbance
+Edge effects
+Foster's rule
+Habitat fragmentation
+Ideal free distribution
+Intermediate Disturbance Hypothesis
+Island biogeography
+Landscape ecology
+Landscape epidemiology
+Landscape limnology
+Metapopulation
+Patch dynamics
+r/K selection theory
+Resource selection function
+Source–sink dynamics
+
+
+
+
+
+Niche
+
+
+
+Ecological niche
+Ecological trap
+Ecosystem engineer
+Environmental niche modelling
+Guild
+Habitat
+Marine habitats
+Limiting similarity
+Niche apportionment models
+Niche construction
+Niche differentiation
+
+
+
+
+
+Other
+
+networks
+
+
+
+Assembly rules
+Bateman's principle
+Bioluminescence
+Ecological collapse
+Ecological debt
+Ecological deficit
+Ecological energetics
+Ecological indicator
+Ecological threshold
+Ecosystem diversity
+Emergence
+Extinction debt
+Kleiber's law
+Liebig's law of the minimum
+Marginal value theorem
+Thorson's rule
+Xerosere
+
+
+
+
+
+Other
+
+
+
+Allometry
+Alternative stable state
+Balance of nature
+Biological data visualization
+Ecocline
+Ecological economics
+Ecological footprint
+Ecological forecasting
+Ecological humanities
+Ecological stoichiometry
+Ecopath
+Ecosystem based fisheries
+Endolith
+Evolutionary ecology
+Functional ecology
+Industrial ecology
+Macroecology
+Microecosystem
+Natural environment
+Regime shift
+Systems ecology
+Urban ecology
+Theoretical ecology
+
+
+
+
+
+
+List of ecology topics
+
+
+
+
+
+
+
+

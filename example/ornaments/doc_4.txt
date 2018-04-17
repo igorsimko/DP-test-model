@@ -1,0 +1,1345 @@
+
+
+
+
+Girih pattern with inlaid floral decoration from Shah-i-Zinda in Samarkand, Uzbekistan
+
+
+Girih (Persian: گره‎, "knot") is a decorative Islamic geometric artform used in architecture and handicraft objects, consisting of angled lines that form an interlaced strapwork pattern.
+Girih decoration is believed to have been inspired by Syrian Roman knotwork patterns from the 2nd century AD. The earliest girih dates from around 1000 AD, and the artform flourished until the 15th century. Girih patterns can be created in a variety of ways, including the traditional compass and straightedge; the construction of a grid of polygons; and the use of a set of girih tiles with lines drawn on them: the lines form the pattern. Patterns may be elaborated by the use of two levels of design, as at the 1453 Darb-e Imam shrine. Square repeating units of known patterns can be copied as templates, and historic pattern books may have been intended for use in this way.
+The 15th century Topkapı Scroll explicitly shows girih patterns together with the tilings used to create them. A set of tiles consisting of a dart and a kite shape can be used to create aperiodic Penrose tilings, though there is no evidence that such a set was used in medieval times. Girih patterns have been used to decorate varied materials including stone screens, as at Fatehpur Sikri; plasterwork, as at mosques and madrasas such as Hunat Hatun, Kayseri; metal, as at Sultan Hassan mosque, Cairo; and in wood, as at the Great Mosque of Cordoba.
+
+
+
+Contents
+
+
+1 History
+
+1.1 Origins
+1.2 Early Islamic forms
+
+
+2 Construction
+
+2.1 Compass and straight edge
+2.2 Polygons in contact
+2.3 Girih tiles
+2.4 Two-level design
+
+2.4.1 Aperiodicity
+2.4.2 The Topkapı Scroll
+
+
+2.5 Templates
+
+
+3 Girih in varied materials
+4 See also
+5 Notes
+6 References
+
+
+
+History[edit]
+Further information: Islamic geometric patterns
+Origins[edit]
+
+
+
+
+2nd century Roman mosaic in Bosra with curvilinear knot patterns
+
+
+The girih style of ornamentation is thought to have been inspired by 2nd century AD Syrian Roman knotwork patterns.[1] These had curvilinear interlaced strapwork with three-fold rotational symmetry. The Umayyad Mosque (709–715) in Damascus, Syria has window screens made of interlacing undulating strapwork in the form of six-pointed stars.[2] Early examples of Islamic geometric patterns made of straight strap lines can be seen in the architecture of the surviving gateway of the Ribat-i Malik caravanserai, Uzbekistan, built in 1078.[3]
+Early Islamic forms[edit]
+The earliest form of girih on a book is seen in the frontispiece of a Koran manuscript from the year 1000, found in Baghdad.[4] It is illuminated with interlacing octagons and thuluth calligraphy.[5]
+In woodwork, one of the earliest surviving examples of Islamic geometric art is the 13th-century minbar (pulpit) of the Ibn Tulun Mosque in Cairo.[6][7] Girih patterns can be created in woodwork in two different ways. In one, a wooden grille with polygons and stars is created; the holes can be left as they are, or filled with some material. In the other, called gereh-chini[8] small wooden panels of geometric shapes are created individually, and combined to create an elaborate design.[1]
+The term "girih" was used in Turkish for polygonal strap patterns in architecture as early as the late 15th century.[9] In the same period, artisans compiled girih pattern books such as the Topkapı Scroll.[10]
+While curvilinear precedents of girih were seen in the 10th century, fully developed girih patterns were not seen before the 11th century in Iran. It became a dominant design element in the 11th and 12th centuries, as in the carved stucco panels with interlaced girih of the Kharraqan towers (1067) near Qazvin, Iran.[1][11] Stylized plant decorations were sometimes co-ordinated with girih.[12]
+After the Safavid period, the use of girih continued in the Seljuk and Ilkhanid periods. In the 14th century, girih became a minor element in the decorative arts; it was largely replaced by vegetal patterns during the Timurid era, but continued to be important in decorative arts in Central Asian monuments after that time.[1]
+
+Construction[edit]
+
+
+
+
+A girih pattern based on a hexagonal overlapping circles grid that can be drawn with compass and straight edge
+
+
+
+A window cage at the Topkapı Palace, built with this girih pattern
+
+
+
+
+Compass and straight edge[edit]
+Further information: Compass and straightedge constructions
+Girih consists of geometric designs, often of stars and polygons, which can be constructed in a variety of ways.[13] Girih star and polygon patterns with 5- and 10-fold rotational symmetry are known to have been made as early as the 13th century. Such figures can be drawn by compass and straightedge. The first girih patterns were made by copying a pattern template on a regular grid; the pattern was drawn with compass and straightedge. Today, artisans using traditional techniques use a pair of dividers to leave an incision mark on a paper sheet that has been left in the sun to make it brittle. Straight lines are drawn with a pencil and an unmarked straightedge.[a][8] Girih patterns made this way are based on tessellations, tiling the plane with a unit cell and leaving no gaps. Because the tiling makes use of translation and rotation operations, the unit cells need to have 2-, 3-, 4- or 6-fold rotational symmetry.[15][16]
+
+Polygons in contact[edit]
+One of the early Western students of Islamic patterns, Ernest Hanbury Hankin, defined a "geometrical arabesque" as a pattern formed "with the help of construction lines consisting of polygons in contact."[17] He observed that many different combinations of polygons can be used as long as the residual spaces between the polygons are reasonably symmetrical. For example, a grid of octagons in contact has squares (of the same side as the octagons) as the residual spaces. Every octagon is the basis for an 8-point star, as seen at Akbar's tomb, Sikandra (1605–1613). Hankin considered the "skill of the Arabian artists in discovering suitable combinations of polygons .. almost astounding."[17]
+Girih tiles[edit]
+
+
+
+
+Girih tiles
+
+
+
+A pattern made from these tiles
+
+
+
+Detail of Yeşil Mosque (Bursa, Turkey) using this girih pattern
+
+
+
+
+Main article: Girih tiles
+By the 15th century, some girih patterns were no longer periodic, and may have been constructed using girih tiles. This method is based on a set of five tiles with lines drawn on them; when used to tile the plane with no gaps, the lines on the tiles form a girih pattern. It is not yet known when girih tiles were first used for architectural decoration instead of compass and straightedge, but it was probably at the start of the 13th century.[18][19] Methods of ornamentation were extremely diverse, however, and the idea that one method was used for all of them has been criticised as anachronistic.[20]
+
+Two-level design[edit]
+
+
+
+
+Girih pattern on a spandrel from the Darb-i Imam shrine, Isfahan, Iran
+
+
+
+Reconstruction of the larger-scale thick line pattern with larger tiles, and a spandrel in yellow
+
+
+
+Subdivision rule for the spandrel's pattern
+
+
+
+
+The girih patterns on the Darb-e Imam shrine built in 1453 at Isfahan had a much more complex pattern than any previously seen. The details of the pattern indicate that girih tiles, rather than compass and straightedge, were used for decorating the shrine. The patterns appear aperiodic; within the area on the wall where they are displayed, they do not form a regularly repeating pattern; and they are drawn at two different scales. A large-scale pattern is discernible when the building is viewed from a distance, and a smaller-scale pattern forming part of the larger one can be seen from closer up.[18]
+Although there is evidence that some ancient girih tilings used a subdivision rule to draw a two-level pattern, there are no known historic examples that can be repeated an infinite level of times. For example, the pattern used in the spandrel of the Darb-i Imam shrine (see figure) consists only of decagons and bowties, while the subdivision rule uses an elongated hexagon tile alongside these two shapes. Therefore, this design lacks self-similarity between the two levels.[18]
+
+Aperiodicity[edit]
+A periodic tiling of the plane is the regular repetition of a "unit cell", in the manner of a wallpaper, without any gaps. Such tilings can be seen as a two-dimensional crystal, and because of the crystallographic restriction theorem, the unit cell is restricted to a rotational symmetry of 2-fold, 3-fold, 4-fold, and 6-fold. It is therefore impossible to tile the plane periodically with a figure that has five-fold rotational symmetry, such as a five-pointed star or a decagon. Patterns with infinite perfect quasi-periodic translational order can have crystallographically forbidden rotational symmetries such as pentagonal or decagonal shapes. These quasi-crystalline tilings contain shapes with five-fold symmetry that repeat periodically, in between other shapes that do not repeat.[18]
+One way to create quasi-periodic patterns is to create a Penrose tiling. Girih tiles can be subdivided into Penrose tiles called "dart" and "kite", but there is no evidence that this approach was used by medieval artisans.[18] Another way to create quasiperiodic patterns is by subdividing girih tiles repeatedly into smaller tiles using a subdivision rule. In the limit the plane would be divided into girih tiles that repeat with frequencies that are aperiodic. The use of such a subdivision rule would serve as evidence that Islamic artisans of the 15th century were aware that girih tiles can produce complex patterns that never exactly repeat themselves. However, no known patterns made with girih tiles have more than a two-level design. There would have been no practical need for a girih pattern with more than two levels of design, as a third level would be either too large or too small to be perceived. It appears that medieval Islamic artisans were using a tool that had the potential of creating highly complex patterns, but they never realized it. As E. Makovicky argues,[21]
+
+The artisans were satisfied by creating a large fundamental domain without being concerned with the mathematical notion of indefinitely expandable quasiperiodic patterns. However, they understood and used to their advantage some of the local geometric properties of the quasi-crystalline patterns they constructed.[21]
+
+The Topkapı Scroll[edit]
+
+
+
+
+A Topkapı Scroll panel; featuring a girih pattern in black with red tiles
+
+
+
+Topkapı scroll panel with patterns at two scales and tiles used
+
+
+
+Reconstruction of the small scale pattern (thick black lines) in left panel, using small tiles
+
+
+
+Reconstruction of the large scale pattern (thick red lines) in left panel, using large tiles
+
+
+
+
+The Topkapı Scroll, from the late 15th century, documents the use of girih tiles to create girih patterns. The drawings in this pattern book show the girih lines superimposed on the tiles used to generate the pattern, making the construction fully evident.[18]
+Templates[edit]
+Once a repeating pattern has been constructed, regardless of the method used, the pattern can be recreated by copying a repeating unit of it, like the pattern of a wallpaper, as a paper template. The pattern can then simply be pricked through on to the surface to be decorated. The Topkapı Scroll grids may well have been meant for use as such templates.[20] The Anonymous Compendium contains square repeat units for many girih patterns.[20] Ibn al-Razzaz al-Jazari's Compendium of Science and Useful Practice in the Mechanical Arts contains explicit templates for special purposes such as cast bronze doors.[20]
+Girih in varied materials[edit]
+
+
+
+
+
+
+
+Girih stone screens at the tomb of Salim Chishti, Fatehpur Sikri, 16th century
+
+
+
+
+
+
+
+
+
+Girih in plasterwork of Iwan of Hunat Hatun medersa, Kayseri
+
+
+
+
+
+
+
+
+
+Girih in metal: 12-pointed star on gate at Sultan Hassan's mosque, Cairo
+
+
+
+
+
+
+
+
+
+Girih in wood: grille in the Great Mosque of Cordoba
+
+
+
+
+See also[edit]
+
+Muqarnas
+
+Notes[edit]
+
+
+
+^ Eric Broug's Islamic Geometric Patterns illustrates many such patterns, and (in the Appendix) gives detailed instructions for their construction using only compass and straightedge.[14]
+
+
+
+References[edit]
+
+
+^ a b c d "Gereh Sazi". Encyclopaedia Iranica Online. Retrieved 2013-01-01. 
+^ Broug, Eric (2008). Islamic Geometric Patterns. Thames and Hudson. p. 153. ISBN 978-0-500-28721-7. 
+^ Broug, Eric (2008). Islamic Geometric Patterns. Thames and Hudson. p. 71. ISBN 978-0-500-28721-7. 
+^ "Materials and Mediums". Pattern in Islamic Art. Retrieved 2012-02-08. 
+^ Tabbaa, Yasser (2002). The transformation of Islamic art during the Sunni revival. I. B. Tauris. p. 84. ISBN 978-1-85043-392-7. 
+^ "Jami' Ibn Tulun". Retrieved 25 January 2017. 
+^ Broug, Eric (2008). Islamic Geometric Patterns. Thames and Hudson. pp. 66–69. ISBN 978-0-500-28721-7. 
+^ a b Henry, Richard (2007). "Pattern, Cognition and contemplation: Exploring the Geometric Art of Iran" (PDF). Iran Society. Retrieved 2012-02-08. 
+^ Dündar, A. (2003). "Bir Belgeye Göre Amasya II. Bayezid Külliyesi" (PDF). Ankara Üniverstesi İlahiyat Fakültesi Dergisi (in Turkish). 44 (2): 131–172. 
+^ Katz, V. J. (2007). The Mathematics of Egypt, Mesopotamia, China, India, and Islam. Princeton University Press. p. 620. ISBN 978-0-691-11485-9. 
+^ "Architecture – iv. Central Asian". Encyclopaedia Iranica. August 11, 2011. Retrieved 2012-02-08. 
+^ Pugachenkova, G. A.; Dani, A. H. Dani; Yinsheng, Liu (2000). "Urban development and architecture". History of Civilizations of Central Asia Volume IV: The Age of Achievement: A.D. 750 to the End of the Fifteenth Century – Part Two: The Achievements. UNESCO. ISBN 978-92-3-103654-5. CS1 maint: Multiple names: authors list (link)
+^ Allen, Terry (2004). "Islamic Art and the Argument from Academic Geometry". Retrieved 2012-01-23. 
+^ Broug, Eric (2008). Islamic Geometric Patterns. Thames and Hudson. pp. 194–243. ISBN 978-0-500-28721-7. 
+^ Cromwell, P.R. (2009). "The Search for Quasi-Periodicity in Islamic 5-fold Ornament". Mathematical Intelligencer. 31 (1): 36–56. doi:10.1007/s00283-008-9018-6. 
+^ Lee, A. J. (1987). "Islamic Star Patterns". Muqarnas. 4: 182–197. doi:10.2307/1523103. JSTOR 1523103. 
+^ a b Hankin, Ernest Hanbury (1925). The Drawing of Geometric Patterns in Saracenic Art. Memoirs of the Archaeological Survey of India No. 15. Government of India Central Publication Branch. 
+^ a b c d e f Peter J. Lu and Paul J. Steinhardt (2007). "Decagonal and Quasi-crystalline Tilings in Medieval Islamic Architecture" (PDF). Science. 315 (5815): 1106–1110. Bibcode:2007Sci...315.1106L. doi:10.1126/science.1135491. PMID 17322056. Archived from the original (PDF) on 2009-10-07. 
+^ Lu and Steinhardt, Supplementary figures Archived 2009-03-26 at the Wayback Machine.
+^ a b c d Necipoglu, Gulru (2017). The Arts of Ornamental Geometry: A Persian Compendium on Similar and Complementary Interlocking Figures. A Volume Commemorating Alpay Özdural. Brill. pp. 11–76. ISBN 978-90-04-31520-4. 
+^ a b Emil Makovicky. "Comment on "Decagonal and Quasi-Crystalline Tilings in Medieval Islamic Architecture"". Retrieved 2012-02-22. 
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Islamic architecture
+
+
+
+categories
+
+
+
+Arabic architecture
+Berber architecture
+Iranian architecture
+Islamic architecture
+Mughal architecture
+Ottoman architecture
+
+
+
+
+
+styles
+
+
+
+Abbasid
+Anatolia Beyliks
+Ayyubid
+Azeri
+Bengali
+Chinese
+Fatimid
+Indo-Islamic
+Indonesian / Malaysian
+Isfahani
+Khorasani
+Mamluk
+Modern
+Moorish
+Moroccan
+Mudéjar
+Mughal
+Ottoman
+Pakistani
+Razi
+Seljuk
+Somali
+Sudano-Sahelian
+Tatar
+Timurid
+Umayyad
+Vernacular Persian
+Yemenite
+
+
+
+
+
+elements
+
+
+
+
+structural
+
+
+
+Ablaq
+Chahartaq
+Chhajja
+Hasht-Bihisht
+Hypostyle
+Iwan
+Jharokha
+Kucheh
+Liwan
+Mashrabiya
+Moroccan riad
+Qadad
+Riwaq
+Sahn
+Semi-dome
+Shabestan
+Squinch
+Tadelakt
+Vaulting
+Voussoir
+Windcatcher
+
+
+
+
+
+
+Dome of the Rock in Jerusalem
+
+
+
+arch
+
+styles
+
+
+
+Discharging arch
+Four-centred arch
+Horseshoe arch
+Multifoil arch
+Ogee arch
+Pointed arch
+
+
+
+
+
+roof
+
+styles
+
+
+
+Dome (Arabic dome / Onion dome / Persian dome / South Asian dome)
+Guldasta
+Tajug
+
+
+
+
+
+religious
+
+objects
+
+
+
+Bedug
+Dikka
+Gonbad
+Hussainiya
+Imamzadeh
+Kiswah
+Loudspeakers
+Maqsurah
+Mihrab
+Minaret
+Minbar
+Müezzin mahfili
+Qibla
+Zarih
+
+
+
+
+
+decorations
+
+
+
+Alfiz
+Arabesque
+Banna'i
+Girih
+Girih tiles
+Islamic calligraphy
+Islamic geometric patterns
+Islamic interlace patterns
+Jali
+Mocárabe
+Mosque lamp
+Muqarnas
+Nagash painting
+Qashani
+Shabaka
+Socarrat
+Yeseria
+Zellige
+
+
+
+
+
+rooms
+
+
+
+Andaruni
+Harem
+Qa’a
+Zenana
+
+
+
+
+
+garden
+
+
+
+Bagh
+Charbagh
+Islamic garden
+Mughal gardens
+Ottoman gardens
+Paradise garden
+Persian gardens
+Reflecting pool
+
+
+
+
+
+outdoor
+
+objects
+
+
+
+Chhatri
+Eidgah
+Howz
+Shading Umbrellas
+Mechouar
+Sebil
+Shadirvan
+
+
+
+
+
+
+
+
+types
+
+
+
+
+religious
+
+
+
+Dargah
+Gongbei
+Jama Masjid
+Jama'at Khana
+Khanqah
+Külliye
+Madrasa
+Maqam
+Maqbara
+Mazar
+Mosque
+Musalla
+Qubba
+Rauza
+Surau
+Tekyeh
+Türbe
+Zawiya
+
+
+
+
+
+civilian
+
+
+
+Baradari
+Bazaar
+Caravanserai
+Dar al-Shifa
+Ghorfa
+Kasbah
+Mahal
+Medina quarter
+Souq
+Turkish bath
+Well house
+
+
+
+
+
+military
+
+
+
+Albarrana tower
+Alcazaba
+Alcázar
+Amsar
+Bab
+Kasbah
+Ksar
+Qalat
+Ribat
+
+
+
+
+
+
+
+
+resources
+
+
+
+Aga Khan Award for Architecture
+ArchNet
+
+
+
+
+
+influences
+
+
+
+Indo-Saracenic Revival
+Influences on Western architecture
+Moorish Revival
+
+
+
+
+
+
+Part of Islamic arts
+
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Islamic art
+
+
+
+Architecture
+
+
+
+
+Regional styles
+
+
+
+Ayyubid
+Azerbaijani
+Chinese
+Indo-Islamic
+Indonesian
+Moorish
+Moroccan
+Mudéjar
+Mughal
+Ottoman
+Pakistani
+Persian
+Somali
+Sudano-Sahelian
+Tatar
+Timurid
+Umayyad
+
+
+
+
+
+Elements
+
+
+
+Ablaq
+Banna'i
+Iwan
+Jali
+Mashrabiya
+Mihrab
+Minaret
+Mocárabe
+Muqarnas
+Yeseria
+See also Decoration
+
+
+
+
+
+
+
+
+
+
+
+Arts
+
+
+
+
+Regional styles
+
+
+
+Persian (Early, Qajar, Safavid)
+Turkish (Ottoman)
+
+
+
+
+
+Carpets
+
+
+
+Gul
+Kilim
+
+Motifs
+
+
+Persian
+Turkish
+Prayer
+
+
+
+
+
+Pottery
+
+
+
+Azulejo
+Fritware
+Hispano-Moresque
+İznik
+Lustreware
+Persian
+Chinese influence
+
+
+
+
+
+Textiles
+
+
+
+Batik
+Damask
+Ikat
+Embroidery
+Soumak
+Suzani
+
+
+
+
+
+Woodwork
+
+
+
+Khatam
+Minbar
+
+
+
+
+
+Other media
+
+
+
+Brass
+Damascus steel
+Glass
+Hardstone carving
+Ivory carving
+Stained glass
+
+Shabaka
+
+
+
+
+
+
+
+
+
+
+Arts of
+
+the book
+
+
+
+
+Miniatures
+
+
+
+Arabic
+Mughal
+Ottoman
+Persian
+
+
+
+
+
+Calligraphy
+
+
+
+Arabic
+Diwani
+Kufic
+Muhaqqaq
+Naskh
+Nastaʿlīq
+Persian
+Sini
+Taʿlīq
+Thuluth
+Tughra
+
+
+
+
+
+Other arts
+
+
+
+Muraqqa
+Hilya
+Ottoman illumination
+
+
+
+
+
+
+
+
+Decoration
+
+
+
+Arabesque
+Geometric patterns
+Girih (tiles)
+Zellige
+
+
+
+
+
+The garden
+
+
+
+Charbagh
+Mughal
+Ottoman
+Paradise
+Persian
+
+
+
+
+
+Museums
+
+
+
+Berlin
+Cairo
+Doha
+Ghazni
+Istanbul (Arts, Calligraphy Art)
+Jerusalem (Islamic Museum, L. A. Mayer Institute)
+Kuala Lumpur
+London (British Museum, V&A)
+Los Angeles
+Marrakech (Museum, Majorelle Garden)
+Melbourne
+Paris (Arab World Institute, Louvre)
+Singapore
+Toronto (Aga Khan)
+Tripoli
+
+
+
+
+
+Principles,
+
+influences
+
+
+
+Islamic Art: Mirror of the Invisible World
+Aniconism in Islam
+Indo-Saracenic Revival
+Islamic world contributions to Medieval Europe
+Influences on Western art
+
+Grotesque
+Moresque
+
+
+Mathematics and architecture
+Moorish Revival
+Oriental carpets in Renaissance painting
+Pseudo-Kufic
+Stilfragen
+Topkapı Scroll
+
+
+
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Ornaments
+
+
+
+
+
+
+Acanthus
+Arabesque
+Ball flower
+Bead and reel
+Dog-tooth
+Egg-and-dart
+Girih
+Grotesque
+Guilloché
+Gul
+Hood
+Interlace
+Margent
+Meander
+Millefleur
+Molding
+Moresque
+Palmette
+Rosette
+Scroll
+Strapwork
+Zellige
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Mathematics and art
+
+
+
+Concepts
+
+
+
+Algorithm
+Catenary
+Fractal
+Golden ratio
+Plastic number
+Hyperboloid structure
+Minimal surface
+Paraboloid
+Perspective
+
+Camera lucida
+Camera obscura
+
+
+Projective geometry
+Proportion
+
+Architecture
+Human
+
+
+Symmetry
+Tessellation
+Wallpaper group
+
+
+
+
+
+
+
+
+Forms
+
+
+
+Algorithmic art
+Anamorphic art
+Computer art
+4D art
+Fractal art
+Islamic geometric patterns
+
+Girih
+Jali
+Muqarnas
+Zellige
+
+
+Knotting
+Architecture
+
+Geodesic dome
+Islamic
+Mughal
+Pyramid
+Vastu shastra
+
+
+Music
+Origami
+Textiles
+String art
+Sculpture
+Tiling
+
+
+
+
+
+Artworks
+
+
+
+List of works designed with the golden ratio
+Continuum
+Octacube
+Pi
+Pi in the Sky
+
+
+
+
+
+Buildings
+
+
+
+Hagia Sophia
+Pantheon
+Parthenon
+Pyramid of Khufu
+Sagrada Família
+St Mary's Cathedral
+Sydney Opera House
+Taj Mahal
+
+
+
+
+
+Artists
+
+
+
+
+Renaissance
+
+
+
+Paolo Uccello
+Piero della Francesca
+Albrecht Dürer
+Leonardo da Vinci
+
+Vitruvian Man
+
+
+Parmigianino
+
+Self-portrait in a Convex Mirror
+
+
+
+
+
+
+
+19th–20th Century
+
+
+
+William Blake
+
+The Ancient of Days
+Newton
+
+
+Jean Metzinger
+
+Danseuse au café
+L'Oiseau bleu
+
+
+Man Ray
+René Magritte
+
+La condition humaine
+
+
+Salvador Dalí
+
+Crucifixion
+The Swallow's Tail
+
+
+Giorgio de Chirico
+M. C. Escher
+
+Circle Limit III
+Print Gallery
+Relativity
+Reptiles
+Waterfall
+
+
+
+
+
+
+
+Contemporary
+
+
+
+Martin and Erik Demaine
+Scott Draves
+Jan Dibbets
+John Ernest
+Helaman Ferguson
+Peter Forakis
+Bathsheba Grossman
+George W. Hart
+Desmond Paul Henry
+John A. Hiigli
+Anthony Hill
+Charles Jencks
+
+Garden of Cosmic Speculation
+
+
+Robert Longhurst
+István Orosz
+Hinke Osinga
+Hamid Naderi Yeganeh
+
+A Bird in Flight
+Boat
+
+
+Tony Robbin
+Oliver Sin
+Hiroshi Sugimoto
+Daina Taimina
+Roman Verostko
+
+
+
+
+
+
+
+
+Theorists
+
+
+
+
+Ancient
+
+
+
+Polykleitos
+
+Canon
+
+
+Vitruvius
+
+De architectura
+
+
+
+
+
+
+
+Renaissance
+
+
+
+Luca Pacioli
+
+De divina proportione
+
+
+Piero della Francesca
+
+De prospectiva pingendi
+
+
+Leon Battista Alberti
+
+De pictura
+De re aedificatoria
+
+
+Sebastiano Serlio
+
+Regole generali d'architettura
+
+
+Andrea Palladio
+
+I quattro libri dell'architettura
+
+
+Albrecht Dürer
+
+Vier Bücher von Menschlicher Proportion
+
+
+
+
+
+
+
+Romantic
+
+
+
+Frederik Macody Lund
+
+"Ad Quadratum"
+
+
+Jay Hambidge
+
+"The Greek Vase"
+
+
+Samuel Colman
+
+"Nature's Harmonic Unity"
+
+
+
+
+
+
+
+Modern
+
+
+
+Owen Jones
+
+The Grammar of Ornament
+
+
+Ernest Hanbury Hankin
+
+The Drawing of Geometric Patterns in Saracenic Art
+
+
+G. H. Hardy
+
+A Mathematician's Apology
+
+
+George David Birkhoff
+
+Aesthetic Measure
+
+
+Douglas Hofstadter
+
+Gödel, Escher, Bach
+
+
+Nikos Salingaros
+
+The 'Life' of a Carpet
+
+
+
+
+
+
+
+
+
+
+Publications
+
+
+
+Journal of Mathematics and the Arts
+
+
+
+
+
+Organizations
+
+
+
+Ars Mathematica
+The Bridges Organization
+European Society for Mathematics and the Arts
+Goudreau Museum of Mathematics in Art and Science
+Institute For Figuring
+Museum of Mathematics
+
+
+
+
+
+Related topics
+
+
+
+Droste effect
+Mathematical beauty
+Patterns in nature
+Sacred geometry
+
+
+
+
+
+
+
+
+ Category
+
+
+
+
+
+
+
+
+
+

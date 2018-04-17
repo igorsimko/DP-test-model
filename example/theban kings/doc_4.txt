@@ -1,0 +1,182 @@
+
+
+
+
+
+
+v
+t
+e
+
+
+Oedipus
+
+
+
+Titles and lineage
+
+
+
+Theban kings in Greek mythology
+Laius (biological father)
+Polybus of Corinth (adoptive father)
+Merope (adoptive mother)
+Jocasta/Epicaste (biological mother/wife)
+Creon (Jocasta's brother/Laius' successor)
+Antigone (half sister/daughter)
+Eteocles (half brother/son)
+Polynices (half brother/son)
+Ismene (half sister/daughter)
+Euryganeia (2nd wife)
+Astymedusa (later wife)
+
+
+
+
+
+Theban plays
+
+
+
+
+Antiquity
+
+
+
+Aeschylus:
+
+Seven Against Thebes
+
+
+Sophocles:
+
+Antigone
+Oedipus Rex
+Oedipus at Colonus
+
+
+Euripides:
+
+Antigone
+Oedipus
+The Phoenician Women
+
+
+Seneca:
+
+Oedipus
+
+
+
+
+
+
+
+Other (Oedipus)
+
+
+
+Oedipus (Dryden & Lee)
+Oedipus (Voltaire)
+The Infernal Machine
+Greek
+The Gospel at Colonus
+
+
+
+
+
+Other (Antigone)
+
+
+
+Antigone (Cocteau)
+Antigone (Anouilh)
+The Burial at Thebes
+
+
+
+
+
+
+
+
+Operas
+
+
+
+Antigona
+Œdipe à Colone
+Oedipus rex
+Œdipe
+Greek
+
+
+
+
+
+Films
+
+
+
+Oedipus Rex (1957)
+Antigone (1961)
+Oedipus Rex (1967)
+Oedipus the King (1968)
+Funeral Parade of Roses (1969)
+Night Warning (1982)
+Voyager (1991)
+Oedipus Mayor (1996)
+
+
+
+
+
+Other works
+
+
+
+Oedipodea
+Thebaid
+Theban Cycle
+Lille Stesichorus
+The Gods Are Not To Blame
+Oedipus Tex
+
+
+
+
+
+Related
+
+
+
+Oedipus complex
+Electra complex
+Feminism and the Oedipus complex
+Hamlet and Oedipus
+Jocasta complex
+Phaedra complex
+
+
+
+
+
+
+Initial visibility
+To set the template's initial visibility, the |state= parameter may be used:
+
+|state=collapsed: {{Oedipus|state=collapsed}} to show the template collapsed, i.e., hidden apart from its title bar
+|state=expanded: {{Oedipus|state=expanded}} to show the template expanded, i.e., fully visible
+|state=autocollapse: {{Oedipus|state=autocollapse}}
+
+shows the template collapsed to the title bar if there is a {{navbar}}, a {{sidebar}}, or some other table on the page with the collapsible attribute
+shows the template in its expanded state if there are no other collapsible items on the page
+
+
+
+If the |state= parameter is not set, the template's initial visibility is taken from the |default= parameter in the template. For this template, that currently evaluates to autocollapse.
+
+
+
+

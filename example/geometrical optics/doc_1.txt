@@ -1,0 +1,276 @@
+This article is about reflections of waves. For the use of the term with capillary membrames, see Starling equation § Reflection coefficient.
+For intensity ratios, see Reflectance.
+In physics and electrical engineering the reflection coefficient is a parameter that describes how much of an electromagnetic wave is reflected by an impedance discontinuity in the transmission medium. It is equal to the ratio of the amplitude of the reflected wave to the incident wave, with each expressed as phasors. For example, it is used in optics to calculate the amount of light that is reflected from a surface with a different index of refraction, such as a glass surface, or in an electrical transmission line to calculate how much of the electromagnetic wave is reflected by an impedance. The reflection coefficient is closely related to the transmission coefficient. The reflectance of a system is also sometimes called a "reflection coefficient".
+
+
+A wave experiences partial transmittance and partial reflectance when the medium through which it travels suddenly changes. The reflection coefficient determines the ratio of the reflected wave amplitude to the incident wave amplitude.
+
+
+Different specialties have different applications for the term.
+
+
+
+Contents
+
+
+1 Telecommunications
+2 Seismology
+3 Optics and microwaves
+4 Acoustics
+5 See also
+6 References
+7 External links
+
+
+
+Telecommunications[edit]
+See also: Reflections of signals on conducting lines and Signal reflection
+In telecommunications, the reflection coefficient is the ratio of the complex amplitude of the reflected wave to that of the incident wave. In particular, at a discontinuity in a transmission line, it is the complex ratio of the electric field strength of the reflected wave (
+  
+    
+      
+        
+          E
+          
+            −
+          
+        
+      
+    
+    {\displaystyle E^{-}}
+  
+) to that of the incident wave (
+  
+    
+      
+        
+          E
+          
+            +
+          
+        
+      
+    
+    {\displaystyle E^{+}}
+  
+). This is typically represented with a 
+  
+    
+      
+        Γ
+      
+    
+    {\displaystyle \Gamma }
+  
+ (capital gamma) and can be written as:
+
+
+  
+    
+      
+        Γ
+        =
+        
+          
+            
+              E
+              
+                −
+              
+            
+            
+              E
+              
+                +
+              
+            
+          
+        
+      
+    
+    {\displaystyle \Gamma ={\frac {E^{-}}{E^{+}}}}
+  
+
+
+The reflection coefficient may also be established using other field or circuit quantities.
+The reflection coefficient of a load is determined by its impedance 
+  
+    
+      
+        
+          Z
+          
+            L
+          
+        
+        
+      
+    
+    {\displaystyle Z_{L}\,}
+  
+(load impedance) and the impedance toward the source 
+  
+    
+      
+        
+          Z
+          
+            S
+          
+        
+        
+      
+    
+    {\displaystyle Z_{S}\,}
+  
+(source impedance).
+
+
+
+
+Simple circuit configuration showing measurement location of reflection coefficient.
+
+
+
+  
+    
+      
+        Γ
+        =
+        
+          
+            
+              
+                Z
+                
+                  L
+                
+              
+              −
+              
+                Z
+                
+                  S
+                
+              
+            
+            
+              
+                Z
+                
+                  L
+                
+              
+              +
+              
+                Z
+                
+                  S
+                
+              
+            
+          
+        
+      
+    
+    {\displaystyle \Gamma ={Z_{L}-Z_{S} \over Z_{L}+Z_{S}}}
+  
+
+Notice that a negative reflection coefficient means that the reflected wave receives a 180°, or 
+  
+    
+      
+        π
+      
+    
+    {\displaystyle \pi }
+  
+, phase shift.
+The magnitude (designated by vertical bars) of the reflection coefficient can be calculated from the standing wave ratio, 
+  
+    
+      
+        S
+        W
+        R
+      
+    
+    {\displaystyle SWR}
+  
+:
+
+
+  
+    
+      
+        
+          |
+        
+        Γ
+        
+          |
+        
+        =
+        
+          
+            
+              S
+              W
+              R
+              −
+              1
+            
+            
+              S
+              W
+              R
+              +
+              1
+            
+          
+        
+      
+    
+    {\displaystyle |\Gamma |={SWR-1 \over SWR+1}}
+  
+
+
+The reflection coefficient is displayed graphically using a Smith chart.
+Seismology[edit]
+Main article: Reflection seismology
+Reflection coefficient is used in feeder testing for reliability of medium.
+Optics and microwaves[edit]
+Main article: Fresnel equations
+In optics and electromagnetics in general, "reflection coefficient" can refer to either the amplitude reflection coefficient described here, or the reflectance, depending on context. Typically, the reflectance is represented by a capital R, while the amplitude reflection coefficient is represented by a lower-case r.These related concepts are covered by Fresnel equations in classical optics.
+Acoustics[edit]
+Main article: Acoustic_wave
+Acousticians use reflection coefficients to understand the effect of different materials on their acoustic environments.
+See also[edit]
+
+Microwave
+Mismatch loss
+Scattering parameters
+Transmission coefficient
+Target strength
+Hagen-Rubens relation
+
+References[edit]
+
+ This article incorporates public domain material from the General Services Administration document "Federal Standard 1037C" (in support of MIL-STD-188).
+Bogatin, Eric (2004). Signal Integrity - Simplified. Upper Saddle River, New Jersey: Pearson Education, Inc. ISBN 0-13-066946-6.  Figure 8-2 and Eqn. 8-1 Pg. 279
+
+External links[edit]
+
+
+
+Wikimedia Commons has media related to Smith charts.
+
+
+
+Flash tutorial for understanding reflection A flash program that shows how a reflected wave is generated, the reflection coefficient and VSWR
+Application for drawing standing wave diagrams including the reflection coefficient, input impedance, SWR, etc.
+
+
+
+
+

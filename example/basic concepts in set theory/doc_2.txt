@@ -1,0 +1,61 @@
+Not to be confused with Null function or Empty function.
+
+
+
+
+Graph of the identity function on the real numbers
+
+
+In mathematics, an identity function, also called an identity relation or identity map or identity transformation, is a function that always returns the same value that was used as its argument. In equations, the function is given by f(x) = x.
+
+
+
+Contents
+
+
+1 Definition
+2 Algebraic property
+3 Properties
+4 See also
+5 References
+
+
+
+Definition[edit]
+Formally, if M is a set, the identity function f on M is defined to be that function with domain and codomain M which satisfies
+
+f(x) = x   for all elements x in M.[1]
+
+In other words, the function value f(x) in M (that is, the codomain) is always the same input element x of M (now considered as the domain). The identity function on M is clearly an injective function as well as a surjective function, so it is also bijective.[2]
+The identity function f on M is often denoted by idM.
+In set theory, where a function is defined as a particular kind of binary relation, the identity function is given by the identity relation, or diagonal of M.
+Algebraic property[edit]
+If f : M → N is any function, then we have f ∘ idM = f = idN ∘ f (where "∘" denotes function composition). In particular, idM is the identity element of the monoid of all functions from M to M.
+Since the identity element of a monoid is unique, one can alternately define the identity function on M to be this identity element. Such a definition generalizes to the concept of an identity morphism in category theory, where the endomorphisms of M need not be functions.
+Properties[edit]
+
+The identity function is a linear operator, when applied to vector spaces.[3]
+The identity function on the positive integers is a completely multiplicative function (essentially multiplication by 1), considered in number theory.[4]
+In an n-dimensional vector space the identity function is represented by the identity matrix In, regardless of the basis.[5]
+In a metric space the identity is trivially an isometry. An object without any symmetry has as symmetry group the trivial group only containing this isometry (symmetry type C1).[6]
+In a topological space, the identity function is always continuous.
+
+See also[edit]
+
+Inclusion map
+
+References[edit]
+
+
+^ Knapp, Anthony W. (2006), Basic algebra, Springer, ISBN 978-0-8176-3248-9 
+^ Mapa, Sadhan Kumar. Higher Algebra Abstract and Linear (11th ed.). Sarat Book House. p. 36. ISBN 978-93-80663-24-1. 
+^ Anton, Howard (2005), Elementary Linear Algebra (Applications Version) (9th ed.), Wiley International 
+^ D. Marshall; E. Odell; M. Starbird (2007). Number Theory through Inquiry. Mathematical Association of America Textbooks. Mathematical Assn of Amer. ISBN 978-0883857519. 
+^ T. S. Shores (2007). Applied Linear Algebra and Matrix Analysis. Undergraduate Texts in Mathematics. Springer. ISBN 038-733-195-6. 
+^ James W. Anderson, Hyperbolic Geometry, Springer 2005, ISBN 1-85233-934-9
+
+
+
+
+
+

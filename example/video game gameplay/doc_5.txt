@@ -1,0 +1,350 @@
+"Twitch game" redirects here. It is not to be confused with Twitch.tv.
+
+
+
+
+
+
+
+This article has multiple issues. Please help improve it or discuss these issues on the talk page. (Learn how and when to remove these template messages)
+
+
+
+
+
+
+
+This article needs additional citations for verification. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed. (March 2012) (Learn how and when to remove this template message)
+
+
+
+
+
+
+
+
+
+This article may be unbalanced towards certain viewpoints. Please improve the article by adding information on neglected viewpoints, or discuss the issue on the talk page. (June 2014)
+
+
+
+
+
+(Learn how and when to remove this template message)
+
+
+
+
+
+
+
+Pong is one of the earliest commercial arcade video games relying on twitch gameplay.
+
+
+Twitch gameplay is a type of video gameplay scenario that tests a player's reaction time. Action games such as shooters, sports and fighting games often contain elements of twitch gameplay. For example, first-person shooters such as Counter-Strike as well as Call of Duty shooters require quick reaction times for the players to shoot enemies, and fighting games such as Street Fighter require quick reaction times to attack or counter an opponent. Other video game genres may also involve twitch gameplay. For example, the puzzle video game Tetris gradually speeds up as the player makes progress.
+Twitch gameplay keeps players actively engaged with quick feedback to their actions, as opposed to turn-based gaming that involves waiting for the outcome of a chosen course of action. Twitch can be used to expand tactical options and play by testing the skill of the player in various areas (usually reflexive responses) and generally add difficulty (relating to the intensity of "twitching" required).
+Fast chess, chess played with short time limits between moves, is an example of adding a twitch gameplay element to a turn-based game. Conversely, checkpoints and extra lives are common game mechanics in twitch gaming that attempt to reduce the penalty for errors in play, adding an element of turn-based gameplay. Traditionally, however, the term "twitch game" has been applied to simple arcade, console, and computer games that lack an element of strategy and are based solely upon a player's reaction time.
+
+
+
+Contents
+
+
+1 History
+2 Gameplay today
+3 Twitch in shooters
+4 References
+5 External links
+
+
+
+History[edit]
+"Twitch" refers to the motion the player makes, a sudden movement or reaction to an event on the screen. An early use of the term was by Vern Raburn of Microsoft in 1981.[1] Most early computer, arcade, and console games are considered to be "twitch games." They mostly involved "see and react" situations. For instance, Kaboom! had players rapidly catching bombs that a mad bomber threw from a rooftop. Most classic arcade games such as Space Invaders and Pac-Man were also twitch-based.
+As games and their control inputs evolved, the games started to favor strategy over reaction, early turn-based games being the most prevalent examples. Such games required players to plan each move and anticipate the opponent's moves ahead of time. Not unlike chess, early strategy games focused on setting pieces and then moving them one turn at a time while the opponent did the same. Many of these games were based on tabletop games. The introduction of the internet, and its suitability as a playable medium, facilitated many of the features of today's mainstream games.
+However, that is not to say that all games with a base in strategy do not include room for twitch gameplay. Soon after turn-based strategy games were introduced, real-time strategy games were introduced to the video gaming market, beginning with Herzog Zwei and then Dune II and eventually leading to popular titles such as Command & Conquer, Warcraft, and StarCraft. While strategy was still the primary objective, these games played out in real time. Players were required to have fast reactions to enemies' movements and attacks.
+Early first-person shooters were very much like early games in general; fast reactions were required and little strategy or thought went into the gameplay. Even the youngest players were able to understand the concept, which may have been the reason such games became instantly popular among a large demographic. Many of the earliest first person games were considered cookie cutter copies of each other; Doom, Wolfenstein 3D, and many others looked, played, and felt the same, especially since many shooters were built off the Doom engine. Enemy AI was predictable and levels were simple mazes with secrets and side rooms. While some games included the ability to look up and down, it was rarely required of the player.
+Gameplay today[edit]
+Games have become more complex as technology has improved. Today, nearly every genre of video game contains some level of "twitch", though turn-based strategy games have remained roughly untouched by the phenomenon. First-person shooters remain the predominant genre to emphasize twitch gameplay.
+Some games include elements that take players back in nostalgic gameplay in the form of quick time events or QTEs. These events decide the fate of the player by displaying a keystroke or keystrokes that the player must input quickly.[2] While the concept is not new, the term is often attributed to Yu Suzuki, director of the game Shenmue. Shenmue was an adventure game at its core and it introduced QTEs as a way to keep players interested during extended cut scenes. Other games have since adopted this method (e.g. Resident Evil 4).
+Twitch in shooters[edit]
+Early shooter games were two-dimensional, such as the shoot 'em up Space Invaders, though some had the guise of being three-dimensional, such as the rail shooter Space Harrier. Players operated on a single level with enemies, and with the introduction of three-dimensional environments along with enhanced graphics and network capability, shooters continued to be a major influence in the gaming world. The overall tactics and strategies remained the same. Games such as Quake encouraged fast-paced destruction. Automatic weapons and rocket launchers ensured quick gameplay. It was still a "twitch game," but over time, gameplay success was determined by more than merely having the fastest reactions. As games evolved, additional layers of strategy were demanded. Over time, strategy won over twitch, especially in team- and objective-based games.
+A primary example of this would be the game Counter-Strike – originally a modification of the popular game Half-Life that quickly became one of the most popular competitive first-person shooters to date. The base game included objective-based game types that limited the player to a single life per round. Players obtained in-game cash to purchase better weapons and armor. Twitch became a scenario-based event as players wanted to retain the weapons they had worked hard to purchase, knowing a death resulted in losing all the equipment they had obtained.
+Many players realized that teamwork and strategy would win over the "run and gun" tactic. Twitching became something that happened in moments of need versus all the time; for example, a player might have walked around a corner and found an enemy there, in which one would have to react immediately to kill the opponent.
+With further advancement in technology and improvement of the artificial intelligence of computer-controlled enemies, games became more and more about strategy in the shooter genre. A player had to be able to aim precisely to conserve ammo, and often flank large groups of enemies.
+Today's shooters still have scenarios where players will have a twitch reaction, but often even those scenarios can be avoided by taking one's time.
+Even highly skilled gamers still find themselves in twitch scenarios in shooters. Most are predominantly online, where the actions of the enemy team are unscripted and difficult to predict. Many skilled snipers in these games find themselves "twitching" when flanked; the instinctual reaction is for one to switch to a secondary weapon, which is most often an inaccurate handgun, and spray fire while attempting to find cover.
+The predominant reason that shooters do not limit the effectiveness of twitch scenarios is because the average gamer has little time to actually play the game, especially if they play in online lobbies, with the amount of time the average gamer has to play games limited to between two and four hours per day. A game that requires a large amount of skill may deter these gamers from playing at all. At the same time, due to the popularity of the internet, there is a large number of gamers who favor twitch (skill) over strategy. In recent years, videos have appeared across the internet displaying montages of twitch in-game kills. Most of these depict players with sniper rifles hardly aiming or not even aiming at all and getting such kills.[citation needed]
+Traditional 2D shooters have survived in the form of bullet hell shooters, which place a strong emphasis on quick reaction times.
+References[edit]
+
+
+
+^ Zamora, Ramon (1981-04-13). "Olympic Decathlon: The Software of Champions". InfoWorld. IDG. Retrieved 2015-08-02. 
+^ Goldstein, Hilary. "Shenmue II: QTE". IGN. 
+
+
+
+External links[edit]
+
+Instructional Technology Research Online
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Video game genres (List)
+
+
+
+Action
+
+
+
+Beat 'em up
+
+Hack and slash
+
+
+Fighting
+Maze
+
+Pac-Man clone
+
+
+Platform
+Shooter
+
+First-person
+Third-person
+Side-scrolling
+Top-down
+isometric
+Light gun
+Shoot 'em up
+Tactical
+
+
+Survival
+
+Battle royale
+
+
+
+
+
+
+
+
+
+
+Action-adventure
+
+
+
+Grand Theft Auto clone
+Immersive sim
+Metroidvania
+Stealth
+Survival horror
+
+Psychological horror
+
+
+
+
+
+
+
+Adventure
+
+
+
+Escape the room
+Interactive fiction
+Interactive movie
+Point n' click
+Visual novel
+
+
+
+
+
+MMO
+
+
+
+MMOFPS
+MMORPG
+MMORTS
+MUD
+
+
+
+
+
+Role-playing
+
+
+
+Action role-playing
+Dungeon crawl
+Roguelike
+Tactical role-playing
+
+
+
+
+
+Simulation
+
+
+
+Construction and management
+
+Business
+City
+Government
+
+
+Life simulation
+
+Dating sim
+Digital pet
+God
+Social simulation
+
+
+Sports
+
+
+
+
+
+Strategy
+
+
+
+4X
+Multiplayer online battle arena
+Real-time strategy
+
+Tower defense
+Time management
+
+
+Real-time tactics
+Turn-based strategy
+Turn-based tactics
+Wargame
+
+
+
+
+
+Vehicle simulation
+
+
+
+Flight simulator
+
+Amateur
+Combat
+Space
+
+
+Racing
+
+Kart racing
+Sim racing
+
+
+Submarine simulator
+Train simulator
+Vehicular combat
+
+
+
+
+
+Other genres
+
+
+
+Artillery
+Breakout clone
+Eroge
+Exergame
+Incremental
+Music
+
+Rhythm
+
+
+Non-game
+Party
+Programming
+Puzzle
+
+Sokoban
+Tile-matching
+
+
+
+
+
+
+
+Related concepts
+
+
+
+AAA rating
+Advertising
+Arcade game
+Art game
+Audio game
+Casual game
+Christian game
+Crossover game
+Cult game
+Educational game
+FMV
+Gamification
+Indie game
+Multiplayer video game
+Nonlinear gameplay
+
+Open world
+
+
+Nonviolent video game
+Online game
+
+Browser game
+Multiplayer online game
+Online gambling
+Social-network game
+
+
+Pervasive game
+Serious game
+Toys-to-life
+Twitch gameplay
+Video game clone
+
+
+
+
+
+
+
+
+
+

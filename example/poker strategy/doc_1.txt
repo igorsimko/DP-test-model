@@ -1,0 +1,206 @@
+
+
+
+
+
+
+This article needs additional citations for verification. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed. (July 2011) (Learn how and when to remove this template message)
+
+
+
+In poker, an isolation play is usually a raise designed to encourage one or more players to fold, specifically for the purpose of making the hand a one-on-one contest with a specific opponent. For example, if an opponent raises and a player suspects he is holding a weak, but playable hand, they may reraise to pressure other opponents to fold, with the aim of getting heads up with the opening raiser.
+Isolation plays are most common against overly-aggressive players ("maniacs") who frequently play inferior hands, or with players who may have a drawing hand. Isolation plays are also common in tournaments to isolate a player who is "short stacked", that is, one who is in imminent danger of elimination, and so is likely to be playing aggressively out of desperation. However, when a player is extremely short stacked compared to the rest of the field in a tournament, making him bust will sometimes be more profitable than winning his chips, so inducing overcalls from other players trumps isolation play.[1]
+Isolating is encouraged when holding a hand that fares better heads up than in a multi-way pot. For instance, when a player has a small pocket pair he may raise a large amount simply to knock out other players because typically a small pocket pair is about 50–60% likely to win an all-in pot in a heads up situation, but less likely when facing multiple opponents.
+See also[edit]
+
+Protection (poker)
+Poker jargon
+
+References[edit]
+
+
+
+^ [1] Archived February 8, 2012, at the Wayback Machine.
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Poker
+
+
+
+
+
+
+Index of poker articles
+Outline of poker
+
+
+
+
+
+Overview
+
+
+
+Betting
+Cheating
+Glossary
+History
+
+Poker boom
+
+
+Tournaments
+
+
+
+
+
+Play
+
+
+
+
+Elements
+
+
+
+Chip
+Position
+Pot
+Playing card
+Hands
+
+Non-standard
+
+
+Tell
+
+
+
+
+
+Plays
+
+
+
+Aggression
+Bluff
+Check-raise
+Draw
+Isolation
+Protection
+Steal
+
+
+
+
+
+
+
+
+Variations
+
+
+
+Draw poker
+
+five-card draw
+
+
+Stud poker
+
+five-card stud
+seven-card stud
+
+
+Community card poker
+
+Texas hold 'em
+Omaha hold 'em
+Greek hold 'em
+Six-plus hold 'em
+
+
+Three card poker
+
+three card brag
+
+
+Four card poker
+Chinese poker
+
+Open-face Chinese poker
+
+
+
+
+
+
+
+Strategy
+
+
+
+Fundamental theorem of poker
+Morton's theorem
+Pot odds
+Slow play
+
+
+
+
+
+Computing
+
+
+
+Computer poker player
+Online poker
+Poker tools
+
+
+
+
+
+
+
+
+ Category
+ Commons
+WikiProject
+
+
+
+
+
+
+
+
+
+This poker-related article is a stub. You can help Wikipedia by expanding it.
+
+
+v
+t
+e
+
+
+
+
+
+
+
+
+

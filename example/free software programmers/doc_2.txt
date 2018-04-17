@@ -1,0 +1,465 @@
+
+
+Michael Simms
+
+
+Born
+8 May 1973
+
+Leicester, England
+
+
+Residence
+Nottingham, England
+
+
+Occupation
+LGP Business Adviser, Linux Game Publishing
+
+
+Employer
+Wcities (2000–2001)
+
+CEO Tux Games (2000–2012)
+
+CEO and Head of Development Linux Game Publishing (2001–2012)
+
+
+Michael Simms is the creator of the Tux Games website and the founder of Linux Game Publishing.
+
+
+
+Contents
+
+
+1 Biography
+2 Games credited
+3 Open source projects
+4 See also
+5 References
+6 External links
+
+
+
+Biography[edit]
+Simms began using Linux when he was at university in 1992 and has been writing and contributing to open source software since 1993, having a strong belief that operating systems and file formats need to be open source in order to make computing competitive.[1] Between 2000 and 2001 he also worked at Wcities in London as a Lead product architect.[2] Simms was a beta tester for Loki Software's Linux ports of Civilization: Call to Power and Descent 3,[3] and it was in response to being unable to order versions of Loki's titles from any British reseller that spurred him to create Tux Games, one of the first online Linux game stores.[4] The website went live ten seconds after midnight on 1 January 2000, selling its first title on 3 January.[5] In response to Loki's demise and the effect it would have on Tux Games, Simms invested £350,000 into a company porting Windows game titles to Linux. Linux Game Publishing was founded on 15 October 2001 to port and publish new games for Linux. Simms remained the CEO, as well as the Head of Development for over a decade.[4] He likes to play Majesty and other strategy games. [6]
+On 31 January 2012 Simms announced that he was stepping down as CEO and handing over control to Clive Crous.[7]
+Games credited[edit]
+
+
+Date of Release
+Title
+Company
+Credited for
+
+
+18 September 2009
+Shadowgrounds Survivor
+Linux Game Publishing
+PHB and Programming
+
+
+16 September 2009
+Shadowgrounds
+Linux Game Publishing
+PHB and Programming
+
+
+15 September 2009
+Majesty: Gold Edition r2
+Linux Game Publishing
+PHB and Additional Programming
+
+
+9 April 2009
+Sacred: Gold Edition
+Linux Game Publishing
+PHB and Programming
+
+
+29 January 2009
+Jets'n'Guns
+Linux Game Publishing
+PHB and Additional Programming
+
+
+5 December 2008
+X3: Reunion
+Linux Game Publishing
+PHB and Programming
+
+
+7 June 2007
+Ballistics
+Linux Game Publishing
+PHB and Programming
+
+
+13 March 2007
+Knights and Merchants: The Shattered Kingdom
+Linux Game Publishing
+PHB and Additional Programming
+
+
+4 August 2006
+Cold War
+Linux Game Publishing
+PHB
+
+
+15 June 2006
+Gorky 17
+Linux Game Publishing
+PHB
+
+
+30 May 2006
+X2: The Threat
+Linux Game Publishing
+PHB and Developer
+
+
+24 June 2005
+Soul Ride
+Linux Game Publishing
+PHB
+
+
+4 February 2005
+Postal²: Share The Pain
+Linux Game Publishing
+PHB
+
+
+10 January 2005
+Software Tycoon
+Linux Game Publishing
+PHB
+
+
+15 April 2003
+Majesty: Gold Edition
+Linux Game Publishing
+PHB
+
+
+13 December 2002
+MindRover: The Europa Project
+Linux Game Publishing
+PHB
+
+
+16 August 2000
+Descent³
+Loki Software
+Beta Tester
+
+
+7 May 1999
+Civilization: Call to Power
+Loki Software
+Beta Tester
+
+
+Open source projects[edit]
+
+
+Date of Release
+Title
+Company
+Credited for
+
+
+20 August 2006
+Grapple
+Linux Game Publishing
+Programming
+
+
+See also[edit]
+
+Tux Games
+Linux Game Publishing
+Hyperion Entertainment
+Runesoft
+Ryan C. Gordon
+
+References[edit]
+
+
+
+^ A closed source company’s CEO’s view on open source Archived 2012-04-22 at the Wayback Machine. Linux Game Publishing Blog, June 29, 2009 (Article by Michael Simms)
+^ Michael Simms’s Experience Archived 2012-07-15 at Archive.is Linkedin
+^ MobyGames, Descent 3 - Linux beta testers
+^ a b Bringing Windows games to Linux TechRadar, 10 August 2009 (Interview by Graham Morrison)
+^ LGP History pt 2: The Early Days Archived 2011-08-12 at the Wayback Machine. Linux Game Publishing Blog, June 23, 2009 (Article by Michael Simms)
+^ Linux Game Publishing: Interview with Michael Simms Linux Gazette, March 6, 2005
+^ Linux Game Publishing...the return?[permanent dead link] GamingOnLinux, January 31, 2012 (Article by Liam Dawe)
+
+
+
+External links[edit]
+
+
+
+Wikiquote has quotations related to: Michael Simms
+
+
+
+Tux Games, The Online Store for Linux Games
+Linux Game Publishing official site
+2006 Interview with Michael Simms (LinuxEXPRES)
+2009 Interview with Michael Simms (hardware.no)
+2009 Interview with Michael Simms (techradar.com)
+2003 Interview with Michael Simms (Mstation.org)
+Michael Simms at LinuxGames (lost interview)
+Michael Simms at LinuxGamers[permanent dead link]
+Michael Simms at MobyGames
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Video games published by Linux Game Publishing
+
+
+
+Strategy
+
+
+
+Majesty: The Fantasy Kingdom Sim
+Knights and Merchants: The Shattered Kingdom
+Disciples II: Dark Prophecy
+
+
+
+
+
+Action
+
+
+
+Postal 2
+Gorky 17
+Cold War
+Shadowgrounds
+Shadowgrounds: Survivor
+Jets'n'Guns
+
+
+
+
+
+Racing
+
+
+
+MindRover
+Ballistics
+Bandits: Phoenix Rising
+
+
+
+
+
+X series
+
+
+
+X2: The Threat
+X3: Reunion
+
+
+
+
+
+Other games
+
+
+
+Creatures
+Hyperspace Delivery Boy!
+Sacred
+
+
+
+
+
+Partners
+
+
+
+Tux Games
+Loki Software
+Alternative Games
+RuneSoft
+Hyperion Entertainment
+Mindware Studios
+Ryan C. Gordon
+Tribsoft
+
+
+
+
+
+Other articles
+
+
+
+Michael Simms
+Grapple
+
+
+
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Notable contributors to the Linux operating system
+
+
+
+Kernel
+
+
+
+H. Peter Anvin
+Jens Axboe
+Andries Brouwer
+Rémy Card
+Arnaldo Carvalho de Melo
+Alan Cox
+Kristoffer Ericson
+Matthew Garrett
+Michael Kerrisk
+Con Kolivas
+Greg Kroah-Hartman
+Robert Love
+David S. Miller
+Ingo Molnár
+Andrew Morton
+Keith Packard
+Hans Reiser
+Rusty Russell
+Sage Sharp
+Linus Torvalds
+Theodore Ts'o
+Sage Weil
+Harald Welte
+Chris Wright
+
+
+
+
+
+GNU
+
+
+
+Loïc Dachary
+Alexandre Oliva
+Richard Stallman
+Michael Tiemann
+
+
+
+
+
+Distributions
+
+
+
+Benjamin Mako Hill
+Daniel Robbins
+Gaël Duval
+Ian Murdock
+Mark Shuttleworth
+Jane Silber
+Patrick Volkerding
+Peter MacDonald
+
+
+
+
+
+Other developers
+
+
+
+Timothee Besset
+Matthias Ettrich
+Olivier Fourdan
+Mark Galassi
+Jim Gettys
+Ryan C. Gordon
+Harald Hoyer
+Miguel de Icaza
+Havoc Pennington
+Lennart Poettering
+Michael Simms
+Kay Sievers
+Dave Taylor
+Jeff Waugh
+
+
+
+
+
+Advocates
+
+
+
+Bradley M. Kuhn
+Bruce Perens
+Donna Benjamin
+Eric S. Raymond
+Federico Heinz
+Jon Hall
+Ken Coar
+Mary Gardiner
+Valerie Aurora
+
+
+
+
+
+Others
+
+
+
+Allison Randal
+Dave Sifry
+Jono Bacon
+Karen Sandler
+Keith Bergelt
+Luis Villa
+Pamela Jones
+Pia Waugh
+
+
+
+
+
+
+
+
+
+

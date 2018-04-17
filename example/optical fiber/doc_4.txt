@@ -1,0 +1,229 @@
+Optical attached cable (OPAC) is a type of fibre optic cable that is installed by being attached to a host conductor along overhead power lines. The attachment system varies and can include wrapping, lashing or clipping the fibre optic cable to the host. Installation is typically performed using a specialised piece of equipment that travels along the host conductor from pole to pole or tower to tower, wrapping, clipping or lashing the fibre optic cable in place. Different manufacturers have different systems and the installation equipment, cable designs and hardware are not interchangeable.
+
+
+
+
+SkyWrap fibre optic cable installation
+
+
+Although lashed cable systems and clipped cable systems have been investigated as a means of attaching optical fibre cables to overhead power lines, wrapped cables were the first type to be developed and are the only type in common use today.
+Wrapped cable systems were developed independently in the UK (SkyWrap) and Japan (GWWOP) during the 1980s and have been widely used,[1][2][3] with installations in every continent except Antarctica. Through licensing and through independent development, wrapped cable systems have also been supplied by French, Italian, German and Russian companies.
+The installation process for wrapped cables involves passing a drum of cable around and around the host conductor as the carrying device moves across the span. For installation on hosts within 10 m of the ground (medium or low voltage overhead lines), it is possible to pull the wrapping machine by hand from the ground below the line. However, a radio controlled power unit using batteries or a petrol engine is normally required when the host conductor is on a high voltage transmission line. Wrapped cables can be applied to earth wires (ground wires, shield wires) on power transmission lines and to phase conductors on transmission, sub-transmission or distribution lines.
+SkyWrap is the most successful example of OPAC and is used together with more familiar optical fibre cables such as OPGW and All-dielectric self-supporting cable (ADSS) to build communications networks for power utilities.[4]
+
+
+
+Contents
+
+
+1 Etymology
+2 History
+
+2.1 UK and Japan
+2.2 Russia
+2.3 France
+
+
+3 Technology
+
+3.1 Cable
+3.2 Wrapping equipment
+3.3 Hardware
+
+
+4 Lashed cable
+5 Uses
+6 Current status of commercial wrapped cable systems
+7 In the media
+8 External links
+9 References
+
+
+
+Etymology[edit]
+The generic International Electrotechnical Commission (IEC) and IEEE designation for attached cable is "OPAC".[5] OPAC can be used in the same sense as the nomenclature "OPGW" and "ADSS". OPAC refers specifically to fibre optic cables and specifically to installations where the host conductor is part of the electricity supply system. Installations using metallic cables (coax or copper telephone cables) or messenger wires as the host are not covered by the term OPAC.
+The term "Ground-Wire Wound Optical cable" (GWWOP) is sometimes used to describe wrapped fibre optic cables for installation on power lines.[6] and may be a brand name owned by Furukawa Electric of Japan. The Russian language description for wrapped cable technology is "ОКНН" (оптоволоконного кабеля неметаллического навивной)[7] (in English: OCNN = Optical Cable, Non-metallic, coiling or wrapping (Navivnoj)). The French language term is "Câble Optique Enroulé" (COE)
+The name "SkyWrap" is one of three related brand names introduced by FOCAS in 1990 to describe its fibre optic cable products used in the construction of power utility communications networks, the others being SkyLite OPGW and SkySpan ADSS.[8] When AFL acquired FOCAS in 2000, the SkyLite and SkySpan brand names were dropped but SkyWrap has continued to be used. Prior to 1992 the brand name was Rayfos. The Rayfos name is owned by Raychem Corporation,[9] who developed the technology before selling it to FOCAS. Rayfos is a portmanteau name constructed from "Raychem" and "fibre optic system".
+History[edit]
+UK and Japan[edit]
+Wrapped optical fibre cable technology was developed independently in the UK and Japan in the early 1980s. In the UK, Raychem Ltd had a background in polymeric materials with resistance to high voltage environments; used for example in heat-shrinkable 33kV cable terminations and in polymer insulators.[10] The initial development involved an all-dielectric fibre optic cable with a sheath made from tracking resistant material.[11] The first installation was carried out on a 33kV overhead distribution line between sub-stations at Hartley and Goudhurst in Kent, UK in December 1982.The choice of a 33kV line indicates the expected market for the technology – building communication networks over local distribution lines when transmission and sub-transmission lines were expected to be equipped with OPGW. Over the next five years, installations were carried out in Norway, New Zealand, USA, India, Germany, France and Finland totalling about 180 km in both ground-wire and phase-conductor installations, and on both distribution and transmission lines. Raychem sold the wrapped optical fibre cable technology to Cookson Group plc in 1987. A subsidiary of Cookson Group was FOCAS Limited who completed the development work and commercialised the product as SkyWrap, supplying more than 16,000 km to customers in over 30 countries. FOCAS was acquired by AFL in 2000[8]
+In Japan, Furukawa Electric Company developed a product explicitly for installation on the earth-wire of transmission lines, and this was reflected in the name: Ground-Wire Wrapped Optical cable. The first installation was carried out in 1985 on a 275kV transmission line owned by Chubu Electric Power and included a remote controlled pulling device and a self-compensating counterbalance on the wrapping machine.[12] These are both necessary technologies for successful wrapped cable installation on the ground wire of long-span HV transmission lines.
+By 1995, several other companies had entered the wrapped cable market:[13] in Europe, British Insulated Callender's Cables (BICC) (in UK) introduced a product called Fibwrap' and Alcatel subsidiary IKO Kabel of Sweden marketed GWWOP under license from Furukawa. In Japan, GWWOP development had become a joint effort involving Sumitomo Electric Industries, Hitachi Cables,[14] Furukawa Electric and Fujikura companies[6] and each of the 4 companies supplied their own slightly different wrapped cable systems to power utilities in the domestic Japanese market. BICC also had a technology licence from Furukawa, but carried out extensive development work to make the product suitable for the European market: BICC re-designed the cable to use loose-tube technology and so provide a zero-strain environment for the optical fibres at all operating conditions of the overhead line; the tug and wrapping machine were re-designed to reduce the overall load on the conductor during the installation process. This included the use of a light-weight (but very costly) carbon-fibre cable drum in order to maximise the length of cable in a fixed payload weight. Being derived from GWWOP, both the BICC and Alcatel systems were limited to ground-wire installations and no phase-conductor installations were carried out.
+Russia[edit]
+A novel wrapping technology was developed by Russian company Teralink[15] during the early 2000s. The wrapping machine is self-balancing with the fibre-optic cable payload held on a pair of drums arranged one on either side of the host conductor and therefore on either side of the axis of the machine. The cable pays off one drum for 100-150m then the other drum and so on, alternately switching between drums. The drums are never more than 2 kg out of balance and the machine does not require an external counterbalance system. This keeps the machine smaller than other designs of wrapping equipment and the payload constitutes a higher proportion of the all-up weight. Two constructors are able to place by hand the machine with full drum of cable on the wire.
+A second Russian company, Scientific Innovations, introduced a more conventional design of wrapping machine in the mid-2000s, with a single drum of fibre optic cable and a counterbalance arm. There are several records of successful installations using this equipment.
+France[edit]
+The final commercial developments of wrapped cable systems took place in France in about 2005 when RTE, the national electricity transmission utility began to install substantial quantities of optical fibre cables including OPGW and wrapped cables. Two French contractors, Transel (part of the Bouygues group) and Omexom (a Vinci SA company), independently developed their own wrapped cable systems (known as câble optique enroulé (COE) in French) to participate in this program. Neither system had a product name other than COE or was marketed outside France. Both systems were withdrawn in about 2010 after a total of about 1000 km of wrapped cable installations for RTE.
+Technology[edit]
+There are three basic technology requirements for a wrapped cable system – a fibre optic cable with suitable performance for installation on an overhead power-line; a device for carrying out the wrapping operation (wrapping equipment) and the appropriate hardware to stabilise and complete the installation.
+Cable[edit]
+Wrapped fibre optic cable must provide the following characteristics:
+
+Small diameter to have as little as little impact on the wind load of the host conductor as possible;
+Light weight in order to keep the total weight of wrapping machine and cable payload as small as possible.
+Tough outer sheath to provide protection against the types of damage mechanism encountered on overhead lines: sunlight, rain, atmospheric pollution, birds’ claws and beaks, shotgun pellets (hunters shoot at birds which perch on or fly close to overhead lines) and wind-induced vibration.
+Sufficient strain-margin to protect the optical fibres at the extremes of the overhead line operating window: low night-time or winter temperatures cause the host conductor to shrink, high day-time or summer temperatures cause expansion. The optical cable design must allow the fibres to continue to transmit data across the whole daily and seasonal temperature range. Strong winds and built up layers of ice will cause conductors to stretch even more, requiring high levels of strain margin in the fibre optic cable design.
+
+These characteristics are unique to OPAC and mean that wrapped cables are designed and manufactured specifically for the application: generic fibre optic cables cannot be used for wrapped cable installations.
+The strain margin requirements tend to favour cable designs using multiple loose tubes. Tight-buffer cable designs do not provide sufficient strain margin and the optical fibre transmission performance is compromised under strong winds, heavy ice accretions and at high temperatures. In cables based on a single loose tube design, the optical fibres have too much freedom of movement along the cable axis. Consequently, mechanical energy in the form of wind-induced vibration of the host conductor causes the optical fibres to move gradually ‘downhill’ and allowing the excess fibre length to collect in the low point of the span. This uneven distribution of excess fibre length compromises the optical performance of the cable with increased optical attenuation at low temperatures in the relatively crowded sections of tube in the middle of spans and at high temperatures where the fibres are under strain at the high sections close to the towers. These problems are worse on longer spans.
+Heat resistance is an important part of wrapped cable design. Conductors on overhead lines are subject to two different sources of severe temperature excursions: lightning strike and fault current. Lightning strikes produce a large and sudden increase in conductor temperature (from ambient temperature to over 200 °C in less than 40μs) followed by an exponential decay over tens of seconds back to ambient temperature. The amount of energy converted to heat in a lightning strike can be sufficient to melt several strands in a multi-stranded conductor. Fault currents tend to produce longer rise times (ms rather than μs) to somewhat lower temperatures (typically below 200 °C) and with a longer decay time. In order to cope with these temperatures, the sheath of a wrapped fibre optic cable must be made from a high-temperature material or it must be crosslinked to prevent melting. Suppliers will carry testing of their cable to demonstrate that it can survive a number of lightning strikes or fault current episodes.
+Wrapping equipment[edit]
+The installation machinery carries a drum of fibre optic cable along the host conductor on the overhead line, passing the drum around and around the conductor. The machine pays out the cable at a controlled tension and wraps the cable around the host conductor at a helical pitch of about 1 metre. The wrapping machine may be pulled by hand using a rope from the ground or it may be self-propelled and radio controlled. Motive power may be provided by a petrol engine or a battery pack. The motive power unit may be built into the wrapping machine or it may be a separate unit. Separate units are frequently called "Tug" or "Puller" and have the advantage that two smaller pieces of equipment are easier to handle at the top of a tower or pole than one big piece.
+
+
+
+
+Line crew and wrapping equipment at the top of an overhead line tower. The wrapping machine is travelling from right to left in the photo. The tug is already on the new side of the tower and the wrapping machine is about to be lifted over to join it.
+
+
+The design of wrapping equipment varies from supplier to supplier, with no consensus on the ideal design. Some suppliers have more than one type of wrapping machine with different types of machine suited to different classes of overhead line.[16][17][18][19]
+The most important limit on the design of the wrapping machinery is the total combined weight of the equipment and the payload of cable. This weight is applied to the overhead line during the wrapping installation and so the host conductor and its supports must be capable of sustaining the extra load during the installation process. A typical limit is that the tension in the host conductor must not increase to more than 50% of its rated breaking strength during the wrapping installation. Other limits can apply as well, such as the bending loads on a cross-arm or cantilever load on a post insulator. Typically, when installations are carried out in benign weather conditions, the loads on the overhead line are within the limits imposed by the tolerances for extreme weather events.
+This gross weight threshold is a significant constraint on the design of wrapped cable systems as it effectively limits the length of optical cable that can be installed in one piece. Longer lengths of cable add weight in 3 ways – the drum of cable is heavier because it contains more cable; the counterweight is heavier to balance the heavier drum; the machine needs to be bigger and stronger to carry the increased loads and to resist the increased forces involved in wrapping a heavier drum. Small increases in cable length become significant because of this ‘triple-whammy’ effect.
+The total weight (all-up weight) of the installation machine comprises: the cable drum and cable; the wrapping mechanism; the motive power unit; the tension control mechanism and the counterweight system. All of these individual components are necessary, but some components may be combined to increase the efficiency of the design. For example, those designs using electric motors tend to use the battery pack as part of the counterweight system. Counterweights are required for two separate purposes: to counter the turning moment of the wrapping machine and to balance the cable drum payload.
+The turning moment arises because the wrapping machine passes a heavy drum of cable around the machine axis so as to wrap the fibre optic cable onto the host conductor. This motion is achieved by means of a gearbox that converts the linear travel of the wrapping machine along the conductor into a rotating movement of the drum carrier. The force of moving the drum in one direction (say clockwise around the conductor) causes a resultant force to act on the machine in the opposite direction, making the wrapping machine spin on its own axis (counter-clockwise in this example). Frictional effects from the machine’s grip on the conductor can be used to counter this to some degree, but in practice it is insufficient and the required stability can only be achieved by having a relatively large weight suspended rigidly below the conductor from the non-rotating part of the wrapping machine. The motor unit is heavy, has a good grip on the conductor and so is often used to provide the necessary stability. For rope-pulled machines with no motor unit, a separate ‘keel weight’ is used to achieve the same effect.
+During the wrapping operation, the centre of rotation of the equipment lies along the axis of the host conductor.
+Most wrapping machine designs carry a single drum of cable on one side of the machine and therefore require a counterweight on the opposite side to provide lateral stability. As a minimum, the counterweight is adjustable at each pole or tower to reflect the reduced weight of the payload at the end of each span. The more sophisticated designs of wrapping machines have automatically adjusting counterweights that maintain balance throughout the span as the cable drum becomes progressively lighter. This is normally achieved by arranging for the counterweight move inwards towards the machine axis as the machine travels forward. Such devices are essential for span lengths greater than 250 – 300m. Ideally, the centre of gravity of the rotating part of the wrapping machine should lie on the axis of the host conductor at all times. The centre of gravity of the complete wrapping machine will always be below the axis of the host conductor.
+There are designs of wrapping machine that are self-balancing, using two drums of cable carried one on each side of the machine axis: the Teralink (Russian) device dispenses a single cable that is pre-wound onto 2 drums.[15] The AFL (UK/USA) machine can be configured to wrap 2 cables simultaneously from a pair of drums, in order to achieve double the normal fibre-count.
+Hardware[edit]
+Wrapped cable systems incorporate several unique pieces of hardware that are required to anchor the fibre optic cable to the conductor, to protect the cable as it passes over or around supporting poles and towers of the overhead line, and to control electric field effects in installations on phase conductors. Each supplier has its own designs for these items and there is no commonality or interchangeability of hardware between systems.
+There are two variants of wrapped optical fibre cable systems for installation on overhead electricity power lines: they differ in the nature of the host conductor. When the host conductor is a phase-wire, one of the conductors that carry the electric current in the electricity network, a phase-to-ground insulator is required at every location where the wrapped cable leaves the conductor. The phase-to-ground (PTG) insulator is a device that provides electrical isolation whilst allowing optical continuity. This means that the fibre optic cable and joint closures on the grounded side of the PTG can be accessed and worked on safely, even if the overhead line is energised to full system voltage. The simpler system is designed to be installed on the earth-wire (also known as ground-wire or shield wire) of the overhead line. Because earth-wires are not energised in service, this type of installation does not require a phase-to-ground insulator.
+Lashed cable[edit]
+Lashing has been used as a means of installing communications cables since the process was developed by Bell Telephone Laboratories in the late 1940s. This process typically involves lashing one or more copper telephone cable, co-ax cable TV cable or fibre optic cable to a pre-installed steel messenger wire using a steel lashing wire and a device called a 'spinner' or 'lasher'.[20] It is used to attach these types of cables to road-side utility pole lines and this type of installation is not covered by the term OPAC. OPAC specifically refers to fibre optic cables attached to overhead power lines where the host conductor is part of the overhead electricity system. Lashed communication cables on the ground wire or an auxiliary grounded wire were installed until the mid-1980s at several powerlines of former EVS (now EnBW) in Baden-Württemberg, Germany and are still used on some lines.
+
+
+
+
+Lashed communication on a 110kV-powerline of EnBW AG near Leonberg in Germany
+
+
+Uses[edit]
+Wrapped cable systems are used in building telecommunications networks over power utility rights of way. This is an attractive concept for many power utilities because it means that the communications network is under their own control and can be tailored to meet their particular requirements with suitable attributes such as redundancy, latency and bandwidth. Once built, the network is relatively inexpensive to operate compared to rental charges previously paid to phone companies. The network connects directly between power utility operational sites such as power stations, sub-stations and transformer sites. Communications traffic is typically a mix of SCADA, other operational traffic such as tele-protection signaling, video surveillance and monitoring, and other business traffic such as voice channels, inter-office communications and so on. Since fibre optic cables provide very high bandwidth - much more than a power utility would normally require - many power utilities are able to generate revenue from their communications networks by leasing bandwidth or spare optical fibres to other operators such as mobile phone companies or ISPs.
+Three different types of fibre optic cable have been developed for installation on overhead power utility lines: Optical Ground Wire (OPGW), All-Dielectric Self-Supporting (ADSS) cable and Optical Attached Cable (OPAC). Each type has a different set of properties and is therefore better suited to a particular set of circumstances. OPAC cables are most typically used when access to the overhead line is difficult (for example, in remote areas or, conversely, in crowded urban areas) or when an overhead line is structurally too weak to support the extra weight of an ADSS cable.
+Current status of commercial wrapped cable systems[edit]
+
+
+Supplier
+Brand name
+First installed
+Total quantity installed as of July 2014[update]
+Current status
+
+
+IKO Kabel (Alcatel)
+GWWOP
+Never
+0
+Withdrawn about 1995
+
+
+AFL
+SkyWrap
+1982
+30,000 km
+Currently produced and sold internationally (as of July 2014[update])
+
+
+BICC
+Fibwrap
+1993
+850 km
+Withdrawn about 1999
+
+
+FOCAS
+SkyWrap
+
+
+See AFL
+
+
+Furukawa
+GWWOP
+1985
+about 500 km
+Currently produced for the Japanese domestic market (as of July 2014[update])
+
+
+Hitachi, Fujikura, Sumitomo
+GWWOP
+1995
+about 300 km
+Withdrawn about 2005
+
+
+Omexom
+câble optique enroulé (COE)
+2006
+300 km
+Withdrawn about 2010
+
+
+Raychem
+Rayfos
+
+
+See AFL
+
+
+Scientific Innovations
+None
+2006
+about 1000 km
+Not known - domestic market in Russia only
+
+
+Transel
+None
+2004
+650 km
+Withdrawn about 2010
+
+
+Teralink
+None
+2004
+about 200 km
+Currently produced for the Russian domestic market (as of July 2014[update])
+
+
+In the media[edit]
+
+Rayfos was featured on the BBC television programme Tomorrow's World in the episode broadcast at 19:30 on 9 May 1985. Judith Hann was seen in an isolated cottage in Wales during a thunderstorm. The lights went out and the TV stopped working (she had been watching Tomorrows World) after a lightning strike and, following her phone call to the electricity board, an engineer set off to look for the fault. The story line then moved on to discuss how better communications systems between the control centre and outlying substations would speed up restoration of the power supply. During the piece, Judith Hann was seen to pull a wrapping machine along a piece of conductor that had been deliberately installed at shoulder height for the demonstration.
+Wrapped cable installations have been featured in various local and regional magazines and newspapers following local installations, for example in Alsace, France.[21]
+
+External links[edit]
+
+AFL SkyWrap
+Teralink.ru
+Scientific Innovations
+
+References[edit]
+
+
+^ Gilbert, J (April 1990). "New cable and liveline method restores fibre optic relay link". Electric Light & Power. PennWell. 
+^ "Getting to the figures fast". FT Energy World. FT Business Ltd: 44–50. October 1998. 
+^ Moore, G.F., ed. (1997). Electric Cables Handbook, 3rd Ed. Blackwell Science. p. 745pp. ISBN 978-0-632-04075-9. Retrieved 2014-08-12. 
+^ Carrio, S.L. (December 1992). "In-house crews install 100-mile fiber optic link in Wisconsin". Transmission & Distribution. TDWorld. 
+^ "Glossary". IEC. International Electrotechnical Commission. Retrieved 2014-06-12. 
+^ a b "Development of a Multicore Ground Wire Wound Optical Fiber Cable" (PDF). Chubu Electric Power. Retrieved 2014-04-27. 
+^ "Wrapping machine for NSI". Scientific Innovations JSC. Retrieved 2014-07-18. 
+^ a b Redman, Mike (2008). "Chapter 4: Confessions of a Start-up Junkie". In Lopez-Higuera, Miguel; Culshaw, Brian. Engineering a High-Tech Business: Entrepreneurial Experiences and Insights. SPIE Press. pp. 39–50. ISBN 978-0-8194-7180-2. 
+^ "IP Australia". IP Australia. Intellectual Property in Australia. Retrieved 2013-08-15. 
+^ Looms, John S.T. (1988). Insulators for high voltages. Peter Perigrinus. ISBN 0-86341-116-9. Retrieved 2014-07-23. 
+^ Atkins, Alan D.; Clabburn, Robin J.; Looms, John S.T. (1983). "Patent No. EP0303740". 
+^ Yoshida, K; Ikeya, T; Kamata, Y; Miyajima, Y (18–20 November 1986). Winding of optical fiber cable onto existing ground wire. 35th International Wire and Cable Symposium. Reno, Nevada. 
+^ McEntee, Joe (September 1997). "Utilities branch out with overhead fibres". FibreSystems. Institute of Physics Publishing Ltd. 
+^ Ito, Hirofumi; Takahashi, Toshiharu; Namekawa, Yoshikazu; Takagi, Hiromitsu (October 1999). "Development of thermo-resistant wrap-on type OPGW". Hitachi Cable Review (18): 13–18.  |access-date= requires |url= (help)
+^ a b Gaskevich, Evgeny B. (2007). "Patent No. RU 2309109". 
+^ "SkyWrap". AFL. Retrieved 2014-07-16. 
+^ "AccessWrap". AFL. Retrieved 2014-07-16. 
+^ "Construction of a fibre optic link for KuzbassEnergo". Teralink.ru. 2006-02-15. Retrieved 2014-07-23. 
+^ "WF-300". Teralink.ru. Retrieved 2014-07-23. 
+^ "GMP celebrates 75 years". GMP Tools. August 2011. Retrieved 2014-08-04. 
+^ "Dernières Nouvelles d'Alsace (Eng: "the latest news from Alsace"" (PDF). DNA.fr. 26 August 2009. Retrieved 2014-07-02. 
+
+
+
+
+
+

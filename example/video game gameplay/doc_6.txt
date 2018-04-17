@@ -1,0 +1,64 @@
+
+
+
+
+Example of a simple dialog tree.
+
+
+A dialog tree or conversation tree is a gameplay mechanic that is used throughout many adventure games[1][2][3][4][5][6] (including action-adventure games[7]) and role-playing video games.[8] When interacting with a non-player character, the player is given a choice of what to say and makes subsequent choices until the conversation ends.[8] Certain video game genres, such as visual novels and dating sims, revolve almost entirely around these character interactions and branching dialogues.[9]
+
+
+
+Contents
+
+
+1 Game mechanics
+2 Value and impact
+3 References
+4 See also
+
+
+
+Game mechanics[edit]
+
+
+
+
+A dialog tree as implemented in the game The Banner Saga: the query from the non-player character appears at the bottom, and three possible player responses at the upper left.
+
+
+The player typically enters the gameplay mode by choosing to speak with a non-player character (or when a non-player character chooses to speak to them), and then choosing a line of pre-written dialog from a menu. Upon choosing what to say, the non-player character responds to the player, and the player is given another choice of what to say. This cycle continues until the conversation ends. The conversation may end when the player selects a farewell message, the non-player character has nothing more to add and ends the conversation, or when the player makes a bad choice (perhaps angering the non-player to leave the conversation).
+Games often offer options to ask non-players to reiterate information about a topic, allowing players to replay parts of the conversation that they did not pay close enough attention to the first time.[8] These conversations are said to be designed as a tree structure, with players deciding between each branch of dialog to pursue. Unlike a branching story, players may return to earlier parts of a conversation tree and repeat them. Each branch point (or node) is essentially a different menu of choices, and each choice that the player makes triggers a response from the non-player character followed by a new menu of choices.
+In some genres such as role-playing video games, external factors such as charisma may influence the response of the non-player character or unlock options that would not be available to other characters.[8] These conversations can have far-reaching consequences, such as deciding to disclose a valuable secret that has been entrusted to the player.[8] However, these are usually not real tree data structure in programmers sense, because they contain cycles as can be seen on illustration on this page.
+Certain game genres revolve almost entirely around character interactions, including visual novels such as Ace Attorney and dating sims such as Tokimeki Memorial, usually featuring complex branching dialogues and often presenting the player's possible responses word-for-word as the player character would say them. Games revolving around relationship-building, including visual novels, dating sims such as Tokimeki Memorial, and some role-playing games such as Shin Megami Tensei: Persona, often give choices that have a different number of associated "mood points" which influence a player character's relationship and future conversations with a non-player character. These games often feature a day-night cycle with a time scheduling system that provides context and relevance to character interactions, allowing players to choose when and if to interact with certain characters, which in turn influences their responses during later conversations.[10] Some games use a real-time conversation system, giving the player only a few seconds to respond to a non-player character, such as Sega's Sakura Wars and Alpha Protocol.[11]
+Another variation of branching dialogues can be seen in the adventure game Culpa Innata, where the player chooses a tactic at the beginning of a conversation, such as using either a formal, casual or accusatory manner, that affects the tone of the conversation and the information gleaned from the interviewee.[10]
+Value and impact[edit]
+This mechanism allows game designers to provide interactive conversations with nonplayer characters without having to tackle the challenges of natural language processing in the field of artificial intelligence.[8] In games such as Monkey Island, these conversations can help demonstrate the personality of certain characters.[8]
+References[edit]
+
+
+^ IGN: Escape From Monkey Island Review
+^ Adventure Game Design Patterns at God Patterns
+^ Strange Things in Sierra's Adventure Game Demos Archived 2007-10-24 at the Wayback Machine.
+^ Dreamfall: The Longest Journey Hands-On - Yahoo! Video Games Archived August 7, 2011, at the Wayback Machine.
+^ GameDev.net - NPC Conversation Techniques
+^ Adventure Gamers : Callahan's Crosstime Saloon
+^ The Pages of Now & Forever - All About Star Control
+^ a b c d e f g Rollings, Andrew; Ernest Adams (2006). Fundamentals of Game Design. Prentice Hall. 
+^ Brent Ellison (July 8, 2008). "Defining Dialogue Systems". Gamasutra. Retrieved 2011-03-30. 
+^ a b Cite error: The named reference Gamasutra was invoked but never defined (see the help page).
+^ Spencer (17 March 2010). "Alpha Protocol Has A Touch Of Sakura Wars". Siliconera. Retrieved 7 March 2012. 
+
+
+See also[edit]
+
+Digital conversation
+Adventure game
+Action-adventure game
+Sierra Entertainment
+Dialog systems
+
+
+
+
+

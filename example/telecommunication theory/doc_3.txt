@@ -1,0 +1,50 @@
+Water filling algorithm is a general name given to the ideas in communication systems design and practice for equalization strategies on communications channels. As the name suggests, just as water finds its level even when filled in one part of a vessel with multiple openings, as a consequence of Pascal's law, the amplifier systems in communications network repeaters, or receivers amplify each channel up to the required power level compensating for the channel impairments. See, for example, channel power allocation in MIMO systems.
+
+
+
+Contents
+
+
+1 Single channel systems
+2 Multichannel systems
+3 See also
+4 References
+
+
+
+Single channel systems[edit]
+In a single channel communication system the deamplification and loss present on them can be simplistically taken as attenuation by a percentage g, then amplifiers restore the signal power level to the same value at transmission setup by operating at a gain of 1/ (1-g). E.g. if we experience 6dB attenuation in transmission, i.e. 75% loss, then we have to amplify the signal by a factor of 4x to restore the signal to the transmitter levels.
+Multichannel systems[edit]
+Same ideas can be carried out in presence impairments and a multiple channel system. Amplifier nonlinearity, crosstalk and power budgets prevent the use of these waterfilling algorithms to restore all channels, and only a subset can benefit from them.
+See also[edit]
+
+Water-pouring algorithm
+Zero forcing equalizer
+Robert Lucky
+Amplifier systems
+EDFA
+
+References[edit]
+
+Proakis, Digital Communication Systems, 4th Ed., McGraw Hill, (2001).
+
+
+
+
+
+
+This article related to telecommunications is a stub. You can help Wikipedia by expanding it.
+
+
+v
+t
+e
+
+
+
+
+
+
+
+
+

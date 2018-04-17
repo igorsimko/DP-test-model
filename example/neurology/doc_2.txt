@@ -1,0 +1,220 @@
+
+
+CSF/serum glucose ratio
+
+
+Medical diagnostics
+
+
+Reference range
+0.6
+
+
+LOINC
+2352-3
+
+
+
+[edit on Wikidata]
+
+
+
+The CSF/serum glucose ratio is a measurement used to compare CSF glucose and blood sugar.
+Because many bacteria metabolize glucose, and because the blood brain barrier minimizes transversal, the ratio can be useful in determining whether there is a bacterial infection in the CSF.
+The normal ratio is 0.6.[1]
+It is used to distinguish between bacterial and viral meningitis, as it is often lowered in bacterial meningitis and normal in viral meningitis.
+References[edit]
+
+
+Pathophysiology sample values
+
+BMP/ELECTROLYTES:
+
+
+Na+ = 140
+Cl− = 100
+BUN = 20
+/
+
+
+
+
+
+Glu = 150
+
+
+K+ = 4
+CO2 = 22
+PCr = 1.0
+\
+
+
+ARTERIAL BLOOD GAS:
+
+
+HCO3− = 24
+paCO2 = 40
+paO2 = 95
+pH = 7.40
+
+
+ALVEOLAR GAS:
+
+
+
+pACO2 = 36
+pAO2 = 105
+A-a g = 10
+
+
+OTHER:
+
+
+Ca = 9.5
+Mg2+ = 2.0
+PO4 = 1
+
+
+
+CK = 55
+BE = −0.36
+AG = 16
+
+
+
+SERUM OSMOLARITY/RENAL:
+
+
+PMO = 300
+PCO = 295
+POG = 5
+BUN:Cr = 20
+
+
+URINALYSIS:
+
+
+UNa+ = 80
+UCl− = 100
+UAG = 5
+FENa = 0.95
+
+
+UK+ = 25
+USG = 1.01
+UCr = 60
+UO = 800
+
+
+PROTEIN/GI/LIVER FUNCTION TESTS:
+
+
+LDH = 100
+TP = 7.6
+AST = 25
+TBIL = 0.7
+
+
+ALP = 71
+Alb = 4.0
+ALT = 40
+BC = 0.5
+
+
+
+
+AST/ALT = 0.6
+BU = 0.2
+
+
+AF alb = 3.0
+SAAG = 1.0
+
+SOG = 60
+
+
+CSF:
+
+
+CSF alb = 30
+CSF glu = 60
+CSF/S alb = 7.5
+CSF/S glu = 0.4
+
+
+
+
+
+
+^ Karen Roos (2005). Principles of neurologic infectious diseases. New York: McGraw-Hill, Medical Pub. Division. p. 4. ISBN 0-07-140816-9. 
+
+
+
+
+
+
+
+
+
+v
+t
+e
+
+
+Medical tests on Cerebrospinal fluid (CPT 82000-84999)
+
+
+
+Albumin
+
+
+
+CSF albumin
+CSF/serum albumin ratio
+
+
+
+
+
+Glucose
+
+
+
+CSF glucose
+CSF/serum glucose ratio
+
+
+
+
+
+Other
+
+
+
+Baricity
+
+
+
+
+
+
+
+
+
+
+
+This medical diagnostic article is a stub. You can help Wikipedia by expanding it.
+
+
+v
+t
+e
+
+
+
+
+
+
+
+
+
