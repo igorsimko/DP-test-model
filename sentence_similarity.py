@@ -149,10 +149,15 @@ sentences = [
 model = Word2Vec.load('model.bin')
 
 def gramatic_keyword(docs):
-    return utils.postprocess_predict(parse_text_keywords(join.parse_text(''.join(docs), join=False),
-                                                                      keywords=[x[0] for x in
-                                                                                keywords(''.join(docs), scores=True) if
-                                                                                x[1] > 0.1]))
+    try:
+        return utils.postprocess_predict(parse_text_keywords(join.parse_text(''.join(docs), join=False),
+                                                                          keywords=[x[0] for x in
+                                                                                    keywords(''.join(docs), scores=True) if
+                                                                                    x[1] > 0.1]))
+    except ZeroDivisionError:
+        print("x")
+        return []
+
 
 def parse_text_keywords(text_phrases, keywords):
     ret_val = []

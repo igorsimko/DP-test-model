@@ -26,11 +26,14 @@ from rouge import rouge
 WHITELIST = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ .'
 VOCAB_SIZE = 50000
 
+split_ratio = 0.8
+embedding = 30
+
 CM_KEYWORDS = 'keywords'
-CM_PARSE = 'parse_text'
-CM_GET_MOST_SIMILIAR = 'get_most_similiar'
-CM_GET_MOST_SIMILIAR_WITH_PARSE = 'get_most_similiar_with_parse'
-CM_KEYWORDS_PARSE = 'parse_keywords'
+CM_PARSE = 'n-grams'
+CM_GET_MOST_SIMILIAR = 'cos_sim'
+CM_GET_MOST_SIMILIAR_WITH_PARSE = 'cos_sim_w_n-grams'
+CM_KEYWORDS_PARSE = 'keywords_n-grams'
 
 UNK = '<UNK>'
 GO = '<GO>'
@@ -43,8 +46,7 @@ file_name = 'train-4557_test-1212.json'
 file_name = 'train-5185_test-1671.json'
 file_name = 'train-8562_test-2807.json'
 file_name = 'train-6441_test-5475.json'
-# file_name = 'train-61_test-19.json'
-# file_name = 'train-223_test-70.json'
+file_name = 'train-223_test-70.json'
 # file_name = 'train-7608_test-4247.json'
 
 global_separator = int(file_name.split("_")[0].split('-')[1])
@@ -293,8 +295,9 @@ def eval_methods(x, y):
         print("AVG (ROUGE) - %s\t - %f" %(cm, avg_rouge))
         print("AVG (SIM) - %s\t - %f" %(cm, avg_sim))
 
+
     fig, ax = plt.subplots()
-    index = np.arange(0, 4 * 2, 2)
+    index = np.arange(0, 5 * 2, 2)
     bar_width = 0.35
 
     data_bleu = ax.bar(index, tuple([x[1].ROUGE[0] for x in list(avg_eval.items())]), bar_width,
@@ -307,10 +310,12 @@ def eval_methods(x, y):
                 alpha=1, color='green',
                 label='SIMILARITY')
 
-    ax.set_xlabel('Methods')
-    ax.set_ylabel('Score')
-    ax.set_title('Comparision methods metrics evaulation')
+    ax.set_xlabel('Metódy')
+    ax.set_ylabel('Skóre')
+    ax.set_title('Porovnanie metód pre zjednotenie dokumentov')
     ax.set_xticks(index + bar_width / 2)
+    for tick in ax.get_xticklabels():
+        tick.set_rotation(25)
     ax.set_xticklabels((CM_KEYWORDS, CM_PARSE, CM_GET_MOST_SIMILIAR, CM_GET_MOST_SIMILIAR_WITH_PARSE, CM_KEYWORDS_PARSE))
     ax.legend()
 
@@ -385,7 +390,10 @@ def process_data():
 
     utils.prt("Start parsing n-grams")
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: str(unicodedata.normalize('NFKD', x).encode('ascii', 'ignore')))
-    # raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: parse_text(x))
+
+    # Average document length (words)
+    # utils.prt( np.average([len(x.split(' ')) for x in raw_data['parsed_text'].values]))
+    # utils.prt( np.average([len(x) for x in raw_data['parsed_text'].apply(lambda x: sentence_similarity.gramatic_keyword([x])).values]))
 
     raw_data['category'] = raw_data['category'].apply(lambda x: ' '.join(x.split(' ')[:limit['max_headings']]))
     raw_data['parsed_text'] = raw_data['parsed_text'].apply(
@@ -402,26 +410,31 @@ def process_data():
 
     utils.prt('Spliting test/train DF')
 
+    # RANDOM GROUPS FOR TESTING PURPOSE
+
+    # random_groups = []
+    # groups_by_fletter = raw_data.head(global_separator).groupby(raw_data.head(global_separator)['category'].str.get(0))
+    # for group in list(groups_by_fletter.groups):
+    #     for cat in groups_by_fletter.get_group(group).sample(5)['category'].values:
+    #         random_groups.append(cat)
+
     # train data
     category_to_categories = {}
     train_df = raw_data.head(global_separator).groupby('category')
-    sim_train_df, cm_train = group_by_category(train_df, category_to_categories, raw_data, methods=[CM_KEYWORDS_PARSE, CM_KEYWORDS, CM_PARSE])
+    sim_train_df, cm_train = group_by_category(train_df, category_to_categories, raw_data, methods=[CM_KEYWORDS_PARSE, CM_KEYWORDS, CM_PARSE, CM_GET_MOST_SIMILIAR, CM_GET_MOST_SIMILIAR_WITH_PARSE])
     # test data
+    split_ratio_index = len(raw_data.groupby('category')) * (1 - split_ratio)
     test_df = raw_data.tail(len(raw_data) - global_separator).groupby('category')
-    sim_test_df, cm_test = group_by_category(test_df, category_to_categories, raw_data, methods=CM_KEYWORDS_PARSE)
+    test_df = test_df.tail(split_ratio_index).groupby('category')
+    utils.prt("Length whole: %d" % (len(raw_data.groupby('category'))))
+    utils.prt("Length train: %d | Length test: %d" % (len(train_df), len(test_df)))
+    sim_test_df, cm_test = group_by_category(test_df, category_to_categories, raw_data, methods=[CM_KEYWORDS_PARSE, CM_KEYWORDS, CM_PARSE, CM_GET_MOST_SIMILIAR, CM_GET_MOST_SIMILIAR_WITH_PARSE])
 
-    # eval_methods(cm_train, cm_test)
+    eval_methods(cm_train, cm_test)
     raw_data = sim_train_df.append(sim_test_df)
-    
-    # raw_data['parsed_text'] = raw_data['parsed_text'].apply(lambda x: x[:limit['max_descriptions']])
-    # raw_data['category'] = raw_data['category'].apply(lambda x: ' '.join(x.split(' ')[:limit['max_headings']]))
-
-    # raw_data['category'] = raw_data['category'].apply(lambda x: parse_text(x))
-
 
     raw_data.to_json('parsed.json', orient='records')
 
-    # model = loadGloveModel("glove/glove.6B.50d.txt")
 
     headings, descriptions, test_categories, new_separator = tokenize_articles(raw_data, test_arr, split_separator=len(sim_train_df))
 
@@ -457,7 +470,7 @@ def process_data():
     # unk_percentage = calculate_unk_percentage(idx_headings, idx_descriptions, word2idx)
     # print (calculate_unk_percentage(idx_headings, idx_descriptions, word2idx))
 
-    model = Word2Vec(word_tokenized_descriptions + word_tokenized_headings, min_count=1, size=30)
+    model = Word2Vec(word_tokenized_descriptions + word_tokenized_headings, min_count=1, size=embedding)
     model.save('model.bin')
 
     article_data = {

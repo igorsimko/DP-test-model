@@ -81,5 +81,6 @@ def parse_text(text, join=True):
         return ret_val
 
 # txt = "His mythologies and powers are similar, though not identical, to those of Indo-European deities such as Indra, Jupiter, Perkūnas, Perun, Thor, and Odin"
-# print(parse_text("my potato name is nice potato. potato is good. it tastes very very nice."))
+# print(parse_text("This is quick brown fox. And this is green and black quick dog and my cat is pretty small."))
 # print(parse_text(txt))
+#

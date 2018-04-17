@@ -23,6 +23,8 @@ parser.add_argument('--trace', dest='trace',
                     help='Trace logging', default=False)
 parser.add_argument('--category',  dest='category', default=None,
                     help='Category for evaulation')
+parser.add_argument('--parent_dir',  dest='parent_dir', default=None,
+                    help='Parent directory')
 
 results = parser.parse_args()
 
@@ -50,7 +52,6 @@ epochs = actual_config['epochs']
 num_units = actual_config['num_units']
 num_layers = actual_config['num_layers']
 emb_dim = actual_config['emb_dim']
-epochs = actual_config['epochs']
 batch_size = actual_config['batch_size']
 split_idx = actual_config['split_idx']
 ckpt = actual_config['ckpt']
@@ -66,6 +67,26 @@ idx_a, idx_q = metadata['idx_headings'], metadata['idx_descriptions']
 
 # load test documents
 docs_dir = results.docs_dir
+parent_dir = results.parent_dir
+
+if parent_dir != None:
+    testX, testY = [], []
+    for dir in [x[0] for x in os.walk(parent_dir) if x[0] != parent_dir]:
+        docs = []
+        category_name = dir.split(parent_dir + "\\")[1]
+
+        for filename in glob.glob(os.path.join(dir, '*.txt')):
+            with open(filename, 'r', encoding='utf8') as f:
+                docs.append(''.join(f.readlines()).replace('\n', ''))
+
+        docs_representation = sentence_similarity.gramatic_keyword(docs)[:dp.limit['max_descriptions']]
+        print(docs_representation)
+        docs_vectorized = zero_pad([category_name.lower().split(' ')] if category_name else [], [docs_representation], metadata['word2idx'], only_desc=True if not category_name else False)
+
+        testY.append(docs_vectorized[0])
+        testX.append(docs_vectorized[1])
+
+
 if docs_dir != None:
     docs = []
     for filename in glob.glob(os.path.join(docs_dir, '*.txt')):
