@@ -397,8 +397,8 @@ def process_data():
     # utils.prt( np.average([len(x) for x in raw_data['parsed_text'].apply(lambda x: sentence_similarity.gramatic_keyword([x])).values]))
 
     raw_data['category'] = raw_data['category'].apply(lambda x: ' '.join(x.split(' ')[:limit['max_headings']]))
-    raw_data['parsed_text'] = raw_data['parsed_text'].apply(
-        lambda x: ' '.join(x.split(' ')[:limit['max_descriptions']]))
+    # raw_data['parsed_text'] = raw_data['parsed_text'].apply(
+    #     lambda x: ' '.join(x.split(' ')[:limit['max_descriptions']]))
 
     # group_by_id = raw_data.groupby('page_id')
     test_arr = pd.DataFrame(columns=['page_id', 'parsed_text', 'categories'])
@@ -424,12 +424,12 @@ def process_data():
     # train data
     category_to_categories = {}
     train_df = raw_data.head(global_separator).groupby('category')
-    sim_train_df, cm_train = group_by_category(train_df, category_to_categories, raw_data, methods=[CM_KEYWORDS_PARSE, CM_KEYWORDS, CM_PARSE])
+    sim_train_df, cm_train = group_by_category(train_df, category_to_categories, raw_data, methods=[CM_PARSE])
     # test data
     test_df = raw_data.tail(len(raw_data) - global_separator).groupby('category')
 
     split_ratio_index = len(test_df) * (1 - split_ratio)
-    test_df = test_df.tail(split_ratio_index).groupby('category')
+    test_df = pd.DataFrame([j for i in [g[1].values for g in list(test_df)[:int(split_ratio_index)]] for j in i], columns=['category', 'page_id', 'parsed_text']).groupby('category')
     utils.prt("Length whole: %d" % (len(raw_data.groupby('category'))))
     utils.prt("Length train: %d | Length test: %d" % (len(train_df), len(test_df)))
     sim_test_df, cm_test = group_by_category(test_df, category_to_categories, raw_data, methods=[CM_KEYWORDS_PARSE])
@@ -473,9 +473,6 @@ def process_data():
     idx_descriptions = new_idx_d
     # unk_percentage = calculate_unk_percentage(idx_headings, idx_descriptions, word2idx)
     # print (calculate_unk_percentage(idx_headings, idx_descriptions, word2idx))
-
-    model = Word2Vec(raw_data['parsed_text'].values, min_count=1, size=embedding)
-    model.save('model.bin')
 
     tmp_pickle = unpickle_articles()
 
