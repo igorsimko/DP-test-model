@@ -411,6 +411,8 @@ def process_data():
 
     utils.prt('Spliting test/train DF')
 
+    model = Word2Vec([x.split(' ') for x in raw_data['parsed_text'].values], min_count=1, size=embedding)
+    model.save('model.bin')
     # RANDOM GROUPS FOR TESTING PURPOSE
 
     # random_groups = []
@@ -424,8 +426,9 @@ def process_data():
     train_df = raw_data.head(global_separator).groupby('category')
     sim_train_df, cm_train = group_by_category(train_df, category_to_categories, raw_data, methods=[CM_KEYWORDS_PARSE, CM_KEYWORDS, CM_PARSE])
     # test data
-    split_ratio_index = len(raw_data.groupby('category')) * (1 - split_ratio)
     test_df = raw_data.tail(len(raw_data) - global_separator).groupby('category')
+
+    split_ratio_index = len(test_df) * (1 - split_ratio)
     test_df = test_df.tail(split_ratio_index).groupby('category')
     utils.prt("Length whole: %d" % (len(raw_data.groupby('category'))))
     utils.prt("Length train: %d | Length test: %d" % (len(train_df), len(test_df)))
@@ -471,7 +474,7 @@ def process_data():
     # unk_percentage = calculate_unk_percentage(idx_headings, idx_descriptions, word2idx)
     # print (calculate_unk_percentage(idx_headings, idx_descriptions, word2idx))
 
-    model = Word2Vec(word_tokenized_descriptions + word_tokenized_headings, min_count=1, size=embedding)
+    model = Word2Vec(raw_data['parsed_text'].values, min_count=1, size=embedding)
     model.save('model.bin')
 
     tmp_pickle = unpickle_articles()
