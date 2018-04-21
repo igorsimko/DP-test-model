@@ -26,9 +26,9 @@ from rouge import rouge
 WHITELIST = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ .'
 VOCAB_SIZE = 50000
 
-split_ratio = 0.7
-embedding = 30
-just_test_changes = True
+split_ratio = 0.8
+embedding = 15
+just_test_changes = False
 
 CM_KEYWORDS = 'keywords'
 CM_PARSE = 'n-grams'
@@ -429,7 +429,7 @@ def process_data():
     test_df = raw_data.tail(len(raw_data) - global_separator).groupby('category')
 
     split_ratio_index = len(test_df) * (1 - split_ratio)
-    test_df = pd.DataFrame([j for i in [g[1].values for g in list(test_df)[:int(split_ratio_index)]] for j in i], columns=['category', 'page_id', 'parsed_text']).groupby('category')
+    test_df = pd.DataFrame([j for i in [g[1].values for g in list(test_df)[:int(split_ratio_index)]] for j in i], columns=['category', 'page_id', 'page_title', 'parsed_text']).groupby('category')
     utils.prt("Length whole: %d" % (len(raw_data.groupby('category'))))
     utils.prt("Length train: %d | Length test: %d" % (len(train_df), len(test_df)))
     sim_test_df, cm_test = group_by_category(test_df, category_to_categories, raw_data, methods=[CM_KEYWORDS_PARSE])
@@ -474,7 +474,10 @@ def process_data():
     # unk_percentage = calculate_unk_percentage(idx_headings, idx_descriptions, word2idx)
     # print (calculate_unk_percentage(idx_headings, idx_descriptions, word2idx))
 
-    tmp_pickle = unpickle_articles()
+    tmp_pickle = None
+
+    if just_test_changes:
+        tmp_pickle = unpickle_articles()
 
     if tmp_pickle != None and just_test_changes:
         article_data = {
