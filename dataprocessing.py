@@ -10,6 +10,7 @@ import unicodedata
 import sentence_similarity
 import utils
 
+from numpy import random
 from gensim.models import Word2Vec
 from gensim.summarization import keywords
 from nltk.tokenize import word_tokenize as tokenize
@@ -53,7 +54,7 @@ file_name = 'train-6441_test-5475.json'
 global_separator = int(file_name.split("_")[0].split('-')[1])
 
 limit = {
-    'max_descriptions': 150,
+    'max_descriptions': 100,
     'min_descriptions': 0,
     'max_headings': 8,
     'min_headings': 0,
@@ -424,12 +425,14 @@ def process_data():
     # train data
     category_to_categories = {}
     train_df = raw_data.head(global_separator).groupby('category')
-    sim_train_df, cm_train = group_by_category(train_df, category_to_categories, raw_data, methods=[CM_PARSE])
+    sim_train_df, cm_train = group_by_category(train_df, category_to_categories, raw_data, methods=[CM_KEYWORDS_PARSE, CM_KEYWORDS, CM_PARSE])
     # test data
     test_df = raw_data.tail(len(raw_data) - global_separator).groupby('category')
 
     split_ratio_index = len(test_df) * (1 - split_ratio)
-    test_df = pd.DataFrame([j for i in [g[1].values for g in list(test_df)[:int(split_ratio_index)]] for j in i], columns=['category', 'page_id', 'page_title', 'parsed_text']).groupby('category')
+    split_idxs = random.choice(np.arange(len(test_df)), int(split_ratio_index))
+    print(split_idxs)
+    test_df = pd.DataFrame([j for i in [g[1].values for g in [list(test_df)[i] for i in split_idxs]] for j in i], columns=['category', 'page_id', 'page_title', 'parsed_text']).groupby('category')
     utils.prt("Length whole: %d" % (len(raw_data.groupby('category'))))
     utils.prt("Length train: %d | Length test: %d" % (len(train_df), len(test_df)))
     sim_test_df, cm_test = group_by_category(test_df, category_to_categories, raw_data, methods=[CM_KEYWORDS_PARSE])
