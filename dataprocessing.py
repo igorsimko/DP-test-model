@@ -47,7 +47,7 @@ file_name = 'train-4557_test-1212.json'
 file_name = 'train-5185_test-1671.json'
 file_name = 'train-8562_test-2807.json'
 file_name = 'train-6441_test-5475.json'
-file_name = 'train-223_test-70.json'
+# file_name = 'train-223_test-70.json'
 # file_name = 'train-7608_test-4247.json'
 
 global_separator = int(file_name.split("_")[0].split('-')[1])
